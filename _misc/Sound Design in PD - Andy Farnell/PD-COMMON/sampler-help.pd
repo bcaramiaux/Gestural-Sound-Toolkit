@@ -1,0 +1,16 @@
+#N canvas 81 34 107 137 10;
+#X obj 0 85 sampler;
+#X obj 0 0 adc~;
+#X obj 55 38 bng 15 250 50 0 empty empty record 20 7 1 8 -262144 -1
+-1;
+#X obj 55 58 bng 15 250 50 0 empty empty play 20 7 1 8 -262144 -1 -1
+;
+#X obj 14 27 vsl 12 48 0 1 0 0 empty empty gain 16 8 1 8 -262144 -1
+-1 2800 1;
+#X obj 0 119 dac~;
+#X connect 0 0 5 0;
+#X connect 0 0 5 1;
+#X connect 1 0 0 0;
+#X connect 2 0 0 2;
+#X connect 3 0 0 3;
+#X connect 4 0 0 1;

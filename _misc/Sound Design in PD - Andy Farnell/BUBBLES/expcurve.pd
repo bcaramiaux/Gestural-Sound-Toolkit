@@ -1,0 +1,18 @@
+#N canvas 320 91 158 216 10;
+#X obj 26 116 vline~;
+#X obj 2 164 pow~;
+#X obj 2 187 outlet~ signal;
+#X obj 2 141 sig~ 2.71828;
+#X msg 26 92 0 0 0 \, 1 \$1 0;
+#X obj 49 47 f \$1;
+#X obj 49 26 loadbang;
+#X obj 26 1 inlet trigger;
+#X obj 26 70 f 10;
+#X connect 0 0 1 1;
+#X connect 1 0 2 0;
+#X connect 3 0 1 0;
+#X connect 4 0 0 0;
+#X connect 5 0 8 1;
+#X connect 6 0 5 0;
+#X connect 7 0 8 0;
+#X connect 8 0 4 0;

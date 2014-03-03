@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="yes"?>
+
+<pattrstorage name = "Breaking_preset">
+	<slot number = "1" name = "breaking">
+		<pattr name = "Gain_breaking" value = "23.140495" />
+		<patcher name = "00_Break_Impact_params.mxb">
+			<pattr name = "Imp_dissip_lambda" value = "80.487808" />
+			<pattr name = "Imp_shape_alpha" value = "43.902439" />
+			<pattr name = "Imp_stiff_k" value = "65.040649" />
+		</patcher>
+		<patcher name = "01_Break_Hammer_control.mxb">
+			<pattr name = "Mo1_Ham_mass" value = "2.857143" />
+			<pattr name = "Mo1_imp_vel" value = "70.192307" />
+		</patcher>
+		<patcher name = "02_Break_Resonator_control.mxb">
+			<pattr name = "Active_modes" value = "3" />
+			<pattr name = "Mo2_F_freq01" value = "2.1" />
+			<pattr name = "Mo2_F_freq02" value = "2.9" />
+			<pattr name = "Mo2_F_freq03" value = "5.3" />
+			<pattr name = "Mo2_F_freq04" value = "0.1" />
+			<pattr name = "Mo2_F_freq05" value = "0.1" />
+			<pattr name = "Mo2_F_freq06" value = "0.1" />
+			<pattr name = "Mo2_F_freq07" value = "0.1" />
+			<pattr name = "Mo2_F_freq08" value = "0.1" />
+			<pattr name = "Mo2_F_freq09" value = "0.1" />
+			<pattr name = "Mo2_F_freq10" value = "0.1" />
+			<pattr name = "Mo2_F_freq11" value = "0.1" />
+			<pattr name = "Mo2_F_freq12" value = "0.1" />
+			<pattr name = "Mo2_F_freq13" value = "0.1" />
+			<pattr name = "Mo2_F_freq14" value = "0.1" />
+			<pattr name = "Mo2_F_freq15" value = "0.1" />
+			<pattr name = "Mo2_Gdec_fact" value = "0.1" />
+			<pattr name = "Mo2_Gfreq_fact" value = "1." />
+			<pattr name = "Mo2_Ggain_fact" value = "1." />
+			<pattr name = "Mo2_dec_0" value = "0.01" />
+			<pattr name = "Mo2_dec_01" value = "0.01" />
+			<pattr name = "Mo2_dec_02" value = "0.01" />
+			<pattr name = "Mo2_dec_03" value = "0.1" />
+			<pattr name = "Mo2_dec_04" value = "0.001" />
+			<pattr name = "Mo2_dec_05" value = "0.001" />
+			<pattr name = "Mo2_dec_06" value = "0.001" />
+			<pattr name = "Mo2_dec_07" value = "0.001" />
+			<pattr name = "Mo2_dec_08" value = "0.001" />
+			<pattr name = "Mo2_dec_09" value = "0.001" />
+			<pattr name = "Mo2_dec_10" value = "0.001" />
+			<pattr name = "Mo2_dec_11" value = "0.001" />
+			<pattr name = "Mo2_dec_12" value = "0.001" />
+			<pattr name = "Mo2_dec_13" value = "0.001" />
+			<pattr name = "Mo2_dec_14" value = "0.001" />
+			<pattr name = "Mo2_dec_15" value = "0.001" />
+			<pattr name = "Mo2_freq0" value = "1800." />
+			<pattr name = "Mo2_freq01" value = "3780." />
+			<pattr name = "Mo2_freq02" value = "5220." />
+			<pattr name = "Mo2_freq03" value = "9540." />
+			<pattr name = "Mo2_freq04" value = "180." />
+			<pattr name = "Mo2_freq05" value = "180." />
+			<pattr name = "Mo2_freq06" value = "180." />
+			<pattr name = "Mo2_freq07" value = "180." />
+			<pattr name = "Mo2_freq08" value = "180." />
+			<pattr name = "Mo2_freq09" value = "180." />
+			<pattr name = "Mo2_freq10" value = "180." />
+			<pattr name = "Mo2_freq11" value = "180." />
+			<pattr name = "Mo2_freq12" value = "180." />
+			<pattr name = "Mo2_freq13" value = "180." />
+			<pattr name = "Mo2_freq14" value = "180." />
+			<pattr name = "Mo2_freq15" value = "180." />
+			<pattr name = "Mo2_gain_0" value = "60." />
+			<pattr name = "Mo2_gain_01" value = "60." />
+			<pattr name = "Mo2_gain_02" value = "70." />
+			<pattr name = "Mo2_gain_03" value = "90." />
+			<pattr name = "Mo2_gain_04" value = "0." />
+			<pattr name = "Mo2_gain_05" value = "0." />
+			<pattr name = "Mo2_gain_06" value = "0." />
+			<pattr name = "Mo2_gain_07" value = "0." />
+			<pattr name = "Mo2_gain_08" value = "0." />
+			<pattr name = "Mo2_gain_09" value = "0." />
+			<pattr name = "Mo2_gain_10" value = "0." />
+			<pattr name = "Mo2_gain_11" value = "0." />
+			<pattr name = "Mo2_gain_12" value = "0." />
+			<pattr name = "Mo2_gain_13" value = "0." />
+			<pattr name = "Mo2_gain_14" value = "0." />
+			<pattr name = "Mo2_gain_15" value = "0." />
+		</patcher>
+		<patcher name = "03_Break_break_params.mxb">
+			<pattr name = "BRK_graininess" value = "93.495934" />
+			<pattr name = "BRK_rand_dec" value = "73.983742" />
+			<pattr name = "BRK_rand_initval" value = "93.495934" />
+			<pattr name = "BRK_rand_int_1" value = "24.390244" />
+			<pattr name = "BRK_rand_int_2" value = "25.203253" />
+			<pattr name = "BRK_resistance" value = "86.178864" />
+			<pattr name = "BRL_grn_tune" value = "0.814815" />
+		</patcher>
+	</slot>
+	<slot number = "2" name = "break_2">
+		<pattr name = "Gain_breaking" value = "4.958678" />
+		<patcher name = "00_Break_Impact_params.mxb">
+			<pattr name = "Imp_dissip_lambda" value = "80.487808" />
+			<pattr name = "Imp_shape_alpha" value = "21.138212" />
+			<pattr name = "Imp_stiff_k" value = "71.544716" />
+		</patcher>
+		<patcher name = "01_Break_Hammer_control.mxb">
+			<pattr name = "Mo1_Ham_mass" value = "3.809524" />
+			<pattr name = "Mo1_imp_vel" value = "68.269234" />
+		</patcher>
+		<patcher name = "02_Break_Resonator_control.mxb">
+			<pattr name = "Active_modes" value = "4" />
+			<pattr name = "Mo2_F_freq01" value = "1.85" />
+			<pattr name = "Mo2_F_freq02" value = "2.9" />
+			<pattr name = "Mo2_F_freq03" value = "5.3" />
+			<pattr name = "Mo2_F_freq04" value = "0.1" />
+			<pattr name = "Mo2_F_freq05" value = "0.1" />
+			<pattr name = "Mo2_F_freq06" value = "0.1" />
+			<pattr name = "Mo2_F_freq07" value = "0.1" />
+			<pattr name = "Mo2_F_freq08" value = "0.1" />
+			<pattr name = "Mo2_F_freq09" value = "0.1" />
+			<pattr name = "Mo2_F_freq10" value = "0.1" />
+			<pattr name = "Mo2_F_freq11" value = "0.1" />
+			<pattr name = "Mo2_F_freq12" value = "0.1" />
+			<pattr name = "Mo2_F_freq13" value = "0.1" />
+			<pattr name = "Mo2_F_freq14" value = "0.1" />
+			<pattr name = "Mo2_F_freq15" value = "0.1" />
+			<pattr name = "Mo2_Gdec_fact" value = "0.1" />
+			<pattr name = "Mo2_Gfreq_fact" value = "1." />
+			<pattr name = "Mo2_Ggain_fact" value = "1." />
+			<pattr name = "Mo2_dec_0" value = "0.05" />
+			<pattr name = "Mo2_dec_01" value = "0.03" />
+			<pattr name = "Mo2_dec_02" value = "0.06" />
+			<pattr name = "Mo2_dec_03" value = "0.04" />
+			<pattr name = "Mo2_dec_04" value = "0.001" />
+			<pattr name = "Mo2_dec_05" value = "0.001" />
+			<pattr name = "Mo2_dec_06" value = "0.001" />
+			<pattr name = "Mo2_dec_07" value = "0.001" />
+			<pattr name = "Mo2_dec_08" value = "0.001" />
+			<pattr name = "Mo2_dec_09" value = "0.001" />
+			<pattr name = "Mo2_dec_10" value = "0.001" />
+			<pattr name = "Mo2_dec_11" value = "0.001" />
+			<pattr name = "Mo2_dec_12" value = "0.001" />
+			<pattr name = "Mo2_dec_13" value = "0.001" />
+			<pattr name = "Mo2_dec_14" value = "0.001" />
+			<pattr name = "Mo2_dec_15" value = "0.001" />
+			<pattr name = "Mo2_freq0" value = "700." />
+			<pattr name = "Mo2_freq01" value = "1295." />
+			<pattr name = "Mo2_freq02" value = "2030." />
+			<pattr name = "Mo2_freq03" value = "3710." />
+			<pattr name = "Mo2_freq04" value = "70." />
+			<pattr name = "Mo2_freq05" value = "70." />
+			<pattr name = "Mo2_freq06" value = "70." />
+			<pattr name = "Mo2_freq07" value = "70." />
+			<pattr name = "Mo2_freq08" value = "70." />
+			<pattr name = "Mo2_freq09" value = "70." />
+			<pattr name = "Mo2_freq10" value = "70." />
+			<pattr name = "Mo2_freq11" value = "70." />
+			<pattr name = "Mo2_freq12" value = "70." />
+			<pattr name = "Mo2_freq13" value = "70." />
+			<pattr name = "Mo2_freq14" value = "70." />
+			<pattr name = "Mo2_freq15" value = "70." />
+			<pattr name = "Mo2_gain_0" value = "50." />
+			<pattr name = "Mo2_gain_01" value = "70." />
+			<pattr name = "Mo2_gain_02" value = "75." />
+			<pattr name = "Mo2_gain_03" value = "75." />
+			<pattr name = "Mo2_gain_04" value = "0." />
+			<pattr name = "Mo2_gain_05" value = "0." />
+			<pattr name = "Mo2_gain_06" value = "0." />
+			<pattr name = "Mo2_gain_07" value = "0." />
+			<pattr name = "Mo2_gain_08" value = "0." />
+			<pattr name = "Mo2_gain_09" value = "0." />
+			<pattr name = "Mo2_gain_10" value = "0." />
+			<pattr name = "Mo2_gain_11" value = "0." />
+			<pattr name = "Mo2_gain_12" value = "0." />
+			<pattr name = "Mo2_gain_13" value = "0." />
+			<pattr name = "Mo2_gain_14" value = "0." />
+			<pattr name = "Mo2_gain_15" value = "0." />
+		</patcher>
+		<patcher name = "03_Break_break_params.mxb">
+			<pattr name = "BRK_graininess" value = "81.3" />
+			<pattr name = "BRK_rand_dec" value = "67.479675" />
+			<pattr name = "BRK_rand_initval" value = "94.308945" />
+			<pattr name = "BRK_rand_int_1" value = "16.260162" />
+			<pattr name = "BRK_rand_int_2" value = "18.7" />
+			<pattr name = "BRK_resistance" value = "63.414635" />
+			<pattr name = "BRL_grn_tune" value = "0.864198" />
+		</patcher>
+	</slot>
+	<slot number = "3" name = "breaking_3">
+		<pattr name = "Gain_breaking" value = "3.305785" />
+		<patcher name = "00_Break_Impact_params.mxb">
+			<pattr name = "Imp_dissip_lambda" value = "80.487808" />
+			<pattr name = "Imp_shape_alpha" value = "20.325203" />
+			<pattr name = "Imp_stiff_k" value = "60.975609" />
+		</patcher>
+		<patcher name = "01_Break_Hammer_control.mxb">
+			<pattr name = "Mo1_Ham_mass" value = "10.476191" />
+			<pattr name = "Mo1_imp_vel" value = "87.5" />
+		</patcher>
+		<patcher name = "02_Break_Resonator_control.mxb">
+			<pattr name = "Active_modes" value = "4" />
+			<pattr name = "Mo2_F_freq01" value = "1.01" />
+			<pattr name = "Mo2_F_freq02" value = "2.9" />
+			<pattr name = "Mo2_F_freq03" value = "5.3" />
+			<pattr name = "Mo2_F_freq04" value = "0.1" />
+			<pattr name = "Mo2_F_freq05" value = "0.1" />
+			<pattr name = "Mo2_F_freq06" value = "0.1" />
+			<pattr name = "Mo2_F_freq07" value = "0.1" />
+			<pattr name = "Mo2_F_freq08" value = "0.1" />
+			<pattr name = "Mo2_F_freq09" value = "0.1" />
+			<pattr name = "Mo2_F_freq10" value = "0.1" />
+			<pattr name = "Mo2_F_freq11" value = "0.1" />
+			<pattr name = "Mo2_F_freq12" value = "0.1" />
+			<pattr name = "Mo2_F_freq13" value = "0.1" />
+			<pattr name = "Mo2_F_freq14" value = "0.1" />
+			<pattr name = "Mo2_F_freq15" value = "0.1" />
+			<pattr name = "Mo2_Gdec_fact" value = "0.3" />
+			<pattr name = "Mo2_Gfreq_fact" value = "1.3" />
+			<pattr name = "Mo2_Ggain_fact" value = "1." />
+			<pattr name = "Mo2_dec_0" value = "0.05" />
+			<pattr name = "Mo2_dec_01" value = "0.03" />
+			<pattr name = "Mo2_dec_02" value = "0.06" />
+			<pattr name = "Mo2_dec_03" value = "0.04" />
+			<pattr name = "Mo2_dec_04" value = "0.001" />
+			<pattr name = "Mo2_dec_05" value = "0.001" />
+			<pattr name = "Mo2_dec_06" value = "0.001" />
+			<pattr name = "Mo2_dec_07" value = "0.001" />
+			<pattr name = "Mo2_dec_08" value = "0.001" />
+			<pattr name = "Mo2_dec_09" value = "0.001" />
+			<pattr name = "Mo2_dec_10" value = "0.001" />
+			<pattr name = "Mo2_dec_11" value = "0.001" />
+			<pattr name = "Mo2_dec_12" value = "0.001" />
+			<pattr name = "Mo2_dec_13" value = "0.001" />
+			<pattr name = "Mo2_dec_14" value = "0.001" />
+			<pattr name = "Mo2_dec_15" value = "0.001" />
+			<pattr name = "Mo2_freq0" value = "700." />
+			<pattr name = "Mo2_freq01" value = "707." />
+			<pattr name = "Mo2_freq02" value = "2030." />
+			<pattr name = "Mo2_freq03" value = "3710." />
+			<pattr name = "Mo2_freq04" value = "70." />
+			<pattr name = "Mo2_freq05" value = "70." />
+			<pattr name = "Mo2_freq06" value = "70." />
+			<pattr name = "Mo2_freq07" value = "70." />
+			<pattr name = "Mo2_freq08" value = "70." />
+			<pattr name = "Mo2_freq09" value = "70." />
+			<pattr name = "Mo2_freq10" value = "70." />
+			<pattr name = "Mo2_freq11" value = "70." />
+			<pattr name = "Mo2_freq12" value = "70." />
+			<pattr name = "Mo2_freq13" value = "70." />
+			<pattr name = "Mo2_freq14" value = "70." />
+			<pattr name = "Mo2_freq15" value = "70." />
+			<pattr name = "Mo2_gain_0" value = "50." />
+			<pattr name = "Mo2_gain_01" value = "50." />
+			<pattr name = "Mo2_gain_02" value = "75." />
+			<pattr name = "Mo2_gain_03" value = "75." />
+			<pattr name = "Mo2_gain_04" value = "0." />
+			<pattr name = "Mo2_gain_05" value = "0." />
+			<pattr name = "Mo2_gain_06" value = "0." />
+			<pattr name = "Mo2_gain_07" value = "0." />
+			<pattr name = "Mo2_gain_08" value = "0." />
+			<pattr name = "Mo2_gain_09" value = "0." />
+			<pattr name = "Mo2_gain_10" value = "0." />
+			<pattr name = "Mo2_gain_11" value = "0." />
+			<pattr name = "Mo2_gain_12" value = "0." />
+			<pattr name = "Mo2_gain_13" value = "0." />
+			<pattr name = "Mo2_gain_14" value = "0." />
+			<pattr name = "Mo2_gain_15" value = "0." />
+		</patcher>
+		<patcher name = "03_Break_break_params.mxb">
+			<pattr name = "BRK_graininess" value = "81.3" />
+			<pattr name = "BRK_rand_dec" value = "67.479675" />
+			<pattr name = "BRK_rand_initval" value = "19.512196" />
+			<pattr name = "BRK_rand_int_1" value = "53.658535" />
+			<pattr name = "BRK_rand_int_2" value = "18.7" />
+			<pattr name = "BRK_resistance" value = "80.487808" />
+			<pattr name = "BRL_grn_tune" value = "0.864198" />
+		</patcher>
+	</slot>
+	<slot number = "4" name = "breaking_4">
+		<pattr name = "Gain_breaking" value = "8.264462" />
+		<patcher name = "00_Break_Impact_params.mxb">
+			<pattr name = "Imp_dissip_lambda" value = "80.487808" />
+			<pattr name = "Imp_shape_alpha" value = "20.325203" />
+			<pattr name = "Imp_stiff_k" value = "75.609756" />
+		</patcher>
+		<patcher name = "01_Break_Hammer_control.mxb">
+			<pattr name = "Mo1_Ham_mass" value = "1.904762" />
+			<pattr name = "Mo1_imp_vel" value = "88.46154" />
+		</patcher>
+		<patcher name = "02_Break_Resonator_control.mxb">
+			<pattr name = "Active_modes" value = "4" />
+			<pattr name = "Mo2_F_freq01" value = "1.01" />
+			<pattr name = "Mo2_F_freq02" value = "1.6" />
+			<pattr name = "Mo2_F_freq03" value = "1.8" />
+			<pattr name = "Mo2_F_freq04" value = "0.1" />
+			<pattr name = "Mo2_F_freq05" value = "0.1" />
+			<pattr name = "Mo2_F_freq06" value = "0.1" />
+			<pattr name = "Mo2_F_freq07" value = "0.1" />
+			<pattr name = "Mo2_F_freq08" value = "0.1" />
+			<pattr name = "Mo2_F_freq09" value = "0.1" />
+			<pattr name = "Mo2_F_freq10" value = "0.1" />
+			<pattr name = "Mo2_F_freq11" value = "0.1" />
+			<pattr name = "Mo2_F_freq12" value = "0.1" />
+			<pattr name = "Mo2_F_freq13" value = "0.1" />
+			<pattr name = "Mo2_F_freq14" value = "0.1" />
+			<pattr name = "Mo2_F_freq15" value = "0.1" />
+			<pattr name = "Mo2_Gdec_fact" value = "0.3" />
+			<pattr name = "Mo2_Gfreq_fact" value = "1.3" />
+			<pattr name = "Mo2_Ggain_fact" value = "1." />
+			<pattr name = "Mo2_dec_0" value = "0.05" />
+			<pattr name = "Mo2_dec_01" value = "0.03" />
+			<pattr name = "Mo2_dec_02" value = "0.06" />
+			<pattr name = "Mo2_dec_03" value = "0.04" />
+			<pattr name = "Mo2_dec_04" value = "0.001" />
+			<pattr name = "Mo2_dec_05" value = "0.001" />
+			<pattr name = "Mo2_dec_06" value = "0.001" />
+			<pattr name = "Mo2_dec_07" value = "0.001" />
+			<pattr name = "Mo2_dec_08" value = "0.001" />
+			<pattr name = "Mo2_dec_09" value = "0.001" />
+			<pattr name = "Mo2_dec_10" value = "0.001" />
+			<pattr name = "Mo2_dec_11" value = "0.001" />
+			<pattr name = "Mo2_dec_12" value = "0.001" />
+			<pattr name = "Mo2_dec_13" value = "0.001" />
+			<pattr name = "Mo2_dec_14" value = "0.001" />
+			<pattr name = "Mo2_dec_15" value = "0.001" />
+			<pattr name = "Mo2_freq0" value = "2000." />
+			<pattr name = "Mo2_freq01" value = "2020." />
+			<pattr name = "Mo2_freq02" value = "3200." />
+			<pattr name = "Mo2_freq03" value = "3600." />
+			<pattr name = "Mo2_freq04" value = "200." />
+			<pattr name = "Mo2_freq05" value = "200." />
+			<pattr name = "Mo2_freq06" value = "200." />
+			<pattr name = "Mo2_freq07" value = "200." />
+			<pattr name = "Mo2_freq08" value = "200." />
+			<pattr name = "Mo2_freq09" value = "200." />
+			<pattr name = "Mo2_freq10" value = "200." />
+			<pattr name = "Mo2_freq11" value = "200." />
+			<pattr name = "Mo2_freq12" value = "200." />
+			<pattr name = "Mo2_freq13" value = "200." />
+			<pattr name = "Mo2_freq14" value = "200." />
+			<pattr name = "Mo2_freq15" value = "200." />
+			<pattr name = "Mo2_gain_0" value = "50." />
+			<pattr name = "Mo2_gain_01" value = "50." />
+			<pattr name = "Mo2_gain_02" value = "75." />
+			<pattr name = "Mo2_gain_03" value = "75." />
+			<pattr name = "Mo2_gain_04" value = "0." />
+			<pattr name = "Mo2_gain_05" value = "0." />
+			<pattr name = "Mo2_gain_06" value = "0." />
+			<pattr name = "Mo2_gain_07" value = "0." />
+			<pattr name = "Mo2_gain_08" value = "0." />
+			<pattr name = "Mo2_gain_09" value = "0." />
+			<pattr name = "Mo2_gain_10" value = "0." />
+			<pattr name = "Mo2_gain_11" value = "0." />
+			<pattr name = "Mo2_gain_12" value = "0." />
+			<pattr name = "Mo2_gain_13" value = "0." />
+			<pattr name = "Mo2_gain_14" value = "0." />
+			<pattr name = "Mo2_gain_15" value = "0." />
+		</patcher>
+		<patcher name = "03_Break_break_params.mxb">
+			<pattr name = "BRK_graininess" value = "54.471546" />
+			<pattr name = "BRK_rand_dec" value = "87.804878" />
+			<pattr name = "BRK_rand_initval" value = "13.00813" />
+			<pattr name = "BRK_rand_int_1" value = "23.577236" />
+			<pattr name = "BRK_rand_int_2" value = "86.178864" />
+			<pattr name = "BRK_resistance" value = "54.471546" />
+			<pattr name = "BRL_grn_tune" value = "0.259259" />
+		</patcher>
+	</slot>
+	<slot number = "5" name = "break_5">
+		<pattr name = "Gain_breaking" value = "9.090909" />
+		<patcher name = "00_Break_Impact_params.mxb">
+			<pattr name = "Imp_dissip_lambda" value = "89.430893" />
+			<pattr name = "Imp_shape_alpha" value = "8.13" />
+			<pattr name = "Imp_stiff_k" value = "81.3" />
+		</patcher>
+		<patcher name = "01_Break_Hammer_control.mxb">
+			<pattr name = "Mo1_Ham_mass" value = "2.857143" />
+			<pattr name = "Mo1_imp_vel" value = "88.46154" />
+		</patcher>
+		<patcher name = "02_Break_Resonator_control.mxb">
+			<pattr name = "Active_modes" value = "4" />
+			<pattr name = "Mo2_F_freq01" value = "1.01" />
+			<pattr name = "Mo2_F_freq02" value = "1.6" />
+			<pattr name = "Mo2_F_freq03" value = "1.8" />
+			<pattr name = "Mo2_F_freq04" value = "0.1" />
+			<pattr name = "Mo2_F_freq05" value = "0.1" />
+			<pattr name = "Mo2_F_freq06" value = "0.1" />
+			<pattr name = "Mo2_F_freq07" value = "0.1" />
+			<pattr name = "Mo2_F_freq08" value = "0.1" />
+			<pattr name = "Mo2_F_freq09" value = "0.1" />
+			<pattr name = "Mo2_F_freq10" value = "0.1" />
+			<pattr name = "Mo2_F_freq11" value = "0.1" />
+			<pattr name = "Mo2_F_freq12" value = "0.1" />
+			<pattr name = "Mo2_F_freq13" value = "0.1" />
+			<pattr name = "Mo2_F_freq14" value = "0.1" />
+			<pattr name = "Mo2_F_freq15" value = "0.1" />
+			<pattr name = "Mo2_Gdec_fact" value = "0.05" />
+			<pattr name = "Mo2_Gfreq_fact" value = "1.82" />
+			<pattr name = "Mo2_Ggain_fact" value = "1." />
+			<pattr name = "Mo2_dec_0" value = "0.05" />
+			<pattr name = "Mo2_dec_01" value = "0.03" />
+			<pattr name = "Mo2_dec_02" value = "0.06" />
+			<pattr name = "Mo2_dec_03" value = "0.04" />
+			<pattr name = "Mo2_dec_04" value = "0.001" />
+			<pattr name = "Mo2_dec_05" value = "0.001" />
+			<pattr name = "Mo2_dec_06" value = "0.001" />
+			<pattr name = "Mo2_dec_07" value = "0.001" />
+			<pattr name = "Mo2_dec_08" value = "0.001" />
+			<pattr name = "Mo2_dec_09" value = "0.001" />
+			<pattr name = "Mo2_dec_10" value = "0.001" />
+			<pattr name = "Mo2_dec_11" value = "0.001" />
+			<pattr name = "Mo2_dec_12" value = "0.001" />
+			<pattr name = "Mo2_dec_13" value = "0.001" />
+			<pattr name = "Mo2_dec_14" value = "0.001" />
+			<pattr name = "Mo2_dec_15" value = "0.001" />
+			<pattr name = "Mo2_freq0" value = "2000." />
+			<pattr name = "Mo2_freq01" value = "2020." />
+			<pattr name = "Mo2_freq02" value = "3200." />
+			<pattr name = "Mo2_freq03" value = "3600." />
+			<pattr name = "Mo2_freq04" value = "200." />
+			<pattr name = "Mo2_freq05" value = "200." />
+			<pattr name = "Mo2_freq06" value = "200." />
+			<pattr name = "Mo2_freq07" value = "200." />
+			<pattr name = "Mo2_freq08" value = "200." />
+			<pattr name = "Mo2_freq09" value = "200." />
+			<pattr name = "Mo2_freq10" value = "200." />
+			<pattr name = "Mo2_freq11" value = "200." />
+			<pattr name = "Mo2_freq12" value = "200." />
+			<pattr name = "Mo2_freq13" value = "200." />
+			<pattr name = "Mo2_freq14" value = "200." />
+			<pattr name = "Mo2_freq15" value = "200." />
+			<pattr name = "Mo2_gain_0" value = "50." />
+			<pattr name = "Mo2_gain_01" value = "50." />
+			<pattr name = "Mo2_gain_02" value = "75." />
+			<pattr name = "Mo2_gain_03" value = "75." />
+			<pattr name = "Mo2_gain_04" value = "0." />
+			<pattr name = "Mo2_gain_05" value = "0." />
+			<pattr name = "Mo2_gain_06" value = "0." />
+			<pattr name = "Mo2_gain_07" value = "0." />
+			<pattr name = "Mo2_gain_08" value = "0." />
+			<pattr name = "Mo2_gain_09" value = "0." />
+			<pattr name = "Mo2_gain_10" value = "0." />
+			<pattr name = "Mo2_gain_11" value = "0." />
+			<pattr name = "Mo2_gain_12" value = "0." />
+			<pattr name = "Mo2_gain_13" value = "0." />
+			<pattr name = "Mo2_gain_14" value = "0." />
+			<pattr name = "Mo2_gain_15" value = "0." />
+		</patcher>
+		<patcher name = "03_Break_break_params.mxb">
+			<pattr name = "BRK_graininess" value = "54.471546" />
+			<pattr name = "BRK_rand_dec" value = "91.87" />
+			<pattr name = "BRK_rand_initval" value = "63.414635" />
+			<pattr name = "BRK_rand_int_1" value = "47.154472" />
+			<pattr name = "BRK_rand_int_2" value = "16.260162" />
+			<pattr name = "BRK_resistance" value = "56.097561" />
+			<pattr name = "BRL_grn_tune" value = "0.259259" />
+		</patcher>
+	</slot>
+	<slot number = "6" name = "break_6">
+		<pattr name = "Gain_breaking" value = "32.231403" />
+		<patcher name = "00_Break_Impact_params.mxb">
+			<pattr name = "Imp_dissip_lambda" value = "89.430893" />
+			<pattr name = "Imp_shape_alpha" value = "13.00813" />
+			<pattr name = "Imp_stiff_k" value = "87.804878" />
+		</patcher>
+		<patcher name = "01_Break_Hammer_control.mxb">
+			<pattr name = "Mo1_Ham_mass" value = "3.809524" />
+			<pattr name = "Mo1_imp_vel" value = "72.115387" />
+		</patcher>
+		<patcher name = "02_Break_Resonator_control.mxb">
+			<pattr name = "Active_modes" value = "4" />
+			<pattr name = "Mo2_F_freq01" value = "1.8" />
+			<pattr name = "Mo2_F_freq02" value = "2.2" />
+			<pattr name = "Mo2_F_freq03" value = "5.33" />
+			<pattr name = "Mo2_F_freq04" value = "0.1" />
+			<pattr name = "Mo2_F_freq05" value = "0.1" />
+			<pattr name = "Mo2_F_freq06" value = "0.1" />
+			<pattr name = "Mo2_F_freq07" value = "0.1" />
+			<pattr name = "Mo2_F_freq08" value = "0.1" />
+			<pattr name = "Mo2_F_freq09" value = "0.1" />
+			<pattr name = "Mo2_F_freq10" value = "0.1" />
+			<pattr name = "Mo2_F_freq11" value = "0.1" />
+			<pattr name = "Mo2_F_freq12" value = "0.1" />
+			<pattr name = "Mo2_F_freq13" value = "0.1" />
+			<pattr name = "Mo2_F_freq14" value = "0.1" />
+			<pattr name = "Mo2_F_freq15" value = "0.1" />
+			<pattr name = "Mo2_Gdec_fact" value = "0.5" />
+			<pattr name = "Mo2_Gfreq_fact" value = "1." />
+			<pattr name = "Mo2_Ggain_fact" value = "1." />
+			<pattr name = "Mo2_dec_0" value = "0.004" />
+			<pattr name = "Mo2_dec_01" value = "0.005" />
+			<pattr name = "Mo2_dec_02" value = "0.002" />
+			<pattr name = "Mo2_dec_03" value = "0.004" />
+			<pattr name = "Mo2_dec_04" value = "0.001" />
+			<pattr name = "Mo2_dec_05" value = "0.001" />
+			<pattr name = "Mo2_dec_06" value = "0.001" />
+			<pattr name = "Mo2_dec_07" value = "0.001" />
+			<pattr name = "Mo2_dec_08" value = "0.001" />
+			<pattr name = "Mo2_dec_09" value = "0.001" />
+			<pattr name = "Mo2_dec_10" value = "0.001" />
+			<pattr name = "Mo2_dec_11" value = "0.001" />
+			<pattr name = "Mo2_dec_12" value = "0.001" />
+			<pattr name = "Mo2_dec_13" value = "0.001" />
+			<pattr name = "Mo2_dec_14" value = "0.001" />
+			<pattr name = "Mo2_dec_15" value = "0.001" />
+			<pattr name = "Mo2_freq0" value = "400." />
+			<pattr name = "Mo2_freq01" value = "720." />
+			<pattr name = "Mo2_freq02" value = "880." />
+			<pattr name = "Mo2_freq03" value = "2132." />
+			<pattr name = "Mo2_freq04" value = "40." />
+			<pattr name = "Mo2_freq05" value = "40." />
+			<pattr name = "Mo2_freq06" value = "40." />
+			<pattr name = "Mo2_freq07" value = "40." />
+			<pattr name = "Mo2_freq08" value = "40." />
+			<pattr name = "Mo2_freq09" value = "40." />
+			<pattr name = "Mo2_freq10" value = "40." />
+			<pattr name = "Mo2_freq11" value = "40." />
+			<pattr name = "Mo2_freq12" value = "40." />
+			<pattr name = "Mo2_freq13" value = "40." />
+			<pattr name = "Mo2_freq14" value = "40." />
+			<pattr name = "Mo2_freq15" value = "40." />
+			<pattr name = "Mo2_gain_0" value = "44." />
+			<pattr name = "Mo2_gain_01" value = "45." />
+			<pattr name = "Mo2_gain_02" value = "50." />
+			<pattr name = "Mo2_gain_03" value = "55." />
+			<pattr name = "Mo2_gain_04" value = "0." />
+			<pattr name = "Mo2_gain_05" value = "0." />
+			<pattr name = "Mo2_gain_06" value = "0." />
+			<pattr name = "Mo2_gain_07" value = "0." />
+			<pattr name = "Mo2_gain_08" value = "0." />
+			<pattr name = "Mo2_gain_09" value = "0." />
+			<pattr name = "Mo2_gain_10" value = "0." />
+			<pattr name = "Mo2_gain_11" value = "0." />
+			<pattr name = "Mo2_gain_12" value = "0." />
+			<pattr name = "Mo2_gain_13" value = "0." />
+			<pattr name = "Mo2_gain_14" value = "0." />
+			<pattr name = "Mo2_gain_15" value = "0." />
+		</patcher>
+		<patcher name = "03_Break_break_params.mxb">
+			<pattr name = "BRK_graininess" value = "79.674797" />
+			<pattr name = "BRK_rand_dec" value = "59.349594" />
+			<pattr name = "BRK_rand_initval" value = "86.178864" />
+			<pattr name = "BRK_rand_int_1" value = "86.991867" />
+			<pattr name = "BRK_rand_int_2" value = "43.902439" />
+			<pattr name = "BRK_resistance" value = "61.788616" />
+			<pattr name = "BRL_grn_tune" value = "0.876543" />
+		</patcher>
+	</slot>
+</pattrstorage>
+

@@ -1,0 +1,8 @@
+#N canvas 0 0 184 137 10;
+#X obj 15 65 vline~;
+#X msg 15 40 1 \$1 0 \, 0 \$2 \$1;
+#X obj 15 14 inlet attack decay;
+#X obj 15 93 outlet~;
+#X connect 0 0 3 0;
+#X connect 1 0 0 0;
+#X connect 2 0 1 0;

@@ -1,0 +1,12 @@
+#N canvas 0 0 383 163 10;
+#X obj 18 86 phasor~;
+#X obj 21 55 hsl 128 15 1 220 0 1 empty empty frequency 35 7 1 8 -262144
+-1 -1 2700 1;
+#X obj 19 133 dac~;
+#X text 165 54 <-- slider from 1 to 220;
+#X text 115 88 <--------- signal generator;
+#X text 66 130 <---------------- output to soundcard;
+#X text 71 5 Sound of a [phasor~] unit;
+#X connect 0 0 2 0;
+#X connect 0 0 2 1;
+#X connect 1 0 0 0;

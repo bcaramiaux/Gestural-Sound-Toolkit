@@ -1,0 +1,15 @@
+#N canvas 177 206 216 157 10;
+#X msg 30 95 4 6 8;
+#X msg 2 50 set \$1 \$2 \$3;
+#X obj 30 73 loadbang;
+#N canvas 0 0 450 300 synthesiser 0;
+#X obj 94 30 inlet;
+#X restore 50 132 pd synthesiser;
+#X obj 73 24 t a a;
+#X msg 73 0 4 6 8;
+#X connect 0 0 3 0;
+#X connect 1 0 0 0;
+#X connect 2 0 0 0;
+#X connect 4 0 1 0;
+#X connect 4 1 3 0;
+#X connect 5 0 4 0;

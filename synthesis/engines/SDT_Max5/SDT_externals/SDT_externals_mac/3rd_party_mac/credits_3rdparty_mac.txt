@@ -1,0 +1,8 @@
+In alphabetical order:
+
+NAME					|| VERSION				|| SOURCE
+------------------------||----------------------||-----------------------------------------
+mathlist.mxo 			|| jasch_objects_0_5	|| http://www.jasch.ch/dl/
+OpenSoundControl.mxo 	|| 1.9.16				|| http://cnmat.berkeley.edu/downloads
+OSC-route.mxo 			|| 1.17.1 				|| http://cnmat.berkeley.edu/downloads
+slicelist.mxo 			|| jasch_objects_0_5	|| http://www.jasch.ch/dl/

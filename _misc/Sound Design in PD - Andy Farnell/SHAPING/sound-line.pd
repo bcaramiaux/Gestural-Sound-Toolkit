@@ -1,0 +1,29 @@
+#N canvas 0 0 566 298 10;
+#X obj 24 207 line~;
+#X msg 75 141 0.5 700;
+#X msg 24 141 1 250;
+#X obj 75 83 del 250;
+#X msg 24 52 bang;
+#X obj 74 206 noise~;
+#X obj 25 241 *~;
+#X obj 25 271 dac~;
+#X msg 146 141 0 2400;
+#X text 151 6 Slow moving line signals;
+#X text 137 82 <-- each stage is delayed by the length of the previous
+;
+#X text 198 141 <-- messages contain lists \, value and time pairs
+;
+#X text 72 238 <--- multiply by some noise so we can hear it;
+#X obj 146 113 del 700;
+#X connect 0 0 6 0;
+#X connect 1 0 0 0;
+#X connect 2 0 0 0;
+#X connect 3 0 1 0;
+#X connect 3 0 13 0;
+#X connect 4 0 3 0;
+#X connect 4 0 2 0;
+#X connect 5 0 6 1;
+#X connect 6 0 7 0;
+#X connect 6 0 7 1;
+#X connect 8 0 0 0;
+#X connect 13 0 8 0;

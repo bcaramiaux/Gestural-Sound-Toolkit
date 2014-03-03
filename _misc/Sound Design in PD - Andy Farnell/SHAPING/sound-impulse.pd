@@ -1,0 +1,9 @@
+#N canvas 496 486 325 152 10;
+#X obj 14 106 dac~;
+#X text 59 12 Making an impulse click;
+#X obj 14 71 dirac~;
+#X msg 14 46 1;
+#X text 70 68 <-- one sample set to 1;
+#X connect 2 0 0 0;
+#X connect 2 0 0 1;
+#X connect 3 0 2 0;

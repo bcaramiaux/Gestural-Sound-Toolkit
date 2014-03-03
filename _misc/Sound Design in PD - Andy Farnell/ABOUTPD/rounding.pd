@@ -1,0 +1,17 @@
+#N canvas 187 208 180 133 10;
+#X obj 90 46 + 0.5;
+#X obj 90 72 i;
+#X obj 90 14 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -6 0 10
+-262144 -1 -1 0.51 256;
+#X obj 90 101 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -6 0 10
+-262144 -1 -1 1 256;
+#X obj 10 14 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -6 0 10
+-262144 -1 -1 0.99 256;
+#X obj 10 101 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -6 0 10
+-262144 -1 -1 0 256;
+#X obj 10 72 int;
+#X connect 0 0 1 0;
+#X connect 1 0 3 0;
+#X connect 2 0 0 0;
+#X connect 4 0 6 0;
+#X connect 6 0 5 0;

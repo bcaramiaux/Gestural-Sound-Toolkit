@@ -1,0 +1,18 @@
+#N canvas 165 87 251 190 10;
+#X obj 0 95 partial;
+#X obj 60 95 partial;
+#X obj 120 95 partial;
+#X obj 60 140 *~ 0.3333;
+#X obj 60 170 outlet~;
+#X obj 0 27 list split 3;
+#X obj 39 50 list split 3;
+#X obj 0 1 inlet parameters for three partials;
+#X connect 0 0 3 0;
+#X connect 1 0 3 0;
+#X connect 2 0 3 0;
+#X connect 3 0 4 0;
+#X connect 5 0 0 0;
+#X connect 5 1 6 0;
+#X connect 6 0 1 0;
+#X connect 6 1 2 0;
+#X connect 7 0 5 0;

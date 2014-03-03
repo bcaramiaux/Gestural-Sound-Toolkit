@@ -1,0 +1,14 @@
+#N canvas 864 641 223 124 10;
+#X obj 1 92 dac~;
+#X obj 57 26 + 0.004;
+#X obj 57 6 / 20;
+#X obj 60 -12 hsl 128 15 0 1 0 0 empty empty rain-rain-go-away 12 7
+1 8 -262144 -1 -1 0 1;
+#X obj 1 70 hip~ 2000;
+#X obj 1 46 drops 7.7 0.013 0.16 3;
+#X connect 1 0 5 1;
+#X connect 2 0 1 0;
+#X connect 3 0 2 0;
+#X connect 4 0 0 0;
+#X connect 4 0 0 1;
+#X connect 5 0 4 0;

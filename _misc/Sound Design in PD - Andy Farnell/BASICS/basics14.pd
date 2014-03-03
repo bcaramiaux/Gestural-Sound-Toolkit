@@ -1,0 +1,12 @@
+#N canvas 51 92 180 119 10;
+#X obj 26 43 route vcf vco vca;
+#X floatatom 26 70 3 0 0 0 - - -;
+#X floatatom 64 70 3 0 0 0 - - -;
+#X floatatom 102 70 3 0 0 0 - - -;
+#X msg 26 -11 vcf 20;
+#X msg 35 9 vca 5;
+#X connect 0 0 1 0;
+#X connect 0 1 2 0;
+#X connect 0 2 3 0;
+#X connect 4 0 0 0;
+#X connect 5 0 0 0;

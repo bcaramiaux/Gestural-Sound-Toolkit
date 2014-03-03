@@ -1,0 +1,16 @@
+#N canvas 130 152 109 176 10;
+#X obj 37 78 *~;
+#X obj 53 -47 vsl 12 64 0.01 100 0 0 empty empty empty 0 -8 0 8 -262144
+-1 -1 6300 1;
+#X obj 37 107 dac~;
+#X floatatom 63 66 3 0 0 0 - - -;
+#X obj 53 43 dbtorms;
+#X floatatom 60 25 5 0 0 0 - - -;
+#X obj -2 34 osc~ 90;
+#X connect 0 0 2 0;
+#X connect 0 0 2 1;
+#X connect 1 0 4 0;
+#X connect 1 0 5 0;
+#X connect 4 0 3 0;
+#X connect 4 0 0 1;
+#X connect 6 0 0 0;

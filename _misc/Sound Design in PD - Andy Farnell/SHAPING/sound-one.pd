@@ -1,0 +1,14 @@
+#N canvas 0 0 375 203 10;
+#X obj 18 132 sig~;
+#X obj 18 174 dac~;
+#X msg 18 62 1;
+#X msg 41 98 0;
+#X text 75 98 <-------- send a zero;
+#X text 54 62 <-------- send a float of 1;
+#X text 59 133 <-------- convert to constant signal;
+#X text 59 174 <-------- output the signal to soundcard;
+#X text 85 8 The sound of one ?;
+#X connect 0 0 1 0;
+#X connect 0 0 1 1;
+#X connect 2 0 0 0;
+#X connect 3 0 0 0;

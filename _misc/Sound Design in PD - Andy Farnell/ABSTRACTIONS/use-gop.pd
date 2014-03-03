@@ -1,0 +1,2 @@
+#N canvas 206 560 159 89 10;
+#X obj 8 3 GOP-hardsynth;

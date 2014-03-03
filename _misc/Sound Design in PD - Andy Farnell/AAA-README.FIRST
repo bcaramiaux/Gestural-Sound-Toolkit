@@ -1,0 +1,22 @@
+This is a tarball of most of the examples from Designing Sound by Andy Farnell
+All code is copyright of the author but you are free to distribute and modify
+it in whole or part. Polite attribution is encouraged.
+
+
+VERSION: PLEASE NOTE
+
+Some examples in this tarball of  code are for pd < 0.41 since the [pow~] object in them
+has reversed inlets and corrersponds to the Cyclone libary version of that object.
+
+
+Thanks to Miller Puckette and many others. A full list of attributions is given
+in the textbook "Designing Sound" by Andy Farnell or at
+
+http://obiwannabe.co.uk
+http://aspress.co.uk
+
+Wishing you lots of fun creating sound effects from forst principles in Pure Data
+
+ajf
+
+ 

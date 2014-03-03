@@ -1,0 +1,20 @@
+GF 1.6 beta release compatible with MuBu 1.5 (or later) for Max/MSP
+IMTR, IRCAM - Centre Pompidou
+
+____________________________________________________
+Release Notes for GF 1.6.3 (20/07/2011) 
+
+- fixed several bugs introduced in previous release
+- fixed size of probabilitytrack 
+- fixed warpingtrack behavior during decoding 
+- message "clear 0" also call stop 
+- fixed gf behavior learning and following at the same time
+- fixed wrong clip of data to maxFrames-1 during learning
+__________________________________________________________
+Release Notes for Version Beta (03/07/2012)
+
+- maxframes attribute is now intended as maximum learn size, during learning
+- after learning the maxsize of phrases is cropped to the phrase size
+- num channels can be changed also on non empty phrases
+-  other minor bug fixes
+ 

@@ -1,0 +1,27 @@
+#N canvas 270 74 297 189 10;
+#X obj 193 49 s time;
+#X obj 93 0 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 1 1;
+#X obj 11 42 r time;
+#X obj 29 151 bng 15 50 20 0 empty empty empty 0 -6 0 8 -262144 -1
+-1;
+#X obj 137 150 bng 15 250 50 0 empty empty empty 0 -6 0 8 -262144 -1
+-1;
+#X obj 11 125 select 0 1 2 3 4 5 6 7 8;
+#X obj 11 86 mod 8;
+#X floatatom 18 107 5 0 0 0 - - -;
+#X obj 93 23 timebase 60 4 0;
+#X obj 209 124 sel 1024;
+#X obj 209 146 bng 15 250 50 0 empty empty empty 0 -6 0 8 -262144 -1
+-1;
+#X floatatom 19 65 5 0 0 0 - - -;
+#X obj 209 102 r time;
+#X connect 1 0 8 0;
+#X connect 2 0 6 0;
+#X connect 2 0 11 0;
+#X connect 5 1 3 0;
+#X connect 5 7 4 0;
+#X connect 6 0 5 0;
+#X connect 6 0 7 0;
+#X connect 8 1 0 0;
+#X connect 9 0 10 0;
+#X connect 12 0 9 0;

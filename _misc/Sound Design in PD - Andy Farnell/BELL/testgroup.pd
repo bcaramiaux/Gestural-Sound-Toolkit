@@ -1,0 +1,9 @@
+#N canvas 21 50 214 89 10;
+#X obj 2 68 dac~;
+#X obj 2 21 partialgroup;
+#X obj 2 42 *~ 0.3;
+#X msg 2 1 521 0.7 732 0.45 934 0.25 800;
+#X connect 1 0 2 0;
+#X connect 2 0 0 0;
+#X connect 2 0 0 1;
+#X connect 3 0 1 0;

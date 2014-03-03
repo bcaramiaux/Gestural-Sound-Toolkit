@@ -1,0 +1,11 @@
+#N canvas 0 0 445 165 10;
+#X obj 50 73 phasor~ 110;
+#X obj 49 98 cos~;
+#X obj 48 127 dac~;
+#X text 61 21 Obtaining a cosine wave from a phasor;
+#X text 105 98 <--- Pd [cos~] is rotation normalised;
+#X text 138 121 so we dont need a 2 * pi;
+#X text 139 72 <--- phasor cycles over 0 to 1;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 1 0 2 1;

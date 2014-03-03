@@ -1,0 +1,8 @@
+#N canvas 24 10 102 94 10;
+#X obj 0 50 bp~ 1500 4;
+#X obj 0 25 clip~ -0.2 0.2;
+#X obj 0 0 inlet~;
+#X obj 0 75 outlet~;
+#X connect 0 0 3 0;
+#X connect 1 0 0 0;
+#X connect 2 0 1 0;

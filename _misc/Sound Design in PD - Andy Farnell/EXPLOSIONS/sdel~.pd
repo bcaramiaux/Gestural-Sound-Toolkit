@@ -1,0 +1,9 @@
+#N canvas 0 0 450 300 10;
+#X obj 123 112 delread~ \$0-aa;
+#X obj 124 139 outlet~;
+#X obj 124 54 inlet~;
+#X obj 123 82 delwrite~ \$0-aa 3000;
+#X obj 227 48 inlet;
+#X connect 0 0 1 0;
+#X connect 2 0 3 0;
+#X connect 4 0 0 0;

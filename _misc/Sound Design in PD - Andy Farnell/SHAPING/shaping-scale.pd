@@ -1,0 +1,43 @@
+#N canvas 160 388 298 119 10;
+#N canvas 0 0 450 300 grapha 0;
+#X obj 100 100 cnv 15 100 100 empty empty empty 20 12 0 14 -262144
+-66577 0;
+#N canvas 0 0 450 300 graph3 0;
+#X array A 100 float 0;
+#X coords 0 1 99 -1 100 100 1;
+#X restore 100 100 graph;
+#X obj 210 209 tabwrite~ A;
+#X obj 210 130 loadbang;
+#X obj 278 131 bng 15 250 50 0 empty empty empty 0 -6 0 8 -262144 -1
+-1;
+#X obj 217 178 s b;
+#X obj 210 155 metro 200;
+#X obj 289 155 r~ A;
+#X connect 3 0 6 0;
+#X connect 4 0 6 0;
+#X connect 6 0 2 0;
+#X connect 6 0 5 0;
+#X connect 7 0 2 0;
+#X coords 0 -1 1 1 100 100 1 100 100;
+#X restore 80 13 pd grapha;
+#N canvas 0 0 450 300 grapha 0;
+#X obj 100 100 cnv 15 100 100 empty empty empty 20 12 0 14 -262144
+-66577 0;
+#N canvas 0 0 450 300 graph3 0;
+#X array B 100 float 0;
+#X coords 0 1 99 -1 100 100 1;
+#X restore 100 100 graph;
+#X obj 210 182 tabwrite~ B;
+#X obj 210 156 r b;
+#X obj 289 155 r~ B;
+#X connect 3 0 2 0;
+#X connect 4 0 2 0;
+#X coords 0 -1 1 1 100 100 1 100 100;
+#X restore 188 13 pd grapha;
+#X obj 16 38 s~ A;
+#X obj 5 13 osc~ 640;
+#X obj 5 61 *~ 0.5;
+#X obj 19 87 s~ B;
+#X connect 3 0 2 0;
+#X connect 3 0 4 0;
+#X connect 4 0 5 0;

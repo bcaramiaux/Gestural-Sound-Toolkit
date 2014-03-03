@@ -1,0 +1,16 @@
+#N canvas 0 0 117 218 10;
+#X obj 5 52 bp~ 2000 12;
+#X obj 5 124 bp~ 400 7;
+#X obj 5 148 hip~ 90;
+#X obj 5 172 hip~ 90;
+#X obj 5 4 inlet~ thisend;
+#X obj 5 196 outlet~ thatend;
+#X obj 5 28 clip~ -0.9 0.9;
+#X obj 5 85 *~ 1.2;
+#X connect 0 0 7 0;
+#X connect 1 0 2 0;
+#X connect 2 0 3 0;
+#X connect 3 0 5 0;
+#X connect 4 0 6 0;
+#X connect 6 0 0 0;
+#X connect 7 0 1 0;

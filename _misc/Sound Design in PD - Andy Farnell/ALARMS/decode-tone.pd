@@ -1,0 +1,14 @@
+#N canvas 0 0 69 145 10;
+#X obj 1 43 env~;
+#X obj 1 85 int;
+#X obj 1 64 / 80;
+#X obj 1 127 outlet;
+#X obj 1 1 inlet~;
+#X obj 1 106 == 1;
+#X obj 1 22 bp~ \$1 24;
+#X connect 0 0 2 0;
+#X connect 1 0 5 0;
+#X connect 2 0 1 0;
+#X connect 4 0 6 0;
+#X connect 5 0 3 0;
+#X connect 6 0 0 0;

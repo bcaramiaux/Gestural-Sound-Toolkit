@@ -1,0 +1,13 @@
+#N canvas 267 119 173 114 10;
+#X obj 4 45 metro 100;
+#X obj 62 23 inlet period;
+#X obj 4 68 f;
+#X obj 34 68 + 1;
+#X obj 4 91 s time;
+#X obj 4 2 inlet start/stop;
+#X connect 0 0 2 0;
+#X connect 1 0 0 1;
+#X connect 2 0 3 0;
+#X connect 2 0 4 0;
+#X connect 3 0 2 1;
+#X connect 5 0 0 0;

@@ -1,0 +1,10 @@
+#N canvas 0 0 450 300 10;
+#X obj 132 206 outlet~;
+#X obj 132 89 inlet pitch;
+#X obj 131 173 *~;
+#X obj 220 87 inlet amp;
+#X obj 132 115 osc~;
+#X connect 1 0 4 0;
+#X connect 2 0 0 0;
+#X connect 3 0 2 1;
+#X connect 4 0 2 0;

@@ -1,0 +1,32 @@
+#N canvas 61 214 172 305 10;
+#X obj 33 207 line~;
+#X obj 33 185 pack f f;
+#X obj 84 94 random 2;
+#X obj 84 163 *;
+#X obj 33 45 sel 0;
+#X obj 4 94 random 800;
+#X obj 33 229 +~ 20;
+#X obj 33 23 random 4;
+#X obj 33 280 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -6 0 10
+-262144 -1 -1 154.202 256;
+#X obj 33 251 env~;
+#X obj 33 2 bng 15 250 50 0 empty empty empty 0 -6 0 8 -262144 -1 -1
+;
+#X obj 103 125 hsl 64 12 0 1 0 1 empty empty slide-time 10 6 1 8 -262144
+-1 -1 0 1;
+#X obj 100 143 * 5000;
+#X obj 33 67 t b b;
+#X connect 0 0 6 0;
+#X connect 1 0 0 0;
+#X connect 2 0 3 0;
+#X connect 3 0 1 1;
+#X connect 4 0 13 0;
+#X connect 5 0 1 0;
+#X connect 6 0 9 0;
+#X connect 7 0 4 0;
+#X connect 9 0 8 0;
+#X connect 10 0 7 0;
+#X connect 11 0 12 0;
+#X connect 12 0 3 1;
+#X connect 13 0 5 0;
+#X connect 13 1 2 0;

@@ -1,0 +1,18 @@
+#N canvas 71 266 430 200 10;
+#X obj 70 65 vradio 15 1 0 8 empty empty empty 0 -6 0 8 -262144 -1
+-1 0;
+#X obj 70 24 hsl 128 15 0 127 0 0 empty empty empty -2 -6 0 8 -262144
+-1 -1 0 1;
+#X obj 230 25 hradio 15 1 0 8 empty empty empty 0 -6 0 8 -262144 -1
+-1 0;
+#X obj 212 61 vsl 15 121 0 127 0 0 empty empty empty 0 -8 0 8 -262144
+-1 -1 0 1;
+#X obj 336 63 vu 15 120 a empty -1 -8 0 8 -66577 -1 1 0;
+#X obj 554 345 s a;
+#X floatatom 555 325 5 0 0 0 - - -;
+#X text 67 0 A;
+#X text 230 1 B;
+#X text 47 64 C;
+#X text 188 56 D;
+#X text 311 57 E;
+#X connect 6 0 5 0;

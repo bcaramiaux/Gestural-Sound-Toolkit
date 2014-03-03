@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+
+<pattrstorage name = "crumpling_preset">
+	<slot number = "1" name = "crumple">
+		<pattr name = "CR_loudness" value = "0.813008" />
+		<patcher name = "00_Crump_impact_params.mxb">
+			<pattr name = "Imp_rigid_k" value = "76.422768" />
+			<pattr name = "Imp_shape_alpha" value = "35.772358" />
+			<pattr name = "Imp_velocity" value = "10" />
+		</patcher>
+		<patcher name = "02_Crump_Resonator_ctrl.mxb">
+			<pattr name = "CR_filt_range" value = "0 20186" />
+			<pattr name = "CR_freq_range" value = "97 130" />
+			<pattr name = "CR_mass_range" value = "35 35" />
+			<pattr name = "Mo2_F_freq01" value = "0.13" />
+			<pattr name = "Mo2_Gdec_fact" value = "45.528454" />
+			<pattr name = "Mo2_Ggain_fact" value = "60.975609" />
+			<pattr name = "Mo2_freq0" value = "2001." />
+			<pattr name = "Mo2_freq01" value = "260.13" />
+			<pattr name = "Mo2_gain_0" value = "60.7" />
+			<pattr name = "Mo2_gain_01" value = "82.1" />
+			<patcher name = "decay_range0">
+				<pattr name = "Mo2_dec_range" value = "97 102" />
+			</patcher>
+			<patcher name = "decay_range01">
+				<pattr name = "Mo2_dec_range" value = "97 102" />
+			</patcher>
+		</patcher>
+		<patcher name = "01_Crump_crump_params.mxb">
+			<pattr name = "CR_crush_f" value = "65.040649" />
+			<pattr name = "CR_granul" value = "31.707317" />
+			<pattr name = "CR_ob_size" value = "79.674797" />
+		</patcher>
+	</slot>
+	<slot number = "2" name = "footsteps_on">
+		<pattr name = "CR_loudness" value = "8.7" />
+		<patcher name = "00_Crump_impact_params.mxb">
+			<pattr name = "Imp_rigid_k" value = "34.146343" />
+			<pattr name = "Imp_shape_alpha" value = "56.910568" />
+			<pattr name = "Imp_velocity" value = "10" />
+		</patcher>
+		<patcher name = "02_Crump_Resonator_ctrl.mxb">
+			<pattr name = "CR_filt_range" value = "1869 1869" />
+			<pattr name = "CR_freq_range" value = "302 332" />
+			<pattr name = "CR_mass_range" value = "0 99" />
+			<pattr name = "Mo2_F_freq01" value = "3.58" />
+			<pattr name = "Mo2_Gdec_fact" value = "24.390244" />
+			<pattr name = "Mo2_Ggain_fact" value = "60.975609" />
+			<pattr name = "Mo2_freq0" value = "174." />
+			<pattr name = "Mo2_freq01" value = "622.92" />
+			<pattr name = "Mo2_gain_0" value = "81." />
+			<pattr name = "Mo2_gain_01" value = "90." />
+			<patcher name = "decay_range0">
+				<pattr name = "Mo2_dec_range" value = "97 104" />
+			</patcher>
+			<patcher name = "decay_range01">
+				<pattr name = "Mo2_dec_range" value = "97 102" />
+			</patcher>
+		</patcher>
+		<patcher name = "01_Crump_crump_params.mxb">
+			<pattr name = "CR_crush_f" value = "8.943089" />
+			<pattr name = "CR_granul" value = "56.097561" />
+			<pattr name = "CR_ob_size" value = "29.268293" />
+		</patcher>
+	</slot>
+	<slot number = "3" name = "rope_stretching">
+		<pattr name = "CR_loudness" value = "8.7" />
+		<patcher name = "00_Crump_impact_params.mxb">
+			<pattr name = "Imp_rigid_k" value = "84.552849" />
+			<pattr name = "Imp_shape_alpha" value = "53.658535" />
+			<pattr name = "Imp_velocity" value = "10" />
+		</patcher>
+		<patcher name = "02_Crump_Resonator_ctrl.mxb">
+			<pattr name = "CR_filt_range" value = "1869 1869" />
+			<pattr name = "CR_freq_range" value = "302 332" />
+			<pattr name = "CR_mass_range" value = "0 99" />
+			<pattr name = "Mo2_F_freq01" value = "0.85" />
+			<pattr name = "Mo2_Gdec_fact" value = "8.13" />
+			<pattr name = "Mo2_Ggain_fact" value = "60.975609" />
+			<pattr name = "Mo2_freq0" value = "2300." />
+			<pattr name = "Mo2_freq01" value = "1955." />
+			<pattr name = "Mo2_gain_0" value = "90." />
+			<pattr name = "Mo2_gain_01" value = "90." />
+			<patcher name = "decay_range0">
+				<pattr name = "Mo2_dec_range" value = "97 97" />
+			</patcher>
+			<patcher name = "decay_range01">
+				<pattr name = "Mo2_dec_range" value = "97 97" />
+			</patcher>
+		</patcher>
+		<patcher name = "01_Crump_crump_params.mxb">
+			<pattr name = "CR_crush_f" value = "32.520325" />
+			<pattr name = "CR_granul" value = "24.390244" />
+			<pattr name = "CR_ob_size" value = "100." />
+		</patcher>
+	</slot>
+	<slot number = "4" name = "rope_stretching">
+		<pattr name = "CR_loudness" value = "8.7" />
+		<patcher name = "00_Crump_impact_params.mxb">
+			<pattr name = "Imp_rigid_k" value = "79.674797" />
+			<pattr name = "Imp_shape_alpha" value = "33.333332" />
+			<pattr name = "Imp_velocity" value = "10" />
+		</patcher>
+		<patcher name = "02_Crump_Resonator_ctrl.mxb">
+			<pattr name = "CR_filt_range" value = "1869 19065" />
+			<pattr name = "CR_freq_range" value = "97 198" />
+			<pattr name = "CR_mass_range" value = "0 37" />
+			<pattr name = "Mo2_F_freq01" value = "4.6" />
+			<pattr name = "Mo2_Gdec_fact" value = "0." />
+			<pattr name = "Mo2_Ggain_fact" value = "60.975609" />
+			<pattr name = "Mo2_freq0" value = "1600." />
+			<pattr name = "Mo2_freq01" value = "7360." />
+			<pattr name = "Mo2_gain_0" value = "80." />
+			<pattr name = "Mo2_gain_01" value = "90." />
+			<patcher name = "decay_range0">
+				<pattr name = "Mo2_dec_range" value = "31 97" />
+			</patcher>
+			<patcher name = "decay_range01">
+				<pattr name = "Mo2_dec_range" value = "106 200" />
+			</patcher>
+		</patcher>
+		<patcher name = "01_Crump_crump_params.mxb">
+			<pattr name = "CR_crush_f" value = "10.569106" />
+			<pattr name = "CR_granul" value = "4.065041" />
+			<pattr name = "CR_ob_size" value = "31.707317" />
+		</patcher>
+	</slot>
+	<slot number = "5" name = "frying">
+		<pattr name = "CR_loudness" value = "8.7" />
+		<patcher name = "00_Crump_impact_params.mxb">
+			<pattr name = "Imp_rigid_k" value = "79.674797" />
+			<pattr name = "Imp_shape_alpha" value = "33.333332" />
+			<pattr name = "Imp_velocity" value = "10" />
+		</patcher>
+		<patcher name = "02_Crump_Resonator_ctrl.mxb">
+			<pattr name = "CR_filt_range" value = "1869 19065" />
+			<pattr name = "CR_freq_range" value = "209 299" />
+			<pattr name = "CR_mass_range" value = "102 200" />
+			<pattr name = "Mo2_F_freq01" value = "0.95" />
+			<pattr name = "Mo2_Gdec_fact" value = "1.626016" />
+			<pattr name = "Mo2_Ggain_fact" value = "47.96748" />
+			<pattr name = "Mo2_freq0" value = "6767." />
+			<pattr name = "Mo2_freq01" value = "6428.650391" />
+			<pattr name = "Mo2_gain_0" value = "80." />
+			<pattr name = "Mo2_gain_01" value = "90." />
+			<patcher name = "decay_range0">
+				<pattr name = "Mo2_dec_range" value = "109 120" />
+			</patcher>
+			<patcher name = "decay_range01">
+				<pattr name = "Mo2_dec_range" value = "106 111" />
+			</patcher>
+		</patcher>
+		<patcher name = "01_Crump_crump_params.mxb">
+			<pattr name = "CR_crush_f" value = "8.13" />
+			<pattr name = "CR_granul" value = "12.195122" />
+			<pattr name = "CR_ob_size" value = "31.707317" />
+		</patcher>
+	</slot>
+	<slot number = "6" name = "crumple">
+		<pattr name = "CR_loudness" value = "8.7" />
+		<patcher name = "00_Crump_impact_params.mxb">
+			<pattr name = "Imp_rigid_k" value = "79.674797" />
+			<pattr name = "Imp_shape_alpha" value = "43.089432" />
+			<pattr name = "Imp_velocity" value = "10" />
+		</patcher>
+		<patcher name = "02_Crump_Resonator_ctrl.mxb">
+			<pattr name = "CR_filt_range" value = "1869 19065" />
+			<pattr name = "CR_freq_range" value = "209 299" />
+			<pattr name = "CR_mass_range" value = "0 41" />
+			<pattr name = "Mo2_F_freq01" value = "0.95" />
+			<pattr name = "Mo2_Gdec_fact" value = "1.626016" />
+			<pattr name = "Mo2_Ggain_fact" value = "24.390244" />
+			<pattr name = "Mo2_freq0" value = "6767." />
+			<pattr name = "Mo2_freq01" value = "6428.650391" />
+			<pattr name = "Mo2_gain_0" value = "80." />
+			<pattr name = "Mo2_gain_01" value = "90." />
+			<patcher name = "decay_range0">
+				<pattr name = "Mo2_dec_range" value = "61 100" />
+			</patcher>
+			<patcher name = "decay_range01">
+				<pattr name = "Mo2_dec_range" value = "106 111" />
+			</patcher>
+		</patcher>
+		<patcher name = "01_Crump_crump_params.mxb">
+			<pattr name = "CR_crush_f" value = "8.13" />
+			<pattr name = "CR_granul" value = "66.666664" />
+			<pattr name = "CR_ob_size" value = "91.056908" />
+		</patcher>
+	</slot>
+	<slot number = "7" name = "crumple">
+		<pattr name = "CR_loudness" value = "8.7" />
+		<patcher name = "00_Crump_impact_params.mxb">
+			<pattr name = "Imp_rigid_k" value = "79.674797" />
+			<pattr name = "Imp_shape_alpha" value = "32.520325" />
+			<pattr name = "Imp_velocity" value = "10" />
+		</patcher>
+		<patcher name = "02_Crump_Resonator_ctrl.mxb">
+			<pattr name = "CR_filt_range" value = "26168 40000" />
+			<pattr name = "CR_freq_range" value = "209 299" />
+			<pattr name = "CR_mass_range" value = "56 85" />
+			<pattr name = "Mo2_F_freq01" value = "2.2" />
+			<pattr name = "Mo2_Gdec_fact" value = "1.626016" />
+			<pattr name = "Mo2_Ggain_fact" value = "24.390244" />
+			<pattr name = "Mo2_freq0" value = "1368." />
+			<pattr name = "Mo2_freq01" value = "3009.6" />
+			<pattr name = "Mo2_gain_0" value = "80." />
+			<pattr name = "Mo2_gain_01" value = "90." />
+			<patcher name = "decay_range0">
+				<pattr name = "Mo2_dec_range" value = "61 100" />
+			</patcher>
+			<patcher name = "decay_range01">
+				<pattr name = "Mo2_dec_range" value = "106 111" />
+			</patcher>
+		</patcher>
+		<patcher name = "01_Crump_crump_params.mxb">
+			<pattr name = "CR_crush_f" value = "8.13" />
+			<pattr name = "CR_granul" value = "5.691057" />
+			<pattr name = "CR_ob_size" value = "6.504065" />
+		</patcher>
+	</slot>
+	<slot number = "8" name = "crumple">
+		<pattr name = "CR_loudness" value = "8.7" />
+		<patcher name = "00_Crump_impact_params.mxb">
+			<pattr name = "Imp_rigid_k" value = "79.674797" />
+			<pattr name = "Imp_shape_alpha" value = "32.520325" />
+			<pattr name = "Imp_velocity" value = "10" />
+		</patcher>
+		<patcher name = "02_Crump_Resonator_ctrl.mxb">
+			<pattr name = "CR_filt_range" value = "26168 40000" />
+			<pattr name = "CR_freq_range" value = "209 299" />
+			<pattr name = "CR_mass_range" value = "56 85" />
+			<pattr name = "Mo2_F_freq01" value = "2.2" />
+			<pattr name = "Mo2_Gdec_fact" value = "1.626016" />
+			<pattr name = "Mo2_Ggain_fact" value = "24.390244" />
+			<pattr name = "Mo2_freq0" value = "1368." />
+			<pattr name = "Mo2_freq01" value = "3009.6" />
+			<pattr name = "Mo2_gain_0" value = "80." />
+			<pattr name = "Mo2_gain_01" value = "90." />
+			<patcher name = "decay_range0">
+				<pattr name = "Mo2_dec_range" value = "61 100" />
+			</patcher>
+			<patcher name = "decay_range01">
+				<pattr name = "Mo2_dec_range" value = "106 111" />
+			</patcher>
+		</patcher>
+		<patcher name = "01_Crump_crump_params.mxb">
+			<pattr name = "CR_crush_f" value = "8.13" />
+			<pattr name = "CR_granul" value = "5.691057" />
+			<pattr name = "CR_ob_size" value = "57.723576" />
+		</patcher>
+	</slot>
+	<slot number = "9" name = "crumple">
+		<pattr name = "CR_loudness" value = "8.7" />
+		<patcher name = "00_Crump_impact_params.mxb">
+			<pattr name = "Imp_rigid_k" value = "79.674797" />
+			<pattr name = "Imp_shape_alpha" value = "32.520325" />
+			<pattr name = "Imp_velocity" value = "10" />
+		</patcher>
+		<patcher name = "02_Crump_Resonator_ctrl.mxb">
+			<pattr name = "CR_filt_range" value = "26168 40000" />
+			<pattr name = "CR_freq_range" value = "209 299" />
+			<pattr name = "CR_mass_range" value = "56 85" />
+			<pattr name = "Mo2_F_freq01" value = "2.2" />
+			<pattr name = "Mo2_Gdec_fact" value = "24.390244" />
+			<pattr name = "Mo2_Ggain_fact" value = "24.390244" />
+			<pattr name = "Mo2_freq0" value = "1368." />
+			<pattr name = "Mo2_freq01" value = "3009.6" />
+			<pattr name = "Mo2_gain_0" value = "80." />
+			<pattr name = "Mo2_gain_01" value = "90." />
+			<patcher name = "decay_range0">
+				<pattr name = "Mo2_dec_range" value = "61 100" />
+			</patcher>
+			<patcher name = "decay_range01">
+				<pattr name = "Mo2_dec_range" value = "106 111" />
+			</patcher>
+		</patcher>
+		<patcher name = "01_Crump_crump_params.mxb">
+			<pattr name = "CR_crush_f" value = "4.065041" />
+			<pattr name = "CR_granul" value = "5.691057" />
+			<pattr name = "CR_ob_size" value = "11.382113" />
+		</patcher>
+	</slot>
+	<slot number = "10" name = "crumple">
+		<pattr name = "CR_loudness" value = "8.7" />
+		<patcher name = "00_Crump_impact_params.mxb">
+			<pattr name = "Imp_rigid_k" value = "79.674797" />
+			<pattr name = "Imp_shape_alpha" value = "52.845528" />
+			<pattr name = "Imp_velocity" value = "10" />
+		</patcher>
+		<patcher name = "02_Crump_Resonator_ctrl.mxb">
+			<pattr name = "CR_filt_range" value = "26168 40000" />
+			<pattr name = "CR_freq_range" value = "209 299" />
+			<pattr name = "CR_mass_range" value = "56 85" />
+			<pattr name = "Mo2_F_freq01" value = "2.2" />
+			<pattr name = "Mo2_Gdec_fact" value = "59.349594" />
+			<pattr name = "Mo2_Ggain_fact" value = "24.390244" />
+			<pattr name = "Mo2_freq0" value = "1368." />
+			<pattr name = "Mo2_freq01" value = "3009.6" />
+			<pattr name = "Mo2_gain_0" value = "80." />
+			<pattr name = "Mo2_gain_01" value = "90." />
+			<patcher name = "decay_range0">
+				<pattr name = "Mo2_dec_range" value = "61 100" />
+			</patcher>
+			<patcher name = "decay_range01">
+				<pattr name = "Mo2_dec_range" value = "106 111" />
+			</patcher>
+		</patcher>
+		<patcher name = "01_Crump_crump_params.mxb">
+			<pattr name = "CR_crush_f" value = "4.065041" />
+			<pattr name = "CR_granul" value = "21.95122" />
+			<pattr name = "CR_ob_size" value = "76.422768" />
+		</patcher>
+	</slot>
+	<slot number = "11" name = "crumple">
+		<pattr name = "CR_loudness" value = "8.7" />
+		<patcher name = "00_Crump_impact_params.mxb">
+			<pattr name = "Imp_rigid_k" value = "56.910568" />
+			<pattr name = "Imp_shape_alpha" value = "27.642277" />
+			<pattr name = "Imp_velocity" value = "10" />
+		</patcher>
+		<patcher name = "02_Crump_Resonator_ctrl.mxb">
+			<pattr name = "CR_filt_range" value = "26168 40000" />
+			<pattr name = "CR_freq_range" value = "209 299" />
+			<pattr name = "CR_mass_range" value = "56 85" />
+			<pattr name = "Mo2_F_freq01" value = "2.2" />
+			<pattr name = "Mo2_Gdec_fact" value = "4.065041" />
+			<pattr name = "Mo2_Ggain_fact" value = "24.390244" />
+			<pattr name = "Mo2_freq0" value = "1368." />
+			<pattr name = "Mo2_freq01" value = "3009.6" />
+			<pattr name = "Mo2_gain_0" value = "80." />
+			<pattr name = "Mo2_gain_01" value = "90." />
+			<patcher name = "decay_range0">
+				<pattr name = "Mo2_dec_range" value = "61 100" />
+			</patcher>
+			<patcher name = "decay_range01">
+				<pattr name = "Mo2_dec_range" value = "106 111" />
+			</patcher>
+		</patcher>
+		<patcher name = "01_Crump_crump_params.mxb">
+			<pattr name = "CR_crush_f" value = "65.040649" />
+			<pattr name = "CR_granul" value = "88.617889" />
+			<pattr name = "CR_ob_size" value = "22.764227" />
+		</patcher>
+	</slot>
+</pattrstorage>
+

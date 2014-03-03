@@ -1,0 +1,14 @@
+#N canvas 0 0 450 300 10;
+#X obj 64 115 noise~;
+#X obj 64 182 *~;
+#X obj 83 148 hsl 128 15 0 1 0 1 empty empty volume 35 7 1 8 -262144
+-1 -1 0 1;
+#X obj 64 220 dac~;
+#X text 136 59 Sound of noise;
+#X text 128 115 <--- random numbers between -1 and +1;
+#X text 224 150 <-- level control;
+#X text 117 185 <---- audio signal multiply unit;
+#X connect 0 0 1 0;
+#X connect 1 0 3 0;
+#X connect 1 0 3 1;
+#X connect 2 0 1 1;

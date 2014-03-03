@@ -1,0 +1,24 @@
+#N canvas 311 331 186 326 10;
+#X obj -52 252 catch~ bus;
+#X obj -52 295 dac~;
+#X obj -2 25 s~ fundamental;
+#X obj -53 5 bng 15 250 50 0 empty empty empty 0 -6 0 8 -262144 -1
+-1;
+#X obj -2 3 sig~ 100;
+#X obj -52 272 *~ 0.08;
+#X obj -53 24 s play;
+#X obj -52 48 partial 1 300 9000 400;
+#X obj -52 228 partial 17 2 500 0;
+#X obj -52 108 partial 4.06 200 6000 20;
+#X obj -52 208 partial 13.9 5 1000 2;
+#X obj -52 188 partial 11.2 15 1500 5;
+#X obj -52 168 partial 8.1 20 3000 7;
+#X obj -52 148 partial 6.14 31 4000 12;
+#X obj -52 128 partial 5.52 37 5000 17;
+#X obj -52 88 partial 2.44 400 7000 32;
+#X obj -52 68 partial 2.06 700 8000 100;
+#X connect 0 0 5 0;
+#X connect 3 0 6 0;
+#X connect 4 0 2 0;
+#X connect 5 0 1 0;
+#X connect 5 0 1 1;

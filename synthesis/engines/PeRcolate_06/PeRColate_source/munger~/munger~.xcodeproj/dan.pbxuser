@@ -1,0 +1,136 @@
+// !$*UTF8*$!
+{
+	089C1669FE841209C02AAC07 /* Project object */ = {
+		activeBuildConfigurationName = Deployment;
+		activeTarget = 8D01CCC60486CAD60068D4B7 /* munger~ */;
+		breakpointsGroup = 37AB76360AC9AD44004196A7 /* XCBreakpointsBucket */;
+		codeSenseManager = 37AB76280AC9983D004196A7 /* Code sense */;
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXErrorsWarningsDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXErrorsWarningsDataSource_LocationID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					300,
+					138,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXErrorsWarningsDataSource_TypeID,
+					PBXErrorsWarningsDataSource_MessageID,
+					PBXErrorsWarningsDataSource_LocationID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					384,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					200,
+					68,
+					20,
+					48,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 181760862;
+			PBXWorkspaceStateSaveDate = 181760862;
+		};
+		sourceControlManager = 37AB76270AC9983D004196A7 /* Source Control */;
+		userBookmarkGroup = 376E9BBE0AD2DAC500DF2707 /* PBXBookmarkGroup */;
+		userBuildSettings = {
+		};
+	};
+	376E9BBE0AD2DAC500DF2707 /* PBXBookmarkGroup */ = {
+		isa = PBXBookmarkGroup;
+		children = (
+			376E9C6A0AD2F6EC00DF2707 /* PBXTextBookmark */,
+		);
+		name = Root;
+	};
+	376E9C6A0AD2F6EC00DF2707 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C1C021B30A901F9E001717A9 /* munger~.c */;
+		name = double;
+		rLen = 0;
+		rLoc = 426;
+		rType = 0;
+		vrLen = 1709;
+		vrLoc = 306;
+	};
+	37AB76270AC9983D004196A7 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+		};
+		scmType = "";
+	};
+	37AB76280AC9983D004196A7 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	37AB76360AC9AD44004196A7 /* XCBreakpointsBucket */ = {
+		isa = XCBreakpointsBucket;
+		name = "Project Breakpoints";
+		objects = (
+		);
+	};
+	8D01CCC60486CAD60068D4B7 /* munger~ */ = {
+		activeExec = 0;
+	};
+	C1C021B30A901F9E001717A9 /* munger~.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {974, 22106}}";
+			sepNavSelRange = "{936, 6}";
+			sepNavVisRect = "{{0, 0}, {947, 829}}";
+			sepNavWindowFrame = "{{15, 65}, {986, 958}}";
+		};
+	};
+	C1C021BE0A901FB5001717A9 /* ADSR.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {786, 2800}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRect = "{{0, 0}, {786, 706}}";
+			sepNavWindowFrame = "{{15, 188}, {825, 835}}";
+		};
+	};
+	C1C021C00A901FC3001717A9 /* stk.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1103, 20944}}";
+			sepNavSelRange = "{28754, 17}";
+			sepNavVisRect = "{{0, 11615}, {1103, 259}}";
+		};
+	};
+}

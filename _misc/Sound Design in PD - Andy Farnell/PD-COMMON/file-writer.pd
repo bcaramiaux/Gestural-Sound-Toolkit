@@ -1,0 +1,15 @@
+#N canvas 206 143 255 144 10;
+#X floatatom 151 110 5 0 0 1 written - -;
+#X obj 9 114 bng 15 250 50 0 empty empty done 18 6 1 8 -262144 -1 -1
+;
+#X obj 151 59 bng 15 250 50 0 empty empty start 18 6 1 8 -262144 -1
+-1;
+#X obj 7 8 noise~;
+#X obj 9 87 writefile 1000 RENDER;
+#X obj 7 32 throw~ audio;
+#X obj 8 63 catch~ audio;
+#X connect 2 0 4 1;
+#X connect 3 0 5 0;
+#X connect 4 0 1 0;
+#X connect 4 1 0 0;
+#X connect 6 0 4 0;

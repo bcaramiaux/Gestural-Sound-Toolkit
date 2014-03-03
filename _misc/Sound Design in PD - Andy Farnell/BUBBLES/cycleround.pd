@@ -1,0 +1,15 @@
+#N canvas 0 0 89 109 10;
+#X obj 0 45 f 0;
+#X obj 31 45 + 1;
+#X obj 0 22 metro 15;
+#X obj 0 90 outlet;
+#X obj 0 -1 inlet;
+#X obj 51 -1 inlet;
+#X obj 0 68 mod \$1;
+#X connect 0 0 1 0;
+#X connect 0 0 6 0;
+#X connect 1 0 0 1;
+#X connect 2 0 0 0;
+#X connect 4 0 2 0;
+#X connect 5 0 2 1;
+#X connect 6 0 3 0;

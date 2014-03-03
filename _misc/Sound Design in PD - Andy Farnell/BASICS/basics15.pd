@@ -1,0 +1,10 @@
+#N canvas 207 254 237 52 10;
+#X obj 59 28 send mungo;
+#X obj 135 28 send midge;
+#X floatatom 5 6 5 0 0 0 - - -;
+#X floatatom 59 6 5 0 0 0 - - -;
+#X floatatom 135 6 5 0 0 0 - - -;
+#X obj 5 28 s mary;
+#X connect 2 0 5 0;
+#X connect 3 0 0 0;
+#X connect 4 0 1 0;

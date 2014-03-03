@@ -1,0 +1,13 @@
+#N canvas 128 130 450 300 10;
+#X msg 53 83 bang;
+#X msg 140 115 start;
+#X msg 142 141 stop;
+#X obj 53 114 del 1000;
+#X obj 131 207 writesf~ 2;
+#X msg 131 31 open ./low.wav;
+#X connect 0 0 1 0;
+#X connect 0 0 3 0;
+#X connect 1 0 4 0;
+#X connect 2 0 4 0;
+#X connect 3 0 2 0;
+#X connect 5 0 4 0;

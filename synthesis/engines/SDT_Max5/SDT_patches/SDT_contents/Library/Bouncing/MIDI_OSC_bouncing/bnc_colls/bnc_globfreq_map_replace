@@ -1,0 +1,1 @@
+0, script delete bnc_globfreq_MIDI_map;1, script new bnc_globfreq_MIDI_map bpatcher 10 10 410 410 0 0 globfrequency_map.mxb 1;2, script hidden connect inlet_up 0 bnc_globfreq_MIDI_map 0;3, script hidden connect bnc_globfreq_MIDI_map 0 outlet_bottom 0;

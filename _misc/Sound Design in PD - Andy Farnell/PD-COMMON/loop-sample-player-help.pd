@@ -1,0 +1,11 @@
+#N canvas 525 367 450 300 10;
+#X obj 120 139 dac~;
+#X obj 121 75 bng 15 250 50 0 empty empty empty 0 -6 0 8 -262144 -1
+-1;
+#X obj 242 76 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 0 1
+;
+#X obj 121 100 loop-sample-player;
+#X connect 1 0 3 0;
+#X connect 2 0 3 1;
+#X connect 3 0 0 0;
+#X connect 3 0 0 1;

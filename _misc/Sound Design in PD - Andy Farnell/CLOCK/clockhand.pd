@@ -1,0 +1,8 @@
+#N canvas 0 0 450 300 10;
+#X obj 213 53 inlet~ noise;
+#X obj 0 104 outlet~;
+#X obj 0 1 inlet trigger;
+#X obj 0 82 mclick~ 300 120 3245 20 5356 10;
+#X connect 0 0 3 1;
+#X connect 2 0 3 0;
+#X connect 3 0 1 0;

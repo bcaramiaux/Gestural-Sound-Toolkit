@@ -1,0 +1,24 @@
+#N canvas 897 20 197 326 10;
+#X obj -52 252 catch~ bus;
+#X obj -52 295 dac~;
+#X obj -53 5 bng 15 250 50 0 empty empty empty 0 -6 0 8 -262144 -1
+-1;
+#X obj -53 24 s play;
+#X obj -52 48 spartial 1 300 9000 400;
+#X obj -2 3 phasor~ 100;
+#X obj -2 25 s~ phase;
+#X obj -52 272 *~ 0.01;
+#X obj -52 67 spartial 2.01 700 8000 100;
+#X obj -52 88 spartial 4.02 400 7000 32;
+#X obj -52 108 spartial 6.06 200 6000 20;
+#X obj -52 128 spartial 8.12 37 5000 17;
+#X obj -52 228 spartial 19.02 2 300 0;
+#X obj -52 208 spartial 17 5 600 2;
+#X obj -52 188 spartial 14.8 15 800 5;
+#X obj -52 168 spartial 12.5 20 1600 7;
+#X obj -52 148 spartial 10.25 31 3200 12;
+#X connect 0 0 7 0;
+#X connect 2 0 3 0;
+#X connect 5 0 6 0;
+#X connect 7 0 1 0;
+#X connect 7 0 1 1;

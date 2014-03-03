@@ -1,0 +1,28 @@
+#N canvas 270 74 177 227 10;
+#X obj 114 45 s time;
+#X obj 14 -4 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 1 1
+;
+#X obj 14 19 timebase 60 4 0;
+#X obj 14 49 r time;
+#X obj 14 114 / 2;
+#X obj 14 136 change;
+#X obj 86 134 change;
+#X obj 86 112 / 4;
+#X obj 14 91 trigger f f;
+#X floatatom 14 180 5 0 0 0 - - -;
+#X floatatom 86 178 5 0 0 0 - - -;
+#X floatatom 22 71 5 0 0 0 - - -;
+#X obj 86 156 int;
+#X obj 14 157 int;
+#X connect 1 0 2 0;
+#X connect 2 1 0 0;
+#X connect 3 0 8 0;
+#X connect 3 0 11 0;
+#X connect 4 0 5 0;
+#X connect 5 0 13 0;
+#X connect 6 0 12 0;
+#X connect 7 0 6 0;
+#X connect 8 0 4 0;
+#X connect 8 1 7 0;
+#X connect 12 0 10 0;
+#X connect 13 0 9 0;

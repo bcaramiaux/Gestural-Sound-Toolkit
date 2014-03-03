@@ -1,0 +1,18 @@
+#N canvas 3 3 385 217 10;
+#X obj 48 127 +~;
+#X obj 50 190 dac~;
+#X obj 49 153 *~ 0.5;
+#X text 94 4 Adding two cosine waves;
+#X obj 9 47 phasor~ 55;
+#X obj 104 47 phasor~ 200;
+#X obj 103 83 cos~;
+#X obj 9 83 cos~;
+#X text 109 154 <--- scale back to normalised range;
+#X text 108 121 <--- add together two signals;
+#X connect 0 0 2 0;
+#X connect 2 0 1 0;
+#X connect 2 0 1 1;
+#X connect 4 0 7 0;
+#X connect 5 0 6 0;
+#X connect 6 0 0 1;
+#X connect 7 0 0 0;
