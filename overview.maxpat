@@ -7,7 +7,7 @@
 			"revision" : 5
 		}
 ,
-		"rect" : [ 0.0, 44.0, 1725.0, 877.0 ],
+		"rect" : [ 0.0, 44.0, 1440.0, 765.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -73,7 +73,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 34.0, 37.0, 325.0, 36.0 ],
-					"text" : "Gestural Sound Design Toolkit"
+					"text" : "Gestural Sound Toolkit"
 				}
 
 			}
@@ -85,7 +85,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1087.0, 432.888306, 56.0, 20.0 ],
+					"patching_rect" : [ 1192.0, 432.888306, 56.0, 20.0 ],
 					"text" : "print this"
 				}
 
@@ -98,7 +98,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1126.482544, 405.401123, 48.482544, 20.0 ],
+					"patching_rect" : [ 1231.482544, 405.401123, 48.482544, 20.0 ],
 					"text" : "float"
 				}
 
@@ -111,7 +111,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1028.984131, 405.401123, 48.482544, 20.0 ],
+					"patching_rect" : [ 1133.984131, 405.401123, 48.482544, 20.0 ],
 					"text" : "integer"
 				}
 
@@ -126,7 +126,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1076.482544, 405.401123, 50.0, 20.0 ]
+					"patching_rect" : [ 1181.482544, 405.401123, 50.0, 20.0 ]
 				}
 
 			}
@@ -140,7 +140,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 972.085144, 405.401123, 50.0, 20.0 ]
+					"patching_rect" : [ 1077.085205, 405.401123, 50.0, 20.0 ]
 				}
 
 			}
@@ -153,7 +153,7 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 972.085144, 432.888306, 105.0, 20.0 ],
+					"patching_rect" : [ 1077.085205, 432.888306, 105.0, 20.0 ],
 					"text" : "scale 0. 1. 0. 127."
 				}
 
@@ -166,7 +166,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 972.085144, 372.111572, 211.413315, 28.0 ],
+					"patching_rect" : [ 1077.085205, 372.111572, 211.413315, 28.0 ],
 					"text" : "Useful MAX objects"
 				}
 
@@ -180,7 +180,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 1018.547485, 667.959778, 76.698784, 20.0 ],
+					"patching_rect" : [ 1123.547485, 667.959778, 76.698784, 20.0 ],
 					"text" : "phasor~ 200"
 				}
 
@@ -194,7 +194,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 972.085144, 667.959778, 39.33271, 20.0 ],
+					"patching_rect" : [ 1077.085205, 667.959778, 39.33271, 20.0 ],
 					"text" : "pink~"
 				}
 
@@ -208,7 +208,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 1050.013672, 639.039856, 45.232616, 20.0 ],
+					"patching_rect" : [ 1155.013672, 639.039856, 45.232616, 20.0 ],
 					"text" : "noise~"
 				}
 
@@ -221,7 +221,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 972.085144, 603.666687, 211.413315, 28.0 ],
+					"patching_rect" : [ 1077.085205, 603.666687, 211.413315, 28.0 ],
 					"text" : "Useful MSP objects"
 				}
 
@@ -235,7 +235,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 972.085144, 639.039856, 66.865608, 20.0 ],
+					"patching_rect" : [ 1077.085205, 639.039856, 66.865608, 20.0 ],
 					"text" : "cycle~ 200"
 				}
 
@@ -249,7 +249,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 723.305725, 372.404175, 240.794861, 162.048431 ]
+					"patching_rect" : [ 828.305725, 372.404175, 240.794861, 162.048431 ]
 				}
 
 			}
@@ -261,7 +261,7 @@
 					"maxclass" : "panel",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 723.0, 589.598755, 156.281494, 4.0 ]
+					"patching_rect" : [ 828.0, 589.598755, 156.281494, 4.0 ]
 				}
 
 			}
@@ -273,7 +273,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 723.0, 554.111572, 156.281494, 35.0 ],
+					"patching_rect" : [ 828.0, 554.111572, 156.281494, 35.0 ],
 					"text" : "Sound output"
 				}
 
@@ -329,7 +329,7 @@
 									"presentation" : 1,
 									"presentation_linecount" : 5,
 									"presentation_rect" : [ 17.0, 25.0, 626.0, 76.0 ],
-									"text" : "Max/MSP 6.0.8 (not tested yet on Max/MSP 6.1.X)\nFtm&Co, v. 2.6.2 (beta)\n    from IMTR IRCAM – Centre Pompidou\nMubu for Max/MSP, v. 1.6.3 (beta)\n    from IMTR IRCAM – Centre Pompidou",
+									"text" : "Max/MSP 6.0.5 (not tested yet on Max/MSP 6.1.X)\nFtm&Co, v. 2.6.2 (beta)\n    from IMTR IRCAM – Centre Pompidou\nMubu for Max/MSP, v. 1.6.3 (beta)\n    from IMTR IRCAM – Centre Pompidou",
 									"textcolor" : [ 0.501859, 0.501859, 0.501859, 1.0 ]
 								}
 
@@ -343,14 +343,14 @@
 					"saved_object_attributes" : 					{
 						"fontface" : 0,
 						"fontsize" : 12.0,
-						"tags" : "",
 						"default_fontface" : 0,
 						"digest" : "",
-						"globalpatchername" : "",
 						"default_fontname" : "Arial",
 						"fontname" : "Arial",
+						"tags" : "",
 						"default_fontsize" : 12.0,
-						"description" : ""
+						"description" : "",
+						"globalpatchername" : ""
 					}
 ,
 					"text" : "p Requirements"
@@ -366,7 +366,7 @@
 					"name" : "sid.output.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 723.305725, 598.666687, 182.975769, 110.099037 ]
+					"patching_rect" : [ 828.305725, 598.666687, 182.975769, 110.099037 ]
 				}
 
 			}
@@ -381,7 +381,7 @@
 					"numinlets" : 4,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 972.085144, 212.512421, 240.794861, 145.891739 ]
+					"patching_rect" : [ 1077.085205, 212.512421, 240.794861, 145.891739 ]
 				}
 
 			}
@@ -436,7 +436,7 @@
 									"presentation" : 1,
 									"presentation_linecount" : 13,
 									"presentation_rect" : [ 17.0, 25.0, 626.0, 186.0 ],
-									"text" : "Gestural Sound Design Toolkit\na Max 6 library for the design of Embodied Sonic Interactions\n\n(c) Baptiste Caramiaux, EAVI Group, Goldsmiths College, University of London\n     (contact: bc@goldsmithsdigital.com)\n\nContributors: \n– EAVI Group Goldsmiths College (Baptiste Caramiaux, Alessandro Altavilla)\n– IRCAM-Centre Pompidou (Norbert Schnell, Frédéric Bevilacqua, Diemo Schwarz)\n\n\nEAVI website: eavi.goldsmithsdigital.com\n2014",
+									"text" : "Gestural Sound Toolkit\na Max 6 library for the design of Embodied Sonic Interactions\n\n(c) Baptiste Caramiaux, EAVI Group, Goldsmiths College, University of London\n     (contact: bc@goldsmithsdigital.com)\n\nContributors: \n– EAVI Group Goldsmiths College (Baptiste Caramiaux, Alessandro Altavilla)\n– IRCAM-Centre Pompidou (Norbert Schnell, Frédéric Bevilacqua, Diemo Schwarz)\n\n\nEAVI website: eavi.goldsmithsdigital.com\n2014",
 									"textcolor" : [ 0.501859, 0.501859, 0.501859, 1.0 ]
 								}
 
@@ -450,14 +450,14 @@
 					"saved_object_attributes" : 					{
 						"fontface" : 0,
 						"fontsize" : 12.0,
-						"tags" : "",
 						"default_fontface" : 0,
 						"digest" : "",
-						"globalpatchername" : "",
 						"default_fontname" : "Arial",
 						"fontname" : "Arial",
+						"tags" : "",
 						"default_fontsize" : 12.0,
-						"description" : ""
+						"description" : "",
+						"globalpatchername" : ""
 					}
 ,
 					"text" : "p Credits"
@@ -475,7 +475,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 387.994385, 588.666687, 184.863739, 115.333336 ]
+					"patching_rect" : [ 432.994385, 588.666687, 184.863739, 115.333336 ]
 				}
 
 			}
@@ -486,11 +486,11 @@
 					"border" : 1,
 					"id" : "obj-21",
 					"maxclass" : "bpatcher",
-					"name" : "acc.recognition.maxpat",
+					"name" : "acc.recognition_gvf.maxpat",
 					"numinlets" : 2,
 					"numoutlets" : 5,
 					"outlettype" : [ "", "", "", "", "" ],
-					"patching_rect" : [ 387.994385, 456.082611, 184.863739, 115.333336 ]
+					"patching_rect" : [ 432.994385, 456.082611, 184.863739, 115.333336 ]
 				}
 
 			}
@@ -502,7 +502,7 @@
 					"maxclass" : "panel",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 723.305725, 73.487183, 489.574249, 4.0 ]
+					"patching_rect" : [ 828.305725, 73.487183, 489.574249, 4.0 ]
 				}
 
 			}
@@ -514,7 +514,7 @@
 					"maxclass" : "panel",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 387.994385, 72.487183, 275.328979, 4.0 ]
+					"patching_rect" : [ 432.994385, 72.487183, 275.328979, 4.0 ]
 				}
 
 			}
@@ -538,7 +538,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 723.305725, 38.0, 275.328979, 35.0 ],
+					"patching_rect" : [ 828.305725, 38.0, 275.328979, 35.0 ],
 					"text" : "Synthesis"
 				}
 
@@ -554,7 +554,7 @@
 					"numinlets" : 4,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 972.085144, 86.815613, 240.794861, 109.320236 ]
+					"patching_rect" : [ 1077.085205, 86.815613, 240.794861, 109.320236 ]
 				}
 
 			}
@@ -569,7 +569,7 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 723.305725, 212.512421, 240.794861, 145.891739 ]
+					"patching_rect" : [ 828.305725, 212.512421, 240.794861, 145.891739 ]
 				}
 
 			}
@@ -584,7 +584,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 723.305725, 86.815613, 240.794861, 109.320236 ]
+					"patching_rect" : [ 828.305725, 86.815613, 240.794861, 109.320236 ]
 				}
 
 			}
@@ -596,7 +596,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 387.994385, 37.0, 275.328979, 35.0 ],
+					"patching_rect" : [ 432.994385, 37.0, 275.328979, 35.0 ],
 					"text" : "Analysis"
 				}
 
@@ -639,7 +639,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 387.994385, 211.740341, 133.731216, 116.319092 ]
+					"patching_rect" : [ 432.994385, 211.740341, 133.731216, 116.319092 ]
 				}
 
 			}
@@ -654,7 +654,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 387.994385, 333.973969, 133.731216, 116.319092 ]
+					"patching_rect" : [ 432.994385, 333.973969, 133.731216, 116.319092 ]
 				}
 
 			}
@@ -669,7 +669,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 529.592163, 251.170547, 133.731216, 116.319092 ]
+					"patching_rect" : [ 574.592163, 251.170547, 133.731216, 116.319092 ]
 				}
 
 			}
@@ -684,7 +684,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "float" ],
-					"patching_rect" : [ 529.592163, 211.740341, 133.731216, 25.629629 ]
+					"patching_rect" : [ 574.592163, 211.740341, 133.731216, 25.629629 ]
 				}
 
 			}
@@ -699,7 +699,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 529.592163, 86.815613, 133.731216, 114.34758 ]
+					"patching_rect" : [ 574.592163, 86.815613, 133.731216, 114.34758 ]
 				}
 
 			}
@@ -714,60 +714,60 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 387.994385, 86.815613, 133.731216, 114.34758 ]
+					"patching_rect" : [ 432.994385, 86.815613, 133.731216, 114.34758 ]
 				}
 
 			}
  ],
 		"lines" : [  ],
 		"parameters" : 		{
-			"obj-21::obj-13" : [ "live.toggle[6]", "live.toggle", 0 ],
-			"obj-1::obj-2::obj-13" : [ "live.toggle[11]", "live.toggle", 0 ],
-			"obj-2::obj-8::obj-17" : [ "live.toggle[17]", "live.toggle[1]", 0 ],
-			"obj-21::obj-25" : [ "live.tab[1]", "live.tab", 0 ],
 			"obj-13::obj-15::obj-92" : [ "live.toggle[2]", "live.toggle", 0 ],
+			"obj-3::obj-6::obj-2::obj-13" : [ "live.toggle[8]", "live.toggle", 0 ],
 			"obj-2::obj-13" : [ "live.toggle[9]", "live.toggle", 0 ],
-			"obj-21::obj-31" : [ "live.button", "live.button", 0 ],
-			"obj-3::obj-4" : [ "live.button[1]", "live.button", 0 ],
-			"obj-22::obj-42" : [ "live.tab", "live.tab", 0 ],
-			"obj-22::obj-29" : [ "live.button[2]", "live.button", 0 ],
-			"obj-13::obj-15::obj-88" : [ "live.toggle[1]", "live.toggle", 0 ],
-			"obj-12::obj-18::obj-92" : [ "live.toggle[4]", "live.toggle", 0 ],
-			"obj-15::obj-18::obj-88" : [ "live.toggle[13]", "live.toggle", 0 ],
-			"obj-22::obj-46" : [ "live.toggle", "live.toggle", 0 ],
-			"obj-14::obj-23::obj-88" : [ "live.toggle[16]", "live.toggle", 0 ],
-			"obj-2::obj-3::obj-2::obj-13" : [ "live.toggle[18]", "live.toggle", 0 ],
-			"obj-12::obj-18::obj-88" : [ "live.toggle[3]", "live.toggle", 0 ],
 			"obj-15::obj-18::obj-92" : [ "live.toggle[14]", "live.toggle", 0 ],
+			"obj-21::obj-13" : [ "live.toggle[6]", "live.toggle", 0 ],
 			"obj-14::obj-23::obj-92" : [ "live.toggle[15]", "live.toggle", 0 ],
-			"obj-3::obj-6::obj-2::obj-13" : [ "live.toggle[8]", "live.toggle", 0 ]
+			"obj-1::obj-2::obj-13" : [ "live.toggle[11]", "live.toggle", 0 ],
+			"obj-3::obj-4" : [ "live.button[1]", "live.button", 0 ],
+			"obj-14::obj-23::obj-88" : [ "live.toggle[16]", "live.toggle", 0 ],
+			"obj-13::obj-15::obj-88" : [ "live.toggle[1]", "live.toggle", 0 ],
+			"obj-2::obj-3::obj-2::obj-13" : [ "live.toggle[18]", "live.toggle", 0 ],
+			"obj-21::obj-31" : [ "live.button", "live.button", 0 ],
+			"obj-12::obj-18::obj-88" : [ "live.toggle[3]", "live.toggle", 0 ],
+			"obj-2::obj-8::obj-17" : [ "live.toggle[17]", "live.toggle[1]", 0 ],
+			"obj-22::obj-29" : [ "live.button[2]", "live.button", 0 ],
+			"obj-22::obj-42" : [ "live.tab", "live.tab", 0 ],
+			"obj-12::obj-18::obj-92" : [ "live.toggle[4]", "live.toggle", 0 ],
+			"obj-22::obj-46" : [ "live.toggle", "live.toggle", 0 ],
+			"obj-15::obj-18::obj-88" : [ "live.toggle[13]", "live.toggle", 0 ],
+			"obj-21::obj-25" : [ "live.tab[1]", "live.tab", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "acc.energy_ftm.maxpat",
-				"bootpath" : "/Users/caramiaux/Dropbox/SID-Workshops/GDSLibrary/analysis",
-				"patcherrelativepath" : "../GDSLibrary/analysis",
+				"bootpath" : "/Users/caramiaux/Dropbox/SID-Workshops/Gestural-Sound-Toolkit/analysis",
+				"patcherrelativepath" : "../Gestural-Sound-Toolkit/analysis",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "acc.gate.energy_ftm.maxpat",
-				"bootpath" : "/Users/caramiaux/Dropbox/SID-Workshops/GDSLibrary/analysis",
-				"patcherrelativepath" : "../GDSLibrary/analysis",
+				"bootpath" : "/Users/caramiaux/Dropbox/SID-Workshops/Gestural-Sound-Toolkit/analysis",
+				"patcherrelativepath" : "../Gestural-Sound-Toolkit/analysis",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "acc.kick_ftm.maxpat",
-				"bootpath" : "/Users/caramiaux/Dropbox/SID-Workshops/GDSLibrary/analysis",
-				"patcherrelativepath" : "../GDSLibrary/analysis",
+				"bootpath" : "/Users/caramiaux/Dropbox/SID-Workshops/Gestural-Sound-Toolkit/analysis",
+				"patcherrelativepath" : "../Gestural-Sound-Toolkit/analysis",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "derivative_ftm.maxpat",
-				"bootpath" : "/Users/caramiaux/Dropbox/SID-Workshops/GDSLibrary/analysis",
-				"patcherrelativepath" : "../GDSLibrary/analysis",
+				"bootpath" : "/Users/caramiaux/Dropbox/SID-Workshops/Gestural-Sound-Toolkit/analysis",
+				"patcherrelativepath" : "../Gestural-Sound-Toolkit/analysis",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -780,71 +780,71 @@
 			}
 , 			{
 				"name" : "highpass_ftm.maxpat",
-				"bootpath" : "/Users/caramiaux/Dropbox/SID-Workshops/GDSLibrary/analysis",
-				"patcherrelativepath" : "../GDSLibrary/analysis",
+				"bootpath" : "/Users/caramiaux/Dropbox/SID-Workshops/Gestural-Sound-Toolkit/analysis",
+				"patcherrelativepath" : "../Gestural-Sound-Toolkit/analysis",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "lowpass_ftm.maxpat",
-				"bootpath" : "/Users/caramiaux/Dropbox/SID-Workshops/GDSLibrary/analysis",
-				"patcherrelativepath" : "../GDSLibrary/analysis",
+				"bootpath" : "/Users/caramiaux/Dropbox/SID-Workshops/Gestural-Sound-Toolkit/analysis",
+				"patcherrelativepath" : "../Gestural-Sound-Toolkit/analysis",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "wax.maxpat",
-				"bootpath" : "/Users/caramiaux/Dropbox/SID-Workshops/GDSLibrary/receivers/wax",
-				"patcherrelativepath" : "../GDSLibrary/receivers/wax",
+				"bootpath" : "/Users/caramiaux/Dropbox/SID-Workshops/Gestural-Sound-Toolkit/receivers/wax",
+				"patcherrelativepath" : "../Gestural-Sound-Toolkit/receivers/wax",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "wax_setup.maxpat",
-				"bootpath" : "/Users/caramiaux/Dropbox/SID-Workshops/GDSLibrary/receivers/wax/hardware/WAX",
-				"patcherrelativepath" : "../GDSLibrary/receivers/wax/hardware/WAX",
+				"bootpath" : "/Users/caramiaux/Dropbox/SID-Workshops/Gestural-Sound-Toolkit/receivers/wax/hardware/WAX",
+				"patcherrelativepath" : "../Gestural-Sound-Toolkit/receivers/wax/hardware/WAX",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "synth.trigger.samples.maxpat",
-				"bootpath" : "/Users/caramiaux/Dropbox/SID-Workshops/GDSLibrary/synthesis",
-				"patcherrelativepath" : "../GDSLibrary/synthesis",
+				"bootpath" : "/Users/caramiaux/Dropbox/SID-Workshops/Gestural-Sound-Toolkit/synthesis",
+				"patcherrelativepath" : "../Gestural-Sound-Toolkit/synthesis",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "synth.ctrl.soundpool.maxpat",
-				"bootpath" : "/Users/caramiaux/Dropbox/SID-Workshops/GDSLibrary/synthesis",
-				"patcherrelativepath" : "../GDSLibrary/synthesis",
+				"bootpath" : "/Users/caramiaux/Dropbox/SID-Workshops/Gestural-Sound-Toolkit/synthesis",
+				"patcherrelativepath" : "../Gestural-Sound-Toolkit/synthesis",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "audio.ctrl.maxpat",
-				"bootpath" : "/Users/caramiaux/Dropbox/SID-Workshops/GDSLibrary/synthesis",
-				"patcherrelativepath" : "../GDSLibrary/synthesis",
+				"bootpath" : "/Users/caramiaux/Dropbox/SID-Workshops/Gestural-Sound-Toolkit/synthesis",
+				"patcherrelativepath" : "../Gestural-Sound-Toolkit/synthesis",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "synth.manipulate.samples.maxpat",
-				"bootpath" : "/Users/caramiaux/Dropbox/SID-Workshops/GDSLibrary/synthesis",
-				"patcherrelativepath" : "../GDSLibrary/synthesis",
+				"bootpath" : "/Users/caramiaux/Dropbox/SID-Workshops/Gestural-Sound-Toolkit/synthesis",
+				"patcherrelativepath" : "../Gestural-Sound-Toolkit/synthesis",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "synth.scrub.samples.maxpat",
-				"bootpath" : "/Users/caramiaux/Dropbox/SID-Workshops/GDSLibrary/synthesis",
-				"patcherrelativepath" : "../GDSLibrary/synthesis",
+				"bootpath" : "/Users/caramiaux/Dropbox/SID-Workshops/Gestural-Sound-Toolkit/synthesis",
+				"patcherrelativepath" : "../Gestural-Sound-Toolkit/synthesis",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "acc.recognition.maxpat",
-				"bootpath" : "/Users/caramiaux/Dropbox/SID-Workshops/GDSLibrary/analysis",
-				"patcherrelativepath" : "../GDSLibrary/analysis",
+				"name" : "acc.recognition_gvf.maxpat",
+				"bootpath" : "/Users/caramiaux/Dropbox/SID-Workshops/Gestural-Sound-Toolkit/analysis",
+				"patcherrelativepath" : "../Gestural-Sound-Toolkit/analysis",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -857,43 +857,43 @@
 			}
 , 			{
 				"name" : "acc.regression.maxpat",
-				"bootpath" : "/Users/caramiaux/Dropbox/SID-Workshops/GDSLibrary/analysis",
-				"patcherrelativepath" : "../GDSLibrary/analysis",
+				"bootpath" : "/Users/caramiaux/Dropbox/SID-Workshops/Gestural-Sound-Toolkit/analysis",
+				"patcherrelativepath" : "../Gestural-Sound-Toolkit/analysis",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "synth.scratch.samples.maxpat",
-				"bootpath" : "/Users/caramiaux/Dropbox/SID-Workshops/GDSLibrary/synthesis",
-				"patcherrelativepath" : "../GDSLibrary/synthesis",
+				"bootpath" : "/Users/caramiaux/Dropbox/SID-Workshops/Gestural-Sound-Toolkit/synthesis",
+				"patcherrelativepath" : "../Gestural-Sound-Toolkit/synthesis",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sid.output.maxpat",
-				"bootpath" : "/Users/caramiaux/Dropbox/SID-Workshops/GDSLibrary/_misc/abstractions",
-				"patcherrelativepath" : "../GDSLibrary/_misc/abstractions",
+				"bootpath" : "/Users/caramiaux/Dropbox/SID-Workshops/Gestural-Sound-Toolkit/_misc/abstractions",
+				"patcherrelativepath" : "../Gestural-Sound-Toolkit/_misc/abstractions",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "synth.shake-stepseq.samples.maxpat",
-				"bootpath" : "/Users/caramiaux/Dropbox/SID-Workshops/GDSLibrary/synthesis",
-				"patcherrelativepath" : "../GDSLibrary/synthesis",
+				"bootpath" : "/Users/caramiaux/Dropbox/SID-Workshops/Gestural-Sound-Toolkit/synthesis",
+				"patcherrelativepath" : "../Gestural-Sound-Toolkit/synthesis",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "step.maxpat",
-				"bootpath" : "/Users/caramiaux/Dropbox/SID-Workshops/GDSLibrary/synthesis/utils",
-				"patcherrelativepath" : "../GDSLibrary/synthesis/utils",
+				"bootpath" : "/Users/caramiaux/Dropbox/SID-Workshops/Gestural-Sound-Toolkit/synthesis/utils",
+				"patcherrelativepath" : "../Gestural-Sound-Toolkit/synthesis/utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "audio.recorder.maxpat",
-				"bootpath" : "/Users/caramiaux/Dropbox/SID-Workshops/GDSLibrary/_misc/abstractions",
-				"patcherrelativepath" : "../GDSLibrary/_misc/abstractions",
+				"bootpath" : "/Users/caramiaux/Dropbox/SID-Workshops/Gestural-Sound-Toolkit/_misc/abstractions",
+				"patcherrelativepath" : "../Gestural-Sound-Toolkit/_misc/abstractions",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -950,7 +950,7 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "gfpfmax.mxo",
+				"name" : "gvf.mxo",
 				"type" : "iLaX"
 			}
 , 			{
