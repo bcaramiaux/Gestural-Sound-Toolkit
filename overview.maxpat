@@ -341,16 +341,16 @@
 ,
 					"patching_rect" : [ 101.732422, 80.487183, 93.415184, 20.0 ],
 					"saved_object_attributes" : 					{
+						"fontname" : "Arial",
+						"default_fontsize" : 12.0,
+						"description" : "",
+						"globalpatchername" : "",
 						"fontface" : 0,
 						"fontsize" : 12.0,
 						"default_fontface" : 0,
 						"digest" : "",
 						"default_fontname" : "Arial",
-						"fontname" : "Arial",
-						"tags" : "",
-						"default_fontsize" : 12.0,
-						"description" : "",
-						"globalpatchername" : ""
+						"tags" : ""
 					}
 ,
 					"text" : "p Requirements"
@@ -448,16 +448,16 @@
 ,
 					"patching_rect" : [ 34.0, 80.487183, 58.999065, 20.0 ],
 					"saved_object_attributes" : 					{
+						"fontname" : "Arial",
+						"default_fontsize" : 12.0,
+						"description" : "",
+						"globalpatchername" : "",
 						"fontface" : 0,
 						"fontsize" : 12.0,
 						"default_fontface" : 0,
 						"digest" : "",
 						"default_fontname" : "Arial",
-						"fontname" : "Arial",
-						"tags" : "",
-						"default_fontsize" : 12.0,
-						"description" : "",
-						"globalpatchername" : ""
+						"tags" : ""
 					}
 ,
 					"text" : "p Credits"
@@ -475,7 +475,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 432.994385, 588.666687, 184.863739, 115.333336 ]
+					"patching_rect" : [ 432.994385, 580.666687, 184.863739, 115.333336 ]
 				}
 
 			}
@@ -486,11 +486,11 @@
 					"border" : 1,
 					"id" : "obj-21",
 					"maxclass" : "bpatcher",
-					"name" : "acc.recognition_gvf.maxpat",
+					"name" : "acc.recognition.maxpat",
 					"numinlets" : 2,
 					"numoutlets" : 5,
 					"outlettype" : [ "", "", "", "", "" ],
-					"patching_rect" : [ 432.994385, 456.082611, 184.863739, 115.333336 ]
+					"patching_rect" : [ 432.994385, 456.082611, 333.863739, 103.584076 ]
 				}
 
 			}
@@ -721,26 +721,27 @@
  ],
 		"lines" : [  ],
 		"parameters" : 		{
-			"obj-13::obj-15::obj-92" : [ "live.toggle[2]", "live.toggle", 0 ],
-			"obj-3::obj-6::obj-2::obj-13" : [ "live.toggle[8]", "live.toggle", 0 ],
-			"obj-2::obj-13" : [ "live.toggle[9]", "live.toggle", 0 ],
-			"obj-15::obj-18::obj-92" : [ "live.toggle[14]", "live.toggle", 0 ],
-			"obj-21::obj-13" : [ "live.toggle[6]", "live.toggle", 0 ],
-			"obj-14::obj-23::obj-92" : [ "live.toggle[15]", "live.toggle", 0 ],
-			"obj-1::obj-2::obj-13" : [ "live.toggle[11]", "live.toggle", 0 ],
-			"obj-3::obj-4" : [ "live.button[1]", "live.button", 0 ],
-			"obj-14::obj-23::obj-88" : [ "live.toggle[16]", "live.toggle", 0 ],
-			"obj-13::obj-15::obj-88" : [ "live.toggle[1]", "live.toggle", 0 ],
-			"obj-2::obj-3::obj-2::obj-13" : [ "live.toggle[18]", "live.toggle", 0 ],
-			"obj-21::obj-31" : [ "live.button", "live.button", 0 ],
-			"obj-12::obj-18::obj-88" : [ "live.toggle[3]", "live.toggle", 0 ],
-			"obj-2::obj-8::obj-17" : [ "live.toggle[17]", "live.toggle[1]", 0 ],
 			"obj-22::obj-29" : [ "live.button[2]", "live.button", 0 ],
-			"obj-22::obj-42" : [ "live.tab", "live.tab", 0 ],
-			"obj-12::obj-18::obj-92" : [ "live.toggle[4]", "live.toggle", 0 ],
-			"obj-22::obj-46" : [ "live.toggle", "live.toggle", 0 ],
+			"obj-15::obj-18::obj-92" : [ "live.toggle[14]", "live.toggle", 0 ],
+			"obj-12::obj-18::obj-88" : [ "live.toggle[3]", "live.toggle", 0 ],
+			"obj-13::obj-15::obj-92" : [ "live.toggle[2]", "live.toggle", 0 ],
+			"obj-1::obj-2::obj-13" : [ "live.toggle[11]", "live.toggle", 0 ],
 			"obj-15::obj-18::obj-88" : [ "live.toggle[13]", "live.toggle", 0 ],
-			"obj-21::obj-25" : [ "live.tab[1]", "live.tab", 0 ]
+			"obj-2::obj-13" : [ "live.toggle[9]", "live.toggle", 0 ],
+			"obj-21::obj-31" : [ "live.button", "live.button", 0 ],
+			"obj-2::obj-3::obj-2::obj-13" : [ "live.toggle[18]", "live.toggle", 0 ],
+			"obj-13::obj-15::obj-88" : [ "live.toggle[1]", "live.toggle", 0 ],
+			"obj-14::obj-23::obj-92" : [ "live.toggle[15]", "live.toggle", 0 ],
+			"obj-21::obj-13" : [ "live.toggle[6]", "live.toggle", 0 ],
+			"obj-22::obj-46" : [ "live.toggle", "live.toggle", 0 ],
+			"obj-3::obj-6::obj-2::obj-13" : [ "live.toggle[8]", "live.toggle", 0 ],
+			"obj-14::obj-23::obj-88" : [ "live.toggle[16]", "live.toggle", 0 ],
+			"obj-12::obj-18::obj-92" : [ "live.toggle[4]", "live.toggle", 0 ],
+			"obj-21::obj-25" : [ "live.tab[1]", "live.tab", 0 ],
+			"obj-22::obj-42" : [ "live.tab", "live.tab", 0 ],
+			"obj-3::obj-4" : [ "live.button[1]", "live.button", 0 ],
+			"obj-21::obj-6::obj-27" : [ "live.button[3]", "live.button", 0 ],
+			"obj-2::obj-8::obj-17" : [ "live.toggle[17]", "live.toggle[1]", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -842,16 +843,9 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "acc.recognition_gvf.maxpat",
+				"name" : "acc.recognition.maxpat",
 				"bootpath" : "/Users/caramiaux/Dropbox/SID-Workshops/Gestural-Sound-Toolkit/analysis",
 				"patcherrelativepath" : "../Gestural-Sound-Toolkit/analysis",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "mnm.list2fvec.maxpat",
-				"bootpath" : "/Applications/Max6/Cycling '74/ftm-and-co/mnm-abstractions",
-				"patcherrelativepath" : "../../../../../Applications/Max6/Cycling '74/ftm-and-co/mnm-abstractions",
 				"type" : "JSON",
 				"implicit" : 1
 			}
