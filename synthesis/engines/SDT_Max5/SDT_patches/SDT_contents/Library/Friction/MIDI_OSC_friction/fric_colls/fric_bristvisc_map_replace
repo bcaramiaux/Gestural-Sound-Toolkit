@@ -1,1 +1,0 @@
-0, script delete brist_visc_MIDI_map;1, script new brist_visc_MIDI_map bpatcher 10 10 410 410 0 0 Bristvisc_map.mxb 1;2, script hidden connect inlet_up 0 brist_visc_MIDI_map 0;3, script hidden connect brist_visc_MIDI_map 0 outlet_bottom 0;

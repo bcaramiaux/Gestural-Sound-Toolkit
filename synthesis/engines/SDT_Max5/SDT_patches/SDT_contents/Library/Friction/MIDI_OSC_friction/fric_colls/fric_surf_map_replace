@@ -1,1 +1,0 @@
-0, script delete surf_rough_MIDI_map;1, script new surf_rough_MIDI_map bpatcher 10 10 410 410 0 0 Hammer_map 1;2, script hidden connect inlet_up 0 surf_rough_MIDI_map 0;3, script hidden connect surf_rough_MIDI_map 0 outlet_bottom 0;
