@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 0,
-			"revision" : 0,
+			"revision" : 1,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
@@ -50,7 +50,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 0,
+							"revision" : 1,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -887,7 +887,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 0,
+							"revision" : 1,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -1661,7 +1661,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 0,
+							"revision" : 1,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -2071,7 +2071,7 @@
 					"outlettype" : [ "int" ],
 					"patching_rect" : [ 123.5, 99.0, 131.25, 106.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1.0, 21.0, 129.0, 109.0 ],
+					"presentation_rect" : [ -2.0, 21.0, 129.0, 109.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -2086,7 +2086,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 374.0, 183.0, 64.0, 16.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1.0, 126.0, 64.0, 16.0 ],
+					"presentation_rect" : [ 246.0, 21.0, 64.0, 16.0 ],
 					"style" : "",
 					"text" : "Parameters:"
 				}
@@ -2246,7 +2246,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 810.5, 153.0, 87.0, 16.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 127.5, 142.0, 93.5, 16.0 ],
+					"presentation_rect" : [ 248.0, 91.0, 102.0, 16.0 ],
 					"style" : "",
 					"text" : "Filter",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
@@ -2264,7 +2264,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 564.0, 153.0, 87.0, 16.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 65.0, 142.0, 40.0, 16.0 ],
+					"presentation_rect" : [ 310.0, 42.0, 40.0, 16.0 ],
 					"style" : "",
 					"text" : "Pitch",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
@@ -2312,7 +2312,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 395.5, 153.0, 87.0, 16.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 3.0, 142.0, 40.0, 16.0 ],
+					"presentation_rect" : [ 248.0, 42.0, 40.0, 16.0 ],
 					"style" : "",
 					"text" : "Speed",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
@@ -2332,7 +2332,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 516.0, 153.0, 46.0, 19.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 65.0, 158.5, 40.0, 19.0 ],
+					"presentation_rect" : [ 310.0, 58.5, 40.0, 19.0 ],
 					"style" : "",
 					"triscale" : 0.9
 				}
@@ -2351,7 +2351,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 342.5, 153.0, 46.0, 19.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 3.0, 158.5, 40.0, 19.0 ],
+					"presentation_rect" : [ 248.0, 58.5, 40.0, 19.0 ],
 					"style" : "",
 					"triscale" : 0.9
 				}
@@ -2386,8 +2386,6 @@
 			}
 , 			{
 				"box" : 				{
-					"fontface" : 0,
-					"fontname" : "Arial",
 					"fontsize" : 9.0,
 					"id" : "obj-39",
 					"items" : [ "off", ",", "lowpass", ",", "highpass", ",", "resonant", ",", "bandpass", ",", "peaknotch", ",", "bandstop", ",", "allpass", ",", "lowshelf", ",", "highshelf" ],
@@ -2398,7 +2396,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 680.0, 153.0, 65.0, 19.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 127.5, 158.5, 46.0, 19.0 ],
+					"presentation_rect" : [ 248.0, 107.5, 46.0, 19.0 ],
 					"style" : ""
 				}
 
@@ -2418,7 +2416,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 751.0, 153.0, 53.0, 19.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 176.0, 158.5, 46.0, 19.0 ],
+					"presentation_rect" : [ 303.5, 107.5, 46.0, 19.0 ],
 					"style" : "",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"tricolor" : [ 0.75, 0.75, 0.75, 1.0 ],
@@ -2549,7 +2547,6 @@
 			}
 , 			{
 				"box" : 				{
-					"fontface" : 0,
 					"fontname" : "Helvetica Light",
 					"fontsize" : 10.0,
 					"htabcolor" : [ 0.103362, 0.637096, 0.0, 1.0 ],
@@ -2597,7 +2594,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 0,
+							"revision" : 1,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -3218,7 +3215,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 6.5, 8.0, 153.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 224.0, 20.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 350.0, 20.0 ],
 					"style" : "",
 					"text" : "Manipulate sound samples",
 					"textcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ]
@@ -3318,7 +3315,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 0,
+							"revision" : 1,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -3421,7 +3418,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 0,
+											"revision" : 1,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -3624,7 +3621,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 0,
+											"revision" : 1,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -4013,7 +4010,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 0,
+											"revision" : 1,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -5358,7 +5355,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 0,
+											"revision" : 1,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -6005,9 +6002,6 @@
 											}
 , 											{
 												"box" : 												{
-													"fontface" : 0,
-													"fontname" : "Arial",
-													"fontsize" : 12.0,
 													"id" : "obj-106",
 													"items" : [ "off", ",", "lowpass", ",", "highpass", ",", "resonant", ",", "bandpass", ",", "peaknotch", ",", "bandstop", ",", "allpass", ",", "lowshelf", ",", "highshelf" ],
 													"maxclass" : "umenu",
@@ -6432,7 +6426,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 0,
+											"revision" : 1,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -6861,7 +6855,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 0,
+											"revision" : 1,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -8661,9 +8655,6 @@
 											}
 , 											{
 												"box" : 												{
-													"fontface" : 0,
-													"fontname" : "Arial",
-													"fontsize" : 12.0,
 													"id" : "obj-106",
 													"items" : [ "trapezoid", ",", "cosine" ],
 													"maxclass" : "umenu",
@@ -9599,7 +9590,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 0,
+											"revision" : 1,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -12227,13 +12218,13 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-92" : [ "live.toggle[3]", "live.toggle", 0 ],
-			"obj-88" : [ "live.toggle[4]", "live.toggle", 0 ]
+			"obj-88" : [ "live.toggle[4]", "live.toggle", 0 ],
+			"obj-92" : [ "live.toggle[3]", "live.toggle", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "playlist.maxpat",
-				"bootpath" : "~/Dropbox/SID-Workshops/Gestural-Sound-Toolkit/mod-synthesis",
+				"bootpath" : "~/Research/Code/Github/Gestural-Sound-Toolkit/mod-synthesis",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
