@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 82.0, 79.0, 982.0, 746.0 ],
+		"rect" : [ 82.0, 79.0, 899.0, 746.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -5962,12 +5962,12 @@
 					"id" : "obj-2",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "leapmotionv2-interf.maxpat",
+					"name" : "leapmotion-interf.maxpat",
 					"numinlets" : 0,
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "", "int" ],
-					"patching_rect" : [ 9.0, 50.0, 350.0, 152.0 ],
+					"patching_rect" : [ 9.0, 50.0, 300.0, 148.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 9.0, 20.0, 350.0, 152.0 ],
 					"viewvisibility" : 1
@@ -6026,17 +6026,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"disabled" : 0,
-					"hidden" : 1,
-					"source" : [ "obj-2", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-3", 1 ],
-					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 349.5, 241.875, 350.5, 241.875 ],
 					"source" : [ "obj-2", 1 ]
 				}
 
@@ -6297,12 +6287,12 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-15::obj-88" : [ "live.toggle[4]", "live.toggle", 0 ],
-			"obj-15::obj-92" : [ "live.toggle[3]", "live.toggle", 0 ]
+			"obj-15::obj-92" : [ "live.toggle[3]", "live.toggle", 0 ],
+			"obj-15::obj-88" : [ "live.toggle[4]", "live.toggle", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "leapmotionv2-interf.maxpat",
+				"name" : "leapmotion-interf.maxpat",
 				"bootpath" : "~/Research/Code/Github/Gestural-Sound-Toolkit/mod-interfaces/leapmotion",
 				"patcherrelativepath" : "../mod-interfaces/leapmotion",
 				"type" : "JSON",

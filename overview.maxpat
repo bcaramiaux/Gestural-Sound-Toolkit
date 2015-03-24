@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 59.0, 79.0, 1097.0, 787.0 ],
+		"rect" : [ 59.0, 79.0, 1341.0, 787.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -47,12 +47,12 @@
 					"id" : "obj-16",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "leapmotionv2-interf.maxpat",
+					"name" : "leapmotion-interf.maxpat",
 					"numinlets" : 0,
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "", "int" ],
-					"patching_rect" : [ 13.0, 385.695496, 346.978638, 155.566956 ],
+					"patching_rect" : [ 460.0, 59.975731, 300.0, 154.566956 ],
 					"viewvisibility" : 1
 				}
 
@@ -62,46 +62,13 @@
 					"fontname" : "Helvetica Neue Light",
 					"fontsize" : 23.865383,
 					"id" : "obj-29",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 549.994385, 90.975731, 193.0, 35.0 ],
+					"patching_rect" : [ 4.0, 467.975708, 111.0, 63.0 ],
 					"style" : "",
-					"text" : "Machine Learning"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgcolor" : [ 0.799983, 0.799983, 0.799983, 1.0 ],
-					"bgmode" : 2,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-24",
-					"lockeddragscroll" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "audio.recorder.maxpat",
-					"numinlets" : 0,
-					"numoutlets" : 0,
-					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 13.0, 563.313843, 160.280792, 191.236465 ],
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Helvetica Neue Light",
-					"fontsize" : 23.865383,
-					"id" : "obj-23",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 183.0, 563.313843, 58.015747, 35.0 ],
-					"style" : "",
-					"text" : "Misc"
+					"text" : "Machine \nLearning"
 				}
 
 			}
@@ -113,7 +80,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 19.0, 37.0, 325.0, 36.0 ],
+					"patching_rect" : [ 4.0, 6.0, 325.0, 36.0 ],
 					"style" : "",
 					"text" : "Gestural Sound Toolkit"
 				}
@@ -127,9 +94,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 933.305725, 592.461304, 156.281494, 35.0 ],
+					"patching_rect" : [ 1034.305664, 619.461304, 224.0, 35.0 ],
 					"style" : "",
-					"text" : "Sound output"
+					"text" : "Sound input / output"
 				}
 
 			}
@@ -203,7 +170,7 @@
 						"lines" : [  ]
 					}
 ,
-					"patching_rect" : [ 342.732422, 45.0, 93.415184, 22.0 ],
+					"patching_rect" : [ 327.732422, 14.0, 93.415184, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -233,7 +200,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 933.611389, 635.432373, 182.975769, 110.099037 ],
+					"patching_rect" : [ 1034.305664, 663.975708, 182.975769, 110.099037 ],
 					"viewvisibility" : 1
 				}
 
@@ -254,7 +221,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 933.305725, 252.130615, 240.794861, 145.891739 ],
+					"patching_rect" : [ 676.305725, 663.975708, 240.794861, 145.891739 ],
 					"viewvisibility" : 1
 				}
 
@@ -329,7 +296,7 @@
 						"lines" : [  ]
 					}
 ,
-					"patching_rect" : [ 275.0, 45.0, 58.999065, 22.0 ],
+					"patching_rect" : [ 260.0, 14.0, 58.999065, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -352,27 +319,6 @@
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
-					"id" : "obj-22",
-					"lockeddragscroll" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "ml.regression.mlp.maxpat",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 549.994385, 533.801758, 184.863739, 115.333336 ],
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgcolor" : [ 0.819608, 0.819608, 0.819608, 0.0 ],
-					"bgmode" : 2,
-					"border" : 1,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
 					"id" : "obj-21",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
@@ -381,7 +327,7 @@
 					"numoutlets" : 7,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "", "", "", "", "", "", "" ],
-					"patching_rect" : [ 549.994385, 134.022339, 350.863739, 166.0 ],
+					"patching_rect" : [ 131.0, 467.975708, 350.863739, 166.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -394,7 +340,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 933.305725, 90.975731, 275.328979, 35.0 ],
+					"patching_rect" : [ 3.305725, 663.975708, 109.0, 35.0 ],
 					"style" : "",
 					"text" : "Synthesis"
 				}
@@ -416,7 +362,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 933.305725, 407.478241, 240.794861, 145.891739 ],
+					"patching_rect" : [ 409.305725, 663.975708, 240.794861, 145.891739 ],
 					"viewvisibility" : 1
 				}
 
@@ -437,7 +383,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 933.305725, 134.022339, 240.794861, 109.320236 ],
+					"patching_rect" : [ 131.0, 663.975708, 240.794861, 109.320236 ],
 					"viewvisibility" : 1
 				}
 
@@ -450,7 +396,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 387.994385, 90.975731, 94.0, 35.0 ],
+					"patching_rect" : [ 4.0, 330.975739, 94.0, 35.0 ],
 					"style" : "",
 					"text" : "Analysis"
 				}
@@ -464,9 +410,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 13.0, 90.975731, 279.0, 35.0 ],
+					"patching_rect" : [ 4.0, 59.975731, 111.0, 35.0 ],
 					"style" : "",
-					"text" : "Receiver"
+					"text" : "Receivers"
 				}
 
 			}
@@ -486,7 +432,7 @@
 					"numoutlets" : 5,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "", "float", "float", "float", "float" ],
-					"patching_rect" : [ 13.0, 134.022339, 302.978638, 242.566956 ],
+					"patching_rect" : [ 131.0, 59.975731, 300.0, 242.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -507,7 +453,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 387.994385, 288.270203, 133.731216, 116.319092 ],
+					"patching_rect" : [ 426.994385, 330.975739, 133.731216, 116.319092 ],
 					"viewvisibility" : 1
 				}
 
@@ -528,7 +474,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 387.994385, 410.022339, 133.731216, 116.319092 ],
+					"patching_rect" : [ 593.994385, 330.975739, 133.731216, 116.319092 ],
 					"viewvisibility" : 1
 				}
 
@@ -549,7 +495,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 387.994385, 533.801758, 133.731216, 116.319092 ],
+					"patching_rect" : [ 749.994385, 330.975739, 133.731216, 116.319092 ],
 					"viewvisibility" : 1
 				}
 
@@ -570,7 +516,7 @@
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 387.994385, 254.740356, 133.731216, 25.629629 ],
+					"patching_rect" : [ 279.994385, 330.975739, 133.731216, 25.629629 ],
 					"viewvisibility" : 1
 				}
 
@@ -591,7 +537,7 @@
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 387.994385, 655.732605, 133.731216, 114.34758 ],
+					"patching_rect" : [ 902.994385, 330.975739, 133.731216, 114.34758 ],
 					"viewvisibility" : 1
 				}
 
@@ -612,7 +558,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 387.994385, 134.022339, 133.731216, 114.34758 ],
+					"patching_rect" : [ 131.0, 330.975739, 133.731216, 114.34758 ],
 					"viewvisibility" : 1
 				}
 
@@ -621,17 +567,14 @@
 		"lines" : [  ],
 		"parameters" : 		{
 			"obj-3::obj-6::obj-2::obj-13" : [ "live.toggle[5]", "live.toggle", 0 ],
-			"obj-13::obj-15::obj-88" : [ "live.toggle[8]", "live.toggle", 0 ],
-			"obj-22::obj-29" : [ "live.button[1]", "live.button", 0 ],
+			"obj-13::obj-15::obj-92" : [ "live.toggle[8]", "live.toggle", 0 ],
 			"obj-2::obj-8::obj-17" : [ "live.toggle[2]", "live.toggle[1]", 0 ],
-			"obj-22::obj-46" : [ "live.toggle[9]", "live.toggle", 0 ],
 			"obj-1::obj-2::obj-13" : [ "live.toggle[1]", "live.toggle", 0 ],
 			"obj-12::obj-18::obj-88" : [ "live.toggle", "live.toggle", 0 ],
 			"obj-15::obj-18::obj-88" : [ "live.toggle[10]", "live.toggle", 0 ],
 			"obj-2::obj-3::obj-2::obj-13" : [ "live.toggle[3]", "live.toggle", 0 ],
-			"obj-13::obj-15::obj-92" : [ "live.toggle[7]", "live.toggle", 0 ],
+			"obj-13::obj-15::obj-88" : [ "live.toggle[7]", "live.toggle", 0 ],
 			"obj-3::obj-4" : [ "live.button", "live.button", 0 ],
-			"obj-22::obj-42" : [ "live.tab", "live.tab", 0 ],
 			"obj-2::obj-13" : [ "live.toggle[4]", "live.toggle", 0 ],
 			"obj-12::obj-18::obj-92" : [ "live.toggle[6]", "live.toggle", 0 ],
 			"obj-15::obj-18::obj-92" : [ "live.toggle[11]", "live.toggle", 0 ]
@@ -736,13 +679,6 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "ml.regression.mlp.maxpat",
-				"bootpath" : "~/Research/Code/Github/Gestural-Sound-Toolkit/mod-analysis",
-				"patcherrelativepath" : "./mod-analysis",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "synth.scratch.samples.maxpat",
 				"bootpath" : "~/Research/Code/Github/Gestural-Sound-Toolkit/mod-synthesis",
 				"patcherrelativepath" : "./mod-synthesis",
@@ -757,14 +693,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "audio.recorder.maxpat",
-				"bootpath" : "~/Research/Code/Github/Gestural-Sound-Toolkit/ext-libs/abstractions",
-				"patcherrelativepath" : "./ext-libs/abstractions",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "leapmotionv2-interf.maxpat",
+				"name" : "leapmotion-interf.maxpat",
 				"bootpath" : "~/Research/Code/Github/Gestural-Sound-Toolkit/mod-interfaces/leapmotion",
 				"patcherrelativepath" : "./mod-interfaces/leapmotion",
 				"type" : "JSON",
@@ -820,10 +749,6 @@
 			}
 , 			{
 				"name" : "gvf.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "mlnnMax.mxo",
 				"type" : "iLaX"
 			}
 , 			{
