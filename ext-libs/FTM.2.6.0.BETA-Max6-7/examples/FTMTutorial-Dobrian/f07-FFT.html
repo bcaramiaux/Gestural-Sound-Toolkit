@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="949.35">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1"><b>f07. Gabor — FFT for Sound Analysis</b></p>
+<p class="p2"><br></p>
+<p class="p3"><b>Short-term Fourier transform</b></p>
+<p class="p2"><br></p>
+<p class="p3">The Fourier transform is an algorithmic process that converts a time-domain representation of a signal into a frequency-domain representation of its spectrum. Since the Fourier theorem only strictly applies to infinitely repeating signals—a condition that doesn't truly apply to real-world sounds—one commonly performs the transform on a short-term windowed slice of sound. To represent changes in the spectrum over time, one simply performs multiple short-term Fourier transforms on consecutive—or overlapping—slices. Each slice is like a snapshot of the frequency content of the signal at that very short "instant" in time.</p>
+<p class="p2"><br></p>
+<p class="p3">Since a <b>fmat</b> or <b>fvec</b> that contains an audio signal is like a short-term quasi-instant of time "frozen" in a static matrix (as opposed to passing in real time like a MSP signal), FTM is perfectly suited to performing Fourier analysis on a short slice of audio. Once the Fourier anaysis is performed, other information about the sound can be derived from that, such as its formant (local peaks in amplitude in particular frequency regions), harmonicity (whole-number-multiple alignment of those peaks), likely fundamental frequency and period, and so on.</p>
+<p class="p2"><br></p>
+<p class="p3"><b>Windowing slices</b></p>
+<p class="p2"><br></p>
+<p class="p3">As pointed out in the previous tutorial, taking a slice of an audio signal without consideration of its content will likely mean that the slice will not begin and end with the value 0. As we have shown, capturing an unaltered slice is like applying a rectangular window to the sound. If, as is usually the case, that window doesn't contain a precise number of cycles of a periodic waveform, then treating that windowed signal as if it were a cycle of a continuous waveform (say, by playing it back as a repeating grain) will add spurious frequencies. That's the main reason for using a tapering window function in the previous tutorial.</p>
+<p class="p2"><br></p>
+<p class="p3">Similarly, performing a Fourier transform on a rectangular-windowed slice of sound would result in representing frequencies that don't actually exist in the original sound. Just as the tapering function reduces the spurious frequencies in a grain in granular synthesis, windowing a slice with a tapering function reduces the "spectral leakage" that normally occurs when performing a short-term Fourier transform on a sound that is inherently not infinitely periodic. Thus, for performing Fourier analysis in real time, the combination of <b>gbr.slice~</b> and <b>gbr.wind=</b> is again appropriate.</p>
+<p class="p2"><br></p>
+<p class="p3"><b>Appropriate size and period of a slice for FFT</b></p>
+<p class="p2"><br></p>
+<p class="p3">The Fast Fourier Transform (FFT) is a method for performing the discrete Fourier transform that maximizes the speed of computation by using a recursive process that requires that the number of samples be a power of 2. Therefore, the <b>gbr.fft </b>object must receive a <b>fmat</b> or <b>fvec</b> with a size that is a power of 2. (You can provide it a vector that has some other size, and <b>gbr.fft</b> will add 0 values to it to make an internal matrix that is the next larger power of 2. For example, if you give it a vector of 882 values, it will append 142 more 0 values so that the size of its internal matrix will be 1024, a power of 2.)</p>
+<p class="p2"><br></p>
+<p class="p3">Increasing the size of the vector (the number of audio samples in the slice) commensurately increases the frequency resolution of the Fourier transform. However, since increasing the number samples also means increasing the amount of time the slice represents, that also means that the temporal resolution of the Fourier transform decreases. (That's another way of saying that the longer of period of time under consideration, the more time there is for the frequency content of that slice to change during the slice. The longer the slice, the less it resembles an infinitely short "instant".) Thus choosing the size of the slice is always a trade-off between frequency precision and temporal precision. In practice, the trade-off can be mitigated somewhat by taking overlapping slices of the input signal, thus reducing the effect of the temporal imprecision.</p>
+<p class="p2"><br></p>
+<p class="p3">The frequency resolution is a factor of the sampling rate and the window size (number of samples in the slice). The Fourier transform will divide the total representable frequency range (from 0 to the Nyquist frequency, and from -Nyquist up toward 0) into a certain number of "bins" equal to the size of the window. Thus the size of each frequency bin is R/N Hertz, where R is the sampling rate and N is the window size in samples. With a sampling rate of 44,100 Hz and a window size of 1024, for example, each bin would represent an increment of 44,100/1024 = 43.0664 Hz.</p>
+<p class="p2"><br></p>
+<p class="p3">The content of each bin is a complex number representing the real and imaginary components of the sinusoidal component at the corresponding frequency. By converting from cartesian x,y coordinates (real,imaginary) into polar magnitude,angle representation (amplitude, phase), we can derive useful information about the spectrum of the sound.</p>
+<p class="p2"><br></p>
+<p class="p3">Strictly speaking, the Fourier transform is for converting a list of complex numbers into another list of complex numbers. However, audio signals are not complex numbers. Audio samples have only a real component; the imaginary component is 0. This means that (as alluded to in tutorial 4) the Fourier transform of an audio signal will contain a lot of redundant information. For that reason, <b>gbr.fft</b><span class="Apple-converted-space">  </span>has a "real" mode (which can be invoked by setting its <i>@mode</i> attribute to <i>real</i>) that performs a speedier algorithm and produces an output about half the size of its power-of-2 input vector (half plus 1, to be exact).</p>
+<p class="p2"><br></p>
+<p class="p3"><b>Displaying the frequency content of a sound</b></p>
+<p class="p2"><br></p>
+<p class="p3">A visual representation of a sound in two dimensions is usually done as a graph of amplitude over time, and that's reasonably useful (within the limits of the number of pixels available for the display). A visual display of the spectrum of a sound at a given instant in time is usually done as a graph of amplitude over frequency, with time omitted from the graph (because we pretend that time is frozen at that instant). To display all three aspects of interest to us—amplitude, frequency, and time—we need to simulate three dimensions, either by using perspective to give a 3D rendering on three axes, or by using brightness or color intensity to represent one of the three dimensions.</p>
+<p class="p2"><br></p>
+<p class="p3">The <b>ftm.vecdisplay</b> object can represent two dimensions in normal usage, and it can also represent the dimension of time by showing the recent history of how those other two dimensions have looked in the most recently received vectors. Instead of using the y axis to represent the values in the vector, as is normal in a 2D view, it uses color, and uses the y axis to represent the passage of time instead. The historical representation scrolls continuously to move past vectors downward, always leaving the most recent past vector at the top.</p>
+<p class="p2"><br></p>
+<p class="p3">To cause a <b>ftm.vecdisplay</b> to show this history view, you just double-click on it (in a locked Patcher). That creates a divider in the display window, and you can drag that divider to determine how much of the display will be devoted to showing the most recently received vector and how much will display past vectors. (Double-clicking on the divider makes the history view go away.) In the object's Inspector window, you can set whether you want the past values to be represented using the brightness of one color or using several different colors, and you can choose the time interval with which the history scrolls and how many vertical pixels will be used per past vector.</p>
+<p class="p2"><br></p>
+<p class="p3">The tutorial patch demonstrates display of a sound's spectrum in two dimensions—as a graph of (the logarithm of) amplitude over time—and also as a history of the amplitudes in the recent past.</p>
+<p class="p2"><br></p>
+<p class="p3">• Open a sound file for <b>sfplay~</b>, start MSP, and play the sound.</p>
+<p class="p2"><br></p>
+<p class="p3">Every 512 samples, <b>gbr.slice~</b> places the most recent 1024 samples of the MSP signal into a vector. The vector is tapered by a Hann function by <b>gbr.wind=</b> and passed to the <b>gbr.fft</b> which calculates the real FFT of that vector.</p>
+<p class="p2"><br></p>
+<p class="p3">Note that the slice size chosen for <b>gbr.slice~</b> is a power of 2, and that the first argument of <b>gbr.fft</b>, specifying the size of the slice it will analyze, is set to be the same as the slices that are being fed to it. (Thus no zero-padding is necessary.) Because the vector size is 1024 and it is set to perform a <i>real</i> FFT, it will output a matrix of 513 rows (size/2+1) and two columns (the real and imaginary parts of the complex numbers produced by the transform). That matrix is used to set the contents of the <b>fmat</b> <i>$fftslice</i>.</p>
+<p class="p2"><br></p>
+<p class="p3">• Stop MSP and double-click on the <b>fmat</b> to see its contents.</p>
+<p class="p2"><br></p>
+<p class="p3">After the contents are placed in <i>$fftslice</i>, the matrix from <b>gbr.fft</b> is reduced to just its first 128 rows in another <b>ftm.mess</b>. Why do that? Well, since we know that each bin of the FFT represents an increment of 43 Hz, we know that rows 129 and up will represent frequencies above about 5,500 Hz. For most sounds we normally listen to, those high frequencies—while obviously important timbrally—do not contain the most vital information about the sound content, so we made the decision not to use up space displaying those frequencies.</p>
+<p class="p2"><br></p>
+<p class="p3">The next <b>ftm.mess</b> calculates the logarithm of the absolute values of those complex numbers. This gives a (1-column) vector of real numbers representing the amplitudes of the bins, on a logarithmic scale. The logarithmic scale is more closely associated with our subjective perception of intensity than a straight linear scale. Those amplitudes are then displayed as a graph over frequency (from 0 to about 5.5 KHz) in <b>ftm.vecdisplay</b>.</p>
+<p class="p2"><br></p>
+<p class="p3">In the lower half of the <b>ftm.vecdisplay</b>, the amplitudes are shown as color, using a limited set of colors ranging from cool (violet) for the minimum values to hot (red) for the maximum values. Each two-pixel-high line of the history represents one past vector. The most recent past vector is at the top, and the vectors in the more distant past scroll downward. (In fact, not every vector will necessarily be displayed in the history; that depends upon the rate specified in the object's Inspector.)</p>
+<p class="p2"><br></p>
+<p class="p3">The picture below shows the spectrum of a bamboo flute playing the note B-flat below middle C (approximately 233 Hz). It's clear that the sound is harmonic by the evenly-spaced peaks in amplitude, and we can see that the first seven harmonics are the strongest, with the first harmonic (fundamental) being the most intense. Other partials are present, no doubt, but are too weak for the resolution of this visual display.</p>
+<p class="p2"><br></p>
+<p class="p4"><img src="images/f07-01.jpg" alt="f07-01.jpg"></p>
+<p class="p4"><i>Spectrum of a bamboo flute playing B-flat (233 Hz)</i></p>
+<p class="p2"><i></i><br></p>
+<p class="p3">It happens that 233 Hz is almost directly between two frequency bins of the FFT (43x5 = 215 and 43x6 = 258), so we would expect bins 5 and 6 to show nearly equal magnitudes. This is shown by the equal height of the two adjacent lines showing maximum amplitude, and if you look in the actual matrix in the <b>fmat</b>, you can intuit that the magnitudes—i.,e., the square root of (x squared + y squared)—of the complex numbers in those those two rows will be significantly greater than the other nearby bins and will be approximately equal to each other.</p>
+<p class="p2"><br></p>
+<p class="p4"><img src="images/f07-02.jpg" alt="f07-02.jpg"></p>
+<p class="p1"><i>Magnitudes of bins 5 and 6 are similar</i></p>
+<p class="p2"><br></p>
+<p class="p3">In the history display one can detect periodic fluctuations of color (representing intensity) within a given vertical band, particularly in the even harmonics, that may correspond to amplitude modulation of the flute tone.</p>
+<p class="p2"><br></p>
+<p class="p3">Thus, these various types of display—numerical, 2D, and 3D—give information that is sometimes quite precise, and other times less precise but still intuitively useful. But this visual display is just a look into the more detailed information that is contained in the consecutive, overlapping short-term Fourier transforms of the signal, information that can be derived using other Gabor objects.</p>
+<p class="p2"><br></p>
+<p class="p3"><b>Summary</b></p>
+<p class="p2"><br></p>
+<p class="p3">Audio slices captured by <b>gbr.slice~</b> and tapered by <b>gbr.wind=</b> can be treated as snapshots of "instants" of time and used as input to <b>gbr.fft</b> for spectral analysis. Taking the absolute values of the complex numbers produced by the FFT yields the magnitudes, which are proportional to the amplitudes at each frequency region. The spectrum can thus be displayed as a 2D graph of amplitude over frequency. The <b>ftm.vecdisplay</b> object can also represent those two dimensions in a single line, using color instead of height to represent the amplitude values; by so doing, it can show successive time snapshots as lines in a scrolling display, in order to show a recent history of past vectors.</p>
+<p class="p2"><br></p>
+<p class="p3">This is a simple and direct display of the frequency spectrum of a sound. Other information about the spectrum can be derived from the FFT matrix by other Gabor objects, some of which will be demonstrated in later tutorials.</p>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="949.35">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1"><b>f05. Gabor — Adding a Matrix into MSP</b></p>
+<p class="p2"><br></p>
+<p class="p3"><b>The Gabor Objects</b></p>
+<p class="p2"><br></p>
+<p class="p3">The Gabor objects—objects that begin with the prefix <b>gbr.</b>— are a collection of Max objects for processing FTM matrices as audio. They're particularly suitable for windowing and analyzing audio, as well as for exploring a variety of granular synthesis techniques. The Gabor objects provide a powerful interface between FTM data and MSP, including some things that are difficult to do well with just Max and MSP.</p>
+<p class="p2"><br></p>
+<p class="p3">The Gabor objects are named after Dennis Gabor, who theorized the consideration of sound as particles, and whose work led to the exploration of granular synthesis—synthesizing sound by combining a multitude of small "grains" of sound. Thus, the <b>gbr.</b> objects particularly facilitate granular synthesis and related types of audio processing that require windowing small bits of sound with great temporal precision. That precision of timing is difficult to achieve in Max/MSP because of the disparate scheduling of Max messages and MSP audio, but certain Gabor objects help to resolve that discrepancy.</p>
+<p class="p2"><br></p>
+<p class="p3"><b>The overlap-add buffer</b></p>
+<p class="p2"><br></p>
+<p class="p3">The <b>gbr.ola~</b> object is a buffer for adding FTM matrix contents into MSP. You might think of it as a "buffer into the future". Whenever it receives a reference to a FTM matrix in its inlet, it adds the contents of that matrix into an internal buffer as audio samples for immediate MSP signal output—or, optionally, for signal output scheduled in the future. Matrices of sample data can thus be easily overlapped and summed within the <b>gbr.ola~</b> object. (This object facilitates convolution filtering with the "overlap-add (OLA)" method, but it's useful for any application that requires mixing FTM matrices of audio data into MSP.)</p>
+<p class="p2"><br></p>
+<p class="p3">One can provide FTM buffer references to <b>gbr.ola~</b> from a <b>ftm.mess</b> (or any other <b>ftm.</b> object that outputs object references), but to provide matrices at a specified rate with very precise timing, there are some special <b>gbr.</b> objects. One such object is <b>gbr.fire~</b>, which uses MSP's audio sampling rate to determine timing, which can be specified either in samples or milliseconds, or as a rate in Hertz.</p>
+<p class="p2"><br></p>
+<p class="p3"><b>Adding sound or a grain into MSP</b></p>
+<p class="p2"><br></p>
+<p class="p3">In the example patch, the <b>fmat</b> named <i>asinewave</i> is a persistent matrix containing 512 samples describing one cycle of a sine wave.</p>
+<p class="p2"><br></p>
+<p class="p3">• Import some audio into the <b>fmat</b> named <i>abitofsound</i>. You can use the provided audio file 'snare.aif' (which contains a single snare drum note), or any other short audio file.</p>
+<p class="p2"><br></p>
+<p class="p3">When MSP is turned on, the <b>gbr.fire~</b> object provides the specified matrix to <b>gbr.ola~</b> periodically at the specified rate. It is initialized to use the <b>fmat</b> <i>asinewave</i> and to provide that data to <b>gbr.ola~</b> at a rate of 86.132812 Hz, which is to say every 11.61 milliseconds. You can think of <b>gbr.fire~</b> as playing a grain of sound (the contents of the <b>fmat</b>) every 11.61 millieconds, and <b>gbr.ola~</b> is the mixer that adds the grains together. The initial rate in this example was chosen specifically because <i>asinewave</i> is 512 samples long—which, assuming a sampling rate of 44,100 Hz, is 11.61 milliseconds—so the grains occur perfectly end-to-end and the result is a smooth continuous sine tone. However, any slower rate would cause the grains to be discontinuous, and any faster rate would cause the grains to overlap and interfere with each other. In either case the result will no longer be a sine tone; the resulting waveform will still be harmonic, but will be richer in spectral content. (To be specific, it will be a 86.132812 Hz sine tone multiplied by a 512-sample rectangular window, convolved with an impulse train at the new frequency.)</p>
+<p class="p2"><br></p>
+<p class="p3">• Click on the <i>startwindow</i> message to turn on MSP, and turn up the volume with the <b>gain~</b> slider. You will hear a smooth sine tone at first. Change the frequency of <b>gbr.fire~</b> using the <b>number box</b> just above it to hear the effect of playing the grains more or less frequently. Try a sub-audio frequency such as 4 Hz to hear each grain individually.</p>
+<p class="p2"><br></p>
+<p class="p3">The way of specifying the timing for <b>gbr.fire~</b> depends on its unit attribute, so the three <b>number box</b>es first trigger a change of unit, then provide the timing value.</p>
+<p class="p2"><br></p>
+<p class="p3">• Click on the message <i>500</i> to cause <b>gbr.fire~</b> to trigger a grain every 500 milliseconds. Now click on the message <i>$abitofsound</i> to change the matrix to which <b>gbr.fire~</b> refers. You should hear the snare drum note—or whatever sound you imported into that matrix—played 2 times per second. Gradually bring the grain rate up into the audio range to hear a continuous tone made up of overlapping grains.</p>
+<p class="p2"><br></p>
+<p class="p3">Here is a visual display of the snare drum note added into <b>gbr.ola~</b> at a sub-audio rate, once every 500 ms, to create a rhythm, and (a zoomed-in view of) the same snare drum note added into <b>gbr.ola~</b> at an audio rate, once every 10 ms, to create a continuous complex 100 Hz tone.</p>
+<p class="p4"><img src="images/f05-01.jpg" alt="f05-01.jpg"><span class="Apple-converted-space">          </span><img src="images/f05-02.jpg" alt="f05-02.jpg"></p>
+<p class="p4"><i>One second, with a 435 ms grain every 500 ms</i> <span class="Apple-converted-space">          </span><i>1/10 sec., with grains overlapped every 10 ms</i></p>
+<p class="p2"><br></p>
+<p class="p3"><b>Grains and Windows</b></p>
+<p class="p2"><br></p>
+<p class="p3">The grains in this example are short sound excerpts that are played unaltered by any tapering amplitude envelope. Each grain is thus equivalent to a continuous sound being multiplied by a "rectangular window" that lets the sound through (multiplies it by 1) for a short period of time but suppresses it (multiplies it by 0) the rest of the time. Different spectral effects can be achieved by multiplying grains by different tapering window shapes before adding them to the mix, as will be demonstrated in the next tutorials.</p>
+<p class="p2"><br></p>
+<p class="p3"><b>Summary</b></p>
+<p class="p2"><br></p>
+<p class="p3">The Gabor (<b>gbr.</b>) objects in the FTM &amp; Co. family provide an interface between FTM matrices and MSP, with more precise timing than is available with the normal Max scheduler. Most of the objects are designed with the granular approach to sound in mind, treating matrices as "grains"—short windowed segments—of sound to be used in short-term sound analysis and/or granular synthesis.</p>
+<p class="p2"><br></p>
+<p class="p3">The <b>gbr.ola~</b> object treats matrices as sound data to be added to a buffer sent out as an MSP signal. The <b>gbr.fire~</b> object uses the MSP sampling rate to precisely time the periodic triggering of matrices for addition in <b>gbr.ola~</b>.</p>
+</body>
+</html>

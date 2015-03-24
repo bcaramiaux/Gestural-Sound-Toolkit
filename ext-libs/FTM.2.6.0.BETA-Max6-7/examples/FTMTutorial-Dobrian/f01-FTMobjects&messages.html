@@ -1,0 +1,91 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="949.35">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center}
+    span.s1 {font: 12.0px Helvetica}
+  </style>
+</head>
+<body>
+<p class="p1"><b>f01. FTM Basics — fmat</b></p>
+<p class="p2"><br></p>
+<p class="p3"><b>Specialized FTM Objects</b></p>
+<p class="p2"><br></p>
+<p class="p3">To understand FTM &amp; Co., let's start by understanding its fundamental objects, showing how they are similar to canonical Max objects and how they are different.</p>
+<p class="p2"><br></p>
+<p class="p3">FTM adds four new objects to the palette: an enhanced object box (<b>ftm.object</b>) that allows creation of FTM data structures, an enhanced message box (<b>ftm.mess</b>) that has additional functions for communicating with FTM objects, a display object (<b>ftm.vecdisplay</b>) for visualizing (multiple) arrays of data, and a general-purpose editor (<b>ftm.editor</b>) for visualizing and modifying multiple arrays of diverse sorts of time-based data<span class="Apple-converted-space">  </span>such as sound, MIDI, envelopes, control functions, analysis data, and so on.</p>
+<p class="p2"><br></p>
+<p class="p3">There are several classes of FTM objects that can be created with the <b>ftm.object</b> box, depending on what class name you type into it, just as there are many classes of object you can type into the Max object box. Some FTM objects are just ordinary Max objects, and you create those with the normal Max object box; others are a class of the <b>ftm.object</b> and so to create those you type the class name into an <b>ftm.object</b> box.</p>
+<p class="p2"><br></p>
+<p class="p3"><b>fmat</b></p>
+<p class="p2"><br></p>
+<p class="p3">We'll start by looking at the <b>fmat</b> class, which holds a two-dimensional (2D) matrix of floating point numbers. Jitter already provides a way of making a 2D matrix, namely the <b>jit.matrix</b> object; <b>fmat</b> is similar in concept but different in practice.</p>
+<p class="p2"><br></p>
+<p class="p3">• Open the patch <i>f01-fmat</i>.</p>
+<p class="p2"><br></p>
+<p class="p3">The way to create a 2D matrix of floats in FTM is to select the <b>ftm.object</b> <img src="images/f01-01.jpg" alt="f01-01.jpg"> from the palette and type in the word <b>fmat</b> followed by the dimensions of the matrix you want to create.</p>
+<p class="p2"><br></p>
+<p class="p3">Note that the convention in FTM is to refer to the dimensions of a matrix in terms of rows and columns, so a <b>fmat 2 4</b> object has 2 rows and 4 columns; that is to say, 4 cells along the x axis and two along the y axis. The <i>rows-columns</i> description used in FTM corresponds to the way 2D matrices are described in mathematics, but it's the opposite of the way 2D matrices are described in Jitter; Jitter uses a <i>x-y</i> or <i>width-height</i> terminology (or, you could say, a <i>columns-rows</i> terminology).</p>
+<p class="p2"><br></p>
+<p class="p3">Similarly to Jitter, FTM manages the place in memory where the data will be stored, and you can optionally give the matrix a name. To give a <b>fmat</b> (or indeed any <b>ftm.object</b>) a name, type the name in the righthand part of the <b>ftm.object</b> box, or you can enter it in the object's Inspector. By default, that name is <i>local</i>, meaning that the name is only meaningful within that patch (or one of its subpatches, or the patch of which it is a subpatch). A separate patch could reuse that name, and the two patches' objects would be unrelated. That's different from Jitter, where the name of a matrix is <i>global</i>, referring to the same place in Max's memory regardless of where the name occurs. Optionally, you can make a FTM name global by choosing "global" instead of "local" in the object's Inspector. As in any programming environment that allows for both local and global names, you need to choose wisely and keep track of which names are local and which names are global.</p>
+<p class="p2"><br></p>
+<p class="p4"><span class="s1"><img src="images/f01-02.jpg" alt="f01-02.jpg"></span></p>
+<p class="p2"><br></p>
+<p class="p3">Okay, so we've got a 2x4 matrix of floats and we've named it "twobyfour". When the object gets a <i>bang</i> in its inlet it sends a reference to that place in memory out of its left outlet (just as Jitter objects do). If you send the output to a Max <b>print</b> object, it won't print out anything very meaningful, just the word "ftm_object". But there is an object called <b>ftm.print</b> that behaves pretty much just like <b>print</b>, except that it understands ftm_object references and is smart enough to look at the proper place in memory and print out what it finds there.</p>
+<p class="p2"><br></p>
+<p class="p3">• Click on the word "bang" to send a <i>bang</i> message to the <b>fmat</b>. The <b>ftm.print</b> object will print out information about the object, followed by the contents of the matrix, in the Max console window.</p>
+<p class="p2"><br></p>
+<p class="p3">* You can also double-click on the <b>fmat</b> to open up a display/editor window that allows you to see and change its contents.</p>
+<p class="p2"><br></p>
+<p class="p4"><span class="s1"><img src="images/f01-03.jpg" alt="f01-03.jpg"></span></p>
+<p class="p2"><br></p>
+<p class="p3">Notice that <b>ftm.print</b> is just an ordinary Max object (albeit one that is provided as part of the FTM package), not a class of the special <b>ftm.object</b>. So to create <b>ftm.print</b>, you just type it into an ordinary Max object box (not into a <b>ftm.object</b> box).</p>
+<p class="p2"><br></p>
+<p class="p3">You will also notice that in this patch all the message boxes look slightly different from normal Max <b>message box</b>es. That's because these are instances of the <b>ftm.mess</b> object, the "enhanced" message box provided in FTM. It does pretty much all the same stuff that the Max <b>message box</b> does, and in many cases it's completely interchangeable with the Max <b>message box</b>, but it has additional capabilities that are crucial in FTM. So in these tutorials we'll always use <b>ftm.mess</b> objects for FTM purposes, even in cases when a Max message box would work just as well. (However, we'll still call it a "message box" in cases when "ftm.mess" would just sound clumsy.)</p>
+<p class="p2"><br></p>
+<p class="p3">• Now click on the word "random" to send the message <i>random</i> to <b>fmat</b>. The cells of the matrix get filled with randomly chosen (i.e., pseudo-randomly generated) numbers in the range from 0 to 1. This message also causes a reference to the matrix to be sent out the right outlet after the operation is completed, thus the matrix contents get printed by the right <b>ftm.print</b> object.</p>
+<p class="p2"><br></p>
+<p class="p3">The <i>random</i> message to <b>fmat</b> (just like all messages in Max) calls upon a <i>method</i> in the receiving object—a particular task that it knows how to perform. The <b>fmat</b> class has a <i>random</i> method that can have zero, one, or two arguments after it. If there are no arguments, the range of random numbers is from 0 to 1. (Well, technically the range is from 0 to <i>almost</i> 1. It will never actually choose the number 1 exactly.) If there is one argument, the range of random numbers is from 0 to (almost) that value. In effect, it generates random numbers from 0 to 1 and then multiplies each one of them by that value. If there are two arguments, the random numbers are constrained within the range between those two values.</p>
+<p class="p2"><br></p>
+<p class="p3">• Try clicking on the messages <i>random</i>, <i>random 128</i> and <i>random -0.75 0.75</i> to see the effect of the different arguments.</p>
+<p class="p2"><br></p>
+<p class="p3">The method <i>floor</i> in <b>fmat</b> throws away the fractional part of numbers, leaving only the whole number portion. So if we follow the <i>random</i> message with a <i>floor</i> message, we effectively get random integers in the requested range. The <i>random</i> method always produces float results, even if you give it integers as arguments. The <i>floor</i> method does the truncation that converts them to whole numbers.</p>
+<p class="p2"><br></p>
+<p class="p3">• Try clicking on the message "random 21 108, floor" to see the effect. Notice that <b>ftm.print</b> first prints out the random numbers as a result of the <i>random 21 108</i> method, then it prints out the altered numbers as a result of the <i>floor</i> method.<span class="Apple-converted-space">  </span>Both these methods (and indeed most methods in <b>ftm.object</b>) have this effect of sending out a <i>ftm_object</i> reference message after the operation has been completed.</p>
+<p class="p2"><br></p>
+<p class="p3">Almost all <b>ftm.object</b> methods return something when they're done, and whatever the method returns gets sent out the right outlet.</p>
+<p class="p2"><br></p>
+<p class="p3">The <b>ftm.mess</b> object can refer remotely to the contents of a <b>fmat</b> with <i>$</i> and the name of the matrix, as in <i>$twobyfour</i>, either in order to include that data in its message, or to send a method to that <b>fmat</b>. The righthand side of this patch shows how all of the messages that were sent directly into the inlet of the <b>ftm.object</b> could also be sent remotely by <b>ftm.mess</b>, by specifying the <b>fmat</b> name where the method should be sent. In that case, however, the reference that is returned by the method comes out of the outlet of the <b>ftm.mess</b>, not out of the right outlet of the <b>fmat</b>.</p>
+<p class="p2"><br></p>
+<p class="p3">The parentheses in the <b>ftm.mess</b> objects indicate a <i>function</i> to be performed by the<b> ftm.mess</b>. The <b>ftm.mess</b> object can perform many operations itself (beyond the scope of the basic Max <b>message box</b>), and those capabilities will be discussed in the next chapter. Sending methods remotely to a <b>ftm.object</b> is just one of the functions it can perform. When the first word inside a function is a <i>$</i> reference to an <b>ftm.object</b>, that means that the other arguments of the function are a method call to be sent to the named class, which in this case is the <b>fmat</b> <i>twobyfour</i>.</p>
+<p class="p2"><br></p>
+<p class="p3">• Click on the first four messages on the righthand side of the patch. You will see that the effect on the <b>fmat</b> is the same as when the method calls were being sent in directly as messages. The only difference is that the ftm_object reference now comes out the outlet of the <b>ftm.mess</b> (and gets printed by the <b>ftm.print</b> object named <i>from_ftm.mess</i>) instead of out of the right outlet of the <b>ftm.object</b>.</p>
+<p class="p2"><br></p>
+<p class="p3">• Now click on the last of those <b>ftm.mess</b> boxes, the one outlined in green that says "($twobyfour random 21 108); ($twobyfour floor)". The only difference here is that the semicolon has the effect of suppressing the output of the <b>ftm.mess</b> object after the <i>random</i> method. If you want to include more than one method in a single <b>ftm.mess</b> message but suppress the reporting of the results until all the methods have completed, you can use a semicolon in place of a comma as a message separator. <b><i>Notice:</i></b> This is a feature of the <b>ftm.mess</b> object that makes it different from the Max <b>message box</b>. In the Max <b>message box</b> a semicolon is used to send a message remotely to all objects having a certain name. The <b>ftm.mess</b> object also has the ability to communicate remotely with a <b>ftm.object</b>, but it uses a dollar sign <i>$</i> followed immediately by the name it wants to reference, instead of the semicolon.</p>
+<p class="p2"><br></p>
+<p class="p3">The ability to alter the contents of a FTM data structure remotely (without being connected to it by a patch cord) and in place (i.e., without passing it to another object or copying it somewhere else) is one of the most powerful features of FTM. However, it's not the way that Max most commonly works, so it may take some getting used to. You must remember that an <b>fmat</b> is not only an object in the usual Max sense, it's also the manager of a particular data storage structure, and most of its methods are specifically for altering the contents of its own stored data. So any method sent to it, even by remote reference, can potentially change its contents.</p>
+<p class="p2"><br></p>
+<p class="p3">• The <b>fmat</b> class has dozens of methods for modifying its contents, of which we have demonstrated only two (<i>random</i> and <i>floor</i>). If you want to get a terse description of all of its methods, click on the <b>ftm.mess</b> that says "(info class fmat)" and the method descriptions will all be printed in the Max console window.</p>
+<p class="p2"><br></p>
+<p class="p3"><b>Comparison with Jitter</b></p>
+<p class="p2"><br></p>
+<p class="p3">By way of comparison, you might want to take a look at an example of how a similar matrix of floating point data, containing random numbers from -0.75 to 0.75 would be generated in Jitter. The idea is the same, but the methodology is quite different.</p>
+<p class="p2"><br></p>
+<p class="p3">• Double-click on the <b>patcher</b> object to see an example of a comparable operation programmed using Jitter objects.</p>
+<p class="p2"><br></p>
+<p class="p3">The <b>jit.matrix</b> object creates a 2D matrix of floats, just as the <b>fmat</b> did. The <b>jit.noise</b> object creates another matrix of the same size and type. When <b>jit.noise</b> receives a <i>bang</i>, it fills its matrix with random numbers in the range from 0 to 1 and sends a reference to that place in memory out its left outlet. That reference gets passed to <b>jit.op</b> which multiplies each of the cells by 1.5 (effectively expanding the range to be from 0 to 1.5) and passes a reference on to the next <b>jit.op</b>, which subtracts 0.75 from each cell (to offset the range so it's between -0.75 and 0.75) and passes a reference on to<b> jit.matrix</b>, which sets the cells of its own matrix to those values and then sends out a reference to its own matrix. Finally, the <b>jit.print</b> object, a specialized <b>print</b> object that only understands <i>jit_matrix</i> references, prints the contents of the matrix in the Max console window.</p>
+<p class="p2"><br></p>
+<p class="p3">Neither the FTM methodology nor the Jitter methodology is inherently better than the other in this relatively simple example. As you will see in more complicated examples, each has its place for particular purposes.</p>
+<p class="p2"><br></p>
+<p class="p3"><b>Summary</b></p>
+<p class="p2"><br></p>
+<p class="p3">The <b>ftm.object</b> <img src="images/f01-01.jpg" alt="f01-01.jpg"> object can be used to create any of a variety of <i>class</i> of FTM data structure. In this chapter we looked at the <b>fmat</b> class, a 2D matrix of floating-point numbers. The <b>fmat</b> creates and manages a data structure (the matrix of data) in memory, and has many <i>methods</i> of modifying that data in-place. The data—or more correctly, a reference to the place in memory where that data resides—can be sent out the outlet, or it can be referenced, accessed, and modified remotely by use of a <i>$</i> argument referring to its name in <b>ftm.mess</b>, the enhanced message box for FTM.</p>
+</body>
+</html>

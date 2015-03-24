@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="949.35">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 12.0px Helvetica; min-height: 14.0px}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 12.0px Helvetica}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+  </style>
+</head>
+<body>
+<p class="p1"><b></b><br></p>
+<p class="p1"><b></b><br></p>
+<p class="p2"><b>f04. FTM Basics — Buffer for MSP</b></p>
+<p class="p3"><br></p>
+<p class="p4"><b>Making a Matrix Accessible to MSP</b></p>
+<p class="p3"><br></p>
+<p class="p4">So far, although we've been dealing with matrix content that is relevant to sound and music, we haven't listened to it via MSP. In the previous chapter it was demonstrated that a <b>fmat</b> might contain one or more waveforms, and that you can import a soundfile into a <b>fmat</b>. A <b>fmat</b> might also include a window or envelope for shaping sound, or an FFT analysis of a sound, or other control or analysis data for audio/music purposes.</p>
+<p class="p3"><br></p>
+<p class="p4">To access that data as sound in MSP, there is a whole family of FTM objects called the Gabor collection, which we will delve into in the following chapters. For now, this tutorial just demonstrates how to make a matrix accessible in a MSP buffer.</p>
+<p class="p3"><br></p>
+<p class="p4"><b>Displaying and Using Sound Data in a fmat</b></p>
+<p class="p3"><br></p>
+<p class="p4">This patch allows you to view a waveform and its spectrum, and to hear that waveform used as a continuous tone.</p>
+<p class="p3"><br></p>
+<p class="p4">The patch contains four <b>fmat</b>s, each consisting of a 512x1 matrix pre-loaded with a single cycle of a waveform. The waveforms are a sawtooth wave, a square wave, a pulse train, and an electric guitar. The first three are band-limited imitations of the true canonical waveforms, each containing only the first eight partials of that waveform. They therefore sound (and look) low-pass-filtered relative to the true waveforms, but they are less likely to create aliasing when used as the fundamental tone of a high note. The guitar waveform was extracted from a famous chord played by a famous rock guitarist (thanks, Pete), and is left unfiltered for all its original nastiness.</p>
+<p class="p3"><br></p>
+<p class="p4">• Choose the different waveforms from the popup <b>menu</b> at the top of the patch. The display on the left shows the contents of the matrix (in the time domain, as it were) and the display on the right shows it spectrum (amplitudes of its components in the frequency domain).</p>
+<p class="p3"><br></p>
+<p class="p4">Because each <b>fmat</b> is a 1D matrix, the <b>ftm.vecdisplay</b> on the left draws it with no trouble, just as if it were a <b>fvec</b>. (The <i>$1</i> <b>ftm.mess</b> is just for patch cord management; it passes the matrices through unchanged.)</p>
+<p class="p3"><br></p>
+<p class="p4">To convert that waveform into its spectrum representation, the following steps are taken.</p>
+<p class="p3"><br></p>
+<p class="p4">First, in order to leave the original <b>fmat</b>s undisturbed by the methods that are about to take place, we make a copy of the matrix with the <b>ftm.copy</b> <i>fmat</i> object. This is equivalent to <i>((new fmat) set $1)</i>. It dynamically creates a copy and refers to that copy instead of to the original matrix in memory (and then frees up the memory when the copy is no longer needed).</p>
+<p class="p3"><br></p>
+<p class="p4">The <i>fft</i> method converts the matrix copy into a 2-column matrix containing the real and imaginary values of the calculated FFT and returns the result.</p>
+<p class="p3"><br></p>
+<p class="p4">[<i>Technical but important details:</i> The size of the FFT performed by <b>fmat</b>'s <i>fft</i> method is determined by the number of rows in the <b>fmat</b>. The FFT is calculated using a size that is the smallest power of 2 that's greater than or equal to the number of rows in the <b>fmat</b>. If the number of rows in the <b>fmat</b> is not a power of 2, <i>fft</i> will supply and zero-pad extra elements of the matrix up to the next power of 2. (For example, if the <b>fmat</b> has 513 rows, the FFT will be calculated using 1024 points, with the last 511 points set to 0.) In this particular case, the matrix has 512 elements in it, which is exactly a power of 2, so the FFT is calculated using 512 points. Also... Because for audio signals the magnitudes of the negative frequencies (in bins 257-511 of the FFT in this case) are the same as the positive frequencies (in bins 1-255 of the FFT), <i>fft</i> actually only returns bins 0-256 (257 bins). In all cases, the number of rows in the matrix returned by the <i>fft</i> method will be equal to the FFT size divided by 2 plus 1 (in this case, 512/2+1=257).]</p>
+<p class="p3"><br></p>
+<p class="p4">The <i>cabs</i> method then calculates the absolute values of those complex numbers (i.e. the magnitudes) and returns them as a 1-column matrix. It's important to understand that the FFT provides those magnitudes scaled by the number of points in the FFT so to get the true magnitude one should divide those values by the number of points in the FFT. And since the <i>fft</i> method only returns the positive frequency bins, we should multiply the magnitude values by 2. So, what we really want to do is divide all the magnitudes by the one half the size of the FFT, which can be found by taking the rows of the matrix minus 1. (Whew!) So, in the <b>ftm.mess</b> to the right of that, we use the <i>rows</i> method to find its length, we subtract 1 from that, and we send the result to the right inlet of another <b>ftm.mess</b> to scale the magnitudes back down to the correct value between 0 and 1.</p>
+<p class="p3"><br></p>
+<p class="p4">[<i>For the overly efficiency-minded:</i> Since the programmer knew that the length of the original <b>fmat</b> containing the waveform is 512, why not just put 256 in place of the $2 argument? That's true of course, but this way is more general and works for any size of <b>fmat</b>, and it also provided an opportunity to introduce you to the <i>rows</i> attribute of <b>fmat</b>.]</p>
+<p class="p3"><br></p>
+<p class="p4">Note that all of these methods we've just discussed—<i>fft</i>, <i>cabs</i>, and <i>div</i>—are in-place operations. They replace the contents of the matrix with the result of their calculation. That's why we used a <i>copy</i> of the waveform matrix rather than the original.</p>
+<p class="p3"><br></p>
+<p class="p4">Finally, we want to view the spectrum but we know that (at least in the case of the first three waveforms) there are no harmonics present greater than the 15th harmonic in the case of the square wave, or the 8th harmonic in the case of the sawtooth wave and the pulse train. So we use the <i>colref</i> method to refer to only the first 16 elements (0-15) of the spectrum for viewing. (The guitar waveform has more harmonics than that, of course, but they are low in amplitude relative to the fundamental.)</p>
+<p class="p3"><br></p>
+<p class="p4"><b>ftm.buffer</b></p>
+<p class="p3"><br></p>
+<p class="p4">FTM provides an object called <b>ftm.buffer</b> that makes a <b>fmat</b> available for use as a MSP buffer. You can think of it as the FTM equivalent of the MSP <b>buffer~ </b>object because it can be accessed by all the MSP objects that normally access a<b> buffer~</b> such as <b>cycle~</b>, <b>index~</b>, <b>lookup~</b>, <b>wave~</b>, <b>play~</b>, <b>groove~</b>, <b>waveform~</b>, etc. It actually creates an invisible (globally available) named <b>buffer~</b>, and refers to a <b>fmat</b> for its contents.</p>
+<p class="p3"><br></p>
+<p class="p4">The four <b>ftm.buffer</b> objects in the lower right corner of the patch demonstrate the syntax; the arguments are the name of the buffer and a reference to the matrix that the buffer will use for its contents. Note that it's a good idea to use different names for the buffer and the matrix it refers to, just to avoid confusion. (The <b>fmat</b> names are part of FTM's privately managed name space, and by default are local to just the patch they're in, whereas the buffer names are part of Max/MSP's global name space. Nevertheless, it's good programming practice not to create opportunities for confusion any more than is necessary.)</p>
+<p class="p3"><br></p>
+<p class="p4">When the user chooses a waveform from the popup <b>menu</b>, it the menu item number calls up the corresponding <b>ftm.buffer</b> name in another <b>menu</b> that is set to Label mode, which shows the chosen buffer name and sends it to the <b>cycle~</b> object as the argument of a <i>set</i> message. That causes <b>cycle~</b> to refer to that buffer for its waveform. The menu item number also goes to a <b>select</b> object, which triggers the proper <b>fmat</b> name reference for the visual displays.</p>
+<p class="p3"><br></p>
+<p class="p4"><b>Summary</b></p>
+<p class="p3"><br></p>
+<p class="p4">Within a <b>fmat</b> you can store a waveform or sound clip, do an FFT analysis of it—which returns a 2-column matrix reporting the nonnegative frequency half of the FFT—and get needed information about the sound. Such operations generally are done in-place, so if you don't want to overwrite the original matrix you should work with a copy of the matrix. The <b>fmt.copy</b> <i>fmat</i> object returns a dynamically created copy of the matrix it receives.</p>
+<p class="p3"><br></p>
+<p class="p4">Any <b>fmat</b> can be used as a <b>buffer~</b> just by referring to it with a <b>ftm.buffer</b> object. The Gabor objects provide a much broader range of capabilities for using FTM data structures in MSP, and those objects will be the subject of the next group of tutorials.</p>
+<p class="p3"><br></p>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="949.35">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+  </style>
+</head>
+<body>
+<p class="p1"><b>f03. FTM Basics — Vectors</b></p>
+<p class="p2"><br></p>
+<p class="p3"><b>1-Dimensional Matrix</b></p>
+<p class="p2"><br></p>
+<p class="p3">A matrix is a multi-dimensional array of data. Via the <b>ftm.object</b>, FTM provides the <b>fmat</b> class for managing two-dimensional (2D) arrays of floating point numbers, stored in rows and columns. It's also easy to use <b>fmat</b> to describe a 1D array with the syntax <b>fmat</b> <i>128 1</i>, which indicates an array with only one column, such as the <b>fmat</b> named <i>array128</i> in the previous tutorial.</p>
+<p class="p2"><br></p>
+<p class="p3">In situations having to do with audio, 1D arrays are commonly used for storing samples of audio, or waveforms, or envelopes and windows for shaping and processing audio, or control functions of arbitrary shape. In all of those situations, we're really dealing with a time-based function in which a one-dimensional (1D) array of numerical data describes a waveform or a shape over time. A matrix with only one column or one row is also called a <i>vector</i>. Since this is the most common format used in audio, FTM provides a class called <b>fvec</b>—a vector of floats.</p>
+<p class="p2"><br></p>
+<p class="p3">There are also many cases in which one does need a 2D matrix, of course. A stereo sound is one example, and is most easily stored in a matrix with two columns—column 0 for the left channel and column 1 for the right channel. (In most sound file formats the channels are interleaved, with alternating samples for the left and right channels, but those channels still need to be separated into two streams in order to view or play or process the data successfully.) Likewise, the complex numbers of an FFT analysis of a sound would most commonly be stored in two columns, column 0 for the real numbers and column 1 for the imaginary numbers, or column 0 for amplitudes and column 1 for phases. If we want to deal with the columns independently, we can isolate them—treat them as a separate vector—by referring to them as a <b>fvec</b>.</p>
+<p class="p2"><br></p>
+<p class="p3"><b>fvec</b></p>
+<p class="p2"><br></p>
+<p class="p3">The <b>fvec</b> class works by making a reference to a column or row (or diagonal) of data within a <b>fmat</b>. It doesn't create new data, but it contains a reference to a particular vector of data within a matrix, thus providing a way to access that particular data. Thus a <b>fvec</b> (a reference to a chosen vector within a <b>fmat</b>) is for the most part treated just the same as a 1D <b>fmat</b>.</p>
+<p class="p2"><br></p>
+<p class="p3">You can create a static <b>fvec</b> object in the <b>ftm.object</b> box. The <b>fmat</b> class also has methods called <i>colref</i> and <i>rowref</i> that dynamically return a reference to a particular vector within the matrix. In the tutorial patch you can see the use of both static and dynamically-created vectors.</p>
+<p class="p2"><br></p>
+<p class="p3">The <b>fmat</b> <i>waveforms</i> object at the top of the patch is a 2D matrix with 512 rows and two columns.</p>
+<p class="p2"><br></p>
+<p class="p3">• Double-click on the <b>fmat</b> <i>waveforms</i> object to see its contents. If this were audio data imported from a soundfile, the left channel of audio would be in column 0 and the right channel would be in column 1. In this case, each column contains just one cycle of a waveform.</p>
+<p class="p2"><br></p>
+<p class="p3">N.B. Why is there already data in this matrix before you've even done anything to put it there? The data has been saved as part of the patch (as can be done with the <b>table</b> and <b>coll</b> objects in Max). When programming, you can do this by checking the Persistence option in the object Inspector. The data that was in the <b>fmat</b> at the time the patch was saved will be there the next time the patch is opened. A <b>fmat</b>'s persistence is indicated by a small dot on its left edge (and its dimension arguments disappear).</p>
+<p class="p2"><br></p>
+<p class="p3">The two <b>fvec</b> objects just below that create two named vectors within $waveforms; the first one makes a reference to column 0 of $waveforms and the second makes reference to column 1. That means that <i>$sine</i> will now be a synonym for column 0 of $waveform, and <i>$square</i> will be a synonym for column 1 of $waveforms.</p>
+<p class="p2"><br></p>
+<p class="p3"><b>Vector Display</b></p>
+<p class="p2"><br></p>
+<p class="p3">Once one starts dealing with large quantities of numbers, a graphic display is needed make sense of them. For vectors, this is usually best done as a graph of the values (y axis) over the indices (x axis). FTM has a two versatile objects for viewing vectors—<b>ftm.vecdisplay</b> <img src="images/f03-01.jpg" alt="f03-01.jpg"> and <b>ftm.editor</b> <img src="images/f03-02.jpg" alt="f03-02.jpg">. We'll use <b>ftm.vecdisplay</b> for now.</p>
+<p class="p2"><br></p>
+<p class="p3">When <b>ftm.vecdisplay</b> receives a vector in its left inlet, it graphs the values, and also graphs any vectors it has recently received in its other inlets. You can use the Inspector to assign, for each inlet, the range of the y axis, the color of the graph, and the drawing style (points, lines, filled from 0 on the y axis, or filled from the bottom of the graph). Since we're graphing waveforms in this example, we have set the Min-Max Values (the range of the y axis) of each inlet to go from -1 to 1.</p>
+<p class="p2"><br></p>
+<p class="p3">• Click on the message <i>$sine</i> outlined in red. The contents of the vector referred to by <i>sine</i> (column 0 of the <b>fmat</b> named <i>waveforms</i>) are graphed in the <b>ftm.vecdisplay</b>. Clicking on the message above that shows that one can also use the <i>colref</i> method to the <b>fmat</b> to specify a reference to a particular column. Now click on the message <i>$square</i> outlined in blue. Nothing gets drawn until you click again on the message <i>$sine</i>; <b>ftm.vecdisplay</b> waits for a vector in the left inlet before it draws all the recently received vectors.</p>
+<p class="p2"><br></p>
+<p class="p3">(The waveform in column 1 doesn't look quite like a classic square wave; it's actually a "band-limited" square wave, consisting of only the first eight partials of a full square wave. The band-limited version is more visually distinctive than a true square wave, which would have only values of 1 and -1.)</p>
+<p class="p2"><br></p>
+<p class="p3">The message <i>(($sine + $square) * 0.5)</i> demonstrates that one can use <b>fvec</b> references in expressions, just as one can use <b>fmat</b> references. The two vectors <i>$sine</i> and <i>$square</i> are added element-by-element, returning a new temporary vector that contains their sum. That vector is then multiplied by 0.5 (all values are halved), and the expression returns a vector containing the result (the average of <i>$sine</i> and <i>$square</i>).</p>
+<p class="p2"><br></p>
+<p class="p3">• If you click on the <b>button</b> labeled "Draw all three", the three different vectors will be sent into the inlets, with the left inlet being triggered last, thus drawing all three vectors.</p>
+<p class="p2"><br></p>
+<p class="p3">A 1D matrix can be displayed just like a <b>fvec</b> because it's already a vector. However, a two-column <b>fmat</b> will not be handled well by <b>ftm.vecdisplay</b>. To show a two-column matrix, use the <i>colref</i> method to refer to each column independently, and send them into two different inlets of <b>ftm.vecdisplay</b>.</p>
+<p class="p2"><br></p>
+<p class="p3">• Click on the red message <i>$waveforms</i> and you'll see that the 2D <b>fmat</b> is not displayed successfully. Now click on the green message to send column 1 to the second inlet and column 0 the left inlet of <b>ftm.vecdisplay</b>.</p>
+<p class="p2"><br></p>
+<p class="p3">The <b>ftm.vecdisplay</b> object actually has many more capabilities, including showing a history of the vectors it has received in a given inlet as well as allowing the user to scrub through a vector like a lookup table; however, we'll leave those capabilities for future tutorials.</p>
+<p class="p2"><br></p>
+<p class="p3"><b>Dynamic Creation of Vectors</b></p>
+<p class="p2"><br></p>
+<p class="p3">You've seen the dynamic creation of a <b>fvec</b> using <b>fmat</b>'s <i>colref</i> method, With additional arguments to <i>colref</i> you can specify not only which column you want to access, but what row you want to start with and how long you want the vector to be. These attributes of the <b>fvec</b> are called its <i>index</i> (which column), its <i>onset</i> (where in the column to start), and its <i>size</i> (how many elements long it is).<span class="Apple-converted-space"> </span></p>
+<p class="p2"><br></p>
+<p class="p3">• The message <i>($waveforms colref 1 256 128)</i> returns a reference to column 1 of $waveforms, starting with row 256 of the column (halfway in) and continuing for 128 values (1/4 of the column's length). Click on the message to display the third quarter of column 1 of $waveforms.</p>
+<p class="p2"><br></p>
+<p class="p3">All that has been said and demonstrated here for <i>colref</i> applies equally for its counterpart <i>rowref</i>.</p>
+<p class="p2"><br></p>
+<p class="p3">You can change the attributes of an existing vector using the methods <i>index</i>, <i>onset</i>, or <i>size</i> with a number argument. For example, if a vector has a size of 512 and you want to shorten it to 256, you can just send it the message <i>size 256</i>.</p>
+<p class="p2"><br></p>
+<p class="p3">• In the next example message, we show how to view just the first half of the vector without changing the existing vector reference. To do that, you can just dynamically create a new temporary <b>fvec</b>, set it the same as the existing one, then shorten it with the size method. That's what is taking place in the message <i>(((new fvec) set $sine) size 256)</i>. Click on the message to display the first 256 elements of the <i>$sine</i> vector. Now click on the <i>$sine</i> message in the red box again, and you'll see that that <b>fvec</b> has remained unchanged; that's because we copied it to a new <b>fvec</b> and resized it rather than changing the size of <i>$sine</i> itself.</p>
+<p class="p2"><br></p>
+<p class="p3">A similar idea is demonstrated in the next message. The objective is to change the phase of the square wave by 1/4 cycle (which will require "rotating" it by 1/4 the size of the vector) then multiply it by the sine wave. Again, in order to do this without actually altering the contents of the <b>fmat</b> <i>waveforms</i>, we dynamically create a new <b>fmat</b>, set its contents to be the same as <i>$square</i> (thus effectively making a copy of <i>$square</i>), rotate that with <b>fmat</b>'s <i>rotate</i> method, and then do a vector multiplication of the new rotated vector with the original <i>$sine</i> vector. The returned result is a <b>fvec</b> containing the product of the two waveforms.</p>
+<p class="p2"><br></p>
+<p class="p3"><b>Importing Audio</b></p>
+<p class="p2"><br></p>
+<p class="p3">The <i>import</i> method of <b>fmat</b> loads in a file. The file can be either a text file containing numbers or a sound file. The <b>fmat</b> will resize itself to accommodate the size of the file. If it's a sound file, each channel of audio will be stored in a column of the <b>fmat</b>. To access a particular channel, use a <b>fvec</b> reference to a particular column.</p>
+<p class="p2"><br></p>
+<p class="p3">• Click on the message <i>import</i> to load a sound file into the <b>fmat</b>. (Choose a really short one that makes sense to try to view in the tiny display area.) Then click on the <b>button</b> to send out a <b>fmat</b> reference. The <b>ftm.mess</b> <i>($1 colref 0)</i> sends out a <b>fvec</b> reference to column 0 of that matrix, and it gets drawn in the <b>ftm.vecdisplay</b>.</p>
+<p class="p2"><br></p>
+<p class="p3">• To get a description of all of the methods of <b>fvec</b>, click on the message <i>(info class fvec)</i>. You'll note that <b>fvec</b> and <b>fmat</b> share many of the same methods; that's because a <b>fvec</b> is essentially just a 1D <b>fmat</b>. The differences in methods are primarily in cases where the method makes sense only for a 2D matrix or only for a 1D matrix.</p>
+<p class="p2"><br></p>
+<p class="p3"><b>Summary</b></p>
+<p class="p2"><br></p>
+<p class="p3">Digital audio waveforms are one-dimensional arrays, also known as <i>vectors</i>. FTM provides a <b>fvec</b> class that is a reference to a vector—a specific 1D array—within a <b>fmat</b>. You can create a named <b>fvec</b>, which can then be called by its name, or you can create a <b>fvec</b> dynamically with the <i>colref</i> (or <i>rowref</i>) method of <b>fmat</b>. The <b>ftm.vecdisplay</b> object graphically displays a received <b>fvec</b> (and in fact can display up to five overlapping <b>fvec</b>s).</p>
+<p class="p2"><br></p>
+<p class="p3">You can import a soundfile into <b>fmat</b>. The <b>fmat</b> will be resized to contain the sound file, with each channel of the soundfile being placed in a column of the <b>fmat</b>. To access a particular channel of that audio, you can refer to it with an <b>fvec</b> using the <i>colref</i> method of <b>fmat</b>.</p>
+</body>
+</html>

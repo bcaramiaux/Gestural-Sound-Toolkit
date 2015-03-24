@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 58.0, 79.0, 1342.0, 765.0 ],
+		"rect" : [ 59.0, 79.0, 1097.0, 787.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -360,7 +360,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 549.994385, 228.888504, 184.863739, 115.333336 ],
+					"patching_rect" : [ 549.994385, 533.801758, 184.863739, 115.333336 ],
 					"viewvisibility" : 1
 				}
 
@@ -381,7 +381,7 @@
 					"numoutlets" : 7,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "", "", "", "", "", "", "" ],
-					"patching_rect" : [ 549.994385, 134.022339, 348.863739, 84.0 ],
+					"patching_rect" : [ 549.994385, 134.022339, 350.863739, 166.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -397,27 +397,6 @@
 					"patching_rect" : [ 933.305725, 90.975731, 275.328979, 35.0 ],
 					"style" : "",
 					"text" : "Synthesis"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgcolor" : [ 0.823529, 0.823529, 0.823529, 0.0 ],
-					"bgmode" : 2,
-					"border" : 1,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-14",
-					"lockeddragscroll" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "synth.scrub.samples.maxpat",
-					"numinlets" : 4,
-					"numoutlets" : 1,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 1182.085205, 134.022339, 240.794861, 109.320236 ],
-					"viewvisibility" : 1
 				}
 
 			}
@@ -641,21 +620,21 @@
  ],
 		"lines" : [  ],
 		"parameters" : 		{
-			"obj-2::obj-13" : [ "live.toggle[11]", "live.toggle", 0 ],
-			"obj-14::obj-23::obj-88" : [ "live.toggle[5]", "live.toggle", 0 ],
-			"obj-3::obj-4" : [ "live.button[3]", "live.button", 0 ],
-			"obj-14::obj-23::obj-92" : [ "live.toggle[6]", "live.toggle", 0 ],
-			"obj-2::obj-8::obj-17" : [ "live.toggle[10]", "live.toggle[1]", 0 ],
-			"obj-13::obj-15::obj-88" : [ "live.toggle[4]", "live.toggle", 0 ],
-			"obj-12::obj-18::obj-88" : [ "live.toggle", "live.toggle", 0 ],
+			"obj-3::obj-6::obj-2::obj-13" : [ "live.toggle[5]", "live.toggle", 0 ],
+			"obj-13::obj-15::obj-88" : [ "live.toggle[8]", "live.toggle", 0 ],
+			"obj-22::obj-29" : [ "live.button[1]", "live.button", 0 ],
+			"obj-2::obj-8::obj-17" : [ "live.toggle[2]", "live.toggle[1]", 0 ],
+			"obj-22::obj-46" : [ "live.toggle[9]", "live.toggle", 0 ],
 			"obj-1::obj-2::obj-13" : [ "live.toggle[1]", "live.toggle", 0 ],
-			"obj-22::obj-46" : [ "live.toggle[12]", "live.toggle", 0 ],
-			"obj-12::obj-18::obj-92" : [ "live.toggle[2]", "live.toggle", 0 ],
-			"obj-15::obj-18::obj-92" : [ "live.toggle[9]", "live.toggle", 0 ],
-			"obj-13::obj-15::obj-92" : [ "live.toggle[3]", "live.toggle", 0 ],
-			"obj-22::obj-29" : [ "live.button", "live.button", 0 ],
+			"obj-12::obj-18::obj-88" : [ "live.toggle", "live.toggle", 0 ],
+			"obj-15::obj-18::obj-88" : [ "live.toggle[10]", "live.toggle", 0 ],
+			"obj-2::obj-3::obj-2::obj-13" : [ "live.toggle[3]", "live.toggle", 0 ],
+			"obj-13::obj-15::obj-92" : [ "live.toggle[7]", "live.toggle", 0 ],
+			"obj-3::obj-4" : [ "live.button", "live.button", 0 ],
 			"obj-22::obj-42" : [ "live.tab", "live.tab", 0 ],
-			"obj-15::obj-18::obj-88" : [ "live.toggle[8]", "live.toggle", 0 ]
+			"obj-2::obj-13" : [ "live.toggle[4]", "live.toggle", 0 ],
+			"obj-12::obj-18::obj-92" : [ "live.toggle[6]", "live.toggle", 0 ],
+			"obj-15::obj-18::obj-92" : [ "live.toggle[11]", "live.toggle", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -683,6 +662,13 @@
 				"name" : "sp.derivative_ftm.maxpat",
 				"bootpath" : "~/Research/Code/Github/Gestural-Sound-Toolkit/mod-analysis",
 				"patcherrelativepath" : "./mod-analysis",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "mnm.list2col.maxpat",
+				"bootpath" : "~/Research/Code/Github/Gestural-Sound-Toolkit/ext-libs/FTM.2.6.0.BETA-Max6-7/patchers",
+				"patcherrelativepath" : "./ext-libs/FTM.2.6.0.BETA-Max6-7/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -743,13 +729,6 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "synth.scrub.samples.maxpat",
-				"bootpath" : "~/Research/Code/Github/Gestural-Sound-Toolkit/mod-synthesis",
-				"patcherrelativepath" : "./mod-synthesis",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "ml.gvf.advanced-interface.maxpat",
 				"bootpath" : "~/Research/Code/Github/Gestural-Sound-Toolkit/mod-analysis",
 				"patcherrelativepath" : "./mod-analysis",
@@ -790,6 +769,38 @@
 				"patcherrelativepath" : "./mod-interfaces/leapmotion",
 				"type" : "JSON",
 				"implicit" : 1
+			}
+, 			{
+				"name" : "mnm.biquad.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "ftm.mess.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "mnm.biqoefs.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "ftm.list.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "mnm.mean.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "mnm.median.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "mnm.delta.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "ftm.object.mxo",
+				"type" : "iLaX"
 			}
 , 			{
 				"name" : "shell.mxo",

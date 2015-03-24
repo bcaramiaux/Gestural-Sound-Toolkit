@@ -1,0 +1,105 @@
+{
+	"patcher" : 	{
+		"fileversion" : 1,
+		"rect" : [ 196.0, 202.0, 640.0, 480.0 ],
+		"bglocked" : 0,
+		"defrect" : [ 196.0, 202.0, 640.0, 480.0 ],
+		"openrect" : [ 0.0, 0.0, 0.0, 0.0 ],
+		"openinpresentation" : 0,
+		"default_fontsize" : 10.0,
+		"default_fontface" : 0,
+		"default_fontname" : "Arial",
+		"gridonopen" : 0,
+		"gridsize" : [ 15.0, 15.0 ],
+		"gridsnaponopen" : 0,
+		"toolbarvisible" : 1,
+		"boxanimatetime" : 200,
+		"imprint" : 0,
+		"title" : "ftm.palette",
+		"metadata" : [  ],
+		"boxes" : [ 			{
+				"box" : 				{
+					"maxclass" : "fpic",
+					"autofit" : 1,
+					"numinlets" : 1,
+					"patching_rect" : [ 234.0, 139.0, 48.0, 48.0 ],
+					"id" : "ftmobj-1",
+					"numoutlets" : 0,
+					"pic" : "ftm.object.svg",
+					"instance_attributes" : 					{
+						"palette_order" : "first",
+						"palette_numerical_order" : 1,
+						"palette_category" : ["FTM"],
+						"palette_caption" : "ftm.object",
+						"palette_action" : "ftm.object"
+					}
+
+				}
+
+			}
+, 
+						{
+				"box" : 				{
+					"maxclass" : "fpic",
+					"autofit" : 1,
+					"numinlets" : 1,
+					"patching_rect" : [ 234.0, 139.0, 48.0, 48.0 ],
+					"id" : "ftmmess-1",
+					"numoutlets" : 0,
+					"pic" : "ftm.mess.svg",
+					"instance_attributes" : 					{
+						"palette_order" : "first",
+						"palette_numerical_order" : 1,
+						"palette_category" : ["FTM"],
+						"palette_caption" : "ftm.mess",
+						"palette_action" : "ftm.mess"
+					}
+
+				}
+
+			}
+,                                            {
+				"box" : 				{
+					"maxclass" : "fpic",
+					"autofit" : 1,
+					"numinlets" : 1,
+					"patching_rect" : [ 234.0, 139.0, 48.0, 48.0 ],
+					"id" : "vecdisplay-1",
+					"numoutlets" : 0,
+					"pic" : "ftm.vecdisplay.svg",
+					"instance_attributes" : 					{
+						"palette_order" : "first",
+						"palette_numerical_order" : 1,
+						"palette_category" : ["FTM"],
+						"palette_caption" : "ftm.vecdisplay",
+						"palette_action" : "ftm.vecdisplay"
+					}
+
+				}
+
+			}
+,                                             {
+				"box" : 				{
+					"maxclass" : "fpic",
+					"autofit" : 1,
+					"numinlets" : 1,
+					"patching_rect" : [ 234.0, 139.0, 48.0, 48.0 ],
+					"id" : "ftmeditor-1",
+					"numoutlets" : 0,
+					"pic" : "ftm.editor.svg",
+					"instance_attributes" : 					{
+						"palette_order" : "first",
+						"palette_numerical_order" : 1,
+						"palette_category" : ["FTM"],
+						"palette_caption" : "ftm.editor",
+						"palette_action" : "ftm.editor"
+					}
+
+				}
+
+			}
+ ],
+		"lines" : [  ]
+	}
+
+}
