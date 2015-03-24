@@ -152,16 +152,16 @@
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
 									"id" : "obj-58",
-									"linecount" : 5,
+									"linecount" : 3,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 8.0, 9.0, 299.0, 76.0 ],
+									"patching_rect" : [ 8.0, 9.0, 299.0, 47.0 ],
 									"presentation" : 1,
-									"presentation_linecount" : 5,
-									"presentation_rect" : [ 17.0, 25.0, 626.0, 76.0 ],
+									"presentation_linecount" : 3,
+									"presentation_rect" : [ 17.0, 25.0, 626.0, 47.0 ],
 									"style" : "",
-									"text" : "Max/MSP 6.0.5 (not tested yet on Max/MSP 6.1.X)\nFtm&Co, v. 2.6.2 (beta)\n    from IMTR IRCAM – Centre Pompidou\nMubu for Max/MSP, v. 1.6.3 (beta)\n    from IMTR IRCAM – Centre Pompidou",
+									"text" : "Max/MSP 6 and more (tested on Max 7)\n\nInclude the all folder in File Preferences",
 									"textcolor" : [ 0.501859, 0.501859, 0.501859, 1.0 ]
 								}
 
@@ -278,16 +278,16 @@
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
 									"id" : "obj-58",
-									"linecount" : 13,
+									"linecount" : 12,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 6.0, 9.0, 458.0, 186.0 ],
+									"patching_rect" : [ 6.0, 9.0, 458.0, 167.0 ],
 									"presentation" : 1,
-									"presentation_linecount" : 13,
-									"presentation_rect" : [ 17.0, 25.0, 626.0, 186.0 ],
+									"presentation_linecount" : 12,
+									"presentation_rect" : [ 17.0, 25.0, 626.0, 167.0 ],
 									"style" : "",
-									"text" : "Gestural Sound Toolkit\na Max 6 library for the design of Embodied Sonic Interactions\n\n(c) Baptiste Caramiaux, EAVI Group, Goldsmiths College, University of London\n     (contact: bc@goldsmithsdigital.com)\n\nContributors: \n– EAVI Group Goldsmiths College (Baptiste Caramiaux, Alessandro Altavilla)\n– IRCAM-Centre Pompidou (Norbert Schnell, Frédéric Bevilacqua, Diemo Schwarz)\n\n\nEAVI website: eavi.goldsmithsdigital.com\n2014",
+									"text" : "Gestural Sound Toolkit\na Max library for the design of Embodied Sonic Interactions\n\n(c) 2015 EAVI Group, Goldsmiths College, University of London\n     (contact: bc@goldsmithsdigital.com)\n\nContributors: \n– EAVI Group Goldsmiths College (Baptiste Caramiaux, Alessandro Altavilla)\n– IRCAM-Centre Pompidou (Norbert Schnell, Frédéric Bevilacqua, Diemo Schwarz)\n\n\nEAVI website: eavi.goldsmithsdigital.com",
 									"textcolor" : [ 0.501859, 0.501859, 0.501859, 1.0 ]
 								}
 
