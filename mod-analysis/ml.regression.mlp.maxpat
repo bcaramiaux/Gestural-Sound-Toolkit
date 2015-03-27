@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 490.0, 79.0, 649.0, 745.0 ],
+		"rect" : [ 490.0, 79.0, 516.0, 745.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -50,28 +50,11 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 427.0, 527.0, 53.0, 22.0 ],
+					"patching_rect" : [ 427.0, 527.0, 54.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 48.5, 48.0, 42.0, 22.0 ],
+					"presentation_rect" : [ 48.5, 48.0, 51.0, 22.0 ],
 					"style" : "",
 					"textcolor" : [ 0.784314, 0.145098, 0.023529, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Helvetica Light",
-					"fontsize" : 10.0,
-					"id" : "obj-2",
-					"linecount" : 2,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 170.5, 24.5, 99.0, 26.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 147.5, 24.5, 112.0, 16.0 ],
-					"style" : "",
-					"text" : "Corresponding output:"
 				}
 
 			}
@@ -1069,7 +1052,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 7.5, 229.0, 15.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 48.5, 24.5, 15.0, 15.0 ],
+					"presentation_rect" : [ 256.5, 24.5, 15.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.toggle",
@@ -1088,16 +1071,16 @@
 , 			{
 				"box" : 				{
 					"fontname" : "Helvetica Light",
-					"fontsize" : 10.0,
+					"fontsize" : 8.0,
 					"id" : "obj-48",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 23.5, 229.0, 99.0, 16.0 ],
+					"patching_rect" : [ 23.5, 229.0, 42.0, 14.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 62.5, 24.5, 79.0, 16.0 ],
+					"presentation_rect" : [ 269.5, 25.5, 33.0, 14.0 ],
 					"style" : "",
-					"text" : "Start/Stop Data"
+					"text" : "On/Off"
 				}
 
 			}
@@ -1973,7 +1956,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 301.0, 279.0, 49.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 259.5, 22.0, 38.0, 20.0 ],
+					"presentation_rect" : [ 48.5, 24.5, 51.0, 20.0 ],
 					"style" : ""
 				}
 
