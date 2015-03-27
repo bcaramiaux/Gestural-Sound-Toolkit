@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 0,
-			"revision" : 1,
+			"revision" : 2,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
@@ -37,6 +37,33 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"comment" : "List of 3 elements (accelerations along the 3 axis x, y, z)",
+					"id" : "obj-16",
+					"maxclass" : "inlet",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 607.0, 11.0, 25.0, 25.0 ],
+					"presentation_rect" : [ 607.0, 9.0, 0.0, 0.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"comment" : "List of 3 elements (accelerations along the 3 axis x, y, z)",
+					"id" : "obj-4",
+					"maxclass" : "inlet",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 729.0, 11.0, 25.0, 25.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontface" : 0,
 					"fontname" : "Arial",
@@ -126,7 +153,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 1,
+							"revision" : 2,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -167,10 +194,10 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 25.0, 40.0, 310.0, 121.0 ],
+									"patching_rect" : [ 25.0, 40.0, 310.0, 118.0 ],
 									"presentation" : 1,
 									"presentation_linecount" : 11,
-									"presentation_rect" : [ 5.0, 213.0, 211.0, 133.0 ],
+									"presentation_rect" : [ 5.0, 213.0, 211.0, 129.0 ],
 									"style" : "",
 									"text" : "Open the gate if the energy from the accelerometers is greater than a certain level (threshold) and close the gate when this energy is lower than the threshold.\n\ninput: \n     - data values [list]\n\noutput:\n     - [1]: values [list] if open\n     - [2]: 0/1 close or open [int]",
 									"textcolor" : [ 0.501859, 0.501859, 0.501859, 1.0 ]
@@ -245,7 +272,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 26.5, 217.0, 76.0, 18.0 ],
+									"patching_rect" : [ 26.5, 217.0, 76.0, 20.0 ],
 									"style" : "",
 									"text" : "s #0-gate-level"
 								}
@@ -260,7 +287,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 26.5, 147.0, 81.0, 18.0 ],
+									"patching_rect" : [ 26.5, 147.0, 81.0, 20.0 ],
 									"style" : "",
 									"text" : "loadmess 0.005"
 								}
@@ -277,9 +304,9 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 26.5, 182.0, 46.0, 17.0 ],
+									"patching_rect" : [ 26.5, 182.0, 46.0, 19.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 5.0, 149.0, 46.0, 17.0 ],
+									"presentation_rect" : [ 5.0, 149.0, 46.0, 19.0 ],
 									"style" : ""
 								}
 
@@ -359,7 +386,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 231.0, 278.0, 62.0, 18.0 ],
+									"patching_rect" : [ 231.0, 278.0, 62.0, 20.0 ],
 									"style" : "",
 									"text" : "loadmess 0"
 								}
@@ -391,7 +418,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 239.0, 360.0, 137.0, 18.0 ],
+									"patching_rect" : [ 239.0, 360.0, 137.0, 20.0 ],
 									"style" : "",
 									"text" : "s #0-enable-disable-lowpass"
 								}
@@ -406,7 +433,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 26.5, 45.0, 89.0, 18.0 ],
+									"patching_rect" : [ 26.5, 45.0, 89.0, 20.0 ],
 									"style" : "",
 									"text" : "r #0-energy-value"
 								}
@@ -420,7 +447,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 22.5, 360.0, 100.0, 18.0 ],
+									"patching_rect" : [ 22.5, 360.0, 100.0, 20.0 ],
 									"style" : "",
 									"text" : "s #0-lowpass-thresh"
 								}
@@ -435,7 +462,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 22.5, 290.0, 76.0, 18.0 ],
+									"patching_rect" : [ 22.5, 290.0, 76.0, 20.0 ],
 									"style" : "",
 									"text" : "loadmess 0.01"
 								}
@@ -453,9 +480,9 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 26.5, 75.0, 63.0, 18.0 ],
+									"patching_rect" : [ 26.5, 75.0, 63.0, 20.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 5.0, 29.0, 46.0, 18.0 ],
+									"presentation_rect" : [ 5.0, 29.0, 46.0, 20.0 ],
 									"style" : ""
 								}
 
@@ -471,9 +498,9 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 22.5, 325.0, 46.0, 17.0 ],
+									"patching_rect" : [ 22.5, 325.0, 46.0, 19.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 5.0, 91.0, 46.0, 17.0 ],
+									"presentation_rect" : [ 5.0, 91.0, 46.0, 19.0 ],
 									"style" : ""
 								}
 
@@ -896,7 +923,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 1,
+							"revision" : 2,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -1566,7 +1593,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 1,
+							"revision" : 2,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -1850,6 +1877,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-59", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-16", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-50", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -1935,6 +1971,16 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-36", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-62", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 738.5, 560.0, 299.5, 560.0 ],
+					"source" : [ "obj-4", 0 ]
 				}
 
 			}
@@ -2097,8 +2143,8 @@
  ],
 		"parameters" : 		{
 			"obj-3::obj-2::obj-13" : [ "live.toggle[2]", "live.toggle", 0 ],
-			"obj-13" : [ "live.toggle", "live.toggle", 0 ],
-			"obj-8::obj-17" : [ "live.toggle[1]", "live.toggle[1]", 0 ]
+			"obj-8::obj-17" : [ "live.toggle[1]", "live.toggle[1]", 0 ],
+			"obj-13" : [ "live.toggle", "live.toggle", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{

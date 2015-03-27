@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 0,
-			"revision" : 1,
+			"revision" : 2,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
@@ -304,7 +304,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 42.5, 300.0, 110.0 ],
 					"setstyle" : 2,
-					"size" : 2,
+					"size" : 3,
 					"slidercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"style" : ""
 				}
@@ -354,7 +354,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 1,
+							"revision" : 2,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -633,7 +633,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 1,
+							"revision" : 2,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -839,7 +839,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 252.349976, 310.5, 67.0, 22.0 ],
+					"patching_rect" : [ 252.349976, 310.5, 43.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 56.0, 111.5, 67.0, 22.0 ],
 					"saved_object_attributes" : 					{
@@ -851,7 +851,7 @@
 					}
 ,
 					"style" : "",
-					"text" : "p aka-leap"
+					"text" : "p leap"
 				}
 
 			}
