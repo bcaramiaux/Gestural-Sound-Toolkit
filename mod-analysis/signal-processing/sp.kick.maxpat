@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 0,
-			"revision" : 1,
-			"architecture" : "x86",
+			"revision" : 5,
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 414.0, 79.0, 992.0, 752.0 ],
+		"rect" : [ 414.0, 79.0, 874.0, 605.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -78,8 +78,8 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 1,
-							"architecture" : "x86",
+							"revision" : 5,
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -177,10 +177,10 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 59.0, 106.0, 87.0, 22.0 ],
+					"outlettype" : [ "float" ],
+					"patching_rect" : [ 59.0, 106.0, 63.0, 22.0 ],
 					"style" : "",
-					"text" : "sp.energy_ftm"
+					"text" : "sp.energy"
 				}
 
 			}
@@ -462,21 +462,6 @@
 , 			{
 				"box" : 				{
 					"fontname" : "Arial",
-					"fontsize" : 10.0,
-					"id" : "obj-2",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 59.0, 75.0, 49.0, 20.0 ],
-					"style" : "",
-					"text" : "zl slice 3"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
 					"fontsize" : 9.0,
 					"id" : "obj-1",
 					"maxclass" : "newobj",
@@ -684,12 +669,12 @@
 					"ftm_scope" : 1,
 					"id" : "obj-62",
 					"maxclass" : "ftm.mess",
-					"numinlets" : 2,
+					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 215.0, 149.0, 64.068146, 17.0 ],
 					"presentation_rect" : [ 215.0, 149.0, 64.068146, 18.0 ],
-					"text" : [ "_filtersize $1" ]
+					"text" : "_filtersize $1"
 				}
 
 			}
@@ -715,14 +700,9 @@
 					"id" : "obj-63",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 186.0, 181.0, 189.0, 20.0 ],
-					"saved_object_attributes" : 					{
-						"ftm_objref_conv" : 0,
-						"ftm_scope" : 2
-					}
-,
 					"style" : "",
 					"text" : "mnm.median @filtersize 8 @dim stream"
 				}
@@ -756,7 +736,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-2", 0 ],
+					"destination" : [ "obj-6", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-10", 0 ]
@@ -823,15 +803,6 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-18", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-6", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-2", 0 ]
 				}
 
 			}
@@ -1036,40 +1007,15 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-6::obj-2::obj-13" : [ "live.toggle[1]", "live.toggle", 0 ],
-			"obj-4" : [ "live.button", "live.button", 0 ]
+			"obj-4" : [ "live.button", "live.button", 0 ],
+			"obj-6::obj-2::obj-13" : [ "live.toggle[1]", "live.toggle", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "sp.energy_ftm.maxpat",
-				"bootpath" : "~/Research/Code/Github/Gestural-Sound-Toolkit/mod-analysis",
-				"patcherrelativepath" : ".",
+				"name" : "sp.energy.maxpat",
+				"bootpath" : "~/Projects/Gestural-Sound-Toolkit/mod-analysis",
 				"type" : "JSON",
 				"implicit" : 1
-			}
-, 			{
-				"name" : "mnm.median.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "ftm.mess.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "mnm.biquad.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "mnm.biqoefs.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "ftm.list.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "mnm.mean.mxo",
-				"type" : "iLaX"
 			}
  ],
 		"embedsnapshot" : 0
