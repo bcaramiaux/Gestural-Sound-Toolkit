@@ -4,8 +4,8 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 0,
-			"revision" : 1,
-			"architecture" : "x86",
+			"revision" : 5,
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
@@ -37,6 +37,32 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-18",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 940.0, 101.0, 81.0, 22.0 ],
+					"style" : "",
+					"text" : "route /accxyz"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-9",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 940.0, 74.0, 99.0, 22.0 ],
+					"style" : "",
+					"text" : "udpreceive 8001"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"bgcolor" : [ 0.599339, 0.679831, 0.756389, 0.18 ],
 					"bgmode" : 2,
@@ -115,8 +141,8 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 1,
-							"architecture" : "x86",
+							"revision" : 5,
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -241,8 +267,8 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 1,
-							"architecture" : "x86",
+							"revision" : 5,
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -448,7 +474,7 @@
 					"id" : "obj-6",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "sp.lowpass_ftm.maxpat",
+					"name" : "sp.lowpass.maxpat",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
@@ -469,7 +495,7 @@
 					"id" : "obj-5",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "sp.highpass_ftm.maxpat",
+					"name" : "sp.highpass.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
@@ -490,7 +516,7 @@
 					"id" : "obj-4",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "sp.derivative_ftm.maxpat",
+					"name" : "sp.derivative.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
@@ -511,7 +537,7 @@
 					"id" : "obj-3",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "sp.kick_ftm.maxpat",
+					"name" : "sp.kick.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
@@ -532,8 +558,8 @@
 					"id" : "obj-2",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "sp.gate.energy_ftm.maxpat",
-					"numinlets" : 1,
+					"name" : "sp.gate.energy.maxpat",
+					"numinlets" : 3,
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "", "" ],
@@ -553,187 +579,143 @@
 					"id" : "obj-1",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "sp.energy_ftm.maxpat",
+					"name" : "sp.energy.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "" ],
+					"outlettype" : [ "float" ],
 					"patching_rect" : [ 131.0, 330.975739, 133.731216, 114.34758 ],
 					"viewvisibility" : 1
 				}
 
 			}
  ],
-		"lines" : [  ],
+		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-18", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-9", 0 ]
+				}
+
+			}
+ ],
 		"parameters" : 		{
-			"obj-3::obj-6::obj-2::obj-13" : [ "live.toggle[5]", "live.toggle", 0 ],
-			"obj-13::obj-15::obj-92" : [ "live.toggle[8]", "live.toggle", 0 ],
-			"obj-2::obj-8::obj-17" : [ "live.toggle[2]", "live.toggle[1]", 0 ],
-			"obj-1::obj-2::obj-13" : [ "live.toggle[1]", "live.toggle", 0 ],
-			"obj-12::obj-18::obj-88" : [ "live.toggle", "live.toggle", 0 ],
-			"obj-15::obj-18::obj-88" : [ "live.toggle[10]", "live.toggle", 0 ],
-			"obj-2::obj-3::obj-2::obj-13" : [ "live.toggle[3]", "live.toggle", 0 ],
-			"obj-13::obj-15::obj-88" : [ "live.toggle[7]", "live.toggle", 0 ],
+			"obj-13::obj-15::obj-92" : [ "live.toggle[4]", "live.toggle", 0 ],
+			"obj-3::obj-6::obj-2::obj-13" : [ "live.toggle[7]", "live.toggle", 0 ],
+			"obj-2::obj-8::obj-17" : [ "live.toggle[9]", "live.toggle[1]", 0 ],
 			"obj-3::obj-4" : [ "live.button", "live.button", 0 ],
-			"obj-2::obj-13" : [ "live.toggle[4]", "live.toggle", 0 ],
-			"obj-12::obj-18::obj-92" : [ "live.toggle[6]", "live.toggle", 0 ],
-			"obj-15::obj-18::obj-92" : [ "live.toggle[11]", "live.toggle", 0 ]
+			"obj-15::obj-18::obj-88" : [ "live.toggle[5]", "live.toggle", 0 ],
+			"obj-15::obj-18::obj-92" : [ "live.toggle[6]", "live.toggle", 0 ],
+			"obj-12::obj-18::obj-92" : [ "live.toggle[2]", "live.toggle", 0 ],
+			"obj-13::obj-15::obj-88" : [ "live.toggle[3]", "live.toggle", 0 ],
+			"obj-12::obj-18::obj-88" : [ "live.toggle", "live.toggle", 0 ],
+			"obj-2::obj-13" : [ "live.toggle[10]", "live.toggle", 0 ],
+			"obj-2::obj-3::obj-2::obj-13" : [ "live.toggle[8]", "live.toggle", 0 ],
+			"obj-1::obj-2::obj-13" : [ "live.toggle[1]", "live.toggle", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "sp.energy_ftm.maxpat",
-				"bootpath" : "~/Research/Code/Github/Gestural-Sound-Toolkit/mod-analysis",
-				"patcherrelativepath" : "./mod-analysis",
+				"name" : "sp.energy.maxpat",
+				"bootpath" : "~/Projects/Gestural-Sound-Toolkit/mod-analysis/signal-processing",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "sp.gate.energy_ftm.maxpat",
-				"bootpath" : "~/Research/Code/Github/Gestural-Sound-Toolkit/mod-analysis",
-				"patcherrelativepath" : "./mod-analysis",
+				"name" : "sp.gate.energy.maxpat",
+				"bootpath" : "~/Projects/Gestural-Sound-Toolkit/mod-analysis/signal-processing",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "sp.kick_ftm.maxpat",
-				"bootpath" : "~/Research/Code/Github/Gestural-Sound-Toolkit/mod-analysis",
-				"patcherrelativepath" : "./mod-analysis",
+				"name" : "sp.kick.maxpat",
+				"bootpath" : "~/Projects/Gestural-Sound-Toolkit/mod-analysis/signal-processing",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "sp.derivative_ftm.maxpat",
-				"bootpath" : "~/Research/Code/Github/Gestural-Sound-Toolkit/mod-analysis",
-				"patcherrelativepath" : "./mod-analysis",
+				"name" : "sp.derivative.maxpat",
+				"bootpath" : "~/Projects/Gestural-Sound-Toolkit/mod-analysis/signal-processing",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mnm.list2col.maxpat",
-				"bootpath" : "~/Research/Code/Github/Gestural-Sound-Toolkit/ext-libs/FTM.2.6.0.BETA-Max6-7/patchers",
-				"patcherrelativepath" : "./ext-libs/FTM.2.6.0.BETA-Max6-7/patchers",
+				"bootpath" : "~/Projects/Gestural-Sound-Toolkit/ext-libs/FTM.2.6.0.BETA-Max6-7/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "sp.highpass_ftm.maxpat",
-				"bootpath" : "~/Research/Code/Github/Gestural-Sound-Toolkit/mod-analysis",
-				"patcherrelativepath" : "./mod-analysis",
+				"name" : "sp.highpass.maxpat",
+				"bootpath" : "~/Projects/Gestural-Sound-Toolkit/mod-analysis/signal-processing",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "sp.lowpass_ftm.maxpat",
-				"bootpath" : "~/Research/Code/Github/Gestural-Sound-Toolkit/mod-analysis",
-				"patcherrelativepath" : "./mod-analysis",
+				"name" : "sp.lowpass.maxpat",
+				"bootpath" : "~/Projects/Gestural-Sound-Toolkit/mod-analysis/signal-processing",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "wax.maxpat",
-				"bootpath" : "~/Research/Code/Github/Gestural-Sound-Toolkit/mod-interfaces/wax",
-				"patcherrelativepath" : "./mod-interfaces/wax",
+				"bootpath" : "~/Projects/Gestural-Sound-Toolkit/mod-interfaces/wax",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "wax_setup.maxpat",
-				"bootpath" : "~/Research/Code/Github/Gestural-Sound-Toolkit/mod-interfaces/wax/hardware/WAX",
-				"patcherrelativepath" : "./mod-interfaces/wax/hardware/WAX",
+				"bootpath" : "~/Projects/Gestural-Sound-Toolkit/mod-interfaces/wax/Configuration",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "synth.trigger.samples.maxpat",
-				"bootpath" : "~/Research/Code/Github/Gestural-Sound-Toolkit/mod-synthesis",
-				"patcherrelativepath" : "./mod-synthesis",
+				"bootpath" : "~/Projects/Gestural-Sound-Toolkit/mod-synthesis",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "synth.ctrl.soundpool.maxpat",
-				"bootpath" : "~/Research/Code/Github/Gestural-Sound-Toolkit/mod-synthesis",
-				"patcherrelativepath" : "./mod-synthesis",
+				"bootpath" : "~/Projects/Gestural-Sound-Toolkit/mod-synthesis",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "audio.ctrl.maxpat",
-				"bootpath" : "~/Research/Code/Github/Gestural-Sound-Toolkit/mod-synthesis",
-				"patcherrelativepath" : "./mod-synthesis",
+				"bootpath" : "~/Projects/Gestural-Sound-Toolkit/mod-synthesis",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "synth.manipulate.samples.maxpat",
-				"bootpath" : "~/Research/Code/Github/Gestural-Sound-Toolkit/mod-synthesis",
-				"patcherrelativepath" : "./mod-synthesis",
+				"bootpath" : "~/Projects/Gestural-Sound-Toolkit/mod-synthesis",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ml.gvf.advanced-interface.maxpat",
-				"bootpath" : "~/Research/Code/Github/Gestural-Sound-Toolkit/mod-analysis",
-				"patcherrelativepath" : "./mod-analysis",
+				"bootpath" : "~/Projects/Gestural-Sound-Toolkit/mod-analysis/machine-learning",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "synth.scratch.samples.maxpat",
-				"bootpath" : "~/Research/Code/Github/Gestural-Sound-Toolkit/mod-synthesis",
-				"patcherrelativepath" : "./mod-synthesis",
+				"bootpath" : "~/Projects/Gestural-Sound-Toolkit/mod-synthesis",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sid.output.maxpat",
-				"bootpath" : "~/Research/Code/Github/Gestural-Sound-Toolkit/ext-libs/abstractions",
-				"patcherrelativepath" : "./ext-libs/abstractions",
+				"bootpath" : "~/Projects/Gestural-Sound-Toolkit/ext-libs/abstractions",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "leapmotion-interf.maxpat",
-				"bootpath" : "~/Research/Code/Github/Gestural-Sound-Toolkit/mod-interfaces/leapmotion",
-				"patcherrelativepath" : "./mod-interfaces/leapmotion",
+				"bootpath" : "~/Projects/Gestural-Sound-Toolkit/mod-interfaces/leapmotion",
 				"type" : "JSON",
 				"implicit" : 1
-			}
-, 			{
-				"name" : "mnm.biquad.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "ftm.mess.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "mnm.biqoefs.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "ftm.list.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "mnm.mean.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "mnm.median.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "mnm.delta.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "ftm.object.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "shell.mxo",
-				"type" : "iLaX"
 			}
 , 			{
 				"name" : "mubu.concat~.mxo",

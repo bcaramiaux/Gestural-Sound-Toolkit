@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 0,
-			"revision" : 0,
-			"architecture" : "x86",
+			"revision" : 5,
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ -112.0, -837.0, 807.0, 667.0 ],
+		"rect" : [ 232.0, 97.0, 807.0, 667.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,19 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"comment" : "Sound Index to be played (starting from 1)",
+					"id" : "obj-1",
+					"maxclass" : "inlet",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 446.75, 76.5, 25.0, 25.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontname" : "Helvetica Light",
 					"fontsize" : 10.0,
 					"id" : "obj-14",
@@ -45,10 +58,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 153.0, 244.5, 124.0, 16.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 2.0, 1.0, 124.0, 16.0 ],
 					"style" : "",
-					"text" : "drop sound folder here",
+					"text" : "DROP SOUNDS",
+					"textcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
 					"textjustification" : 1
 				}
 
@@ -355,9 +367,33 @@
 			}
 , 			{
 				"box" : 				{
-					"fontface" : 0,
-					"fontname" : "Arial",
-					"fontsize" : 9.0,
+					"angle" : 0.0,
+					"bgcolor" : [ 0.862745, 0.870588, 0.878431, 0.8 ],
+					"border" : 1,
+					"bordercolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
+					"id" : "obj-52",
+					"maxclass" : "panel",
+					"mode" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 307.25, 76.5, 132.0, 35.0 ],
+					"proportion" : 0.39,
+					"rounded" : 0,
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgfillcolor_angle" : 270.0,
+					"bgfillcolor_autogradient" : 0,
+					"bgfillcolor_color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+					"bgfillcolor_color1" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
+					"bgfillcolor_color2" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
+					"bgfillcolor_proportion" : 0.39,
+					"bgfillcolor_type" : "gradient",
+					"fontname" : "Helvetica Neue Light",
+					"fontsize" : 18.0,
 					"id" : "obj-3",
 					"items" : "<empty>",
 					"maxclass" : "umenu",
@@ -365,10 +401,11 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 113.25, 222.0, 146.0, 19.0 ],
+					"patching_rect" : [ 113.25, 222.0, 146.0, 30.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.0, 84.0, 124.0, 19.0 ],
-					"style" : ""
+					"presentation_rect" : [ -3.0, 0.0, 242.0, 30.0 ],
+					"style" : "",
+					"textcolor" : [ 0.803922, 0.898039, 0.909804, 1.0 ]
 				}
 
 			}
@@ -383,33 +420,22 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 307.25, 76.5, 132.0, 35.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.0, 1.0, 124.0, 84.0 ],
+					"presentation_rect" : [ -3.0, 0.0, 242.0, 31.0 ],
 					"rounded" : 0.0
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"angle" : 0.0,
-					"bgcolor" : [ 0.913725, 0.913725, 0.913725, 0.0 ],
-					"border" : 1,
-					"bordercolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
-					"id" : "obj-52",
-					"maxclass" : "panel",
-					"mode" : 0,
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 307.25, 76.5, 132.0, 35.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 2.0, 1.0, 124.0, 83.0 ],
-					"proportion" : 0.39,
-					"rounded" : 0,
-					"style" : ""
 				}
 
 			}
  ],
 		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-58", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-23", 0 ],
 					"disabled" : 0,
@@ -461,16 +487,6 @@
 					"hidden" : 0,
 					"midpoints" : [ 458.75, 587.0, 58.625, 587.0, 58.625, 211.0, 122.75, 211.0 ],
 					"source" : [ "obj-20", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-3", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"midpoints" : [ 456.25, 505.0, 763.5, 505.0, 763.5, 211.0, 122.75, 211.0 ],
-					"source" : [ "obj-22", 0 ]
 				}
 
 			}
