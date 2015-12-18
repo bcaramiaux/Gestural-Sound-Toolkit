@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 59.0, 79.0, 1341.0, 787.0 ],
+		"rect" : [ 34.0, 79.0, 630.0, 911.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -601,14 +601,14 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-13::obj-15::obj-92" : [ "live.toggle[4]", "live.toggle", 0 ],
+			"obj-13::obj-15::obj-88" : [ "live.toggle[4]", "live.toggle", 0 ],
 			"obj-3::obj-6::obj-2::obj-13" : [ "live.toggle[7]", "live.toggle", 0 ],
 			"obj-2::obj-8::obj-17" : [ "live.toggle[9]", "live.toggle[1]", 0 ],
 			"obj-3::obj-4" : [ "live.button", "live.button", 0 ],
-			"obj-15::obj-18::obj-88" : [ "live.toggle[5]", "live.toggle", 0 ],
-			"obj-15::obj-18::obj-92" : [ "live.toggle[6]", "live.toggle", 0 ],
+			"obj-15::obj-18::obj-92" : [ "live.toggle[5]", "live.toggle", 0 ],
+			"obj-15::obj-18::obj-88" : [ "live.toggle[6]", "live.toggle", 0 ],
 			"obj-12::obj-18::obj-92" : [ "live.toggle[2]", "live.toggle", 0 ],
-			"obj-13::obj-15::obj-88" : [ "live.toggle[3]", "live.toggle", 0 ],
+			"obj-13::obj-15::obj-92" : [ "live.toggle[3]", "live.toggle", 0 ],
 			"obj-12::obj-18::obj-88" : [ "live.toggle", "live.toggle", 0 ],
 			"obj-2::obj-13" : [ "live.toggle[10]", "live.toggle", 0 ],
 			"obj-2::obj-3::obj-2::obj-13" : [ "live.toggle[8]", "live.toggle", 0 ],
@@ -707,7 +707,7 @@
 			}
 , 			{
 				"name" : "sid.output.maxpat",
-				"bootpath" : "~/Projects/Gestural-Sound-Toolkit/ext-libs/abstractions",
+				"bootpath" : "~/Projects/Gestural-Sound-Toolkit/mod-synthesis",
 				"type" : "JSON",
 				"implicit" : 1
 			}
