@@ -146,7 +146,7 @@
 				"box" : 				{
 					"fontsize" : 9.0,
 					"id" : "obj-40",
-					"items" : [ "/dev/tty.usbmodem1411", ",", "/dev/tty.usbmodem1421", ",", "/dev/tty.usbmodem1411", ",", "/dev/tty.usbmodem1421", ",", "/dev/tty.usbmodem1411", ",", "/dev/tty.usbmodem1421", ",", "/dev/tty.usbmodem1411", ",", "/dev/tty.usbmodem1421", ",", "/dev/tty.usbmodem1411", ",", "/dev/tty.usbmodem1421", ",", "/dev/tty.usbmodem1411", ",", "/dev/tty.usbmodem1421" ],
+					"items" : [ "/dev/tty.usbmodem1411", ",", "/dev/tty.usbmodem1421", ",", "/dev/tty.usbmodem1411", ",", "/dev/tty.usbmodem1421", ",", "/dev/tty.usbmodem1411", ",", "/dev/tty.usbmodem1421", ",", "/dev/tty.usbmodem1411", ",", "/dev/tty.usbmodem1421", ",", "/dev/tty.usbmodem1411", ",", "/dev/tty.usbmodem1421", ",", "/dev/tty.usbmodem1411", ",", "/dev/tty.usbmodem1421", ",", "/dev/tty.WAX9-CC03-COM1" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -181,7 +181,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 778.0, 172.0, 128.0, 20.0 ],
 					"style" : "",
-					"text" : "ls /dev/tty.usbmodem*"
+					"text" : "ls /dev/tty.WAX*"
 				}
 
 			}
@@ -192,9 +192,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 778.0, 237.0, 83.0, 20.0 ],
+					"patching_rect" : [ 778.0, 237.0, 47.0, 20.0 ],
 					"style" : "",
-					"text" : "prepend append"
+					"text" : "prepend"
 				}
 
 			}
@@ -2090,13 +2090,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "shell.mxo",
-				"type" : "iLaX"
-			}
- ],
-		"embedsnapshot" : 0
+ ]
 	}
 
 }
