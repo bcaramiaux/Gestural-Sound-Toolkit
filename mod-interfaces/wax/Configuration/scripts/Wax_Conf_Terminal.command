@@ -12,7 +12,9 @@ Echo " ----------------------"
 
 # ...
 # call it
+pause 'Please remove any arduino or serial devices connected to your USB. Press [Enter] when finished'
 pause 'Press [Enter] key to continue...'
+
 
 # launch the script
 screen /dev/tty.usbmodemf*
