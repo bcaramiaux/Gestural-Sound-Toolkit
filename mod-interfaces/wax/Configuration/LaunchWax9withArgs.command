@@ -7,7 +7,7 @@ function pause(){
 clear
 
 echo "Script executed from: ${PWD}"
-BASEDIR=$(dirname $0)
+BASEDIR="$(dirname "$0" )"
 echo "Script location: ${BASEDIR}"
 echo
 echo
@@ -40,7 +40,7 @@ pause 'Press [Enter] key to continue...'
 # launch the script
 #mypath=`pwd`;
 #sh `echo ${BASEDIR}/scripts/wax-RX_p8200.sh`
-${BASEDIR}/waxrec/waxrec /dev/tty.WAX9-CC03-COM1 -init "\r\nRATE x $outputrate\r\nRATE a 1 $accgyrorate $accrange\r\nRATE g 1 $accgyrorate $gyrrange\r\nRate m 1 $magrate\r\nDATAMODE 1\r\nSTREAM\r\n" -osc localhost:8200
+"${BASEDIR}"/waxrec/waxrec /dev/tty.WAX9-CC03-COM1 -init "\r\nRATE x $outputrate\r\nRATE a 1 $accgyrorate $accrange\r\nRATE g 1 $accgyrorate $gyrrange\r\nRate m 1 $magrate\r\nDATAMODE 1\r\nSTREAM\r\n" -osc localhost:8200
 # ${BASEDIR}/waxrec/waxrec /dev/tty.WAX9-CC03-COM1 -init "\r\nRATE a 1 $1 $2\r\nRATE g 1 $rate $3\r\nRate m 1 $4\r\nDATAMODE 1\r\nSTREAM\r\n" -osc localhost:8200
 
 #${BASEDIR}/waxrec/waxrec $1 -osc localhost:8200
