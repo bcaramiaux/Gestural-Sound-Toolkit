@@ -3,13 +3,13 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 7,
-			"minor" : 0,
-			"revision" : 6,
+			"minor" : 1,
+			"revision" : 0,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 263.0, 206.0, 987.0, 921.0 ],
+		"rect" : [ 244.0, 104.0, 987.0, 921.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -38,6 +38,19 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-48",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 164.0, 204.0, 664.0, 22.0 ],
+					"style" : "",
+					"text" : "/wax9 -0.167969 0.004883 4.006836 -14.49 4.76 -17.57 -88.2 138.4 -39.3 718 43664662"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-45",
 					"linecount" : 2,
@@ -183,8 +196,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 0,
-							"revision" : 6,
+							"minor" : 1,
+							"revision" : 0,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -1108,7 +1121,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 322.125, 9.0, 611.0, 22.0 ],
 									"style" : "",
-									"text" : "0.043945 0.084961 -2.075195 -11.76 -1.33 -10.29 -111.4 73.9 -51.1"
+									"text" : "-0.15625 -0.003906 3.894531 -13.37 2.24 -13.65 -86.4 138.1 -41.1"
 								}
 
 							}
@@ -2087,13 +2100,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-55",
-					"linecount" : 2,
+					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 269.0, 341.0, 216.0, 33.0 ],
+					"patching_rect" : [ 269.0, 341.0, 216.0, 47.0 ],
 					"style" : "",
-					"text" : "ax, ay, az, gx, gy, gz, mx, my, mz. \nsample index, sample time are ignored"
+					"text" : "ax, ay, az, gx, gy, gz, mx, my, mz. \nsample index, sample timestamp are ignored"
 				}
 
 			}
@@ -2106,7 +2119,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 129.0, 295.0, 68.0, 22.0 ],
+					"patching_rect" : [ 208.0, 408.0, 68.0, 22.0 ],
 					"style" : "",
 					"text" : "s raw_IMU"
 				}
@@ -2304,8 +2317,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 0,
-							"revision" : 6,
+							"minor" : 1,
+							"revision" : 0,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -2702,8 +2715,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 0,
-							"revision" : 6,
+							"minor" : 1,
+							"revision" : 0,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -2892,8 +2905,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 0,
-							"revision" : 6,
+							"minor" : 1,
+							"revision" : 0,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -2928,14 +2941,14 @@
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-8",
-									"linecount" : 13,
+									"linecount" : 12,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 143.0, 118.0, 50.0, 169.0 ],
 									"style" : "",
-									"text" : "0.01098 0.021228 -0.5185 -1.47 -0.16625 -1.28625 -111.4 73.9 -51.1"
+									"text" : "-0.07808 -0.001952 19.461439 -1.67125 0.28 -1.70625 -86.4 138.1 -41.1"
 								}
 
 							}
@@ -3215,8 +3228,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 0,
-							"revision" : 6,
+							"minor" : 1,
+							"revision" : 0,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -3704,6 +3717,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-42", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-23", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-64", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -3804,15 +3826,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-32", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-38", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-42", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-38", 0 ]
@@ -4011,7 +4024,7 @@
 				"type" : "iLaX"
 			}
  ],
-		"embedsnapshot" : 0,
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "newobjBlue-1",
 				"default" : 				{
