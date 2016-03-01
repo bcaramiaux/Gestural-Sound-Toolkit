@@ -3,13 +3,13 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 7,
-			"minor" : 0,
-			"revision" : 6,
+			"minor" : 1,
+			"revision" : 0,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 58.0, 161.0, 952.0, 644.0 ],
+		"rect" : [ 200.0, 118.0, 782.0, 646.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,33 @@
 		"style" : "gst.title",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"comment" : "Carrier Frequency (in Midi)",
+					"id" : "obj-7",
+					"maxclass" : "inlet",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 105.0, 34.0, 30.0, 30.0 ],
+					"presentation_rect" : [ 107.757675, 31.0, 0.0, 0.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 105.0, 66.0, 34.0, 22.0 ],
+					"style" : "",
+					"text" : "mtof"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"activebgoncolor" : [ 0.115151, 0.706522, 0.000054, 1.0 ],
 					"id" : "obj-88",
@@ -151,8 +178,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 0,
-							"revision" : 6,
+							"minor" : 1,
+							"revision" : 0,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -502,7 +529,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 15.744034, 12.0, 166.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 8.0, 5.0, 132.720139, 20.0 ],
+					"presentation_rect" : [ 8.0, 6.0, 247.720139, 20.0 ],
 					"style" : "gst.title",
 					"text" : "Simple FM Synthesis"
 				}
@@ -654,7 +681,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "Carrier Frequency",
+					"comment" : "Carrier Frequency (in Hz)",
 					"id" : "obj-49",
 					"maxclass" : "inlet",
 					"numinlets" : 0,
@@ -925,6 +952,26 @@
 				}
 
 			}
+, 			{
+				"box" : 				{
+					"angle" : 270.0,
+					"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
+					"border" : 1,
+					"bordercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"id" : "obj-5",
+					"maxclass" : "panel",
+					"mode" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 351.0, 212.0, 128.0, 128.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 4.720139, 5.0, 252.0, 226.5 ],
+					"proportion" : 0.39,
+					"rounded" : 0,
+					"style" : ""
+				}
+
+			}
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
@@ -1155,6 +1202,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-21", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-20", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -1177,6 +1233,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-62", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-7", 0 ]
 				}
 
 			}
@@ -1216,14 +1281,14 @@
 				"implicit" : 1
 			}
  ],
-		"embedsnapshot" : 0,
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "gst.comment",
 				"default" : 				{
-					"fontsize" : [ 12.0 ],
-					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"fontname" : [ "Helvetica Light" ],
-					"clearcolor" : [ 0.254902, 0.27451, 0.32549, 1.0 ]
+					"clearcolor" : [ 0.254902, 0.27451, 0.32549, 1.0 ],
+					"fontsize" : [ 12.0 ],
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
