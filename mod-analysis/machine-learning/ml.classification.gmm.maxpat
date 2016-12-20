@@ -3,13 +3,13 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 7,
-			"minor" : 0,
-			"revision" : 2,
+			"minor" : 1,
+			"revision" : 0,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 453.0, 79.0, 686.0, 769.0 ],
+		"rect" : [ 394.0, 81.0, 956.0, 649.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -59,7 +59,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 198.25, 174.5, 57.0, 21.0 ],
-					"presentation_rect" : [ 198.5, 174.5, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "addbuffer"
 				}
@@ -306,7 +305,7 @@
 					"cursor_shape" : "bar",
 					"cursor_size" : 3,
 					"cursor_visible" : 1,
-					"domain_bounds" : [ -0.0, 1.1 ],
+					"domain_bounds" : [ 0.0, 1.0 ],
 					"domainruler_bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"domainruler_fgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"domainruler_grid" : 0,
@@ -332,8 +331,6 @@
 					"outputselection" : 0,
 					"outputvalues" : 0,
 					"patching_rect" : [ 349.0, 116.0, 303.0, 133.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 74.0, 300.5, 205.0 ],
 					"rangeruler_grid" : 0,
 					"rangeruler_size" : 35,
 					"rangeruler_visible" : 0,
@@ -452,14 +449,13 @@
 					"fontname" : "Arial",
 					"fontsize" : 11.0,
 					"id" : "obj-32",
-					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 6.0, 280.5, 775.0, 33.0 ],
+					"patching_rect" : [ 6.0, 280.5, 784.0, 21.0 ],
 					"style" : "",
-					"text" : "mubu.record mygmm data @predef yes @samplerate 100 @matrixcols 3 @maxsize 1000 @info gui \"interface multiwave, bounds -1. 1., colormode rainbow, shape envelope\""
+					"text" : "mubu.record mygmm data @predef yes @samplerate 100 @maxsize 1000 @info gui \"interface multiwave, bounds -1. 1., colormode rainbow, shape envelope\""
 				}
 
 			}
@@ -578,7 +574,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 0.0, 300.0, 20.0 ],
 					"style" : "",
-					"text" : "Classification (GMM)",
+					"text" : "Classification",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -1045,7 +1041,7 @@
 				"type" : "iLaX"
 			}
  ],
-		"embedsnapshot" : 0
+		"autosave" : 0
 	}
 
 }
