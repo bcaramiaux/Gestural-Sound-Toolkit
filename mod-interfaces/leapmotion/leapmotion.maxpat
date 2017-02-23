@@ -545,7 +545,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 211.849976, 159.5, 67.0, 20.0 ],
 					"style" : "",
-					"text" : "loadmess 20"
+					"text" : "loadmess 10"
 				}
 
 			}

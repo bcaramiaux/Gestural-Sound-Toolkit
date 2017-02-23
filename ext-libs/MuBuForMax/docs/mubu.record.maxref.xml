@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+
+<?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
+
+<c74object name="mubu.record">
+	<digest>
+		Record data
+	</digest>
+	<description>
+		Record data into a track of a MuBu container.
+	</description>
+
+	<!--METADATA-->
+	<metadatalist>
+		<metadata name="author">
+		Ircam | Centre Pompidou
+		</metadata>
+		<metadata name="copyright">
+		 © 1995 - 2014 IRCAM - Centre Pompidou
+		</metadata>
+		<metadata name="version">
+		1.8.11 (Build 01/2016)
+		</metadata>
+	</metadatalist>
+
+	<!--INLETS-->
+	<inletlist>
+		<inlet id="0" name="messages">
+			<digest>
+			</digest>
+			<description>
+				messages
+			</description>
+		</inlet>
+	</inletlist>
+
+	<!--OUTLETS-->
+	<outletlist>
+		<outlet id="0" name="record progress">
+			<digest>
+			</digest>
+			<description>
+				record progress
+			</description>
+		</outlet>
+		<outlet id="1" name="record done">
+			<digest>
+			</digest>
+			<description>
+				record done
+			</description>
+		</outlet>
+	</outletlist>
+
+	<!--ARGUMENTS-->
+	<objarglist>
+		<objarg name="MuBu name" type="symbol" optional="1"> 
+			<digest>
+			</digest>
+			<description>
+			Name of MuBu container
+			</description>
+		</objarg>
+		<objarg name="Track id" type="atom" optional="1"> 
+			<digest>
+			</digest>
+			<description>
+			Track index or name
+			</description>
+		</objarg>
+	</objarglist>
+
+	<!--ATTRIBUTES-->
+	<attributelist>
+		<attribute name="overdub" get="1" set="1" type="int" size="1">
+			<digest>
+				Enable/Disable Overdub Mode (record then punches in/out)
+			</digest>
+			<description>
+				Enable/Disable Overdub Mode (record then punches in/out)
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Enable/Disable Overdub Mode (record then punches in/out)" />
+				<attribute name="order" get="1" set="1" type="int" value="11" />
+				<attribute name="style" get="1" set="1" type="symbol" value="onoff" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="mubuname" get="1" set="1" type="symbol" size="1">
+			<digest>
+				MuBu Container Name
+			</digest>
+			<description>
+				MuBu Container Name
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="MuBu Container Name" />
+				<attribute name="order" get="1" set="1" type="int" value="1" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="trackid" get="1" set="1" type="unknown" size="1">
+			<digest>
+				Track Id
+			</digest>
+			<description>
+				Track Id
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Track Id" />
+				<attribute name="order" get="1" set="1" type="int" value="2" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="bufferindex" get="1" set="1" type="int" size="1">
+			<digest>
+				Buffer Index
+			</digest>
+			<description>
+				Buffer Index
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Buffer Index" />
+				<attribute name="order" get="1" set="1" type="int" value="3" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="record" get="1" set="1" type="int" size="1">
+			<digest>
+				Enable/Disable Recording
+			</digest>
+			<description>
+				Enable/Disable Recording
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Enable/Disable Recording" />
+				<attribute name="order" get="1" set="1" type="int" value="9" />
+				<attribute name="style" get="1" set="1" type="symbol" value="onoff" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="append" get="1" set="1" type="int" size="1">
+			<digest>
+				Enable/Disable Recording Append
+			</digest>
+			<description>
+				Enable/Disable Recording Append
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Enable/Disable Recording Append" />
+				<attribute name="order" get="1" set="1" type="int" value="10" />
+				<attribute name="style" get="1" set="1" type="symbol" value="onoff" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="progressoutput" get="1" set="1" type="unknown" size="1">
+			<digest>
+				Progress Output Mode
+			</digest>
+			<description>
+				Progress Output Mode
+			</description>
+			<attributelist>
+				<attribute name="enumvals" get="1" set="1" type="unknown" value="off time index fill" />
+				<attribute name="label" get="1" set="1" type="symbol" value="Progress Output Mode" />
+				<attribute name="order" get="1" set="1" type="int" value="12" />
+				<attribute name="style" get="1" set="1" type="symbol" value="enumindex" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="defer" get="1" set="1" type="float" size="1">
+			<digest>
+				Defer Recording
+			</digest>
+			<description>
+				Defer Recording
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Defer Recording" />
+				<attribute name="order" get="1" set="1" type="int" value="13" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="predef" get="1" set="1" type="unknown" size="1">
+			<digest>
+				Predefine Track
+			</digest>
+			<description>
+				Predefine Track
+			</description>
+			<attributelist>
+				<attribute name="category" get="1" set="1" type="unknown" value="track" />
+				<attribute name="label" get="1" set="1" type="symbol" value="Predefine Track" />
+				<attribute name="order" get="1" set="1" type="int" value="201" />
+				<attribute name="style" get="1" set="1" type="symbol" value="onoff" />
+			</attributelist>
+		</attribute>
+
+	</attributelist>
+
+	<!--MESSAGES-->
+	<methodlist>
+	</methodlist>
+
+	<!--SEEALSO-->
+	<seealsolist>
+		<seealso name="mubu.record~" />
+	</seealsolist>
+
+	<!--MENU ITEMS-->
+	<menuitemlist>
+	</menuitemlist>
+
+	<!--EXAMPLE-->
+	<examplelist>
+	</examplelist>
+
+
+</c74object>
+

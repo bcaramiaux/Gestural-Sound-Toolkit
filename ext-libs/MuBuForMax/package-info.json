@@ -1,0 +1,24 @@
+{
+	"name" : "MuBuForMax",
+	"author" : "ISMM Team @ Ircam",
+	"description" : "MuBu: multi-buffer container for sound and motion data.",
+	"homepatcher" : "MuBu-Overview.maxpat",
+	"max_version_max" : "none",
+	"max_version_min" : "6.1.7",
+	"os" : 	{
+		"macintosh" : 		{
+			"platform" : [ "ia32", "x64" ],
+			"min_version" : "10.7.x"
+		}
+,
+		"windows" : 		{
+			"platform" : [ "ia32", "x64" ],
+			"min_version" : "7"
+		}
+
+	}
+,
+	"tags" : [ "data", "analysis", "synthesis", "externals", "gesture", "visualisation" ],
+	"version" : "1.9.1",
+	"website" : "http://ismm.ircam.fr/mubu/"
+}

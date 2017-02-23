@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+
+<?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
+
+<c74object name="mubu.process">
+	<digest>
+		Process MuBu tracks
+	</digest>
+	<description>
+		The external streams the data of a given MuBu track through PiPo modules or patches directly recording the output data into a target track. The iteration on the input stream can be scheduled synchronously or asynchronously with different priorities. For asynchronous processing an independent thread is created for each MuBu buffer. Processing is automatically triggered when data is recorded to the input track as well as for any other modification.
+	</description>
+
+	<!--METADATA-->
+	<metadatalist>
+		<metadata name="author">
+		Ircam | Centre Pompidou
+		</metadata>
+		<metadata name="copyright">
+		 © 1995 - 2014 IRCAM - Centre Pompidou
+		</metadata>
+		<metadata name="version">
+		1.8.11 (Build 01/2016)
+		</metadata>
+	</metadatalist>
+
+	<!--INLETS-->
+	<inletlist>
+		<inlet id="0" name="messages">
+			<digest>
+			</digest>
+			<description>
+				messages
+			</description>
+		</inlet>
+		<inlet id="1" name="loop-back data input">
+			<digest>
+			</digest>
+			<description>
+				loop-back data input
+			</description>
+		</inlet>
+	</inletlist>
+
+	<!--OUTLETS-->
+	<outletlist>
+		<outlet id="0" name="procesing progress">
+			<digest>
+			</digest>
+			<description>
+				procesing progress
+			</description>
+		</outlet>
+		<outlet id="1" name="procesed data">
+			<digest>
+			</digest>
+			<description>
+				procesed data
+			</description>
+		</outlet>
+		<outlet id="2" name="buffer index">
+			<digest>
+			</digest>
+			<description>
+				buffer index
+			</description>
+		</outlet>
+		<outlet id="3" name="info">
+			<digest>
+			</digest>
+			<description>
+				info
+			</description>
+		</outlet>
+	</outletlist>
+
+	<!--ARGUMENTS-->
+	<objarglist>
+		<objarg name="MuBu name" type="symbol" optional="1"> 
+			<digest>
+			</digest>
+			<description>
+			Name of MuBu container
+			</description>
+		</objarg>
+		<objarg name="Track id" type="atom" optional="1"> 
+			<digest>
+			</digest>
+			<description>
+			Track index or name
+			</description>
+		</objarg>
+		<objarg name="PiPo definition" type="symbol" optional="1"> 
+			<digest>
+			</digest>
+			<description>
+			PiPo module or series of PiPo modules
+			</description>
+		</objarg>
+	</objarglist>
+
+	<!--ATTRIBUTES-->
+	<attributelist>
+		<attribute name="mubuname" get="1" set="1" type="symbol" size="1">
+			<digest>
+				MuBu Container Name
+			</digest>
+			<description>
+				MuBu Container Name
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="MuBu Container Name" />
+				<attribute name="order" get="1" set="1" type="int" value="1" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="bufferindex" get="1" set="1" type="unknown" size="1">
+			<digest>
+				Buffer Index
+			</digest>
+			<description>
+				Buffer Index
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Buffer Index" />
+				<attribute name="order" get="1" set="1" type="int" value="2" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="trackid" get="1" set="1" type="unknown" size="1">
+			<digest>
+				Input Track Id
+			</digest>
+			<description>
+				Input Track Id
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Input Track Id" />
+				<attribute name="order" get="1" set="1" type="int" value="3" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="process" get="1" set="1" type="unknown" size="1">
+			<digest>
+				Enable Processing
+			</digest>
+			<description>
+				Enable Processing
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Enable Processing" />
+				<attribute name="order" get="1" set="1" type="int" value="11" />
+				<attribute name="style" get="1" set="1" type="symbol" value="onoff" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="priority" get="1" set="1" type="unknown" size="1">
+			<digest>
+				Process Thread Priority
+			</digest>
+			<description>
+				Process Thread Priority
+			</description>
+			<attributelist>
+				<attribute name="enumvals" get="1" set="1" type="unknown" value="lowest low default high highest sync" />
+				<attribute name="label" get="1" set="1" type="symbol" value="Process Thread Priority" />
+				<attribute name="order" get="1" set="1" type="int" value="12" />
+				<attribute name="style" get="1" set="1" type="symbol" value="enumindex" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="dataoutput" get="1" set="1" type="unknown" size="1">
+			<digest>
+				Output Data
+			</digest>
+			<description>
+				Output Data
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Output Data" />
+				<attribute name="order" get="1" set="1" type="int" value="13" />
+				<attribute name="style" get="1" set="1" type="symbol" value="onoff" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="progressoutput" get="1" set="1" type="unknown" size="1">
+			<digest>
+				Progress Report Format
+			</digest>
+			<description>
+				Progress Report Format
+			</description>
+			<attributelist>
+				<attribute name="enumvals" get="1" set="1" type="unknown" value="off time index fill input" />
+				<attribute name="label" get="1" set="1" type="symbol" value="Progress Report Format" />
+				<attribute name="order" get="1" set="1" type="int" value="14" />
+				<attribute name="style" get="1" set="1" type="symbol" value="enumindex" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="maxframes" get="1" set="1" type="unknown" size="1">
+			<digest>
+				Max Input Frames
+			</digest>
+			<description>
+				Max Input Frames
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Max Input Frames" />
+				<attribute name="order" get="1" set="1" type="int" value="15" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="prepad" get="1" set="1" type="unknown" size="1">
+			<digest>
+				Zero Pre-Padding
+			</digest>
+			<description>
+				Zero Pre-Padding
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Zero Pre-Padding" />
+				<attribute name="order" get="1" set="1" type="int" value="16" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="name" get="1" set="1" type="symbol" size="1">
+			<digest>
+				Output Track Name
+			</digest>
+			<description>
+				Output Track Name
+			</description>
+			<attributelist>
+				<attribute name="category" get="1" set="1" type="unknown" value="output" />
+				<attribute name="label" get="1" set="1" type="symbol" value="Output Track Name" />
+				<attribute name="order" get="1" set="1" type="int" value="101" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="slice.size" get="1" set="1" type="int" size="1">
+			<digest>
+				Slice Frame Size (slice)
+			</digest>
+			<description>
+				Slice Frame Size (slice)
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Slice Frame Size (slice)" />
+				<attribute name="order" get="1" set="1" type="int" value="256" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="slice.hop" get="1" set="1" type="int" size="1">
+			<digest>
+				Slice Hop Size (slice)
+			</digest>
+			<description>
+				Slice Hop Size (slice)
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Slice Hop Size (slice)" />
+				<attribute name="order" get="1" set="1" type="int" value="257" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="slice.wind" get="1" set="1" type="int" size="1">
+			<digest>
+				Slice Window Type (slice)
+			</digest>
+			<description>
+				Slice Window Type (slice)
+			</description>
+			<attributelist>
+				<attribute name="enumvals" get="1" set="1" type="symbol" value="none hann hamming blackman blackmanharris sine" />
+				<attribute name="label" get="1" set="1" type="symbol" value="Slice Window Type (slice)" />
+				<attribute name="order" get="1" set="1" type="int" value="258" />
+				<attribute name="style" get="1" set="1" type="symbol" value="enumindex" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="slice.norm" get="1" set="1" type="int" size="1">
+			<digest>
+				Normalize Slice (slice)
+			</digest>
+			<description>
+				Normalize Slice (slice)
+			</description>
+			<attributelist>
+				<attribute name="enumvals" get="1" set="1" type="symbol" value="none linear power" />
+				<attribute name="label" get="1" set="1" type="symbol" value="Normalize Slice (slice)" />
+				<attribute name="order" get="1" set="1" type="int" value="259" />
+				<attribute name="style" get="1" set="1" type="symbol" value="enumindex" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="fft.size" get="1" set="1" type="int" size="1">
+			<digest>
+				FFT Size (fft)
+			</digest>
+			<description>
+				FFT Size (fft)
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="FFT Size (fft)" />
+				<attribute name="order" get="1" set="1" type="int" value="512" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="fft.mode" get="1" set="1" type="int" size="1">
+			<digest>
+				FFT Mode (fft)
+			</digest>
+			<description>
+				FFT Mode (fft)
+			</description>
+			<attributelist>
+				<attribute name="enumvals" get="1" set="1" type="symbol" value="complex magnitude power logpower" />
+				<attribute name="label" get="1" set="1" type="symbol" value="FFT Mode (fft)" />
+				<attribute name="order" get="1" set="1" type="int" value="513" />
+				<attribute name="style" get="1" set="1" type="symbol" value="enumindex" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="fft.norm" get="1" set="1" type="int" size="1">
+			<digest>
+				Normalize FFT (fft)
+			</digest>
+			<description>
+				Normalize FFT (fft)
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Normalize FFT (fft)" />
+				<attribute name="order" get="1" set="1" type="int" value="514" />
+				<attribute name="style" get="1" set="1" type="symbol" value="onoff" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="fft.weighting" get="1" set="1" type="int" size="1">
+			<digest>
+				FFT Weighting (fft)
+			</digest>
+			<description>
+				FFT Weighting (fft)
+			</description>
+			<attributelist>
+				<attribute name="enumvals" get="1" set="1" type="symbol" value="none a b c d itur468" />
+				<attribute name="label" get="1" set="1" type="symbol" value="FFT Weighting (fft)" />
+				<attribute name="order" get="1" set="1" type="int" value="515" />
+				<attribute name="style" get="1" set="1" type="symbol" value="enumindex" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="bands.mode" get="1" set="1" type="int" size="1">
+			<digest>
+				Bands Mode (bands)
+			</digest>
+			<description>
+				Bands Mode (bands)
+			</description>
+			<attributelist>
+				<attribute name="enumvals" get="1" set="1" type="symbol" value="mel htkmel" />
+				<attribute name="label" get="1" set="1" type="symbol" value="Bands Mode (bands)" />
+				<attribute name="order" get="1" set="1" type="int" value="768" />
+				<attribute name="style" get="1" set="1" type="symbol" value="enumindex" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="bands.eqlmode" get="1" set="1" type="int" size="1">
+			<digest>
+				Equal Loudness Curve (bands)
+			</digest>
+			<description>
+				Equal Loudness Curve (bands)
+			</description>
+			<attributelist>
+				<attribute name="enumvals" get="1" set="1" type="symbol" value="none hynek" />
+				<attribute name="label" get="1" set="1" type="symbol" value="Equal Loudness Curve (bands)" />
+				<attribute name="order" get="1" set="1" type="int" value="769" />
+				<attribute name="style" get="1" set="1" type="symbol" value="enumindex" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="bands.num" get="1" set="1" type="int" size="1">
+			<digest>
+				Number Of Bands (bands)
+			</digest>
+			<description>
+				Number Of Bands (bands)
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Number Of Bands (bands)" />
+				<attribute name="order" get="1" set="1" type="int" value="770" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="bands.log" get="1" set="1" type="int" size="1">
+			<digest>
+				Logarithmic Bands (bands)
+			</digest>
+			<description>
+				Logarithmic Bands (bands)
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Logarithmic Bands (bands)" />
+				<attribute name="order" get="1" set="1" type="int" value="771" />
+				<attribute name="style" get="1" set="1" type="symbol" value="onoff" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="bands.power" get="1" set="1" type="unknown" size="1">
+			<digest>
+				Power Scaling Exponent (bands)
+			</digest>
+			<description>
+				Power Scaling Exponent (bands)
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Power Scaling Exponent (bands)" />
+				<attribute name="order" get="1" set="1" type="int" value="772" />
+			</attributelist>
+		</attribute>
+
+	</attributelist>
+
+	<!--MESSAGES-->
+	<methodlist>
+	</methodlist>
+
+	<!--SEEALSO-->
+	<seealsolist>
+		<seealso name="" />
+	</seealsolist>
+
+	<!--MENU ITEMS-->
+	<menuitemlist>
+	</menuitemlist>
+
+	<!--EXAMPLE-->
+	<examplelist>
+	</examplelist>
+
+
+</c74object>
+
