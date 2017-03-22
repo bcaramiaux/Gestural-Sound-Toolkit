@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 7,
-			"minor" : 0,
-			"revision" : 5,
+			"minor" : 3,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -38,6 +38,51 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"attr" : "delta.normalize",
+					"fontname" : "Arial",
+					"fontsize" : 11.0,
+					"id" : "obj-15",
+					"maxclass" : "attrui",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 212.0, 179.0, 218.0, 21.0 ],
+					"style" : "",
+					"text_width" : 160.0
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"attr" : "delta.size",
+					"fontname" : "Arial",
+					"fontsize" : 11.0,
+					"id" : "obj-26",
+					"maxclass" : "attrui",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 192.0, 143.0, 218.0, 21.0 ],
+					"style" : "",
+					"text_width" : 160.0
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-14",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "float", "" ],
+					"patching_rect" : [ 119.0, 274.0, 139.0, 22.0 ],
+					"style" : "",
+					"text" : "pipo delta @delta.size 3"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 10.0,
 					"id" : "obj-12",
@@ -45,7 +90,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 449.0, 527.0, 82.0, 20.0 ],
+					"patching_rect" : [ 341.0, 373.0, 82.0, 20.0 ],
 					"style" : "",
 					"text" : "r #0-lower-value"
 				}
@@ -60,7 +105,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 449.0, 545.0, 84.0, 20.0 ],
+					"patching_rect" : [ 341.0, 391.0, 84.0, 20.0 ],
 					"style" : "",
 					"text" : "r #0-upper-value"
 				}
@@ -80,13 +125,13 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 0,
-							"revision" : 5,
+							"minor" : 3,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 677.0, 59.0, 235.0, 248.0 ],
+						"rect" : [ 677.0, 79.0, 235.0, 248.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -122,10 +167,10 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 307.0, 31.0, 310.0, 98.0 ],
+									"patching_rect" : [ 307.0, 31.0, 310.0, 96.0 ],
 									"presentation" : 1,
 									"presentation_linecount" : 9,
-									"presentation_rect" : [ 8.0, 107.0, 209.0, 110.0 ],
+									"presentation_rect" : [ 8.0, 107.0, 209.0, 107.0 ],
 									"style" : "",
 									"text" : "It computes the First Derivativs along each axis of the incoming data. Useful to capture changes in the continuous data.\n\ninput: \n     - data values [list]\n\noutput:\n     - [1]: 1st derivatives [list]",
 									"textcolor" : [ 0.501859, 0.501859, 0.501859, 1.0 ]
@@ -234,9 +279,9 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 1.5, 117.0, 45.0, 18.0 ],
+									"patching_rect" : [ 1.5, 117.0, 45.0, 20.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 8.0, 45.0, 45.0, 18.0 ],
+									"presentation_rect" : [ 8.0, 45.0, 45.0, 20.0 ],
 									"style" : ""
 								}
 
@@ -252,9 +297,9 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 1.5, 62.0, 45.0, 18.0 ],
+									"patching_rect" : [ 1.5, 62.0, 45.0, 20.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 8.0, 26.0, 45.0, 18.0 ],
+									"presentation_rect" : [ 8.0, 26.0, 45.0, 20.0 ],
 									"style" : ""
 								}
 
@@ -363,8 +408,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 0,
-							"revision" : 5,
+							"minor" : 3,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -491,42 +536,12 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"id" : "obj-19",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 321.0, 481.0, 79.0, 22.0 ],
-					"style" : "",
-					"text" : "loadmess -1."
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-18",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 387.0, 509.0, 75.0, 22.0 ],
-					"style" : "",
-					"text" : "loadmess 1."
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
 					"id" : "obj-17",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 387.0, 579.0, 57.0, 22.0 ],
+					"patching_rect" : [ 279.0, 425.0, 57.0, 22.0 ],
 					"style" : "",
 					"text" : "pak 0. 0."
 				}
@@ -541,7 +556,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 387.0, 612.0, 100.0, 22.0 ],
+					"patching_rect" : [ 279.0, 458.0, 100.0, 22.0 ],
 					"style" : "",
 					"text" : "setminmax $1 $2"
 				}
@@ -565,43 +580,13 @@
 , 			{
 				"box" : 				{
 					"fontname" : "Arial",
-					"fontsize" : 9.0,
-					"id" : "obj-11",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 70.0, 192.0, 61.0, 19.0 ],
-					"style" : "",
-					"text" : "mnm.list2col"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 9.0,
-					"id" : "obj-10",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 70.0, 229.0, 68.0, 19.0 ],
-					"style" : "",
-					"text" : "mnm.delta 3 3"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-8",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 459.21225, 449.0, 39.0, 22.0 ],
+					"patching_rect" : [ 281.5, 274.0, 39.0, 22.0 ],
 					"style" : "",
 					"text" : "zl len"
 				}
@@ -616,7 +601,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 459.21225, 485.0, 50.0, 22.0 ],
+					"patching_rect" : [ 281.5, 310.0, 50.0, 22.0 ],
 					"style" : "",
 					"text" : "size $1"
 				}
@@ -661,27 +646,13 @@
 			}
 , 			{
 				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-3",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 119.0, 296.0, 45.0, 22.0 ],
-					"style" : "",
-					"text" : "ftm.list"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"comment" : "First derivative of the input data (along each axis) (list)",
 					"id" : "obj-2",
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 134.0, 657.0, 25.0, 25.0 ],
+					"patching_rect" : [ 119.0, 661.0, 25.0, 25.0 ],
 					"style" : ""
 				}
 
@@ -690,6 +661,7 @@
 				"box" : 				{
 					"comment" : "Input data (list)",
 					"id" : "obj-1",
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -702,9 +674,10 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-11", 0 ],
+					"destination" : [ "obj-14", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 1,
 					"source" : [ "obj-1", 0 ]
 				}
 
@@ -714,25 +687,8 @@
 					"destination" : [ "obj-8", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 0,
 					"source" : [ "obj-1", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-3", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-10", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-10", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-11", 0 ]
 				}
 
 			}
@@ -756,6 +712,24 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-14", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-14", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-15", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-7", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -765,10 +739,10 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-4", 0 ],
+					"destination" : [ "obj-14", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-3", 0 ]
+					"source" : [ "obj-26", 0 ]
 				}
 
 			}
@@ -777,6 +751,7 @@
 					"destination" : [ "obj-2", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 1,
 					"source" : [ "obj-4", 0 ]
 				}
 
@@ -786,6 +761,7 @@
 					"destination" : [ "obj-91", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 0,
 					"source" : [ "obj-4", 0 ]
 				}
 
@@ -804,6 +780,7 @@
 					"destination" : [ "obj-4", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 1,
 					"source" : [ "obj-8", 0 ]
 				}
 
@@ -813,6 +790,7 @@
 					"destination" : [ "obj-9", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 0,
 					"source" : [ "obj-8", 0 ]
 				}
 
@@ -828,13 +806,11 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "mnm.list2col.maxpat",
-				"bootpath" : "~/Projects/Gestural-Sound-Toolkit/ext-libs/FTM.2.6.0.BETA-Max6-7/patchers",
-				"type" : "JSON",
-				"implicit" : 1
+				"name" : "pipo.mxo",
+				"type" : "iLaX"
 			}
  ],
-		"embedsnapshot" : 0
+		"autosave" : 0
 	}
 
 }

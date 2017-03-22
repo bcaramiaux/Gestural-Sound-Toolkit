@@ -3,13 +3,13 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 7,
-			"minor" : 0,
-			"revision" : 5,
+			"minor" : 3,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 414.0, 79.0, 874.0, 605.0 ],
+		"rect" : [ 414.0, 79.0, 958.0, 787.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,19 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "float", "" ],
+					"patching_rect" : [ 186.0, 173.0, 165.0, 22.0 ],
+					"style" : "",
+					"text" : "pipo median @median.size 8"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"activebgoncolor" : [ 0.115151, 0.706522, 0.000054, 1.0 ],
 					"id" : "obj-4",
@@ -77,13 +90,13 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 0,
-							"revision" : 5,
+							"minor" : 3,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 52.0, 235.0, 246.0, 199.0 ],
+						"rect" : [ 76.0, 235.0, 234.0, 199.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -112,6 +125,26 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"fontface" : 2,
+									"fontname" : "Arial",
+									"fontsize" : 9.0,
+									"id" : "obj-5",
+									"linecount" : 2,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 180.0, 26.0, 231.0, 27.0 ],
+									"presentation" : 1,
+									"presentation_linecount" : 2,
+									"presentation_rect" : [ 10.0, 160.0, 210.0, 27.0 ],
+									"style" : "",
+									"text" : "Note: uses PiPo from ISMM team at IRCAM Centre Pompidou http://ismm.ircam.fr/pipo/",
+									"textcolor" : [ 0.32549, 0.345098, 0.372549, 0.99 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"bgcolor" : [ 0.683403, 0.543763, 0.321212, 0.11 ],
 									"fontname" : "Helvetica Light",
 									"fontsize" : 14.0,
@@ -137,13 +170,13 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 10.0, 25.0, 310.0, 110.0 ],
+									"patching_rect" : [ 10.0, 25.0, 310.0, 107.0 ],
 									"presentation" : 1,
 									"presentation_linecount" : 10,
-									"presentation_rect" : [ 10.0, 28.0, 210.0, 121.0 ],
+									"presentation_rect" : [ 10.0, 30.0, 210.0, 118.0 ],
 									"style" : "",
 									"text" : "Detect a kick in the incoming accelerometer data. When a kick is detected a bang is sent together with the intensity of the kick.\n\ninput: \n     - data values [list]\n\noutput:\n     - [1]: bang [bang] if kick detected\n     - [2]: intensity of the kick [float]",
-									"textcolor" : [ 0.501859, 0.501859, 0.501859, 1.0 ]
+									"textcolor" : [ 0.239216, 0.254902, 0.278431, 1.0 ]
 								}
 
 							}
@@ -151,7 +184,7 @@
 						"lines" : [  ]
 					}
 ,
-					"patching_rect" : [ 215.5, 44.5, 44.0, 19.0 ],
+					"patching_rect" : [ 287.5, 3.0, 44.0, 19.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 84.5, 4.0, 44.0, 19.0 ],
 					"saved_object_attributes" : 					{
@@ -416,9 +449,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 180.0, 26.0, 293.0, 20.0 ],
+					"patching_rect" : [ 180.0, 26.0, 305.0, 20.0 ],
 					"style" : "",
-					"text" : "uses FTM&Co Lirbary from Ircam, Centre Pompidou\n"
+					"text" : "Use PiPo from ISMM team at IRCAM Centre Pompidou"
 				}
 
 			}
@@ -426,6 +459,7 @@
 				"box" : 				{
 					"comment" : "Bang when kick",
 					"id" : "obj-25",
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -438,6 +472,7 @@
 				"box" : 				{
 					"comment" : "Energy of the kick (float) but slightly delayed from the kick",
 					"id" : "obj-11",
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -450,6 +485,7 @@
 				"box" : 				{
 					"comment" : "List of 3d acceleration values along axis x,y,z",
 					"id" : "obj-10",
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -567,37 +603,6 @@
 , 			{
 				"box" : 				{
 					"fontname" : "Arial",
-					"fontsize" : 10.0,
-					"id" : "obj-18",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 215.0, 97.0, 80.0, 20.0 ],
-					"style" : "",
-					"text" : "loadmess 9"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 10.0,
-					"format" : 6,
-					"id" : "obj-31",
-					"maxclass" : "flonum",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 215.0, 124.0, 47.0, 20.0 ],
-					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"format" : 6,
 					"id" : "obj-37",
@@ -658,28 +663,6 @@
 			}
 , 			{
 				"box" : 				{
-					"#init" : "",
-					"#loadbang" : 0,
-					"#triggerall" : 0,
-					"#untuple" : 0,
-					"fontface" : 0,
-					"fontname" : "Geneva",
-					"fontsize" : 10.0,
-					"ftm_objref_conv" : 0,
-					"ftm_scope" : 1,
-					"id" : "obj-62",
-					"maxclass" : "ftm.mess",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 215.0, 149.0, 64.068146, 17.0 ],
-					"presentation_rect" : [ 215.0, 149.0, 64.068146, 18.0 ],
-					"text" : "_filtersize $1"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 10.0,
 					"id" : "obj-44",
@@ -690,21 +673,6 @@
 					"patching_rect" : [ 123.0, 206.0, 82.0, 20.0 ],
 					"style" : "",
 					"text" : "- 0."
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 10.0,
-					"id" : "obj-63",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 186.0, 181.0, 189.0, 20.0 ],
-					"style" : "",
-					"text" : "mnm.median @filtersize 8 @dim stream"
 				}
 
 			}
@@ -799,10 +767,10 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-31", 0 ],
+					"destination" : [ "obj-44", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-18", 0 ]
+					"source" : [ "obj-2", 0 ]
 				}
 
 			}
@@ -821,15 +789,6 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-30", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-62", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-31", 0 ]
 				}
 
 			}
@@ -910,6 +869,7 @@
 					"destination" : [ "obj-42", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 0,
 					"source" : [ "obj-44", 0 ]
 				}
 
@@ -919,6 +879,7 @@
 					"destination" : [ "obj-8", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 1,
 					"source" : [ "obj-44", 0 ]
 				}
 
@@ -934,6 +895,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-46", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-44", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -943,37 +913,10 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-63", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-46", 2 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-46", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-6", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-63", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-62", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-44", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-63", 0 ]
 				}
 
 			}
@@ -1013,12 +956,16 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "sp.energy.maxpat",
-				"bootpath" : "~/Projects/Gestural-Sound-Toolkit/mod-analysis",
+				"bootpath" : "~/Work/Development/Gestural-Sound-Toolkit/mod-analysis/signal-processing",
 				"type" : "JSON",
 				"implicit" : 1
 			}
+, 			{
+				"name" : "pipo.mxo",
+				"type" : "iLaX"
+			}
  ],
-		"embedsnapshot" : 0
+		"autosave" : 0
 	}
 
 }
