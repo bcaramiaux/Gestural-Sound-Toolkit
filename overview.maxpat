@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 1669.0, 104.0, 1435.0, 890.0 ],
+		"rect" : [ 73.0, 79.0, 1330.0, 787.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,40 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-18",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 837.0, 216.0, 90.0, 22.0 ],
+					"style" : "",
+					"text" : "route acc euler"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.6, 0.678431, 0.756863, 0.0 ],
+					"bgmode" : 2,
+					"border" : 1,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-9",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "myo.maxpat",
+					"numinlets" : 0,
+					"numoutlets" : 3,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "", "", "int" ],
+					"patching_rect" : [ 765.0, 74.975731, 163.0, 132.566956 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"bgcolor" : [ 0.6, 0.678431, 0.756863, 0.0 ],
 					"bgmode" : 2,
@@ -584,15 +618,6 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-8", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-1", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-31", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -618,22 +643,32 @@
 				}
 
 			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-18", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-9", 1 ]
+				}
+
+			}
  ],
 		"parameters" : 		{
-			"obj-8::obj-29" : [ "live.button[1]", "live.button", 0 ],
-			"obj-3::obj-6::obj-2::obj-13" : [ "live.toggle[12]", "live.toggle", 0 ],
 			"obj-3::obj-4" : [ "live.button", "live.button", 0 ],
-			"obj-15::obj-18::obj-88" : [ "live.toggle[6]", "live.toggle", 0 ],
-			"obj-8::obj-46" : [ "live.toggle[14]", "live.toggle", 0 ],
-			"obj-2::obj-3::obj-2::obj-13" : [ "live.toggle[7]", "live.toggle", 0 ],
-			"obj-13::obj-15::obj-92" : [ "live.toggle[3]", "live.toggle", 0 ],
-			"obj-12::obj-18::obj-92" : [ "live.toggle[2]", "live.toggle", 0 ],
 			"obj-41::obj-5::obj-13" : [ "live.toggle[15]", "live.toggle", 0 ],
-			"obj-12::obj-18::obj-88" : [ "live.toggle", "live.toggle", 0 ],
+			"obj-12::obj-18::obj-92" : [ "live.toggle[2]", "live.toggle", 0 ],
+			"obj-9::obj-5::obj-13" : [ "live.toggle[16]", "live.toggle", 0 ],
+			"obj-3::obj-6::obj-2::obj-13" : [ "live.toggle[12]", "live.toggle", 0 ],
 			"obj-16::obj-5::obj-13" : [ "live.toggle[11]", "live.toggle", 0 ],
-			"obj-1::obj-2::obj-13" : [ "live.toggle[1]", "live.toggle", 0 ],
-			"obj-2::obj-13" : [ "live.toggle[9]", "live.toggle", 0 ],
+			"obj-12::obj-18::obj-88" : [ "live.toggle", "live.toggle", 0 ],
+			"obj-2::obj-3::obj-2::obj-13" : [ "live.toggle[7]", "live.toggle", 0 ],
 			"obj-15::obj-18::obj-92" : [ "live.toggle[5]", "live.toggle", 0 ],
+			"obj-8::obj-46" : [ "live.toggle[14]", "live.toggle", 0 ],
+			"obj-13::obj-15::obj-92" : [ "live.toggle[3]", "live.toggle", 0 ],
+			"obj-2::obj-13" : [ "live.toggle[9]", "live.toggle", 0 ],
+			"obj-15::obj-18::obj-88" : [ "live.toggle[6]", "live.toggle", 0 ],
+			"obj-8::obj-29" : [ "live.button[1]", "live.button", 0 ],
+			"obj-1::obj-2::obj-13" : [ "live.toggle[1]", "live.toggle", 0 ],
 			"obj-2::obj-8::obj-17" : [ "live.toggle[8]", "live.toggle[1]", 0 ],
 			"obj-13::obj-15::obj-88" : [ "live.toggle[4]", "live.toggle", 0 ]
 		}
@@ -747,19 +782,21 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "myo.maxpat",
+				"bootpath" : "~/Work/Development/Gestural-Sound-Toolkit/mod-interfaces/myo",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "pipo.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "mubu.concat~.mxo",
+				"name" : "mubu.granular~.mxo",
 				"type" : "iLaX"
 			}
 , 			{
 				"name" : "mubu.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "mubu.granular~.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -784,6 +821,10 @@
 			}
 , 			{
 				"name" : "mlpmax.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "myomax.mxo",
 				"type" : "iLaX"
 			}
  ],
