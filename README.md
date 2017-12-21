@@ -2,6 +2,16 @@
 
 Toolkit in Max/MSP for easy and fast gesture-to-sound scenario prototyping. 
 
+## Install
+
+Clone the repo:
+```
+git clone --depth=1 https://github.com/bcaramiaux/Gestural-Sound-Toolkit 
+```
+
+The toolkit heavly relies on the MuBu lib developed by the ISMM team at IRCAM. This a Max/MSP library that is free (only to register to the IRCAM forum [that doesn't spam]): http://forumnet.ircam.fr/product/mubu-en/
+
+
 ## Credits
 
 This toolkit has been designed and implemented in order to investigate research questions on sonic interaction design, and led to a publication at the CHI 2015 conference. If you use the toolkit in your research or teaching, please credit our work:
