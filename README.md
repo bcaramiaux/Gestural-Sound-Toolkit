@@ -11,7 +11,7 @@ git clone --depth=1 https://github.com/bcaramiaux/Gestural-Sound-Toolkit
 
 The toolkit heavly relies on the MuBu lib developed by the ISMM team at IRCAM. This a Max/MSP library that is free (only to register to the IRCAM forum [that doesn't spam]): http://forumnet.ircam.fr/product/mubu-en/. 
 
-**Note**: for Windows' users, you need to install Visual Studio 2015 Redistributable Package! 
+**Note for Windows' users**: you need to install Visual Studio 2015 Redistributable Package to have MuBu working! 
 
 Once downloaded, add the Mubu library into the `ext-libs` folder within the GST.
 
