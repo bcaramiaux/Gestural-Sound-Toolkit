@@ -11,6 +11,10 @@ git clone --depth=1 https://github.com/bcaramiaux/Gestural-Sound-Toolkit
 
 The toolkit heavly relies on the MuBu lib developed by the ISMM team at IRCAM. This a Max/MSP library that is free (only to register to the IRCAM forum [that doesn't spam]): http://forumnet.ircam.fr/product/mubu-en/
 
+Once downloaded, add the Mubu library into the `ext-libs` folder within the GST.
+
+Last step: in MaxMSP add all the toolkit to your file preferences: `Options > File Preferences > +`
+
 
 ## Credits
 
