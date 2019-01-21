@@ -68,11 +68,11 @@
 					"presentation_rect" : [ 180.0, 50.5, 18.0, 18.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2,
 							"parameter_longname" : "live.toggle",
 							"parameter_mmax" : 1.0,
-							"parameter_shortname" : "live.toggle"
+							"parameter_shortname" : "live.toggle",
+							"parameter_enum" : [ "off", "on" ],
+							"parameter_type" : 2
 						}
 
 					}
@@ -1219,7 +1219,7 @@
 					"id" : "obj-1",
 					"layout" : 0,
 					"maxclass" : "imubu",
-					"name" : "myhhmm",
+					"name" : "#0-myhhmm",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"opacity" : 0.0,
@@ -1350,8 +1350,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ -99.0, 299.5, 788.0, 21.0 ],
-					"text" : "mubu.record myhhmm data @predef yes @samplerate 100 @maxsize 1000 @info gui \"interface multiwave, bounds -1. 1., colormode rainbow, shape envelope\""
+					"patching_rect" : [ -99.0, 299.5, 804.0, 21.0 ],
+					"text" : "mubu.record #0-myhhmm data @predef yes @samplerate 100 @maxsize 1000 @info gui \"interface multiwave, bounds -1. 1., colormode rainbow, shape envelope\""
 				}
 
 			}
@@ -1362,8 +1362,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 5,
 					"outlettype" : [ "", "", "", "", "" ],
-					"patching_rect" : [ 171.0, 401.0, 343.0, 22.0 ],
-					"text" : "mubu.hhmm myhhmm data @regularization 0.05 0.01 @play 1"
+					"patching_rect" : [ 171.0, 401.0, 360.0, 22.0 ],
+					"text" : "mubu.hhmm #0-myhhmm data @regularization 0.05 0.01 @play 1"
 				}
 
 			}
@@ -1797,7 +1797,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-221", 1 ],
-					"midpoints" : [ 423.5, 636.666656494140625, 472.75, 636.666656494140625 ],
+					"midpoints" : [ 436.25, 636.666656494140625, 472.75, 636.666656494140625 ],
 					"order" : 0,
 					"source" : [ "obj-31", 3 ]
 				}

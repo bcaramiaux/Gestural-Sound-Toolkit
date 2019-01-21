@@ -1254,7 +1254,7 @@
 					"id" : "obj-1",
 					"layout" : 0,
 					"maxclass" : "imubu",
-					"name" : "mygmm",
+					"name" : "#0-mygmm",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"opacity" : 0.0,
@@ -1385,8 +1385,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ -99.0, 299.5, 784.0, 21.0 ],
-					"text" : "mubu.record mygmm data @predef yes @samplerate 100 @maxsize 1000 @info gui \"interface multiwave, bounds -1. 1., colormode rainbow, shape envelope\""
+					"patching_rect" : [ -99.0, 299.5, 798.0, 21.0 ],
+					"text" : "mubu.record #0-mygmm data @predef yes @samplerate 100 @maxsize 1000 @info gui \"interface multiwave, bounds -1. 1., colormode rainbow, shape envelope\""
 				}
 
 			}
@@ -1397,8 +1397,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 5,
 					"outlettype" : [ "", "", "", "", "" ],
-					"patching_rect" : [ 171.0, 401.0, 344.0, 22.0 ],
-					"text" : "mubu.gmm mygmm data @varianceoffset 1. 0.2 @mixtures 10"
+					"patching_rect" : [ 171.0, 401.0, 359.0, 22.0 ],
+					"text" : "mubu.gmm #0-mygmm data @varianceoffset 1. 0.2 @mixtures 10"
 				}
 
 			}
@@ -1470,7 +1470,7 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.3267, 0.6469, 0.13027, 0.367221 ],
+					"bgcolor" : [ 0.3267, 0.3267, 0.3267, 0.367221 ],
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"htricolor" : [ 0.87, 0.82, 0.24, 1.0 ],

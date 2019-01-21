@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 76.0, 104.0, 1033.0, 670.0 ],
+		"rect" : [ 168.0, 175.0, 1033.0, 670.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -1525,12 +1525,12 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-3::obj-25::obj-18::obj-88" : [ "live.toggle", "live.toggle", 0 ],
+			"obj-3::obj-18::obj-18::obj-88" : [ "live.toggle[7]", "live.toggle", 0 ],
+			"obj-3::obj-12::obj-18::obj-92" : [ "live.toggle[10]", "live.toggle", 0 ],
+			"obj-3::obj-18::obj-18::obj-92" : [ "live.toggle[5]", "live.toggle", 0 ],
 			"obj-3::obj-12::obj-18::obj-88" : [ "live.toggle[8]", "live.toggle", 0 ],
 			"obj-3::obj-25::obj-18::obj-92" : [ "live.toggle[2]", "live.toggle", 0 ],
-			"obj-3::obj-18::obj-18::obj-92" : [ "live.toggle[5]", "live.toggle", 0 ],
-			"obj-3::obj-12::obj-18::obj-92" : [ "live.toggle[10]", "live.toggle", 0 ],
-			"obj-3::obj-18::obj-18::obj-88" : [ "live.toggle[7]", "live.toggle", 0 ],
+			"obj-3::obj-25::obj-18::obj-88" : [ "live.toggle", "live.toggle", 0 ],
 			"parameterbanks" : 			{
 
 			}

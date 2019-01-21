@@ -92,7 +92,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 7.0, 61.0, 338.0, 47.0 ],
-									"presentation_linecount" : 3,
 									"text" : "2) Send data into inlets 1 and 2\n    ** inputs (n-dimensional) are given in the first inlet\n    ** outputs (n-dimensional) are given in the second inlet"
 								}
 
@@ -1283,7 +1282,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 59.0, 104.0, 800.0, 457.0 ],
+						"rect" : [ 76.0, 104.0, 800.0, 457.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1377,8 +1376,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 177.0, 119.5, 596.5, 33.0 ],
-									"text" : "mubu.record gmr-help regression_output @predef yes @samplerate 100 @matrixcols 1 @maxsize 1000 @info gui \"interface multiwave, bounds 0. 1., fgcolor blue, shape envelope\""
+									"patching_rect" : [ 177.0, 119.5, 587.0, 33.0 ],
+									"text" : "mubu.record #0-gmr-help regression_output @predef yes @samplerate 100 @matrixcols 1 @maxsize 1000 @info gui \"interface multiwave, bounds 0. 1., fgcolor blue, shape envelope\""
 								}
 
 							}
@@ -1869,8 +1868,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 5,
 					"outlettype" : [ "", "", "", "", "" ],
-					"patching_rect" : [ 443.5, 598.7618408203125, 546.0, 24.0 ],
-					"text" : "mubu.gmr gmr-help input output @regularization 0.001 0.001 @gaussians 10 @play 1"
+					"patching_rect" : [ 443.5, 598.7618408203125, 564.0, 24.0 ],
+					"text" : "mubu.gmr #0-gmr-help input output @regularization 0.001 0.001 @gaussians 10 @play 1"
 				}
 
 			}
@@ -2262,7 +2261,7 @@
 					"id" : "obj-1",
 					"layout" : 0,
 					"maxclass" : "imubu",
-					"name" : "gmr-help",
+					"name" : "#0-gmr-help",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"opacity" : 0.0,
@@ -2791,13 +2790,13 @@
 					"fontname" : "Arial",
 					"fontsize" : 11.0,
 					"id" : "obj-157",
-					"linecount" : 4,
+					"linecount" : 5,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 139.5, 628.7618408203125, 231.0, 58.0 ],
-					"text" : "mubu.record gmr-help 1 input @predef yes @samplerate 100 @matrixcols 1 @maxsize 1000 @info gui \"interface multiwave, bounds 0. 1., fgcolor green, shape envelope\""
+					"patching_rect" : [ 139.5, 628.7618408203125, 226.0, 70.0 ],
+					"text" : "mubu.record #0-gmr-help 1 input @predef yes @samplerate 100 @matrixcols 1 @maxsize 1000 @info gui \"interface multiwave, bounds 0. 1., fgcolor green, shape envelope\""
 				}
 
 			}
@@ -2811,8 +2810,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 60.5, 705.9166259765625, 288.0, 58.0 ],
-					"text" : "mubu.record gmr-help 2 output @predef yes @samplerate 100 @matrixcols 1 @maxsize 1000 @info gui \"interface multiwave, bounds 0. 1., fgcolor red, shape envelope\""
+					"patching_rect" : [ 60.5, 705.9166259765625, 295.0, 58.0 ],
+					"text" : "mubu.record #0-gmr-help 2 output @predef yes @samplerate 100 @matrixcols 1 @maxsize 1000 @info gui \"interface multiwave, bounds 0. 1., fgcolor red, shape envelope\""
 				}
 
 			}
@@ -2995,7 +2994,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-142", 1 ],
-					"midpoints" : [ 848.25, 628.26187109082025, 902.0, 628.26187109082025 ],
+					"midpoints" : [ 861.75, 628.26187109082025, 902.0, 628.26187109082025 ],
 					"order" : 0,
 					"source" : [ "obj-146", 3 ]
 				}
@@ -3028,7 +3027,7 @@
 				"patchline" : 				{
 					"color" : [ 0.828788, 0.139708, 0.147518, 1.0 ],
 					"destination" : [ "obj-95", 0 ],
-					"midpoints" : [ 584.75, 628.76187109082025, 685.375, 628.76187109082025, 685.375, 463.880905090820306, 718.0, 463.880905090820306 ],
+					"midpoints" : [ 589.25, 628.76187109082025, 685.375, 628.76187109082025, 685.375, 463.880905090820306, 718.0, 463.880905090820306 ],
 					"order" : 1,
 					"source" : [ "obj-146", 1 ]
 				}

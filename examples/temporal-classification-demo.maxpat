@@ -288,10 +288,10 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-14::obj-24" : [ "live.toggle", "live.toggle", 0 ],
-			"obj-12::obj-15::obj-92" : [ "live.toggle[2]", "live.toggle", 0 ],
 			"obj-41::obj-5::obj-13" : [ "live.toggle[1]", "live.toggle", 0 ],
 			"obj-12::obj-15::obj-88" : [ "live.toggle[5]", "live.toggle", 0 ],
+			"obj-12::obj-15::obj-92" : [ "live.toggle[2]", "live.toggle", 0 ],
+			"obj-14::obj-24" : [ "live.toggle", "live.toggle", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -321,8 +321,8 @@
 			}
 , 			{
 				"name" : "sid.output.maxpat",
-				"bootpath" : "~/Work/Development/GST/Gestural-Sound-Toolkit/mod-synthesis",
-				"patcherrelativepath" : "../mod-synthesis",
+				"bootpath" : "~/Work/Development/GST/Gestural-Sound-Toolkit/ext-libs/abstractions",
+				"patcherrelativepath" : "../ext-libs/abstractions",
 				"type" : "JSON",
 				"implicit" : 1
 			}
