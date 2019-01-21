@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 653.0, 79.0, 726.0, 639.0 ],
+		"rect" : [ 369.0, 79.0, 726.0, 639.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,61 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-15",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "int", "int" ],
+					"patching_rect" : [ 28.0, 254.0, 29.5, 22.0 ],
+					"text" : "t 1 i"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-5",
+					"maxclass" : "multislider",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 168.5, 254.0, 67.0, 45.0 ],
+					"setminmax" : [ 0.0, 1.0 ],
+					"setstyle" : 1,
+					"size" : 3
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "multislider",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"orientation" : 0,
+					"outlettype" : [ "", "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 309.0, 254.0, 151.0, 23.0 ],
+					"setminmax" : [ 0.0, 1.0 ],
+					"setstyle" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 10.0,
+					"id" : "obj-3",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 63.0, 254.0, 48.0, 20.0 ],
+					"text" : "1"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"bgcolor" : [ 0.6, 0.678431, 0.756863, 0.0 ],
 					"bgmode" : 2,
 					"border" : 1,
@@ -55,30 +110,6 @@
 					"outlettype" : [ "", "int" ],
 					"patching_rect" : [ 201.0, 13.975738525390625, 163.0, 132.56695556640625 ],
 					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-32",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "int", "int" ],
-					"patching_rect" : [ 28.0, 278.0, 30.0, 22.0 ],
-					"text" : "t 1 i"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-27",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "int", "int" ],
-					"patching_rect" : [ 28.0, 248.0, 50.0, 22.0 ],
-					"text" : "change"
 				}
 
 			}
@@ -113,11 +144,11 @@
 					"id" : "obj-14",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "ml.classification.gmm.maxpat",
-					"numinlets" : 1,
-					"numoutlets" : 2,
+					"name" : "ml.temporal.classification.hhmm.maxpat",
+					"numinlets" : 2,
+					"numoutlets" : 3,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "", "" ],
+					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 28.0, 167.975707999999997, 300.0, 72.0 ],
 					"viewvisibility" : 1
 				}
@@ -138,7 +169,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 28.0, 470.975707999999997, 182.975769000000014, 110.099036999999996 ],
+					"patching_rect" : [ 28.0, 497.9757080078125, 182.97576904296875, 110.099037170410156 ],
 					"viewvisibility" : 1
 				}
 
@@ -154,12 +185,12 @@
 					"id" : "obj-12",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "synth.trigger.samples.maxpat",
-					"numinlets" : 3,
+					"name" : "synth.scrub.samples.maxpat",
+					"numinlets" : 4,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 28.0, 329.975707999999997, 240.794860999999997, 109.320235999999994 ],
+					"patching_rect" : [ 28.0, 331.9757080078125, 240.79486083984375, 111.320236206054688 ],
 					"viewvisibility" : 1
 				}
 
@@ -167,8 +198,14 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
+					"destination" : [ "obj-14", 1 ],
+					"source" : [ "obj-1", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-14", 0 ],
-					"midpoints" : [ 210.5, 156.759201045898436, 37.5, 156.759201045898436 ],
 					"source" : [ "obj-1", 0 ]
 				}
 
@@ -182,29 +219,63 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-27", 0 ],
+					"destination" : [ "obj-12", 2 ],
+					"midpoints" : [ 318.5, 318.47570800390622, 185.363240559895843, 318.47570800390622 ],
+					"order" : 1,
+					"source" : [ "obj-14", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-15", 0 ],
+					"order" : 1,
 					"source" : [ "obj-14", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-32", 0 ],
-					"source" : [ "obj-27", 0 ]
+					"destination" : [ "obj-3", 1 ],
+					"midpoints" : [ 37.5, 246.0, 101.5, 246.0 ],
+					"order" : 0,
+					"source" : [ "obj-14", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"order" : 0,
+					"source" : [ "obj-14", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"source" : [ "obj-14", 1 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-12", 1 ],
-					"source" : [ "obj-32", 1 ]
+					"source" : [ "obj-15", 1 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-12", 0 ],
-					"source" : [ "obj-32", 0 ]
+					"source" : [ "obj-15", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-14", 1 ],
+					"source" : [ "obj-41", 1 ]
 				}
 
 			}
@@ -217,9 +288,10 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-12::obj-18::obj-88" : [ "live.toggle", "live.toggle", 0 ],
-			"obj-12::obj-18::obj-92" : [ "live.toggle[2]", "live.toggle", 0 ],
+			"obj-14::obj-24" : [ "live.toggle", "live.toggle", 0 ],
+			"obj-12::obj-15::obj-92" : [ "live.toggle[2]", "live.toggle", 0 ],
 			"obj-41::obj-5::obj-13" : [ "live.toggle[1]", "live.toggle", 0 ],
+			"obj-12::obj-15::obj-88" : [ "live.toggle[5]", "live.toggle", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -227,7 +299,7 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "synth.trigger.samples.maxpat",
+				"name" : "synth.scrub.samples.maxpat",
 				"bootpath" : "~/Work/Development/GST/Gestural-Sound-Toolkit/mod-synthesis",
 				"patcherrelativepath" : "../mod-synthesis",
 				"type" : "JSON",
@@ -249,13 +321,13 @@
 			}
 , 			{
 				"name" : "sid.output.maxpat",
-				"bootpath" : "~/Work/Development/GST/Gestural-Sound-Toolkit/ext-libs/abstractions",
-				"patcherrelativepath" : "../ext-libs/abstractions",
+				"bootpath" : "~/Work/Development/GST/Gestural-Sound-Toolkit/mod-synthesis",
+				"patcherrelativepath" : "../mod-synthesis",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "ml.classification.gmm.maxpat",
+				"name" : "ml.temporal.classification.hhmm.maxpat",
 				"bootpath" : "~/Work/Development/GST/Gestural-Sound-Toolkit/mod-analysis/machine-learning",
 				"patcherrelativepath" : "../mod-analysis/machine-learning",
 				"type" : "JSON",
@@ -276,11 +348,19 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "mubu.gmm.mxo",
+				"name" : "mubu.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "mubu.granular~.mxo",
 				"type" : "iLaX"
 			}
 , 			{
 				"name" : "mubu.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "mubu.hhmm.mxo",
 				"type" : "iLaX"
 			}
 , 			{

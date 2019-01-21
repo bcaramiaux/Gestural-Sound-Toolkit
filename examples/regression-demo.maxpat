@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 59.0, 104.0, 1033.0, 670.0 ],
+		"rect" : [ 76.0, 104.0, 1033.0, 670.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -45,7 +45,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 228.397430419921875, 23.0, 150.0, 47.0 ],
-					"presentation_linecount" : 3,
 					"text" : "Example2 :\n(X, Y): input \nFloat + 0.01Noise: output"
 				}
 
@@ -299,7 +298,7 @@
 					"id" : "obj-4",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "lcd.maxpat",
+					"name" : "drawing.maxpat",
 					"numinlets" : 0,
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
@@ -1411,7 +1410,7 @@
 					"id" : "obj-1",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "lcd.maxpat",
+					"name" : "drawing.maxpat",
 					"numinlets" : 0,
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
@@ -1526,12 +1525,12 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-3::obj-25::obj-18::obj-88" : [ "live.toggle", "live.toggle", 0 ],
+			"obj-3::obj-12::obj-18::obj-88" : [ "live.toggle[8]", "live.toggle", 0 ],
 			"obj-3::obj-25::obj-18::obj-92" : [ "live.toggle[2]", "live.toggle", 0 ],
 			"obj-3::obj-18::obj-18::obj-92" : [ "live.toggle[5]", "live.toggle", 0 ],
 			"obj-3::obj-12::obj-18::obj-92" : [ "live.toggle[10]", "live.toggle", 0 ],
-			"obj-3::obj-25::obj-18::obj-88" : [ "live.toggle", "live.toggle", 0 ],
 			"obj-3::obj-18::obj-18::obj-88" : [ "live.toggle[7]", "live.toggle", 0 ],
-			"obj-3::obj-12::obj-18::obj-88" : [ "live.toggle[8]", "live.toggle", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -1546,7 +1545,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "lcd.maxpat",
+				"name" : "drawing.maxpat",
 				"bootpath" : "~/Work/Development/GST/Gestural-Sound-Toolkit/mod-interfaces/lcd",
 				"patcherrelativepath" : "../mod-interfaces/lcd",
 				"type" : "JSON",
