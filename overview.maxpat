@@ -39,6 +39,26 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"bgmode" : 0,
+					"border" : 1,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-21",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "lcd.maxpat",
+					"numinlets" : 0,
+					"numoutlets" : 2,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "", "int" ],
+					"patching_rect" : [ 985.39227294921875, 74.975730895996094, 160.0, 132.56695556640625 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-18",
 					"maxclass" : "newobj",
 					"numinlets" : 3,
@@ -65,7 +85,7 @@
 					"numoutlets" : 3,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "", "", "int" ],
-					"patching_rect" : [ 765.0, 74.975730999999996, 163.0, 132.566956000000005 ],
+					"patching_rect" : [ 765.0, 74.975730895996094, 163.0, 132.56695556640625 ],
 					"viewvisibility" : 1
 				}
 
@@ -441,8 +461,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 19.0, 74.975730999999996, 111.0, 35.0 ],
-					"text" : "Receivers"
+					"patching_rect" : [ 19.0, 74.975730895996094, 111.0, 35.0 ],
+					"text" : "Interfaces"
 				}
 
 			}
@@ -586,13 +606,13 @@
 			"obj-1::obj-2::obj-13" : [ "live.toggle[1]", "live.toggle", 0 ],
 			"obj-2::obj-13" : [ "live.toggle[9]", "live.toggle", 0 ],
 			"obj-13::obj-15::obj-92" : [ "live.toggle[3]", "live.toggle", 0 ],
+			"obj-8::obj-46" : [ "live.toggle[17]", "live.toggle", 0 ],
 			"obj-41::obj-5::obj-13" : [ "live.toggle[15]", "live.toggle", 0 ],
 			"obj-9::obj-5::obj-13" : [ "live.toggle[16]", "live.toggle", 0 ],
 			"obj-3::obj-4" : [ "live.button", "live.button", 0 ],
 			"obj-12::obj-18::obj-92" : [ "live.toggle[2]", "live.toggle", 0 ],
 			"obj-16::obj-5::obj-13" : [ "live.toggle[11]", "live.toggle", 0 ],
 			"obj-3::obj-6::obj-2::obj-13" : [ "live.toggle[12]", "live.toggle", 0 ],
-			"obj-8::obj-46" : [ "live.toggle[14]", "live.toggle", 0 ],
 			"obj-15::obj-18::obj-92" : [ "live.toggle[5]", "live.toggle", 0 ],
 			"obj-12::obj-18::obj-88" : [ "live.toggle", "live.toggle", 0 ],
 			"obj-2::obj-3::obj-2::obj-13" : [ "live.toggle[7]", "live.toggle", 0 ],
@@ -727,6 +747,13 @@
 				"name" : "myo.maxpat",
 				"bootpath" : "~/Work/Development/GST/Gestural-Sound-Toolkit/mod-interfaces/myo",
 				"patcherrelativepath" : "./mod-interfaces/myo",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "lcd.maxpat",
+				"bootpath" : "~/Work/Development/GST/Gestural-Sound-Toolkit/mod-interfaces/lcd",
+				"patcherrelativepath" : "./mod-interfaces/lcd",
 				"type" : "JSON",
 				"implicit" : 1
 			}

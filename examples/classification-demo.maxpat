@@ -2,14 +2,15 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 7,
-			"minor" : 1,
-			"revision" : 0,
-			"architecture" : "x86",
+			"major" : 8,
+			"minor" : 0,
+			"revision" : 3,
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 680.0, 79.0, 726.0, 639.0 ],
+		"classnamespace" : "box",
+		"rect" : [ 653.0, 79.0, 726.0, 639.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,13 +39,33 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"bgcolor" : [ 0.6, 0.678431, 0.756863, 0.0 ],
+					"bgmode" : 2,
+					"border" : 1,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-1",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "lcd.maxpat",
+					"numinlets" : 0,
+					"numoutlets" : 2,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "", "int" ],
+					"patching_rect" : [ 201.0, 13.975738525390625, 163.0, 132.56695556640625 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-32",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "int" ],
 					"patching_rect" : [ 28.0, 278.0, 30.0, 22.0 ],
-					"style" : "",
 					"text" : "t 1 i"
 				}
 
@@ -57,7 +78,6 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "int", "int" ],
 					"patching_rect" : [ 28.0, 248.0, 50.0, 22.0 ],
-					"style" : "",
 					"text" : "change"
 				}
 
@@ -78,7 +98,7 @@
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "", "int" ],
-					"patching_rect" : [ 28.0, 13.975739, 163.0, 132.566956 ],
+					"patching_rect" : [ 28.0, 13.975739000000001, 163.0, 132.566956000000005 ],
 					"viewvisibility" : 1
 				}
 
@@ -95,10 +115,10 @@
 					"maxclass" : "bpatcher",
 					"name" : "ml.classification.gmm.maxpat",
 					"numinlets" : 1,
-					"numoutlets" : 1,
+					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 28.0, 167.975708, 300.0, 72.0 ],
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 28.0, 167.975707999999997, 300.0, 72.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -118,7 +138,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 28.0, 470.975708, 182.975769, 110.099037 ],
+					"patching_rect" : [ 28.0, 470.975707999999997, 182.975769000000014, 110.099036999999996 ],
 					"viewvisibility" : 1
 				}
 
@@ -139,7 +159,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 28.0, 329.975708, 240.794861, 109.320236 ],
+					"patching_rect" : [ 28.0, 329.975707999999997, 240.794860999999997, 109.320235999999994 ],
 					"viewvisibility" : 1
 				}
 
@@ -147,9 +167,15 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
+					"destination" : [ "obj-14", 0 ],
+					"midpoints" : [ 210.5, 156.759201045898436, 37.5, 156.759201045898436 ],
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-26", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-12", 0 ]
 				}
 
@@ -157,8 +183,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-27", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-14", 0 ]
 				}
 
@@ -166,8 +190,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-32", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-27", 0 ]
 				}
 
@@ -175,8 +197,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-12", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-32", 1 ]
 				}
 
@@ -184,8 +204,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-12", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-32", 0 ]
 				}
 
@@ -193,62 +211,69 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-14", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-41", 0 ]
 				}
 
 			}
  ],
 		"parameters" : 		{
+			"obj-41::obj-5::obj-13" : [ "live.toggle[1]", "live.toggle", 0 ],
 			"obj-12::obj-18::obj-92" : [ "live.toggle[2]", "live.toggle", 0 ],
 			"obj-12::obj-18::obj-88" : [ "live.toggle", "live.toggle", 0 ],
-			"obj-41::obj-5::obj-13" : [ "live.toggle[1]", "live.toggle", 0 ]
+			"parameterbanks" : 			{
+
+			}
+
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "synth.trigger.samples.maxpat",
-				"bootpath" : "~/Work/Projects/Gestural-Sound-Toolkit/mod-synthesis",
+				"bootpath" : "~/Work/Development/GST/Gestural-Sound-Toolkit/mod-synthesis",
+				"patcherrelativepath" : "../mod-synthesis",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "synth.ctrl.soundpool.maxpat",
-				"bootpath" : "~/Work/Projects/Gestural-Sound-Toolkit/mod-synthesis",
+				"bootpath" : "~/Work/Development/GST/Gestural-Sound-Toolkit/mod-synthesis",
+				"patcherrelativepath" : "../mod-synthesis",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "audio.ctrl.maxpat",
-				"bootpath" : "~/Work/Projects/Gestural-Sound-Toolkit/mod-synthesis",
+				"bootpath" : "~/Work/Development/GST/Gestural-Sound-Toolkit/mod-synthesis",
+				"patcherrelativepath" : "../mod-synthesis",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sid.output.maxpat",
-				"bootpath" : "~/Work/Projects/Gestural-Sound-Toolkit/mod-synthesis",
+				"bootpath" : "~/Work/Development/GST/Gestural-Sound-Toolkit/ext-libs/abstractions",
+				"patcherrelativepath" : "../ext-libs/abstractions",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ml.classification.gmm.maxpat",
-				"bootpath" : "~/Work/Projects/Gestural-Sound-Toolkit/mod-analysis/machine-learning",
+				"bootpath" : "~/Work/Development/GST/Gestural-Sound-Toolkit/mod-analysis/machine-learning",
+				"patcherrelativepath" : "../mod-analysis/machine-learning",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "acc_osc.maxpat",
-				"bootpath" : "~/Work/Projects/Gestural-Sound-Toolkit/mod-interfaces/acc",
+				"bootpath" : "~/Work/Development/GST/Gestural-Sound-Toolkit/mod-interfaces/acc",
+				"patcherrelativepath" : "../mod-interfaces/acc",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "mubu.concat~.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "mubu.mxo",
-				"type" : "iLaX"
+				"name" : "lcd.maxpat",
+				"bootpath" : "~/Work/Development/GST/Gestural-Sound-Toolkit/mod-interfaces/lcd",
+				"patcherrelativepath" : "../mod-interfaces/lcd",
+				"type" : "JSON",
+				"implicit" : 1
 			}
 , 			{
 				"name" : "mubu.gmm.mxo",
