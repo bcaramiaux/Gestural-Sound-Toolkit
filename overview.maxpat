@@ -2,13 +2,14 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 7,
-			"minor" : 3,
-			"revision" : 2,
+			"major" : 8,
+			"minor" : 0,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
+		"classnamespace" : "box",
 		"rect" : [ 73.0, 79.0, 1330.0, 787.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
@@ -44,7 +45,6 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 837.0, 216.0, 90.0, 22.0 ],
-					"style" : "",
 					"text" : "route acc euler"
 				}
 
@@ -65,7 +65,7 @@
 					"numoutlets" : 3,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "", "", "int" ],
-					"patching_rect" : [ 765.0, 74.975731, 163.0, 132.566956 ],
+					"patching_rect" : [ 765.0, 74.975730999999996, 163.0, 132.566956000000005 ],
 					"viewvisibility" : 1
 				}
 
@@ -86,20 +86,8 @@
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "", "int" ],
-					"patching_rect" : [ 557.0, 74.975731, 163.0, 132.566956 ],
+					"patching_rect" : [ 557.0, 74.975730999999996, 163.0, 132.566956000000005 ],
 					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-31",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 146.0, 524.0, 34.0, 22.0 ],
-					"style" : "",
-					"text" : "print"
 				}
 
 			}
@@ -109,8 +97,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 962.416504, 823.0, 150.0, 20.0 ],
-					"style" : ""
+					"patching_rect" : [ 962.41650390625, 733.0, 150.0, 20.0 ]
 				}
 
 			}
@@ -123,13 +110,12 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 366.100586, 6.0, 299.0, 33.0 ],
+					"patching_rect" : [ 366.1005859375, 6.0, 299.0, 33.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
 					"presentation_rect" : [ 17.0, 25.0, 626.0, 33.0 ],
-					"style" : "",
-					"text" : "Max/MSP 6 and more (tested on Max 7)\nInclude the all folder in File Preferences",
-					"textcolor" : [ 0.501859, 0.501859, 0.501859, 1.0 ]
+					"text" : "Max/MSP 6 and more (tested on Max 7 and Max 8)\nInclude the whole GST folder in File Preferences",
+					"textcolor" : [ 0.5018590092659, 0.5018590092659, 0.5018590092659, 1.0 ]
 				}
 
 			}
@@ -143,12 +129,12 @@
 					"id" : "obj-8",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "ml.regression.mlp.maxpat",
-					"numinlets" : 6,
-					"numoutlets" : 2,
+					"name" : "ml.regression.gmr.maxpat",
+					"numinlets" : 3,
+					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 472.666656, 422.975708, 300.0, 72.0 ],
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 472.666655999999989, 422.975707999999997, 300.0, 72.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -169,7 +155,7 @@
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "", "int" ],
-					"patching_rect" : [ 146.0, 74.975731, 163.0, 132.566956 ],
+					"patching_rect" : [ 146.0, 74.975730999999996, 163.0, 132.566956000000005 ],
 					"viewvisibility" : 1
 				}
 
@@ -190,7 +176,7 @@
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "", "int" ],
-					"patching_rect" : [ 347.0, 74.975731, 163.0, 132.566956 ],
+					"patching_rect" : [ 347.0, 74.975730999999996, 163.0, 132.566956000000005 ],
 					"viewvisibility" : 1
 				}
 
@@ -210,7 +196,7 @@
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 146.0, 422.975708, 301.0, 74.0 ],
+					"patching_rect" : [ 146.0, 422.975707999999997, 301.0, 74.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -218,14 +204,13 @@
 , 			{
 				"box" : 				{
 					"fontname" : "Helvetica Neue Light",
-					"fontsize" : 23.865383,
+					"fontsize" : 23.865383000000001,
 					"id" : "obj-29",
 					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 19.0, 422.975708, 111.0, 63.0 ],
-					"style" : "",
+					"patching_rect" : [ 19.0, 422.975707999999997, 111.0, 63.0 ],
 					"text" : "Machine \nLearning"
 				}
 
@@ -233,13 +218,12 @@
 , 			{
 				"box" : 				{
 					"fontname" : "Helvetica Neue UltraLight Italic",
-					"fontsize" : 25.414198,
+					"fontsize" : 25.414197999999999,
 					"id" : "obj-56",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 19.0, 6.0, 325.0, 36.0 ],
-					"style" : "",
 					"text" : "Gestural Sound Toolkit"
 				}
 
@@ -247,13 +231,12 @@
 , 			{
 				"box" : 				{
 					"fontname" : "Helvetica Neue Light",
-					"fontsize" : 23.865383,
+					"fontsize" : 23.865383000000001,
 					"id" : "obj-28",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 962.416504, 661.461304, 224.0, 35.0 ],
-					"style" : "",
+					"patching_rect" : [ 962.41650390625, 571.4613037109375, 224.0, 35.0 ],
 					"text" : "Sound input / output"
 				}
 
@@ -273,7 +256,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 962.416504, 705.975708, 182.975769, 110.099037 ],
+					"patching_rect" : [ 962.41650390625, 615.9757080078125, 182.97576904296875, 110.099037170410156 ],
 					"viewvisibility" : 1
 				}
 
@@ -294,7 +277,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 702.416565, 672.975708, 240.794861, 145.891739 ],
+					"patching_rect" : [ 702.41656494140625, 582.9757080078125, 240.79486083984375, 145.891738891601562 ],
 					"viewvisibility" : 1
 				}
 
@@ -304,7 +287,7 @@
 					"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 					"color" : [ 0.670163, 0.727459, 0.804348, 1.0 ],
 					"fontname" : "Arial",
-					"fontsize" : 11.69588,
+					"fontsize" : 11.695880000000001,
 					"id" : "obj-7",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
@@ -312,13 +295,14 @@
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
-							"major" : 7,
-							"minor" : 3,
-							"revision" : 2,
+							"major" : 8,
+							"minor" : 0,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
+						"classnamespace" : "box",
 						"rect" : [ 645.0, 419.0, 500.0, 210.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
@@ -359,9 +343,8 @@
 									"presentation" : 1,
 									"presentation_linecount" : 12,
 									"presentation_rect" : [ 17.0, 25.0, 626.0, 167.0 ],
-									"style" : "",
 									"text" : "Gestural Sound Toolkit\na Max library for the design of Embodied Sonic Interactions\n\n(c) 2015 EAVI Group, Goldsmiths College, University of London\n     (contact: bc@goldsmithsdigital.com)\n\nContributors: \n– EAVI Group Goldsmiths College (Baptiste Caramiaux, Alessandro Altavilla)\n– IRCAM-Centre Pompidou (Norbert Schnell, Frédéric Bevilacqua, Diemo Schwarz)\n\n\nEAVI website: eavi.goldsmithsdigital.com",
-									"textcolor" : [ 0.501859, 0.501859, 0.501859, 1.0 ]
+									"textcolor" : [ 0.5018590092659, 0.5018590092659, 0.5018590092659, 1.0 ]
 								}
 
 							}
@@ -369,16 +352,14 @@
 						"lines" : [  ]
 					}
 ,
-					"patching_rect" : [ 275.0, 13.0, 58.999065, 22.0 ],
+					"patching_rect" : [ 275.0, 13.0, 58.999065000000002, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
 						"globalpatchername" : "",
-						"style" : "",
 						"tags" : ""
 					}
 ,
-					"style" : "",
 					"text" : "p Credits",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -386,35 +367,13 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.819608, 0.819608, 0.819608, 0.0 ],
-					"bgmode" : 2,
-					"border" : 1,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-21",
-					"lockeddragscroll" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "ml.temporal.gvf.maxpat",
-					"numinlets" : 2,
-					"numoutlets" : 7,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "", "", "", "", "", "", "" ],
-					"patching_rect" : [ 794.528564, 422.975708, 350.863739, 166.0 ],
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"fontname" : "Helvetica Neue Light",
-					"fontsize" : 23.865383,
+					"fontsize" : 23.865383000000001,
 					"id" : "obj-19",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 29.416595, 676.975708, 109.0, 35.0 ],
-					"style" : "",
+					"patching_rect" : [ 29.416595458984375, 586.9757080078125, 109.0, 35.0 ],
 					"text" : "Synthesis"
 				}
 
@@ -435,7 +394,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 435.416595, 672.975708, 240.794861, 145.891739 ],
+					"patching_rect" : [ 435.416595458984375, 582.9757080078125, 240.79486083984375, 145.891738891601562 ],
 					"viewvisibility" : 1
 				}
 
@@ -456,7 +415,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 157.11087, 672.975708, 240.794861, 109.320236 ],
+					"patching_rect" : [ 157.110870361328125, 582.9757080078125, 240.79486083984375, 109.320236206054688 ],
 					"viewvisibility" : 1
 				}
 
@@ -464,13 +423,12 @@
 , 			{
 				"box" : 				{
 					"fontname" : "Helvetica Neue Light",
-					"fontsize" : 23.865383,
+					"fontsize" : 23.865383000000001,
 					"id" : "obj-11",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 19.0, 255.975739, 94.0, 35.0 ],
-					"style" : "",
+					"patching_rect" : [ 19.0, 255.975739000000004, 94.0, 35.0 ],
 					"text" : "Analysis"
 				}
 
@@ -478,13 +436,12 @@
 , 			{
 				"box" : 				{
 					"fontname" : "Helvetica Neue Light",
-					"fontsize" : 23.9,
+					"fontsize" : 23.899999999999999,
 					"id" : "obj-10",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 19.0, 74.975731, 111.0, 35.0 ],
-					"style" : "",
+					"patching_rect" : [ 19.0, 74.975730999999996, 111.0, 35.0 ],
 					"text" : "Receivers"
 				}
 
@@ -505,7 +462,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 288.994385, 255.975739, 133.731216, 116.319092 ],
+					"patching_rect" : [ 288.994385000000023, 255.975739000000004, 133.731215999999989, 116.319091999999998 ],
 					"viewvisibility" : 1
 				}
 
@@ -526,7 +483,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 566.994385, 255.975739, 133.731216, 116.319092 ],
+					"patching_rect" : [ 566.994384999999966, 255.975739000000004, 133.731215999999989, 116.319091999999998 ],
 					"viewvisibility" : 1
 				}
 
@@ -547,7 +504,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 705.994385, 255.975739, 133.731216, 116.319092 ],
+					"patching_rect" : [ 705.994384999999966, 255.975739000000004, 133.731215999999989, 116.319091999999998 ],
 					"viewvisibility" : 1
 				}
 
@@ -568,7 +525,7 @@
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 428.305725, 255.975739, 133.731216, 25.629629 ],
+					"patching_rect" : [ 428.305724999999995, 255.975739000000004, 133.731215999999989, 25.629629000000001 ],
 					"viewvisibility" : 1
 				}
 
@@ -589,7 +546,7 @@
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 844.994385, 255.975739, 133.731216, 114.34758 ],
+					"patching_rect" : [ 844.994384999999966, 255.975739000000004, 133.731215999999989, 114.347579999999994 ],
 					"viewvisibility" : 1
 				}
 
@@ -610,7 +567,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 146.0, 255.975739, 133.731216, 114.34758 ],
+					"patching_rect" : [ 146.0, 255.975739000000004, 133.731215999999989, 114.347579999999994 ],
 					"viewvisibility" : 1
 				}
 
@@ -618,154 +575,158 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-31", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-14", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-18", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-9", 1 ]
 				}
 
 			}
  ],
 		"parameters" : 		{
-			"obj-3::obj-4" : [ "live.button", "live.button", 0 ],
+			"obj-15::obj-18::obj-88" : [ "live.toggle[6]", "live.toggle", 0 ],
+			"obj-1::obj-2::obj-13" : [ "live.toggle[1]", "live.toggle", 0 ],
+			"obj-2::obj-13" : [ "live.toggle[9]", "live.toggle", 0 ],
+			"obj-13::obj-15::obj-92" : [ "live.toggle[3]", "live.toggle", 0 ],
 			"obj-41::obj-5::obj-13" : [ "live.toggle[15]", "live.toggle", 0 ],
-			"obj-12::obj-18::obj-92" : [ "live.toggle[2]", "live.toggle", 0 ],
 			"obj-9::obj-5::obj-13" : [ "live.toggle[16]", "live.toggle", 0 ],
-			"obj-3::obj-6::obj-2::obj-13" : [ "live.toggle[12]", "live.toggle", 0 ],
+			"obj-3::obj-4" : [ "live.button", "live.button", 0 ],
+			"obj-12::obj-18::obj-92" : [ "live.toggle[2]", "live.toggle", 0 ],
 			"obj-16::obj-5::obj-13" : [ "live.toggle[11]", "live.toggle", 0 ],
+			"obj-3::obj-6::obj-2::obj-13" : [ "live.toggle[12]", "live.toggle", 0 ],
+			"obj-8::obj-46" : [ "live.toggle[14]", "live.toggle", 0 ],
+			"obj-15::obj-18::obj-92" : [ "live.toggle[5]", "live.toggle", 0 ],
 			"obj-12::obj-18::obj-88" : [ "live.toggle", "live.toggle", 0 ],
 			"obj-2::obj-3::obj-2::obj-13" : [ "live.toggle[7]", "live.toggle", 0 ],
-			"obj-15::obj-18::obj-92" : [ "live.toggle[5]", "live.toggle", 0 ],
-			"obj-8::obj-46" : [ "live.toggle[14]", "live.toggle", 0 ],
-			"obj-13::obj-15::obj-92" : [ "live.toggle[3]", "live.toggle", 0 ],
-			"obj-2::obj-13" : [ "live.toggle[9]", "live.toggle", 0 ],
-			"obj-15::obj-18::obj-88" : [ "live.toggle[6]", "live.toggle", 0 ],
-			"obj-8::obj-29" : [ "live.button[1]", "live.button", 0 ],
-			"obj-1::obj-2::obj-13" : [ "live.toggle[1]", "live.toggle", 0 ],
+			"obj-13::obj-15::obj-88" : [ "live.toggle[4]", "live.toggle", 0 ],
 			"obj-2::obj-8::obj-17" : [ "live.toggle[8]", "live.toggle[1]", 0 ],
-			"obj-13::obj-15::obj-88" : [ "live.toggle[4]", "live.toggle", 0 ]
+			"parameterbanks" : 			{
+
+			}
+
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "sp.energy.maxpat",
-				"bootpath" : "~/Work/Development/Gestural-Sound-Toolkit/mod-analysis/signal-processing",
+				"bootpath" : "~/Work/Development/GST/Gestural-Sound-Toolkit/mod-analysis/signal-processing",
+				"patcherrelativepath" : "./mod-analysis/signal-processing",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sp.gate.energy.maxpat",
-				"bootpath" : "~/Work/Development/Gestural-Sound-Toolkit/mod-analysis/signal-processing",
+				"bootpath" : "~/Work/Development/GST/Gestural-Sound-Toolkit/mod-analysis/signal-processing",
+				"patcherrelativepath" : "./mod-analysis/signal-processing",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sp.kick.maxpat",
-				"bootpath" : "~/Work/Development/Gestural-Sound-Toolkit/mod-analysis/signal-processing",
+				"bootpath" : "~/Work/Development/GST/Gestural-Sound-Toolkit/mod-analysis/signal-processing",
+				"patcherrelativepath" : "./mod-analysis/signal-processing",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sp.derivative.maxpat",
-				"bootpath" : "~/Work/Development/Gestural-Sound-Toolkit/mod-analysis/signal-processing",
+				"bootpath" : "~/Work/Development/GST/Gestural-Sound-Toolkit/mod-analysis/signal-processing",
+				"patcherrelativepath" : "./mod-analysis/signal-processing",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sp.highpass.maxpat",
-				"bootpath" : "~/Work/Development/Gestural-Sound-Toolkit/mod-analysis/signal-processing",
+				"bootpath" : "~/Work/Development/GST/Gestural-Sound-Toolkit/mod-analysis/signal-processing",
+				"patcherrelativepath" : "./mod-analysis/signal-processing",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sp.lowpass.maxpat",
-				"bootpath" : "~/Work/Development/Gestural-Sound-Toolkit/mod-analysis/signal-processing",
+				"bootpath" : "~/Work/Development/GST/Gestural-Sound-Toolkit/mod-analysis/signal-processing",
+				"patcherrelativepath" : "./mod-analysis/signal-processing",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "synth.trigger.samples.maxpat",
-				"bootpath" : "~/Work/Development/Gestural-Sound-Toolkit/mod-synthesis",
+				"bootpath" : "~/Work/Development/GST/Gestural-Sound-Toolkit/mod-synthesis",
+				"patcherrelativepath" : "./mod-synthesis",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "synth.ctrl.soundpool.maxpat",
-				"bootpath" : "~/Work/Development/Gestural-Sound-Toolkit/mod-synthesis",
+				"bootpath" : "~/Work/Development/GST/Gestural-Sound-Toolkit/mod-synthesis",
+				"patcherrelativepath" : "./mod-synthesis",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "audio.ctrl.maxpat",
-				"bootpath" : "~/Work/Development/Gestural-Sound-Toolkit/mod-synthesis",
+				"bootpath" : "~/Work/Development/GST/Gestural-Sound-Toolkit/mod-synthesis",
+				"patcherrelativepath" : "./mod-synthesis",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "synth.manipulate.samples.maxpat",
-				"bootpath" : "~/Work/Development/Gestural-Sound-Toolkit/mod-synthesis",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ml.temporal.gvf.maxpat",
-				"bootpath" : "~/Work/Development/Gestural-Sound-Toolkit/mod-analysis/machine-learning",
+				"bootpath" : "~/Work/Development/GST/Gestural-Sound-Toolkit/mod-synthesis",
+				"patcherrelativepath" : "./mod-synthesis",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "synth.scratch.samples.maxpat",
-				"bootpath" : "~/Work/Development/Gestural-Sound-Toolkit/mod-synthesis",
+				"bootpath" : "~/Work/Development/GST/Gestural-Sound-Toolkit/mod-synthesis",
+				"patcherrelativepath" : "./mod-synthesis",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sid.output.maxpat",
-				"bootpath" : "~/Work/Development/Gestural-Sound-Toolkit/ext-libs/abstractions",
+				"bootpath" : "~/Work/Development/GST/Gestural-Sound-Toolkit/ext-libs/abstractions",
+				"patcherrelativepath" : "./ext-libs/abstractions",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ml.classification.gmm.maxpat",
-				"bootpath" : "~/Work/Development/Gestural-Sound-Toolkit/mod-analysis/machine-learning",
+				"bootpath" : "~/Work/Development/GST/Gestural-Sound-Toolkit/mod-analysis/machine-learning",
+				"patcherrelativepath" : "./mod-analysis/machine-learning",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "leapmotion.maxpat",
-				"bootpath" : "~/Work/Development/Gestural-Sound-Toolkit/mod-interfaces/leapmotion",
+				"bootpath" : "~/Work/Development/GST/Gestural-Sound-Toolkit/mod-interfaces/leapmotion",
+				"patcherrelativepath" : "./mod-interfaces/leapmotion",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "acc_osc.maxpat",
-				"bootpath" : "~/Work/Development/Gestural-Sound-Toolkit/mod-interfaces/acc",
+				"bootpath" : "~/Work/Development/GST/Gestural-Sound-Toolkit/mod-interfaces/acc",
+				"patcherrelativepath" : "./mod-interfaces/acc",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "ml.regression.mlp.maxpat",
-				"bootpath" : "~/Work/Development/Gestural-Sound-Toolkit/mod-analysis/machine-learning",
+				"name" : "ml.regression.gmr.maxpat",
+				"bootpath" : "~/Work/Development/GST/Gestural-Sound-Toolkit/mod-analysis/machine-learning",
+				"patcherrelativepath" : "./mod-analysis/machine-learning",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "udp.maxpat",
-				"bootpath" : "~/Work/Development/Gestural-Sound-Toolkit/mod-interfaces/udp",
+				"bootpath" : "~/Work/Development/GST/Gestural-Sound-Toolkit/mod-interfaces/udp",
+				"patcherrelativepath" : "./mod-interfaces/udp",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "myo.maxpat",
-				"bootpath" : "~/Work/Development/Gestural-Sound-Toolkit/mod-interfaces/myo",
+				"bootpath" : "~/Work/Development/GST/Gestural-Sound-Toolkit/mod-interfaces/myo",
+				"patcherrelativepath" : "./mod-interfaces/myo",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -779,10 +740,6 @@
 			}
 , 			{
 				"name" : "mubu.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "gvf.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -802,7 +759,7 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "mlpmax.mxo",
+				"name" : "mubu.gmr.mxo",
 				"type" : "iLaX"
 			}
 , 			{
