@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 653.0, 79.0, 726.0, 639.0 ],
+		"rect" : [ 282.0, 128.0, 726.0, 639.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -65,7 +65,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "int" ],
-					"patching_rect" : [ 28.0, 278.0, 30.0, 22.0 ],
+					"patching_rect" : [ 28.0, 293.0, 30.0, 22.0 ],
 					"text" : "t 1 i"
 				}
 
@@ -77,7 +77,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "int", "int" ],
-					"patching_rect" : [ 28.0, 248.0, 50.0, 22.0 ],
+					"patching_rect" : [ 28.0, 263.0, 50.0, 22.0 ],
 					"text" : "change"
 				}
 
@@ -93,11 +93,11 @@
 					"id" : "obj-41",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "acc_osc.maxpat",
-					"numinlets" : 0,
-					"numoutlets" : 2,
+					"name" : "riot.maxpat",
+					"numinlets" : 2,
+					"numoutlets" : 3,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "", "int" ],
+					"outlettype" : [ "", "", "int" ],
 					"patching_rect" : [ 28.0, 13.975739000000001, 163.0, 132.566956000000005 ],
 					"viewvisibility" : 1
 				}
@@ -118,7 +118,7 @@
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 28.0, 167.975707999999997, 300.0, 72.0 ],
+					"patching_rect" : [ 28.0, 182.9757080078125, 300.0, 72.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -138,7 +138,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 28.0, 470.975707999999997, 182.975769000000014, 110.099036999999996 ],
+					"patching_rect" : [ 28.0, 485.9757080078125, 182.97576904296875, 110.099037170410156 ],
 					"viewvisibility" : 1
 				}
 
@@ -159,7 +159,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 28.0, 329.975707999999997, 240.794860999999997, 109.320235999999994 ],
+					"patching_rect" : [ 28.0, 344.9757080078125, 240.79486083984375, 109.320236206054688 ],
 					"viewvisibility" : 1
 				}
 
@@ -168,7 +168,7 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-14", 0 ],
-					"midpoints" : [ 210.5, 156.759201045898436, 37.5, 156.759201045898436 ],
+					"midpoints" : [ 210.5, 159.759201045898436, 37.5, 159.759201045898436 ],
 					"source" : [ "obj-1", 0 ]
 				}
 
@@ -217,9 +217,8 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-12::obj-18::obj-88" : [ "live.toggle", "live.toggle", 0 ],
 			"obj-12::obj-18::obj-92" : [ "live.toggle[2]", "live.toggle", 0 ],
-			"obj-41::obj-5::obj-13" : [ "live.toggle[1]", "live.toggle", 0 ],
+			"obj-12::obj-18::obj-88" : [ "live.toggle", "live.toggle", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -249,8 +248,8 @@
 			}
 , 			{
 				"name" : "sid.output.maxpat",
-				"bootpath" : "~/Work/Development/GST/Gestural-Sound-Toolkit/ext-libs/abstractions",
-				"patcherrelativepath" : "../ext-libs/abstractions",
+				"bootpath" : "~/Work/Development/GST/Gestural-Sound-Toolkit/mod-synthesis",
+				"patcherrelativepath" : "../mod-synthesis",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -262,9 +261,16 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "acc_osc.maxpat",
-				"bootpath" : "~/Work/Development/GST/Gestural-Sound-Toolkit/mod-interfaces/acc",
-				"patcherrelativepath" : "../mod-interfaces/acc",
+				"name" : "riot.maxpat",
+				"bootpath" : "~/Work/Development/GST/Gestural-Sound-Toolkit/mod-interfaces/riot",
+				"patcherrelativepath" : "../mod-interfaces/riot",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "riotbitalino.maxpat",
+				"bootpath" : "~/Work/Development/GST/Gestural-Sound-Toolkit/mod-interfaces/riot",
+				"patcherrelativepath" : "../mod-interfaces/riot",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -276,7 +282,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "mubu.gmm.mxo",
+				"name" : "mubu.hhmm.mxo",
 				"type" : "iLaX"
 			}
 , 			{

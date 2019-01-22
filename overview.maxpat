@@ -39,6 +39,27 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"bgcolor" : [ 0.6, 0.678431, 0.756863, 0.0 ],
+					"bgmode" : 2,
+					"border" : 1,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-23",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "riot.maxpat",
+					"numinlets" : 2,
+					"numoutlets" : 3,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "", "", "int" ],
+					"patching_rect" : [ 1111.0, 74.975730895996094, 163.0, 132.56695556640625 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"bgcolor" : [ 0.823529, 0.823529, 0.823529, 0.0 ],
 					"bgmode" : 2,
 					"border" : 1,
@@ -93,7 +114,7 @@
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "", "int" ],
-					"patching_rect" : [ 985.39227294921875, 74.975730895996094, 160.0, 132.56695556640625 ],
+					"patching_rect" : [ 918.39227294921875, 74.975730895996094, 160.0, 132.56695556640625 ],
 					"viewvisibility" : 1
 				}
 
@@ -105,7 +126,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 837.0, 216.0, 90.0, 22.0 ],
+					"patching_rect" : [ 796.0, 216.0, 90.0, 22.0 ],
 					"text" : "route acc euler"
 				}
 
@@ -126,7 +147,7 @@
 					"numoutlets" : 3,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "", "", "int" ],
-					"patching_rect" : [ 765.0, 74.975730895996094, 163.0, 132.56695556640625 ],
+					"patching_rect" : [ 724.0, 74.975730895996094, 163.0, 132.56695556640625 ],
 					"viewvisibility" : 1
 				}
 
@@ -147,7 +168,7 @@
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "", "int" ],
-					"patching_rect" : [ 557.0, 74.975730999999996, 163.0, 132.566956000000005 ],
+					"patching_rect" : [ 531.0, 74.975730895996094, 163.0, 132.56695556640625 ],
 					"viewvisibility" : 1
 				}
 
@@ -227,7 +248,7 @@
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "", "int" ],
-					"patching_rect" : [ 347.0, 74.975730999999996, 163.0, 132.566956000000005 ],
+					"patching_rect" : [ 338.0, 74.975730895996094, 163.0, 132.56695556640625 ],
 					"viewvisibility" : 1
 				}
 
@@ -633,24 +654,24 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-20::obj-15::obj-88" : [ "live.toggle[19]", "live.toggle", 0 ],
-			"obj-12::obj-18::obj-88" : [ "live.toggle", "live.toggle", 0 ],
-			"obj-2::obj-8::obj-17" : [ "live.toggle[8]", "live.toggle[1]", 0 ],
-			"obj-12::obj-18::obj-92" : [ "live.toggle[2]", "live.toggle", 0 ],
-			"obj-41::obj-5::obj-13" : [ "live.toggle[15]", "live.toggle", 0 ],
 			"obj-13::obj-15::obj-92" : [ "live.toggle[3]", "live.toggle", 0 ],
-			"obj-1::obj-2::obj-13" : [ "live.toggle[1]", "live.toggle", 0 ],
-			"obj-22::obj-24" : [ "live.toggle[13]", "live.toggle", 0 ],
-			"obj-2::obj-13" : [ "live.toggle[9]", "live.toggle", 0 ],
+			"obj-12::obj-18::obj-88" : [ "live.toggle", "live.toggle", 0 ],
 			"obj-9::obj-5::obj-13" : [ "live.toggle[16]", "live.toggle", 0 ],
-			"obj-15::obj-18::obj-92" : [ "live.toggle[17]", "live.toggle", 0 ],
-			"obj-20::obj-15::obj-92" : [ "live.toggle[10]", "live.toggle", 0 ],
-			"obj-15::obj-18::obj-88" : [ "live.toggle[20]", "live.toggle", 0 ],
-			"obj-3::obj-4" : [ "live.button", "live.button", 0 ],
-			"obj-13::obj-15::obj-88" : [ "live.toggle[4]", "live.toggle", 0 ],
+			"obj-2::obj-8::obj-17" : [ "live.toggle[8]", "live.toggle[1]", 0 ],
 			"obj-16::obj-5::obj-13" : [ "live.toggle[11]", "live.toggle", 0 ],
-			"obj-2::obj-3::obj-2::obj-13" : [ "live.toggle[7]", "live.toggle", 0 ],
+			"obj-20::obj-15::obj-92" : [ "live.toggle[10]", "live.toggle", 0 ],
+			"obj-20::obj-15::obj-88" : [ "live.toggle[19]", "live.toggle", 0 ],
+			"obj-12::obj-18::obj-92" : [ "live.toggle[2]", "live.toggle", 0 ],
+			"obj-15::obj-18::obj-92" : [ "live.toggle[17]", "live.toggle", 0 ],
+			"obj-13::obj-15::obj-88" : [ "live.toggle[4]", "live.toggle", 0 ],
 			"obj-3::obj-6::obj-2::obj-13" : [ "live.toggle[12]", "live.toggle", 0 ],
+			"obj-1::obj-2::obj-13" : [ "live.toggle[1]", "live.toggle", 0 ],
+			"obj-41::obj-5::obj-13" : [ "live.toggle[15]", "live.toggle", 0 ],
+			"obj-2::obj-3::obj-2::obj-13" : [ "live.toggle[7]", "live.toggle", 0 ],
+			"obj-2::obj-13" : [ "live.toggle[9]", "live.toggle", 0 ],
+			"obj-3::obj-4" : [ "live.button", "live.button", 0 ],
+			"obj-15::obj-18::obj-88" : [ "live.toggle[20]", "live.toggle", 0 ],
+			"obj-22::obj-24" : [ "live.toggle[13]", "live.toggle", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -805,6 +826,20 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "riot.maxpat",
+				"bootpath" : "~/Work/Development/GST/Gestural-Sound-Toolkit/mod-interfaces/riot",
+				"patcherrelativepath" : "./mod-interfaces/riot",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "riotbitalino.maxpat",
+				"bootpath" : "~/Work/Development/GST/Gestural-Sound-Toolkit/mod-interfaces/riot",
+				"patcherrelativepath" : "./mod-interfaces/riot",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "pipo.mxo",
 				"type" : "iLaX"
 			}
@@ -821,7 +856,7 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "mubu.gmm.mxo",
+				"name" : "mubu.hhmm.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -838,10 +873,6 @@
 			}
 , 			{
 				"name" : "myomax.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "mubu.hhmm.mxo",
 				"type" : "iLaX"
 			}
  ],

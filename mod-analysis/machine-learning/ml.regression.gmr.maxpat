@@ -39,6 +39,71 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-110",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 872.0, 250.0, 93.0, 22.0 ],
+					"text" : "loadmess 0.001"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.682352941176471, 0.682352941176471, 0.682352941176471, 0.3 ],
+					"fontsize" : 9.0,
+					"id" : "obj-70",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 953.0, 284.0, 124.0, 17.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 151.5, 27.5, 63.0, 17.0 ],
+					"text" : "regularization",
+					"textcolor" : [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.682352941176471, 0.682352941176471, 0.682352941176471, 0.3 ],
+					"fontsize" : 10.0,
+					"format" : 6,
+					"id" : "obj-48",
+					"maxclass" : "flonum",
+					"maximum" : 1.0,
+					"minimum" : 0.0001,
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 872.0, 284.0, 70.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 151.5, 44.5, 63.0, 20.0 ],
+					"textcolor" : [ 0.698039215686274, 0.352941176470588, 0.0, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"attr" : "regularization",
+					"fontname" : "Arial",
+					"fontsize" : 11.0,
+					"id" : "obj-46",
+					"lock" : 1,
+					"maxclass" : "attrui",
+					"menu_display" : 2,
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 872.0, 332.0, 226.0, 21.0 ],
+					"text_width" : 120.0
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.16 ],
 					"color" : [ 0.614285, 0.654518, 0.758022, 1.0 ],
 					"fontsize" : 9.0,
@@ -2318,7 +2383,7 @@
 					"patching_rect" : [ 47.25, -19.0, 122.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 0.0, 300.0, 20.0 ],
-					"text" : "Regression (GMR)",
+					"text" : "Regression ",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -2902,6 +2967,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-48", 0 ],
+					"source" : [ "obj-110", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-54", 0 ],
 					"source" : [ "obj-111", 0 ]
 				}
@@ -3198,6 +3270,20 @@
 					"destination" : [ "obj-41", 0 ],
 					"hidden" : 1,
 					"source" : [ "obj-43", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-146", 0 ],
+					"source" : [ "obj-46", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-46", 0 ],
+					"source" : [ "obj-48", 0 ]
 				}
 
 			}
