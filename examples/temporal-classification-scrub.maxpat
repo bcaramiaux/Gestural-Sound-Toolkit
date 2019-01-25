@@ -44,7 +44,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "int" ],
-					"patching_rect" : [ 28.0, 254.0, 29.5, 22.0 ],
+					"patching_rect" : [ 28.0, 449.0, 29.5, 22.0 ],
 					"text" : "t 1 i"
 				}
 
@@ -57,10 +57,10 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 168.5, 254.0, 67.0, 45.0 ],
+					"patching_rect" : [ 168.5, 449.0, 67.0, 45.0 ],
 					"setminmax" : [ 0.0, 1.0 ],
 					"setstyle" : 1,
-					"size" : 3
+					"size" : 4
 				}
 
 			}
@@ -73,7 +73,7 @@
 					"orientation" : 0,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 309.0, 254.0, 151.0, 23.0 ],
+					"patching_rect" : [ 309.0, 449.0, 151.0, 23.0 ],
 					"setminmax" : [ 0.0, 1.0 ],
 					"setstyle" : 1
 				}
@@ -87,8 +87,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 63.0, 254.0, 48.0, 20.0 ],
-					"text" : "1"
+					"patching_rect" : [ 63.0, 449.0, 48.0, 20.0 ],
+					"text" : "4"
 				}
 
 			}
@@ -149,7 +149,7 @@
 					"numoutlets" : 3,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 28.0, 167.975707999999997, 300.0, 72.0 ],
+					"patching_rect" : [ 28.0, 167.9757080078125, 313.0, 267.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -169,7 +169,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 28.0, 497.9757080078125, 182.97576904296875, 110.099037170410156 ],
+					"patching_rect" : [ 28.0, 662.9757080078125, 182.97576904296875, 110.099037170410156 ],
 					"viewvisibility" : 1
 				}
 
@@ -190,7 +190,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 28.0, 331.9757080078125, 240.79486083984375, 111.320236206054688 ],
+					"patching_rect" : [ 28.0, 496.9757080078125, 240.79486083984375, 111.320236206054688 ],
 					"viewvisibility" : 1
 				}
 
@@ -220,7 +220,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-12", 2 ],
-					"midpoints" : [ 318.5, 318.47570800390622, 185.363240559895843, 318.47570800390622 ],
+					"midpoints" : [ 331.5, 451.47570800390622, 185.363240559895843, 451.47570800390622 ],
 					"order" : 1,
 					"source" : [ "obj-14", 2 ]
 				}
@@ -237,7 +237,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-3", 1 ],
-					"midpoints" : [ 37.5, 246.0, 101.5, 246.0 ],
+					"midpoints" : [ 37.5, 441.48785400390625, 101.5, 441.48785400390625 ],
 					"order" : 0,
 					"source" : [ "obj-14", 0 ]
 				}
@@ -288,10 +288,10 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-41::obj-5::obj-13" : [ "live.toggle[1]", "live.toggle", 0 ],
-			"obj-12::obj-15::obj-88" : [ "live.toggle[5]", "live.toggle", 0 ],
-			"obj-12::obj-15::obj-92" : [ "live.toggle[2]", "live.toggle", 0 ],
 			"obj-14::obj-24" : [ "live.toggle", "live.toggle", 0 ],
+			"obj-12::obj-15::obj-88" : [ "live.toggle[5]", "live.toggle", 0 ],
+			"obj-41::obj-5::obj-13" : [ "live.toggle[1]", "live.toggle", 0 ],
+			"obj-12::obj-15::obj-92" : [ "live.toggle[2]", "live.toggle", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -321,8 +321,8 @@
 			}
 , 			{
 				"name" : "sid.output.maxpat",
-				"bootpath" : "~/Work/Development/GST/Gestural-Sound-Toolkit/ext-libs/abstractions",
-				"patcherrelativepath" : "../ext-libs/abstractions",
+				"bootpath" : "~/Work/Development/GST/Gestural-Sound-Toolkit/mod-synthesis",
+				"patcherrelativepath" : "../mod-synthesis",
 				"type" : "JSON",
 				"implicit" : 1
 			}
