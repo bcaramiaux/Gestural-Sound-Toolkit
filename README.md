@@ -9,7 +9,7 @@ Clone the repo:
 git clone --depth=1 https://github.com/bcaramiaux/Gestural-Sound-Toolkit 
 ```
 
-The toolkit heavly relies on the MuBu lib developed by the ISMM team at IRCAM. This a Max/MSP library that is free (only to register to the IRCAM forum [spam-free]): http://forumnet.ircam.fr/product/mubu-en/. 
+The toolkit heavily relies on the MuBu lib developed by the ISMM team at IRCAM. This a Max/MSP library that is free (only to register to the IRCAM forum [spam-free]): http://forumnet.ircam.fr/product/mubu-en/. 
 
 **Note for Windows' users**: you need to install Visual Studio 2015 Redistributable Package to have MuBu working! 
 
@@ -26,7 +26,7 @@ Caramiaux, Baptiste, Altavilla, Alessandro, Pobiner, Scott and Tanaka, Atau. "Fo
 
 ## Acknowledgments
 
-GST has been devoloped as part of the MetaGestureMusic project, which received funding from the European Research Council under the European Union’s Seventh Framework Programme (FP/2007-2013) / ERC Grant Agreement n. FP7-283771.
+GST has been developed as part of the MetaGestureMusic project, which received funding from the European Research Council under the European Union’s Seventh Framework Programme (FP/2007-2013) / ERC Grant Agreement n. FP7-283771.
 
 Original authors: Baptiste Caramiaux, Alessandro Altavilla
 
