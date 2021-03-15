@@ -15,7 +15,8 @@ The toolkit makes use of the MuBu lib developed by the ISMM team at IRCAM. This 
 `https://forum.ircam.fr/projects/detail/mubu/` 
 (necessary to register to the IRCAM forum [spam-free])
 
-THe MuBu package must be either copied in the Max Package folder, or referenced in the Files Preference: `Options > File Preferences > +`
+THe MuBu package must be either copied in the Max Package folder, or referenced in the Files Preference: 
+`Options > File Preferences > +`
 
 **Note for Windows' users**: you need to install Visual Studio 2015 Redistributable Package to have MuBu working! 
 
