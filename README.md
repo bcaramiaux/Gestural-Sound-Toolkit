@@ -11,7 +11,10 @@ git clone --depth=1 https://github.com/ircam-ismm/Gestural-Sound-Toolkit.git
 ```
 
 The toolkit makes use of the MuBu lib developed by the ISMM team at IRCAM. This a Max/MSP library that is free avaaialble as Max Package (in the Package manager), or freely available at the Forum Ircam
-`https://forum.ircam.fr/projects/detail/mubu/` (necessary to register to the IRCAM forum [spam-free])
+
+`https://forum.ircam.fr/projects/detail/mubu/` 
+(necessary to register to the IRCAM forum [spam-free])
+
 THe MuBu package must be either copied in the Max Package folder, or referenced in the Files Preference: `Options > File Preferences > +`
 
 **Note for Windows' users**: you need to install Visual Studio 2015 Redistributable Package to have MuBu working! 
@@ -28,7 +31,7 @@ a Max library for the design of Embodied Sonic Interactions
 > – LIMSI CNRS (Jules Françoise)
 
 
-V1 Contributors:
+> V1 Contributors:
 > - AVI Group Goldsmiths College (Baptiste Caramiaux, Alessandro Altavilla)
 > – IRCAM-Centre Pompidou (Mubu: Riccardo Borghesi, Diemo Schwarz, Norbert Schnell, Frédéric Bevilacqua, Jules Françoise)
 > EAVI website: eavi.goldsmithsdigital.com, (c) 2015 EAVI Group, Goldsmiths College, University of London
