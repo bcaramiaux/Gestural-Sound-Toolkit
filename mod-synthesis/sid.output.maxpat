@@ -2,13 +2,14 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 7,
-			"minor" : 0,
-			"revision" : 6,
-			"architecture" : "x86",
+			"major" : 8,
+			"minor" : 1,
+			"revision" : 8,
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
+		"classnamespace" : "box",
 		"rect" : [ 310.0, 301.0, 632.0, 371.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -36,7 +37,21 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"comment" : "Audio input",
+					"id" : "obj-7",
+					"index" : 2,
+					"maxclass" : "inlet",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 136.0, 30.0, 25.0, 25.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 10.0,
@@ -45,44 +60,37 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 229.0, 6.0, 72.0, 20.0 ],
-					"style" : "",
-					"text" : "loadmess 110"
+					"patching_rect" : [ 191.0, 79.0, 72.0, 20.0 ],
+					"text" : "loadmess 0"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 10.0,
-					"id" : "obj-3",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 104.0, 56.5, 106.0, 18.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 69.0, 48.5, 98.0, 18.0 ],
-					"style" : "",
-					"text" : "Overall Level Meter "
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"id" : "obj-2",
-					"interpinlet" : 1,
-					"knobcolor" : [ 0.86, 0.86, 0.86, 1.0 ],
-					"maxclass" : "gain~",
+					"lastchannelcount" : 0,
+					"maxclass" : "live.gain~",
 					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "signal", "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 14.0, 30.0, 90.0, 21.0 ],
+					"numoutlets" : 5,
+					"orientation" : 1,
+					"outlettype" : [ "signal", "signal", "", "float", "list" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 19.0, 82.5, 136.0, 47.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 6.0, 25.0, 58.0, 24.0 ],
-					"stripecolor" : [ 1.0, 0.896353, 0.0, 0.7 ],
-					"style" : ""
+					"presentation_rect" : [ 6.0, 23.0, 131.0, 47.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_longname" : "live.gain~[5]",
+							"parameter_mmax" : 6.0,
+							"parameter_mmin" : -70.0,
+							"parameter_shortname" : "live.gain~[4]",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 4
+						}
+
+					}
+,
+					"varname" : "live.gain~[1]"
 				}
 
 			}
@@ -94,27 +102,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 60.0, 6.0, 178.0, 18.0 ],
+					"patching_rect" : [ 191.0, 37.0, 178.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 6.0, 4.0, 178.0, 18.0 ],
-					"style" : "",
 					"text" : "Master Sound Output"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 10.0,
-					"id" : "obj-23",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 104.0, 31.5, 106.0, 18.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 69.0, 25.0, 102.0, 18.0 ],
-					"style" : "",
-					"text" : "Overall Gain Control"
 				}
 
 			}
@@ -126,10 +117,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 96.5, 82.0, 119.0, 18.0 ],
+					"patching_rect" : [ 175.5, 147.5, 119.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 69.0, 78.0, 111.0, 18.0 ],
-					"style" : "",
+					"presentation_rect" : [ 69.0, 64.0, 111.0, 18.0 ],
 					"text" : "Press to Start the DAC"
 				}
 
@@ -138,12 +128,12 @@
 				"box" : 				{
 					"comment" : "Audio input",
 					"id" : "obj-20",
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 14.0, -1.0, 25.0, 25.0 ],
-					"style" : ""
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 19.0, 30.0, 25.0, 25.0 ]
 				}
 
 			}
@@ -153,24 +143,9 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 14.0, 82.0, 32.0, 32.0 ],
+					"patching_rect" : [ 19.0, 212.0, 32.0, 32.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 6.0, 68.5, 37.0, 37.0 ],
-					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-17",
-					"maxclass" : "meter~",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "float" ],
-					"patching_rect" : [ 40.0, 62.5, 58.0, 12.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 6.0, 51.0, 58.0, 13.0 ],
-					"style" : ""
+					"presentation_rect" : [ 143.0, 25.0, 37.0, 37.0 ]
 				}
 
 			}
@@ -178,26 +153,14 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-1", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-17", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-2", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-19", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
+					"order" : 0,
 					"source" : [ "obj-2", 0 ]
 				}
 
@@ -205,8 +168,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-19", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
+					"order" : 1,
 					"source" : [ "obj-2", 0 ]
 				}
 
@@ -214,15 +176,18 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-20", 0 ]
 				}
 
 			}
- ],
-		"dependency_cache" : [  ],
-		"embedsnapshot" : 0
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 1 ],
+					"source" : [ "obj-7", 0 ]
+				}
+
+			}
+ ]
 	}
 
 }

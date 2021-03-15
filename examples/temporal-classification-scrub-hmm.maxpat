@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 683.0, 186.0, 726.0, 815.0 ],
+		"rect" : [ 412.0, 79.0, 735.0, 787.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,62 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-18",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "int", "int" ],
+					"patching_rect" : [ 171.494384765625, 428.0, 48.0, 22.0 ],
+					"text" : "change"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-17",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 372.0, 283.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-10",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 372.0, 317.0, 32.0, 22.0 ],
+					"text" : "gate"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgmode" : 0,
+					"border" : 1,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-2",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "ml.classification.hhmm.maxpat",
+					"numinlets" : 7,
+					"numoutlets" : 3,
+					"offset" : [ 0.0, -3.0 ],
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 29.0, 338.656585693359375, 303.494384765625, 77.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-16",
 					"maxclass" : "toggle",
 					"numinlets" : 1,
@@ -66,7 +122,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 29.0, 158.6566162109375, 133.731216430664062, 116.319091796875 ],
+					"patching_rect" : [ 28.0, 158.6566162109375, 133.731216430664062, 116.319091796875 ],
 					"viewvisibility" : 1
 				}
 
@@ -115,19 +171,6 @@
 			}
 , 			{
 				"box" : 				{
-					"format" : 6,
-					"id" : "obj-3",
-					"maxclass" : "flonum",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 249.333333333333371, 433.0, 50.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"bgcolor" : [ 0.6, 0.678431, 0.756863, 0.0 ],
 					"bgmode" : 2,
 					"border" : 1,
@@ -168,7 +211,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 304.666666666666686, 480.0, 69.0, 29.0 ],
+					"patching_rect" : [ 29.0, 480.0, 69.0, 29.0 ],
 					"text" : "normalized likelihoods"
 				}
 
@@ -207,10 +250,10 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 304.666666666666686, 433.0, 67.0, 45.0 ],
+					"patching_rect" : [ 29.0, 433.0, 67.0, 45.0 ],
 					"setminmax" : [ 0.0, 1.0 ],
 					"setstyle" : 1,
-					"size" : 3
+					"size" : 2
 				}
 
 			}
@@ -246,26 +289,6 @@
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "", "int" ],
 					"patching_rect" : [ 529.0, 4.975739000000001, 163.0, 132.56695556640625 ],
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgmode" : 0,
-					"border" : 1,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-14",
-					"lockeddragscroll" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "ml.temporal.classification.gvf.maxpat",
-					"numinlets" : 2,
-					"numoutlets" : 7,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "", "", "", "", "", "", "" ],
-					"patching_rect" : [ 28.0, 348.9757080078125, 351.0, 76.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -314,17 +337,8 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-14", 1 ],
-					"midpoints" : [ 682.5, 330.759201287109363, 369.5, 330.759201287109363 ],
-					"source" : [ "obj-1", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-14", 0 ],
-					"midpoints" : [ 538.5, 319.759201287109363, 37.5, 319.759201287109363 ],
-					"source" : [ "obj-1", 0 ]
+					"destination" : [ "obj-2", 1 ],
+					"source" : [ "obj-10", 0 ]
 				}
 
 			}
@@ -332,27 +346,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-26", 0 ],
 					"source" : [ "obj-12", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-3", 0 ],
-					"source" : [ "obj-14", 4 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-4", 0 ],
-					"source" : [ "obj-14", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-5", 0 ],
-					"source" : [ "obj-14", 5 ]
 				}
 
 			}
@@ -379,21 +372,49 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-14", 1 ],
-					"source" : [ "obj-25", 0 ]
+					"destination" : [ "obj-10", 0 ],
+					"source" : [ "obj-17", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-15", 0 ],
-					"source" : [ "obj-3", 0 ]
+					"source" : [ "obj-18", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-14", 0 ],
+					"destination" : [ "obj-18", 0 ],
+					"source" : [ "obj-2", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"source" : [ "obj-2", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-10", 1 ],
+					"source" : [ "obj-25", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
 					"source" : [ "obj-31", 0 ]
 				}
 
@@ -459,56 +480,49 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "synth.scrub.samples.maxpat",
-				"bootpath" : "~/github/Gestural-Sound-Toolkit/mod-synthesis",
+				"bootpath" : "~/Documents/Max/Gestural Sound Toolbox V2/mod-synthesis",
 				"patcherrelativepath" : "../mod-synthesis",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "synth.ctrl.soundpool.maxpat",
-				"bootpath" : "~/github/Gestural-Sound-Toolkit/mod-synthesis",
+				"bootpath" : "~/Documents/Max/Gestural Sound Toolbox V2/mod-synthesis",
 				"patcherrelativepath" : "../mod-synthesis",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "audio.ctrl.maxpat",
-				"bootpath" : "~/github/Gestural-Sound-Toolkit/mod-synthesis",
+				"bootpath" : "~/Documents/Max/Gestural Sound Toolbox V2/mod-synthesis",
 				"patcherrelativepath" : "../mod-synthesis",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sid.output.maxpat",
-				"bootpath" : "~/github/Gestural-Sound-Toolkit/mod-synthesis",
+				"bootpath" : "~/Documents/Max/Gestural Sound Toolbox V2/mod-synthesis",
 				"patcherrelativepath" : "../mod-synthesis",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "ml.temporal.classification.gvf.maxpat",
-				"bootpath" : "~/github/Gestural-Sound-Toolkit/mod-analysis/machine-learning",
-				"patcherrelativepath" : "../mod-analysis/machine-learning",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "drawing.maxpat",
-				"bootpath" : "~/github/Gestural-Sound-Toolkit/mod-interfaces/lcd",
+				"bootpath" : "~/Documents/Max/Gestural Sound Toolbox V2/mod-interfaces/lcd",
 				"patcherrelativepath" : "../mod-interfaces/lcd",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "riotbitalino-bp.maxpat",
-				"bootpath" : "~/github/Gestural-Sound-Toolkit/mod-interfaces/riot",
+				"bootpath" : "~/Documents/Max/Gestural Sound Toolbox V2/mod-interfaces/riot",
 				"patcherrelativepath" : "../mod-interfaces/riot",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "riotbitalino.maxpat",
-				"bootpath" : "~/github/Gestural-Sound-Toolkit/mod-interfaces/riot",
+				"bootpath" : "~/Documents/Max/Gestural Sound Toolbox V2/mod-interfaces/riot",
 				"patcherrelativepath" : "../mod-interfaces/riot",
 				"type" : "JSON",
 				"implicit" : 1
@@ -516,29 +530,56 @@
 , 			{
 				"name" : "riot-logo.png",
 				"bootpath" : "~/Documents/Max/riot-new/various",
-				"patcherrelativepath" : "../../../Documents/Max/riot-new/various",
+				"patcherrelativepath" : "../../riot-new/various",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sp.acc.intensity.maxpat",
-				"bootpath" : "~/github/Gestural-Sound-Toolkit/mod-analysis/signal-processing",
+				"bootpath" : "~/Documents/Max/Gestural Sound Toolbox V2/mod-analysis/signal-processing",
 				"patcherrelativepath" : "../mod-analysis/signal-processing",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sp.gate.float.maxpat",
-				"bootpath" : "~/github/Gestural-Sound-Toolkit/mod-analysis/signal-processing",
+				"bootpath" : "~/Documents/Max/Gestural Sound Toolbox V2/mod-analysis/signal-processing",
 				"patcherrelativepath" : "../mod-analysis/signal-processing",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sp.orientation.maxpat",
-				"bootpath" : "~/github/Gestural-Sound-Toolkit/mod-analysis/signal-processing",
+				"bootpath" : "~/Documents/Max/Gestural Sound Toolbox V2/mod-analysis/signal-processing",
 				"patcherrelativepath" : "../mod-analysis/signal-processing",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ml.classification.hhmm.maxpat",
+				"bootpath" : "~/Documents/Max/Gestural Sound Toolbox V2/mod-analysis/machine-learning",
+				"patcherrelativepath" : "../mod-analysis/machine-learning",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "mubu.hhmm.maxhelp",
+				"bootpath" : "~/github/como-vox/max-include/externals/Ircam/MuBu For Max 1_9_14/help",
+				"patcherrelativepath" : "../../../../github/como-vox/max-include/externals/Ircam/MuBu For Max 1_9_14/help",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "mubu.setlabels.maxpat",
+				"bootpath" : "~/github/como-vox/max-include/externals/Ircam/MuBu For Max 1_9_14/patchers",
+				"patcherrelativepath" : "../../../../github/como-vox/max-include/externals/Ircam/MuBu For Max 1_9_14/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "helpstarter.js",
+				"bootpath" : "C74:/help/resources",
+				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
@@ -554,15 +595,23 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "gvf.mxo",
-				"type" : "iLaX"
-			}
-, 			{
 				"name" : "pipo.mxo",
 				"type" : "iLaX"
 			}
 , 			{
 				"name" : "orientation.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "mubu.hhmm.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "mubu.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "mubu.mxo",
 				"type" : "iLaX"
 			}
  ],
