@@ -26,14 +26,14 @@ V2 is a fork of the Gestural Sound Toolkit `https://github.com/bcaramiaux/Gestur
 a Max library for the design of Embodied Sonic Interactions
 
 > V2 Contributors: 
-> –  STMS Lab IRCAM CNRS Sorbonne Université (Frédéric Bevilacqua,  Riccardo Borghesi, Diemo Schwarz, Victor Paredes)
-> – ISIR Sorbonne Université (Baptiste Caramiaux,)
-> – LIMSI CNRS (Jules Françoise)
+> - STMS Lab IRCAM CNRS Sorbonne Université (Frédéric Bevilacqua,  Riccardo Borghesi, Diemo Schwarz, Victor Paredes)
+> - ISIR Sorbonne Université (Baptiste Caramiaux,)
+> - LIMSI CNRS (Jules Françoise)
 
 
 > V1 Contributors:
 > - AVI Group Goldsmiths College (Baptiste Caramiaux, Alessandro Altavilla)
-> – IRCAM-Centre Pompidou (Mubu: Riccardo Borghesi, Diemo Schwarz, Norbert Schnell, Frédéric Bevilacqua, Jules Françoise)
+> - IRCAM-Centre Pompidou (Mubu: Riccardo Borghesi, Diemo Schwarz, Norbert Schnell, Frédéric Bevilacqua, Jules Françoise)
 > EAVI website: eavi.goldsmithsdigital.com, (c) 2015 EAVI Group, Goldsmiths College, University of London
 
 
