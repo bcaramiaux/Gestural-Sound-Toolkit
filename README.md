@@ -22,17 +22,16 @@ THe MuBu package must be either copied in the Max Package folder, or referenced 
 V2 is a fork of the Gestural Sound Toolkit `https://github.com/bcaramiaux/Gestural-Sound-Toolkit`
 a Max library for the design of Embodied Sonic Interactions
 
-V2 Contributors: 
-–  STMS Lab IRCAM CNRS Sorbonne Université (Frédéric Bevilacqua,  Riccardo Borghesi, Diemo Schwarz, Victor Paredes)
-– ISIR Sorbonne Université (Baptiste Caramiaux,)
-– LIMSI CNRS (Jules Françoise)
+> V2 Contributors: 
+> –  STMS Lab IRCAM CNRS Sorbonne Université (Frédéric Bevilacqua,  Riccardo Borghesi, Diemo Schwarz, Victor Paredes)
+> – ISIR Sorbonne Université (Baptiste Caramiaux,)
+> – LIMSI CNRS (Jules Françoise)
 
 
 V1 Contributors:
-- AVI Group Goldsmiths College (Baptiste Caramiaux, Alessandro Altavilla)
-– IRCAM-Centre Pompidou (Mubu: Riccardo Borghesi, Diemo Schwarz, Norbert Schnell, Frédéric Bevilacqua, Jules Françoise)
-EAVI website: eavi.goldsmithsdigital.com, (c) 2015 EAVI Group, Goldsmiths College, University of London
-(contact: bc@goldsmithsdigital.com)
+> - AVI Group Goldsmiths College (Baptiste Caramiaux, Alessandro Altavilla)
+> – IRCAM-Centre Pompidou (Mubu: Riccardo Borghesi, Diemo Schwarz, Norbert Schnell, Frédéric Bevilacqua, Jules Françoise)
+> EAVI website: eavi.goldsmithsdigital.com, (c) 2015 EAVI Group, Goldsmiths College, University of London
 
 
 This toolkit has been designed and implemented in order to investigate research questions on sonic interaction design, and led to a publication at the CHI 2015 conference. If you use the toolkit in your research or teaching, please credit our work:
