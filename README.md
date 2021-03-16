@@ -10,9 +10,16 @@ Clone the repo:
 git clone --depth=1 https://github.com/ircam-ismm/Gestural-Sound-Toolkit.git 
 ```
 
-The toolkit makes use of the MuBu lib developed by the ISMM team at IRCAM. This a Max/MSP library that is free avaaialble as Max Package (in the Package manager), or freely available at the Forum Ircam
-`https://forum.ircam.fr/projects/detail/mubu/` (necessary to register to the IRCAM forum [spam-free])
-THe MuBu package must be either copied in the Max Package folder, or referenced in the Files Preference: `Options > File Preferences > +`
+The toolkit makes use of the MuBu lib developed by the ISMM team at IRCAM. 
+
+This a Max/MSP library that is free avaaialble as Max Package (in the Package manager), or freely available at the Forum Ircam
+
+[https://forum.ircam.fr/projects/detail/mubu/](https://forum.ircam.fr/projects/detail/mubu/) 
+(necessary to register to the IRCAM forum [spam-free])
+
+THe MuBu package must be either copied in the Max Package folder, or referenced in the Files Preference: 
+
+`Options > File Preferences > +`
 
 **Note for Windows' users**: you need to install Visual Studio 2015 Redistributable Package to have MuBu working! 
 
@@ -22,17 +29,16 @@ THe MuBu package must be either copied in the Max Package folder, or referenced 
 V2 is a fork of the Gestural Sound Toolkit `https://github.com/bcaramiaux/Gestural-Sound-Toolkit`
 a Max library for the design of Embodied Sonic Interactions
 
-V2 Contributors: 
-–  STMS Lab IRCAM CNRS Sorbonne Université (Frédéric Bevilacqua,  Riccardo Borghesi, Diemo Schwarz, Victor Paredes)
-– ISIR Sorbonne Université (Baptiste Caramiaux,)
-– LIMSI CNRS (Jules Françoise)
+> V2 Contributors: 
+> - STMS Lab IRCAM CNRS Sorbonne Université (Frédéric Bevilacqua,  Riccardo Borghesi, Diemo Schwarz, Victor Paredes)
+> - ISIR Sorbonne Université (Baptiste Caramiaux,)
+> - LIMSI CNRS (Jules Françoise)
 
 
-V1 Contributors:
-- AVI Group Goldsmiths College (Baptiste Caramiaux, Alessandro Altavilla)
-– IRCAM-Centre Pompidou (Mubu: Riccardo Borghesi, Diemo Schwarz, Norbert Schnell, Frédéric Bevilacqua, Jules Françoise)
-EAVI website: eavi.goldsmithsdigital.com, (c) 2015 EAVI Group, Goldsmiths College, University of London
-(contact: bc@goldsmithsdigital.com)
+> V1 Contributors:
+> - AVI Group Goldsmiths College (Baptiste Caramiaux, Alessandro Altavilla)
+> - IRCAM-Centre Pompidou (Mubu: Riccardo Borghesi, Diemo Schwarz, Norbert Schnell, Frédéric Bevilacqua, Jules Françoise)
+> EAVI website: eavi.goldsmithsdigital.com, (c) 2015 EAVI Group, Goldsmiths College, University of London
 
 
 This toolkit has been designed and implemented in order to investigate research questions on sonic interaction design, and led to a publication at the CHI 2015 conference. If you use the toolkit in your research or teaching, please credit our work:
