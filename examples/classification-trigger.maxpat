@@ -115,7 +115,7 @@
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "ml.classification.gmm.maxpat",
-					"numinlets" : 7,
+					"numinlets" : 8,
 					"numoutlets" : 2,
 					"offset" : [ 0.0, -5.0 ],
 					"outlettype" : [ "", "" ],
@@ -136,7 +136,7 @@
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "sid.output.maxpat",
-					"numinlets" : 1,
+					"numinlets" : 2,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 28.0, 485.9757080078125, 182.97576904296875, 110.099037170410156 ],
@@ -155,11 +155,11 @@
 					"id" : "obj-12",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "synth.trigger.samples.maxpat",
-					"numinlets" : 3,
-					"numoutlets" : 1,
+					"name" : "synth.scratch.samples.maxpat",
+					"numinlets" : 4,
+					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "signal" ],
+					"outlettype" : [ "signal", "signal" ],
 					"patching_rect" : [ 28.0, 344.9757080078125, 240.79486083984375, 109.320236206054688 ],
 					"viewvisibility" : 1
 				}
@@ -176,7 +176,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-26", 1 ],
+					"order" : 0,
+					"source" : [ "obj-12", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-26", 0 ],
+					"order" : 1,
 					"source" : [ "obj-12", 0 ]
 				}
 
@@ -220,7 +229,20 @@
 		"parameters" : 		{
 			"obj-12::obj-18::obj-88" : [ "live.toggle", "live.toggle", 0 ],
 			"obj-12::obj-18::obj-92" : [ "live.toggle[2]", "live.toggle", 0 ],
+			"obj-12::obj-22" : [ "live.gain~", "live.gain~", 0 ],
+			"obj-26::obj-2" : [ "live.gain~[5]", "live.gain~[4]", 0 ],
 			"parameterbanks" : 			{
+
+			}
+,
+			"parameter_overrides" : 			{
+				"obj-12::obj-18::obj-88" : 				{
+					"parameter_longname" : "live.toggle"
+				}
+,
+				"obj-12::obj-18::obj-92" : 				{
+					"parameter_longname" : "live.toggle[2]"
+				}
 
 			}
 ,
@@ -228,36 +250,29 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "synth.trigger.samples.maxpat",
-				"bootpath" : "~/github/Gestural-Sound-Toolkit/mod-synthesis",
+				"name" : "synth.scratch.samples.maxpat",
+				"bootpath" : "~/github/Gestural-Sound-Toolkit-V2/mod-synthesis",
 				"patcherrelativepath" : "../mod-synthesis",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "synth.ctrl.soundpool.maxpat",
-				"bootpath" : "~/github/Gestural-Sound-Toolkit/mod-synthesis",
-				"patcherrelativepath" : "../mod-synthesis",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "audio.ctrl.maxpat",
-				"bootpath" : "~/github/Gestural-Sound-Toolkit/mod-synthesis",
+				"bootpath" : "~/github/Gestural-Sound-Toolkit-V2/mod-synthesis",
 				"patcherrelativepath" : "../mod-synthesis",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sid.output.maxpat",
-				"bootpath" : "~/github/Gestural-Sound-Toolkit/mod-synthesis",
+				"bootpath" : "~/github/Gestural-Sound-Toolkit-V2/mod-synthesis",
 				"patcherrelativepath" : "../mod-synthesis",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ml.classification.gmm.maxpat",
-				"bootpath" : "~/github/Gestural-Sound-Toolkit/mod-analysis/machine-learning",
+				"bootpath" : "~/github/Gestural-Sound-Toolkit-V2/mod-analysis/machine-learning",
 				"patcherrelativepath" : "../mod-analysis/machine-learning",
 				"type" : "JSON",
 				"implicit" : 1
@@ -284,14 +299,14 @@
 			}
 , 			{
 				"name" : "riotbitalino-bp.maxpat",
-				"bootpath" : "~/github/Gestural-Sound-Toolkit/mod-interfaces/riot",
+				"bootpath" : "~/github/Gestural-Sound-Toolkit-V2/mod-interfaces/riot",
 				"patcherrelativepath" : "../mod-interfaces/riot",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "riotbitalino.maxpat",
-				"bootpath" : "~/github/Gestural-Sound-Toolkit/mod-interfaces/riot",
+				"bootpath" : "~/github/Gestural-Sound-Toolkit-V2/mod-interfaces/riot",
 				"patcherrelativepath" : "../mod-interfaces/riot",
 				"type" : "JSON",
 				"implicit" : 1
@@ -305,7 +320,7 @@
 			}
 , 			{
 				"name" : "drawing.maxpat",
-				"bootpath" : "~/github/Gestural-Sound-Toolkit/mod-interfaces/lcd",
+				"bootpath" : "~/github/Gestural-Sound-Toolkit-V2/mod-interfaces/lcd",
 				"patcherrelativepath" : "../mod-interfaces/lcd",
 				"type" : "JSON",
 				"implicit" : 1

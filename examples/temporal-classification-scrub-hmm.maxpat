@@ -85,7 +85,7 @@
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "ml.classification.hhmm.maxpat",
-					"numinlets" : 7,
+					"numinlets" : 8,
 					"numoutlets" : 3,
 					"offset" : [ 0.0, -3.0 ],
 					"outlettype" : [ "", "", "" ],
@@ -253,7 +253,7 @@
 					"patching_rect" : [ 29.0, 433.0, 67.0, 45.0 ],
 					"setminmax" : [ 0.0, 1.0 ],
 					"setstyle" : 1,
-					"size" : 2
+					"size" : 3
 				}
 
 			}
@@ -305,7 +305,7 @@
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "sid.output.maxpat",
-					"numinlets" : 1,
+					"numinlets" : 2,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 28.0, 688.9757080078125, 182.97576904296875, 110.099037170410156 ],
@@ -326,9 +326,9 @@
 					"maxclass" : "bpatcher",
 					"name" : "synth.scrub.samples.maxpat",
 					"numinlets" : 4,
-					"numoutlets" : 1,
+					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "signal" ],
+					"outlettype" : [ "signal", "signal" ],
 					"patching_rect" : [ 28.0, 552.9757080078125, 240.79486083984375, 111.320236206054688 ],
 					"viewvisibility" : 1
 				}
@@ -462,8 +462,10 @@
 		"parameters" : 		{
 			"obj-12::obj-15::obj-88" : [ "live.toggle[5]", "live.toggle", 0 ],
 			"obj-12::obj-15::obj-92" : [ "live.toggle[2]", "live.toggle", 0 ],
+			"obj-12::obj-2" : [ "live.gain~[3]", "live.gain~", 0 ],
 			"obj-25::obj-13" : [ "live.toggle", "live.toggle", 0 ],
 			"obj-25::obj-8::obj-17" : [ "live.toggle[1]", "live.toggle[1]", 0 ],
+			"obj-26::obj-2" : [ "live.gain~[5]", "live.gain~[4]", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -471,6 +473,10 @@
 			"parameter_overrides" : 			{
 				"obj-12::obj-15::obj-88" : 				{
 					"parameter_longname" : "live.toggle[5]"
+				}
+,
+				"obj-12::obj-15::obj-92" : 				{
+					"parameter_longname" : "live.toggle[2]"
 				}
 
 			}
@@ -480,49 +486,42 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "synth.scrub.samples.maxpat",
-				"bootpath" : "~/Documents/Max/Gestural Sound Toolbox V2/mod-synthesis",
+				"bootpath" : "~/github/Gestural-Sound-Toolkit-V2/mod-synthesis",
 				"patcherrelativepath" : "../mod-synthesis",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "synth.ctrl.soundpool.maxpat",
-				"bootpath" : "~/Documents/Max/Gestural Sound Toolbox V2/mod-synthesis",
-				"patcherrelativepath" : "../mod-synthesis",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "audio.ctrl.maxpat",
-				"bootpath" : "~/Documents/Max/Gestural Sound Toolbox V2/mod-synthesis",
+				"bootpath" : "~/github/Gestural-Sound-Toolkit-V2/mod-synthesis",
 				"patcherrelativepath" : "../mod-synthesis",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sid.output.maxpat",
-				"bootpath" : "~/Documents/Max/Gestural Sound Toolbox V2/mod-synthesis",
+				"bootpath" : "~/github/Gestural-Sound-Toolkit-V2/mod-synthesis",
 				"patcherrelativepath" : "../mod-synthesis",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "drawing.maxpat",
-				"bootpath" : "~/Documents/Max/Gestural Sound Toolbox V2/mod-interfaces/lcd",
+				"bootpath" : "~/github/Gestural-Sound-Toolkit-V2/mod-interfaces/lcd",
 				"patcherrelativepath" : "../mod-interfaces/lcd",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "riotbitalino-bp.maxpat",
-				"bootpath" : "~/Documents/Max/Gestural Sound Toolbox V2/mod-interfaces/riot",
+				"bootpath" : "~/github/Gestural-Sound-Toolkit-V2/mod-interfaces/riot",
 				"patcherrelativepath" : "../mod-interfaces/riot",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "riotbitalino.maxpat",
-				"bootpath" : "~/Documents/Max/Gestural Sound Toolbox V2/mod-interfaces/riot",
+				"bootpath" : "~/github/Gestural-Sound-Toolkit-V2/mod-interfaces/riot",
 				"patcherrelativepath" : "../mod-interfaces/riot",
 				"type" : "JSON",
 				"implicit" : 1
@@ -530,49 +529,49 @@
 , 			{
 				"name" : "riot-logo.png",
 				"bootpath" : "~/Documents/Max/riot-new/various",
-				"patcherrelativepath" : "../../riot-new/various",
+				"patcherrelativepath" : "../../../Documents/Max/riot-new/various",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sp.acc.intensity.maxpat",
-				"bootpath" : "~/Documents/Max/Gestural Sound Toolbox V2/mod-analysis/signal-processing",
+				"bootpath" : "~/github/Gestural-Sound-Toolkit-V2/mod-analysis/signal-processing",
 				"patcherrelativepath" : "../mod-analysis/signal-processing",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sp.gate.float.maxpat",
-				"bootpath" : "~/Documents/Max/Gestural Sound Toolbox V2/mod-analysis/signal-processing",
+				"bootpath" : "~/github/Gestural-Sound-Toolkit-V2/mod-analysis/signal-processing",
 				"patcherrelativepath" : "../mod-analysis/signal-processing",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sp.orientation.maxpat",
-				"bootpath" : "~/Documents/Max/Gestural Sound Toolbox V2/mod-analysis/signal-processing",
+				"bootpath" : "~/github/Gestural-Sound-Toolkit-V2/mod-analysis/signal-processing",
 				"patcherrelativepath" : "../mod-analysis/signal-processing",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ml.classification.hhmm.maxpat",
-				"bootpath" : "~/Documents/Max/Gestural Sound Toolbox V2/mod-analysis/machine-learning",
+				"bootpath" : "~/github/Gestural-Sound-Toolkit-V2/mod-analysis/machine-learning",
 				"patcherrelativepath" : "../mod-analysis/machine-learning",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mubu.hhmm.maxhelp",
-				"bootpath" : "~/github/como-vox/max-include/externals/Ircam/MuBu For Max 1_9_14/help",
-				"patcherrelativepath" : "../../../../github/como-vox/max-include/externals/Ircam/MuBu For Max 1_9_14/help",
+				"bootpath" : "~/Documents/Max 8/Packages/MuBu For Max/help",
+				"patcherrelativepath" : "../../../Documents/Max 8/Packages/MuBu For Max/help",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mubu.setlabels.maxpat",
-				"bootpath" : "~/github/como-vox/max-include/externals/Ircam/MuBu For Max 1_9_14/patchers",
-				"patcherrelativepath" : "../../../../github/como-vox/max-include/externals/Ircam/MuBu For Max 1_9_14/patchers",
+				"bootpath" : "~/Documents/Max 8/Packages/MuBu For Max/patchers",
+				"patcherrelativepath" : "../../../Documents/Max 8/Packages/MuBu For Max/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -583,11 +582,11 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "mubu.mxo",
+				"name" : "mubu.granular~.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "mubu.granular~.mxo",
+				"name" : "mubu.mxo",
 				"type" : "iLaX"
 			}
 , 			{

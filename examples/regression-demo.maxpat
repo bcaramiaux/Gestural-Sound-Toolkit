@@ -60,7 +60,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 209.397430419921875, 638.0, 100.0, 22.0 ],
+					"patching_rect" : [ 255.897430419921875, 663.0, 70.0, 22.0 ],
 					"text" : "pack f f f"
 				}
 
@@ -84,7 +84,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 27.397430419921875, 638.0, 100.0, 22.0 ],
+					"patching_rect" : [ 27.397430419921875, 663.0, 70.0, 22.0 ],
 					"text" : "pack f f"
 				}
 
@@ -356,7 +356,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 7.397430419921875, 680.0, 302.0, 106.0 ],
+					"patching_rect" : [ 27.397430419921875, 696.0, 302.0, 106.0 ],
 					"setminmax" : [ 0.0, 2.0 ],
 					"setstyle" : 3,
 					"size" : 2
@@ -406,7 +406,7 @@
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "ml.regression.gmr.maxpat",
-					"numinlets" : 8,
+					"numinlets" : 9,
 					"numoutlets" : 3,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "", "", "" ],
@@ -564,7 +564,7 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "ml.regression.gmr.maxpat",
-				"bootpath" : "~/github/Gestural-Sound-Toolkit/mod-analysis/machine-learning",
+				"bootpath" : "~/github/Gestural-Sound-Toolkit-V2/mod-analysis/machine-learning",
 				"patcherrelativepath" : "../mod-analysis/machine-learning",
 				"type" : "JSON",
 				"implicit" : 1
@@ -591,7 +591,7 @@
 			}
 , 			{
 				"name" : "drawing.maxpat",
-				"bootpath" : "~/github/Gestural-Sound-Toolkit/mod-interfaces/lcd",
+				"bootpath" : "~/github/Gestural-Sound-Toolkit-V2/mod-interfaces/lcd",
 				"patcherrelativepath" : "../mod-interfaces/lcd",
 				"type" : "JSON",
 				"implicit" : 1

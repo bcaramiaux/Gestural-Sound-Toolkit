@@ -783,7 +783,7 @@
 					"patching_rect" : [ 23.5, 11.0, 125.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1.5, 4.0, 118.0, 20.0 ],
-					"text" : "Gate-float"
+					"text" : "Gate"
 				}
 
 			}
@@ -1066,7 +1066,7 @@
 					"patching_rect" : [ 469.5, 374.0, 125.0, 85.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 2.500000000000014, 27.0, 130.617977528089909, 93.0 ],
-					"setminmax" : [ 0.0, 1.100000023841858 ],
+					"setminmax" : [ 0.0, 1.0 ],
 					"setstyle" : 3,
 					"slidercolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
