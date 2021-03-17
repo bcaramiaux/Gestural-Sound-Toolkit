@@ -306,7 +306,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 4,
 					"numoutlets" : 3,
-					"outlettype" : [ "signal", "signal", "" ],
+					"outlettype" : [ "signal", "signal", "int" ],
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
@@ -603,6 +603,13 @@
  ],
 						"lines" : [ 							{
 								"patchline" : 								{
+									"destination" : [ "obj-3", 0 ],
+									"source" : [ "obj-1", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-33", 0 ],
 									"source" : [ "obj-1", 1 ]
 								}
@@ -853,7 +860,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-18", 0 ],
-					"midpoints" : [ 333.5, 427.0, 407.25, 427.0, 407.25, 189.0, 53.0, 189.0 ],
+					"midpoints" : [ 333.5, 427.0, 413.25, 427.0, 413.25, 200.0, 53.0, 200.0 ],
 					"source" : [ "obj-51", 2 ]
 				}
 
@@ -861,7 +868,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-22", 1 ],
-					"midpoints" : [ 193.25, 445.5, 82.0, 445.5 ],
+					"midpoints" : [ 193.25, 444.5, 82.0, 444.5 ],
 					"source" : [ "obj-51", 1 ]
 				}
 
