@@ -82,8 +82,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 385.0, 192.0, 98.0, 20.0 ],
-					"text" : "Cutoff frequency"
+					"patching_rect" : [ 385.0, 192.0, 118.0, 20.0 ],
+					"text" : "Bandpass frequency"
 				}
 
 			}
@@ -167,19 +167,21 @@
 			}
 , 			{
 				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
 					"id" : "obj-10",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "float", "" ],
-					"patching_rect" : [ 76.0, 393.0, 543.0, 22.0 ],
-					"text" : "pipo biquad @framerate 100 @biquad.filtermode highpass @biquad.frequency 30 @biquad.Q 0.5"
+					"patching_rect" : [ 76.0, 393.0, 522.0, 22.0 ],
+					"text" : "pipo biquad @biquad.filtermode bandpass @framerate 100 @biquad.frequency 5 @biquad.Q 1."
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"comment" : "Cutoff Frequency (Hz)",
+					"comment" : "Bandpass Frequency (Hz)",
 					"id" : "obj-9",
 					"index" : 0,
 					"maxclass" : "inlet",
@@ -256,7 +258,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 333.0, 168.0, 109.0, 20.0 ],
-					"text" : "r #0-highpass-thresh"
+					"text" : "r #0-bandpass-thresh"
 				}
 
 			}
@@ -281,7 +283,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 1076.0, 619.0, 222.0, 307.0 ],
+						"rect" : [ 448.0, 79.0, 222.0, 307.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -309,7 +311,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"fontface" : 2,
@@ -553,15 +554,15 @@
 									"fontname" : "Arial",
 									"fontsize" : 10.0,
 									"id" : "obj-3",
-									"linecount" : 10,
+									"linecount" : 9,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ -0.5, 182.0, 310.0, 118.0 ],
+									"patching_rect" : [ -0.5, 182.0, 310.0, 107.0 ],
 									"presentation" : 1,
-									"presentation_linecount" : 10,
-									"presentation_rect" : [ 5.0, 162.0, 209.0, 118.0 ],
-									"text" : "Lowpass filtering of incoming data\n\ninput: \n     - data values [list]\n     - cutoff frequency (cut out \n       frequencies lower than this value)\n     - sampling rate\n\noutput:\n     - [1]: filtered data [list]",
+									"presentation_linecount" : 9,
+									"presentation_rect" : [ 5.0, 162.0, 209.0, 107.0 ],
+									"text" : "Bandpass filtering of incoming data (biquad)\n\ninput: \n     - data values [list]\n     - bandpass frequency\n     - sampling rate\n\noutput:\n     - [1]: filtered data [list]",
 									"textcolor" : [ 0.239216, 0.254902, 0.278431, 1.0 ]
 								}
 
@@ -578,7 +579,7 @@
 									"patching_rect" : [ -0.5, 155.0, 120.0, 20.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 5.0, 142.0, 209.0, 20.0 ],
-									"text" : "Help [Highpass]"
+									"text" : "Help [Bandpass]"
 								}
 
 							}
@@ -609,7 +610,7 @@
 									"patching_rect" : [ 36.5, 6.0, 131.0, 20.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 5.0, 5.0, 209.0, 20.0 ],
-									"text" : "Highpass Filtering"
+									"text" : "Bandpass Filtering"
 								}
 
 							}
@@ -621,8 +622,8 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 9.5, 112.0, 110.0, 20.0 ],
-									"text" : "s #0-highpass-thresh"
+									"patching_rect" : [ 9.5, 112.0, 100.0, 20.0 ],
+									"text" : "s #0-lowpass-thresh"
 								}
 
 							}
@@ -767,7 +768,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 831.0, 435.0, 729.0, 350.0 ],
+						"rect" : [ 831.0, 435.0, 326.0, 159.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -800,15 +801,15 @@
 									"fontname" : "Arial",
 									"fontsize" : 10.0,
 									"id" : "obj-2",
-									"linecount" : 7,
+									"linecount" : 9,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 10.0, 25.0, 310.0, 85.0 ],
+									"patching_rect" : [ 10.0, 25.0, 310.0, 107.0 ],
 									"presentation" : 1,
-									"presentation_linecount" : 8,
-									"presentation_rect" : [ 80.0, 101.0, 155.0, 96.0 ],
-									"text" : "Lowpass filtering allows for data smoothing.\n\ninput: \n     - data values [list]\n\noutput:\n     - [1]: smoothed data [list]",
+									"presentation_linecount" : 10,
+									"presentation_rect" : [ 80.0, 101.0, 155.0, 118.0 ],
+									"text" : "Bandpass filtering of incoming data (biquad)\n\ninput: \n     - data values [list]\n     - bandpass frequency\n     - sampling rate\n\noutput:\n     - [1]: filtered data [list]",
 									"textcolor" : [ 0.501859, 0.501859, 0.501859, 1.0 ]
 								}
 
@@ -825,40 +826,6 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 65.0, 86.0, 203.0, 22.0 ],
 									"text" : "Lowpass filtering",
-									"textcolor" : [ 0.501859, 0.501859, 0.501859, 1.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Arial",
-									"fontsize" : 10.0,
-									"id" : "obj-59",
-									"linecount" : 3,
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 507.0, 190.0, 146.0, 40.0 ],
-									"presentation" : 1,
-									"presentation_linecount" : 4,
-									"presentation_rect" : [ 20.0, 53.0, 128.0, 51.0 ],
-									"text" : "output: \n   - left: values [list] if open\n   - right: 0/1 close or open [int]",
-									"textcolor" : [ 0.501859, 0.501859, 0.501859, 1.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Arial",
-									"fontsize" : 10.0,
-									"id" : "obj-58",
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 507.0, 173.0, 153.0, 18.0 ],
-									"presentation" : 1,
-									"presentation_rect" : [ 20.0, 41.0, 153.0, 18.0 ],
-									"text" : "input: data values [list]",
 									"textcolor" : [ 0.501859, 0.501859, 0.501859, 1.0 ]
 								}
 
@@ -916,10 +883,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 108.0, 38.0, 69.0, 20.0 ],
+					"patching_rect" : [ 108.0, 38.0, 82.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.0, 5.0, 69.0, 20.0 ],
-					"text" : "Highpass"
+					"presentation_rect" : [ 0.0, 4.5, 81.0, 20.0 ],
+					"text" : "Bandpass"
 				}
 
 			}
@@ -956,7 +923,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "input [list]",
+					"comment" : "input [List]",
 					"id" : "obj-1",
 					"index" : 0,
 					"maxclass" : "inlet",
