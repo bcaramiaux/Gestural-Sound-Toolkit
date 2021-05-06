@@ -1,2 +1,0 @@
-max definecommand o patcher insertobj ftm.object;
-max definecommand x patcher insertobj ftm.mess;
