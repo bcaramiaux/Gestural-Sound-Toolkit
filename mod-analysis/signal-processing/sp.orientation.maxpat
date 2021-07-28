@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 7,
+			"revision" : 10,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -53,7 +53,7 @@
 				"box" : 				{
 					"comment" : "gyroscope data (list 3 float)",
 					"id" : "obj-15",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -96,7 +96,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 397.5, 129.5, 88.0, 20.0 ],
+					"patching_rect" : [ 397.5, 129.5, 89.0, 20.0 ],
 					"text" : "r #0-gyroweight"
 				}
 
@@ -105,7 +105,7 @@
 				"box" : 				{
 					"comment" : "gyroweight",
 					"id" : "obj-10",
-					"index" : 0,
+					"index" : 3,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -123,7 +123,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 218.5, 261.0, 82.0, 20.0 ],
+					"patching_rect" : [ 218.5, 261.0, 91.0, 20.0 ],
 					"text" : "r #0-lower-value"
 				}
 
@@ -137,7 +137,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 321.5, 261.0, 84.0, 20.0 ],
+					"patching_rect" : [ 321.5, 261.0, 93.0, 20.0 ],
 					"text" : "r #0-upper-value"
 				}
 
@@ -157,7 +157,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 7,
+							"revision" : 10,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -199,7 +199,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 169.5, 112.0, 90.0, 20.0 ],
+									"patching_rect" : [ 169.5, 112.0, 99.0, 20.0 ],
 									"text" : "s #0-samplingrate"
 								}
 
@@ -377,7 +377,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 342.5, 144.0, 84.0, 20.0 ],
+									"patching_rect" : [ 342.5, 144.0, 93.0, 20.0 ],
 									"text" : "s #0-lower-value"
 								}
 
@@ -390,7 +390,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 341.5, 75.0, 86.0, 20.0 ],
+									"patching_rect" : [ 341.5, 75.0, 95.0, 20.0 ],
 									"text" : "s #0-upper-value"
 								}
 
@@ -571,7 +571,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 7,
+							"revision" : 10,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -775,6 +775,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 5.0, 27.0, 125.0, 85.0 ],
 					"setstyle" : 3,
+					"size" : 3,
 					"slidercolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -783,7 +784,7 @@
 				"box" : 				{
 					"comment" : "orientation (list of 3 float [-1 1])",
 					"id" : "obj-2",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -795,7 +796,7 @@
 				"box" : 				{
 					"comment" : "accelerometer data (list 3 float)",
 					"id" : "obj-1",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -926,13 +927,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "orientation.mxo",
-				"type" : "iLaX"
-			}
- ],
-		"autosave" : 0
+ ]
 	}
 
 }
