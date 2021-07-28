@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 8,
+			"revision" : 10,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -39,6 +39,18 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-17",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 314.0, 301.0, 50.0, 22.0 ],
+					"text" : "printall"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"comment" : "imubu inlet",
 					"id" : "obj-2",
@@ -183,7 +195,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 8,
+							"revision" : 10,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -918,7 +930,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 402.842257534851115, 366.761925876140594, 50.0, 22.0 ],
+					"patching_rect" : [ 402.842257534851115, 370.761925876140594, 50.0, 22.0 ],
 					"text" : "clear"
 				}
 
@@ -1027,7 +1039,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 8,
+							"revision" : 10,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1589,7 +1601,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 485.973160242427866, 366.761925876140594, 35.0, 17.0 ],
+					"patching_rect" : [ 485.973160242427866, 370.761925876140594, 35.0, 17.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 265.25, 25.0, 31.0, 17.0 ],
 					"text" : "clear",
@@ -1608,7 +1620,7 @@
 					"outlettype" : [ "bang" ],
 					"outlinecolor" : [ 0.960784, 0.827451, 0.156863, 1.0 ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 457.223160242427866, 366.761925876140594, 24.0, 24.0 ],
+					"patching_rect" : [ 457.223160242427866, 370.761925876140594, 24.0, 24.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 248.25, 26.0, 15.0, 15.0 ]
 				}
@@ -1621,9 +1633,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 485.973160242427866, 304.5, 26.0, 17.0 ],
+					"patching_rect" : [ 485.973160242427866, 334.928580582141876, 26.0, 17.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 265.25, 59.0, 31.0, 17.0 ],
+					"presentation_rect" : [ 265.25, 43.0, 31.0, 17.0 ],
 					"text" : "load",
 					"textcolor" : [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
 				}
@@ -1653,9 +1665,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 485.973160242427866, 334.928580582141876, 35.0, 17.0 ],
+					"patching_rect" : [ 485.973160242427866, 301.0, 35.0, 17.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 265.25, 42.0, 33.0, 17.0 ],
+					"presentation_rect" : [ 265.25, 60.0, 33.0, 17.0 ],
 					"text" : "save",
 					"textcolor" : [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
 				}
@@ -1830,10 +1842,15 @@
 					"bufferchooser_shape" : "buttons",
 					"bufferchooser_size" : 15,
 					"bufferchooser_visible" : 1,
+					"cursor_circleedgecolor" : [ 1.0, 0.0, 0.0, 1.0 ],
+					"cursor_circlefillcolor" : [ 1.0, 0.0, 0.0, 1.0 ],
+					"cursor_circlefilled" : 1,
 					"cursor_circleheight" : 3.0,
 					"cursor_circlewidth" : 3.0,
 					"cursor_color" : [ 1.0, 0.0, 0.0, 1.0 ],
 					"cursor_followmouse" : 0,
+					"cursor_nearest" : 0,
+					"cursor_nearestcolor" : [ 1.0, 0.0, 0.0, 1.0 ],
 					"cursor_noringoffset" : 0,
 					"cursor_position" : -1.0,
 					"cursor_shape" : "bar",
@@ -1968,6 +1985,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-73", 0 ],
 					"source" : [ "obj-16", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-68", 0 ],
+					"source" : [ "obj-17", 0 ]
 				}
 
 			}
@@ -2414,16 +2438,23 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "mubu.hhmm.maxhelp",
-				"bootpath" : "~/Documents/Max 8/Packages/MuBu For Max/help",
-				"patcherrelativepath" : "../../../../Max 8/Packages/MuBu For Max/help",
+				"bootpath" : "~/src/mubu-and-co/maxxmm/patches/help",
+				"patcherrelativepath" : "../../../../../../maxxmm/patches/help",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mubu.setlabels.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/MuBu For Max/patchers",
-				"patcherrelativepath" : "../../../../Max 8/Packages/MuBu For Max/patchers",
+				"bootpath" : "~/src/mubu-and-co/maxxmm/patches/abstractions",
+				"patcherrelativepath" : "../../../../../../maxxmm/patches/abstractions",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "hhmm_highlevel.png",
+				"bootpath" : "~/src/mubu-and-co/maxxmm/patches/help",
+				"patcherrelativepath" : "../../../../../../maxxmm/patches/help",
+				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
