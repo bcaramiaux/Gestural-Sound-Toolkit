@@ -232,7 +232,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 2.5, 40.0, 70.0, 20.0 ],
-									"text" : "loadmess 15"
+									"text" : "loadmess 30"
 								}
 
 							}
@@ -701,7 +701,7 @@
 					"patching_rect" : [ 115.5, 381.0, 125.0, 85.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 5.0, 27.0, 125.0, 85.0 ],
-					"setstyle" : 3,
+					"setstyle" : 5,
 					"size" : 3,
 					"slidercolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
