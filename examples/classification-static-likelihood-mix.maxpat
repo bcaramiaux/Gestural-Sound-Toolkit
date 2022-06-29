@@ -55,7 +55,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 284.0, 195.816161634765621, 133.731216430664062, 116.319091796875 ],
+					"patching_rect" : [ 142.26495361328125, 195.816161634765649, 133.731216430664062, 116.319091796875 ],
 					"viewvisibility" : 1
 				}
 
@@ -77,7 +77,7 @@
 					"numoutlets" : 4,
 					"offset" : [ -6.0, 0.0 ],
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 284.0, 40.975738525390625, 163.0, 132.566956000000005 ],
+					"patching_rect" : [ 142.26495361328125, 40.975738525390653, 163.0, 132.566956000000005 ],
 					"viewvisibility" : 1
 				}
 
@@ -99,7 +99,7 @@
 				"box" : 				{
 					"fontsize" : 11.0,
 					"id" : "obj-19",
-					"items" : [ "stop", ",", "RIot", ",", "CoMo.te", ",", "Drawing" ],
+					"items" : [ "stop", ",", "CoMo.te", ",", "Drawing" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -124,28 +124,6 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.819608, 0.819608, 0.819608, 0.0 ],
-					"bgmode" : 2,
-					"border" : 1,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-31",
-					"lockeddragscroll" : 0,
-					"lockedsize" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "sp.orientation.maxpat",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 112.0, 195.816161634765621, 133.731216430664062, 116.319091796875 ],
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"bgcolor" : [ 0.6, 0.678431, 0.756863, 0.0 ],
 					"bgmode" : 2,
 					"border" : 1,
@@ -161,29 +139,7 @@
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "", "int" ],
-					"patching_rect" : [ 454.79486083984375, 40.975738525390625, 163.0, 132.56695556640625 ],
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgcolor" : [ 0.6, 0.678431, 0.756863, 0.0 ],
-					"bgmode" : 2,
-					"border" : 1,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-6",
-					"lockeddragscroll" : 0,
-					"lockedsize" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "riotbitalino-bp.maxpat",
-					"numinlets" : 4,
-					"numoutlets" : 4,
-					"offset" : [ -6.0, 0.0 ],
-					"outlettype" : [ "", "", "", "float" ],
-					"patching_rect" : [ 112.0, 39.975738525390625, 163.0, 132.566956000000005 ],
+					"patching_rect" : [ 312.5299072265625, 40.975738525390653, 163.0, 132.56695556640625 ],
 					"viewvisibility" : 1
 				}
 
@@ -373,14 +329,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-16", 1 ],
-					"source" : [ "obj-31", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-16", 3 ],
+					"destination" : [ "obj-16", 2 ],
 					"source" : [ "obj-4", 0 ]
 				}
 
@@ -401,21 +350,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-31", 1 ],
-					"source" : [ "obj-6", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-31", 0 ],
-					"source" : [ "obj-6", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-16", 2 ],
+					"destination" : [ "obj-16", 1 ],
 					"source" : [ "obj-7", 0 ]
 				}
 
@@ -546,30 +481,9 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "riotbitalino-bp.maxpat",
-				"bootpath" : "~/github/Gestural-Sound-Toolkit-V2/mod-interfaces/riot",
-				"patcherrelativepath" : "../mod-interfaces/riot",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "riotbitalino.maxpat",
-				"bootpath" : "~/github/Gestural-Sound-Toolkit-V2/mod-interfaces/riot",
-				"patcherrelativepath" : "../mod-interfaces/riot",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "drawing.maxpat",
 				"bootpath" : "~/github/Gestural-Sound-Toolkit-V2/mod-interfaces/lcd",
 				"patcherrelativepath" : "../mod-interfaces/lcd",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "sp.orientation.maxpat",
-				"bootpath" : "~/github/Gestural-Sound-Toolkit-V2/mod-analysis/signal-processing",
-				"patcherrelativepath" : "../mod-analysis/signal-processing",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -623,6 +537,13 @@
 				"name" : "comote.connect.maxhelp",
 				"bootpath" : "~/github/Gestural-Sound-Toolkit-V2/mod-interfaces/CoMo.te/patchers",
 				"patcherrelativepath" : "../mod-interfaces/CoMo.te/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "sp.orientation.maxpat",
+				"bootpath" : "~/github/Gestural-Sound-Toolkit-V2/mod-analysis/signal-processing",
+				"patcherrelativepath" : "../mod-analysis/signal-processing",
 				"type" : "JSON",
 				"implicit" : 1
 			}
