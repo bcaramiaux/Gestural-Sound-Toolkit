@@ -40,6 +40,35 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"bgcolor" : [ 0.8731849193573, 0.873295426368713, 0.87312525510788, 1.0 ],
+					"fontname" : "Helvetica Neue Light Italic",
+					"fontsize" : 12.0,
+					"id" : "obj-45",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 601.89019775390625, 24.0, 247.0, 20.0 ],
+					"presentation_linecount" : 2,
+					"text" : " https://forum.ircam.fr/projects/detail/mubu/"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"annotation" : " https://forum.ircam.fr/projemcts/detail/mubu/",
+					"handoff" : "",
+					"id" : "obj-43",
+					"maxclass" : "ubutton",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "bang", "bang", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 601.89019775390625, 25.25, 247.0, 17.5 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontname" : "Helvetica Neue Light",
 					"fontsize" : 14.0,
 					"id" : "obj-24",
@@ -47,7 +76,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 11.0, 45.5, 192.0, 23.0 ],
-					"presentation_linecount" : 2,
 					"text" : "(only a selection below)"
 				}
 
@@ -78,25 +106,6 @@
 			}
 , 			{
 				"box" : 				{
-					"fontface" : 0,
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"hyperlinkcolor" : [ 0.16078431372549, 0.215686274509804, 0.450980392156863, 1.0 ],
-					"id" : "obj-55",
-					"linecount" : 2,
-					"linkend" : [ ":,;()[]{}" ],
-					"linkstart" : [ "http" ],
-					"maxclass" : "bach.hypercomment",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 351.0, 4.5, 493.0, 33.0 ],
-					"text" : "must install  the MuBu package\nfrom the Cycling'74 package manager or  https://forum.ircam.fr/projemcts/detail/mubu/"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 10.0,
 					"hidden" : 1,
@@ -106,8 +115,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 846.0, 4.5, 220.0, 42.0 ],
-					"text" : ";\rmax launchbrowser https://forum.ircam.fr/projemcts/detail/mubu/"
+					"patching_rect" : [ 867.0, 8.0, 220.0, 42.0 ],
+					"text" : ";\rmax launchbrowser https://forum.ircam.fr/projects/detail/mubu/"
 				}
 
 			}
@@ -241,14 +250,14 @@
 , 			{
 				"box" : 				{
 					"fontname" : "Helvetica Neue Light",
-					"fontsize" : 23.865383000000001,
+					"fontsize" : 12.0,
 					"id" : "obj-35",
 					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 679.344146728515625, 73.975730895996094, 146.0, 63.0 ],
-					"text" : "Recording & Visualization"
+					"patching_rect" : [ 348.0, 8.0, 267.0, 35.0 ],
+					"text" : "must install  the MuBu package\ndirectly from the Cycling'74 package manager or "
 				}
 
 			}
@@ -940,7 +949,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"midpoints" : [ 469.6005859375, 247.849651336669922, 1170.145622253417969, 247.849651336669922 ],
-					"order" : 0,
+					"order" : 1,
 					"source" : [ "obj-12", 0 ]
 				}
 
@@ -957,7 +966,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-31", 0 ],
 					"midpoints" : [ 469.6005859375, 247.849651336669922, 881.408790588378906, 247.849651336669922 ],
-					"order" : 1,
+					"order" : 0,
 					"source" : [ "obj-12", 0 ]
 				}
 
@@ -1097,16 +1106,16 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-15", 1 ],
-					"source" : [ "obj-44", 0 ]
+					"destination" : [ "obj-77", 0 ],
+					"hidden" : 1,
+					"source" : [ "obj-43", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-77", 0 ],
-					"hidden" : 1,
-					"source" : [ "obj-55", 0 ]
+					"destination" : [ "obj-15", 1 ],
+					"source" : [ "obj-44", 0 ]
 				}
 
 			}
@@ -1513,10 +1522,6 @@
 			}
 , 			{
 				"name" : "mubu.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "bach.hypercomment.mxo",
 				"type" : "iLaX"
 			}
  ],
