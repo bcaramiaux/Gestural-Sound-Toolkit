@@ -33,6 +33,8 @@ a Max library for the design of Embodied Sonic Interactions
 > - STMS Lab IRCAM CNRS Sorbonne Université (Frédéric Bevilacqua,  Riccardo Borghesi, Diemo Schwarz, Victor Paredes)
 > - ISIR Sorbonne Université (Baptiste Caramiaux,)
 > - LIMSI CNRS (Jules Françoise)
+> - University of York (Alessandro Altavilla)
+
 
 
 > V1 Contributors:

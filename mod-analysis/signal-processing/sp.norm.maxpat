@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 1,
-			"revision" : 8,
+			"minor" : 2,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -169,8 +169,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 8,
+							"minor" : 2,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -224,6 +224,7 @@
 									"fontname" : "Arial",
 									"fontsize" : 10.0,
 									"id" : "obj-5",
+									"linecount" : 3,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
@@ -237,6 +238,7 @@
 									"fontname" : "Arial",
 									"fontsize" : 10.0,
 									"id" : "obj-7",
+									"linecount" : 3,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
@@ -502,9 +504,9 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 42.5, 322.0, 125.0, 85.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 5.0, 25.0, 125.0, 86.257816039873134 ],
-					"setminmax" : [ 0.0, 1.100000023841858 ],
-					"setstyle" : 3,
+					"presentation_rect" : [ 5.0, 25.0, 125.0, 86.0 ],
+					"setminmax" : [ 0.0, 1.0 ],
+					"setstyle" : 5,
 					"slidercolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -513,7 +515,7 @@
 				"box" : 				{
 					"comment" : "nom (normalized by the input length)",
 					"id" : "obj-11",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -525,7 +527,7 @@
 				"box" : 				{
 					"comment" : "input [List]",
 					"id" : "obj-10",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -661,9 +663,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [  ],
-		"autosave" : 0
+ ]
 	}
 
 }

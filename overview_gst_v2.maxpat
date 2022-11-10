@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 1,
-			"revision" : 8,
+			"minor" : 2,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -40,13 +40,153 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"bgcolor" : [ 0.8731849193573, 0.873295426368713, 0.87312525510788, 1.0 ],
+					"fontname" : "Helvetica Neue Light Italic",
+					"fontsize" : 12.0,
+					"id" : "obj-45",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 601.89019775390625, 24.0, 247.0, 20.0 ],
+					"presentation_linecount" : 2,
+					"text" : " https://forum.ircam.fr/projects/detail/mubu/"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"annotation" : " https://forum.ircam.fr/projemcts/detail/mubu/",
+					"handoff" : "",
 					"id" : "obj-43",
+					"maxclass" : "ubutton",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "bang", "bang", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 601.89019775390625, 25.25, 247.0, 17.5 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Helvetica Neue Light",
+					"fontsize" : 14.0,
+					"id" : "obj-24",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 11.0, 45.5, 192.0, 23.0 ],
+					"text" : "(only a selection below)"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-16",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "float", "float", "float" ],
+					"patching_rect" : [ 888.774398803710938, 414.6566162109375, 100.0, 22.0 ],
+					"text" : "unpack f f f"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-38",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1319.0, 410.0, 65.0, 22.0 ],
+					"text" : "0.107939"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 10.0,
+					"hidden" : 1,
+					"id" : "obj-77",
+					"linecount" : 3,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 867.0, 8.0, 220.0, 42.0 ],
+					"text" : ";\rmax launchbrowser https://forum.ircam.fr/projects/detail/mubu/"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.6, 0.678431, 0.756863, 0.0 ],
+					"bgmode" : 2,
+					"border" : 1,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-12",
+					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "in.comote.maxpat",
+					"numinlets" : 5,
+					"numoutlets" : 4,
+					"offset" : [ -7.0, -5.0 ],
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 460.1005859375, 77.975730895996094, 163.0, 132.56695556640625 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-44",
 					"maxclass" : "number",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 46.5, 619.0, 50.0, 22.0 ]
+					"patching_rect" : [ 197.437235514322936, 639.656585693359375, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-41",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "float", "float" ],
+					"patching_rect" : [ 1160.645622253417969, 410.0, 65.0, 22.0 ],
+					"text" : "unpack f f"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-22",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1568.606201171875, 410.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-13",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1428.29486083984375, 410.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -60,13 +200,14 @@
 					"enablevscroll" : 0,
 					"id" : "obj-63",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "sp.angles.maxpat",
 					"numinlets" : 2,
 					"numoutlets" : 3,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 1017.908790588378906, 286.1566162109375, 133.731216430664062, 116.319091796875 ],
+					"patching_rect" : [ 1019.908790588378906, 286.1566162109375, 133.731216430664062, 116.319091796875 ],
 					"viewvisibility" : 1
 				}
 
@@ -81,13 +222,14 @@
 					"enablevscroll" : 0,
 					"id" : "obj-60",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "synth.filter.maxpat",
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 366.30047607421875, 658.156585693359375, 241.79486083984375, 145.891738891601562 ],
+					"patching_rect" : [ 366.30047607421875, 667.156585693359375, 241.79486083984375, 145.891738891601562 ],
 					"viewvisibility" : 1
 				}
 
@@ -100,7 +242,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 743.2471923828125, 419.6566162109375, 135.0, 28.0 ],
+					"patching_rect" : [ 743.2471923828125, 414.6566162109375, 135.0, 28.0 ],
 					"text" : "Regression"
 				}
 
@@ -108,14 +250,14 @@
 , 			{
 				"box" : 				{
 					"fontname" : "Helvetica Neue Light",
-					"fontsize" : 23.865383000000001,
+					"fontsize" : 12.0,
 					"id" : "obj-35",
 					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 589.640007019042969, 68.975730895996094, 146.0, 63.0 ],
-					"text" : "Recording & Visualization"
+					"patching_rect" : [ 348.0, 8.0, 267.0, 35.0 ],
+					"text" : "must install  the MuBu package\ndirectly from the Cycling'74 package manager or "
 				}
 
 			}
@@ -129,13 +271,14 @@
 					"enablevscroll" : 0,
 					"id" : "obj-48",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "gst.recorddata.maxpat",
 					"numinlets" : 6,
 					"numoutlets" : 3,
 					"offset" : [ -2.0, -4.0 ],
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 757.640007019042969, 73.975730895996094, 505.79486083984375, 132.56695556640625 ],
+					"patching_rect" : [ 827.344146728515625, 73.975730895996094, 505.79486083984375, 132.56695556640625 ],
 					"viewvisibility" : 1
 				}
 
@@ -149,6 +292,7 @@
 					"enablevscroll" : 0,
 					"id" : "obj-2",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "ml.classification.hhmm.maxpat",
 					"numinlets" : 8,
@@ -183,13 +327,14 @@
 					"enablevscroll" : 0,
 					"id" : "obj-40",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "gst.synth.FM.maxpat",
 					"numinlets" : 6,
 					"numoutlets" : 4,
 					"offset" : [ -6.0, -7.0 ],
 					"outlettype" : [ "signal", "", "", "" ],
-					"patching_rect" : [ 610.0953369140625, 658.156585693359375, 240.79486083984375, 145.891738891601562 ],
+					"patching_rect" : [ 610.0953369140625, 667.156585693359375, 240.79486083984375, 145.891738891601562 ],
 					"viewvisibility" : 1
 				}
 
@@ -203,6 +348,7 @@
 					"enablevscroll" : 0,
 					"id" : "obj-18",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "ml.regression.xmm.maxpat",
 					"numinlets" : 9,
@@ -222,7 +368,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 120.5, 419.6566162109375, 116.0, 28.0 ],
+					"patching_rect" : [ 120.5, 414.6566162109375, 116.0, 28.0 ],
 					"text" : "Classification"
 				}
 
@@ -248,7 +394,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 749.640007019042969, 245.975738525390625, 256.0, 28.0 ],
+					"patching_rect" : [ 737.640007019042969, 245.975738525390625, 256.0, 28.0 ],
 					"text" : "Continuous Motion Descriptors"
 				}
 
@@ -276,9 +422,10 @@
 					"enablevscroll" : 0,
 					"id" : "obj-31",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "sp.orientation.maxpat",
-					"numinlets" : 3,
+					"numinlets" : 2,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
@@ -297,6 +444,7 @@
 					"enablevscroll" : 0,
 					"id" : "obj-30",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "sp.norm.maxpat",
 					"numinlets" : 1,
@@ -318,6 +466,7 @@
 					"enablevscroll" : 0,
 					"id" : "obj-27",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "sp.bandpass.maxpat",
 					"numinlets" : 3,
@@ -339,11 +488,12 @@
 					"enablevscroll" : 0,
 					"id" : "obj-25",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "sp.gate.float.maxpat",
 					"numinlets" : 2,
 					"numoutlets" : 2,
-					"offset" : [ 0.0, 0.0 ],
+					"offset" : [ 1.0, -4.0 ],
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 1313.563644409179688, 286.1566162109375, 133.731216430664062, 116.347579956054688 ],
 					"viewvisibility" : 1
@@ -360,13 +510,14 @@
 					"enablevscroll" : 0,
 					"id" : "obj-23",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "riotbitalino-bp.maxpat",
+					"name" : "in.riotbitalino.maxpat",
 					"numinlets" : 4,
 					"numoutlets" : 4,
 					"offset" : [ -7.0, -5.0 ],
 					"outlettype" : [ "", "", "", "float" ],
-					"patching_rect" : [ 296.5, 68.975730895996094, 163.0, 132.56695556640625 ],
+					"patching_rect" : [ 290.5, 77.975730895996094, 163.0, 132.56695556640625 ],
 					"viewvisibility" : 1
 				}
 
@@ -381,13 +532,14 @@
 					"enablevscroll" : 0,
 					"id" : "obj-20",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "synth.scrub.samples.maxpat",
 					"numinlets" : 4,
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 855.705138999999917, 658.156585693359375, 240.794860999999997, 145.891739000000001 ],
+					"patching_rect" : [ 852.89019775390625, 667.156585693359375, 240.794860999999997, 145.891739000000001 ],
 					"viewvisibility" : 1
 				}
 
@@ -401,29 +553,15 @@
 					"enablevscroll" : 0,
 					"id" : "obj-21",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "drawing.maxpat",
 					"numinlets" : 0,
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "", "int" ],
-					"patching_rect" : [ 120.5, 68.975730895996094, 160.725601196289062, 133.56695556640625 ],
+					"patching_rect" : [ 121.137199401855469, 77.975730895996094, 160.725601196289062, 133.56695556640625 ],
 					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-58",
-					"linecount" : 2,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 429.1005859375, 11.5, 407.0, 33.0 ],
-					"text" : "must install  the MuBu package\nfrom the package manager or https://forum.ircam.fr/projects/detail/mubu/",
-					"textcolor" : [ 0.5018590092659, 0.5018590092659, 0.5018590092659, 1.0 ]
 				}
 
 			}
@@ -436,6 +574,7 @@
 					"enablevscroll" : 0,
 					"id" : "obj-8",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "ml.regression.gmr.maxpat",
 					"numinlets" : 9,
@@ -456,6 +595,7 @@
 					"enablevscroll" : 0,
 					"id" : "obj-14",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "ml.classification.gmm.maxpat",
 					"numinlets" : 8,
@@ -489,7 +629,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2.5, 4.5, 335.0, 36.0 ],
+					"patching_rect" : [ 11.0, 4.5, 335.0, 36.0 ],
 					"text" : "Gestural Sound Toolkit V2(beta)"
 				}
 
@@ -502,7 +642,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2.5, 830.156585693359375, 98.0, 35.0 ],
+					"patching_rect" : [ 2.5, 839.156585693359375, 98.0, 35.0 ],
 					"text" : "Output"
 				}
 
@@ -517,12 +657,13 @@
 					"enablevscroll" : 0,
 					"id" : "obj-26",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "sid.output.maxpat",
 					"numinlets" : 2,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 123.505615234375, 830.156585693359375, 182.97576904296875, 86.099037170410156 ],
+					"patching_rect" : [ 123.505615234375, 839.156585693359375, 182.97576904296875, 86.099037170410156 ],
 					"viewvisibility" : 1
 				}
 
@@ -537,13 +678,14 @@
 					"enablevscroll" : 0,
 					"id" : "obj-15",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "synth.scratch.samples.maxpat",
 					"numinlets" : 4,
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 123.505615234375, 658.156585693359375, 240.79486083984375, 145.891738891601562 ],
+					"patching_rect" : [ 123.505615234375, 667.156585693359375, 240.79486083984375, 145.891738891601562 ],
 					"viewvisibility" : 1
 				}
 
@@ -562,14 +704,14 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 8,
+							"minor" : 2,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 644.0, 309.0, 507.0, 267.0 ],
+						"rect" : [ 644.0, 309.0, 709.0, 413.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -604,6 +746,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 8.0, 21.0, 313.0, 20.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 17.0, 3.0, 313.0, 20.0 ],
 									"text" : "Gestural Sound Toolkit V2, based on MuBu for Max"
 								}
 
@@ -613,15 +757,15 @@
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
 									"id" : "obj-58",
-									"linecount" : 21,
+									"linecount" : 27,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 8.0, 43.0, 458.0, 288.0 ],
+									"patching_rect" : [ 8.0, 43.0, 689.0, 368.0 ],
 									"presentation" : 1,
-									"presentation_linecount" : 21,
-									"presentation_rect" : [ 17.0, 25.0, 623.0, 288.0 ],
-									"text" : "Contributors: \n–  STMS Lab IRCAM CNRS Sorbonne Université (Frédéric Bevilacqua,  Riccardo Borghesi, Diemo Schwarz, Victor Paredes)\n– ISIR Sorbonne Université (Baptiste Caramiaux,)\n– LIMSI CNRS (Jules Françoise)\n\nAcknowledgement: \nELEMENT (ANR-18-CE33-0002), element-project.ircam.fr\n\nBased on the Gestural Sound Toolkit\na Max library for the design of Embodied Sonic Interactions\n\n(c) 2015 EAVI Group, Goldsmiths College, University of London\n     (contact: bc@goldsmithsdigital.com)\n\nContributors: \n– EAVI Group Goldsmiths College (Baptiste Caramiaux, Alessandro Altavilla)\n– IRCAM-Centre Pompidou (Mubu: Riccardo Borghesi, Diemo Schwarz, Norbert Schnell, Frédéric Bevilacqua, Jules Françoise)\n\nEAVI website: eavi.goldsmithsdigital.com",
+									"presentation_linecount" : 30,
+									"presentation_rect" : [ 17.0, 25.0, 623.0, 409.0 ],
+									"text" : "Contributors: \n–  STMS Lab IRCAM CNRS Sorbonne Université (Frédéric Bevilacqua,  Riccardo Borghesi, Diemo Schwarz, Victor Paredes)\n– ISIR Sorbonne Université (Baptiste Caramiaux,)\n– LIMSI CNRS (Jules Françoise)\n– University of York (Alessandro Altavilla)\n\n\n\nAcknowledgement: \nELEMENT (ANR-18-CE33-0002), element-project.ircam.fr\n\nBased on the Gestural Sound Toolkit by Baptiste Caramiaux and Alessandro Altavilla\n\nIRCAM-Centre Pompidou (Mubu: Riccardo Borghesi, Diemo Schwarz, Norbert Schnell, Frédéric Bevilacqua, Jules Françoise) \n\nEAVI website: eavi.goldsmithsdigital.com, (c) 2015 EAVI Group, Goldsmiths College, University of London\n\na Max library for the design of Embodied Sonic Interactions\n\n(c) 2015 EAVI Group, Goldsmiths College, University of London\n     (contact: bc@goldsmithsdigital.com)\n\nContributors: \n– EAVI Group Goldsmiths College (Baptiste Caramiaux, Alessandro Altavilla)\n– IRCAM-Centre Pompidou (Mubu: Riccardo Borghesi, Diemo Schwarz, Norbert Schnell, Frédéric Bevilacqua, Jules Françoise)\n\nEAVI website: eavi.goldsmithsdigital.com",
 									"textcolor" : [ 0.5018590092659, 0.5018590092659, 0.5018590092659, 1.0 ]
 								}
 
@@ -630,7 +774,7 @@
 						"lines" : [  ]
 					}
 ,
-					"patching_rect" : [ 353.0, 11.5, 58.999065000000002, 22.0 ],
+					"patching_rect" : [ 1274.139942568359402, 4.5, 58.999065000000002, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -652,7 +796,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2.5, 690.156585693359375, 109.0, 63.0 ],
+					"patching_rect" : [ 2.5, 699.156585693359375, 109.0, 63.0 ],
 					"text" : "Sound\nSynthesis"
 				}
 
@@ -678,7 +822,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2.5, 63.975730895996094, 111.0, 35.0 ],
+					"patching_rect" : [ 2.5, 77.975730895996094, 111.0, 35.0 ],
 					"text" : "Interfaces"
 				}
 
@@ -693,6 +837,7 @@
 					"enablevscroll" : 0,
 					"id" : "obj-6",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "sp.lowpass.maxpat",
 					"numinlets" : 3,
@@ -714,6 +859,7 @@
 					"enablevscroll" : 0,
 					"id" : "obj-5",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "sp.highpass.maxpat",
 					"numinlets" : 3,
@@ -735,6 +881,7 @@
 					"enablevscroll" : 0,
 					"id" : "obj-4",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "sp.derivative.maxpat",
 					"numinlets" : 3,
@@ -756,11 +903,12 @@
 					"enablevscroll" : 0,
 					"id" : "obj-3",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "sp.kick.maxpat",
 					"numinlets" : 4,
 					"numoutlets" : 3,
-					"offset" : [ 0.0, 0.0 ],
+					"offset" : [ 0.0, -5.0 ],
 					"outlettype" : [ "", "int", "" ],
 					"patching_rect" : [ 1453.874984741210938, 286.1566162109375, 133.731216430664062, 116.319091796875 ],
 					"viewvisibility" : 1
@@ -777,6 +925,7 @@
 					"enablevscroll" : 0,
 					"id" : "obj-1",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "sp.acc.intensity.maxpat",
 					"numinlets" : 3,
@@ -791,19 +940,42 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-25", 1 ],
-					"midpoints" : [ 1170.145622253417969, 412.504196166992188, 1305.835849761962891, 412.504196166992188, 1305.835849761962891, 275.1566162109375, 1437.79486083984375, 275.1566162109375 ],
-					"order" : 0,
+					"destination" : [ "obj-41", 0 ],
 					"source" : [ "obj-1", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-3", 0 ],
-					"midpoints" : [ 1170.145622253417969, 412.504196166992188, 1306.991519927978516, 412.504196166992188, 1306.991519927978516, 275.1566162109375, 1463.374984741210938, 275.1566162109375 ],
+					"destination" : [ "obj-1", 0 ],
+					"midpoints" : [ 469.6005859375, 247.849651336669922, 1170.145622253417969, 247.849651336669922 ],
 					"order" : 1,
-					"source" : [ "obj-1", 0 ]
+					"source" : [ "obj-12", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-31", 1 ],
+					"midpoints" : [ 517.6005859375, 247.849651336669922, 996.140007019042969, 247.849651336669922 ],
+					"source" : [ "obj-12", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-31", 0 ],
+					"midpoints" : [ 469.6005859375, 247.849651336669922, 881.408790588378906, 247.849651336669922 ],
+					"order" : 0,
+					"source" : [ "obj-12", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-44", 0 ],
+					"midpoints" : [ 416.2528076171875, 635.656585693359375, 206.937235514322936, 635.656585693359375 ],
+					"source" : [ "obj-14", 1 ]
 				}
 
 			}
@@ -837,52 +1009,54 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
-					"midpoints" : [ 306.0, 235.259212493896484, 1170.145622253417969, 235.259212493896484 ],
+					"destination" : [ "obj-6", 0 ],
+					"source" : [ "obj-21", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-13", 0 ],
+					"source" : [ "obj-25", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-38", 1 ],
+					"source" : [ "obj-25", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-22", 0 ],
+					"source" : [ "obj-3", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-14", 0 ],
+					"midpoints" : [ 881.408790588378906, 441.080390930175781, 133.2528076171875, 441.080390930175781 ],
 					"order" : 2,
-					"source" : [ "obj-23", 0 ]
+					"source" : [ "obj-31", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-31", 1 ],
-					"midpoints" : [ 354.0, 222.259212493896484, 938.774398803710938, 222.259212493896484 ],
-					"order" : 1,
-					"source" : [ "obj-23", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-31", 0 ],
-					"midpoints" : [ 306.0, 234.259212493896484, 881.408790588378906, 234.259212493896484 ],
-					"order" : 1,
-					"source" : [ "obj-23", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-48", 1 ],
-					"midpoints" : [ 354.0, 211.542686462402344, 560.570003509521484, 211.542686462402344, 560.570003509521484, 66.975730895996094, 864.498979187011741, 66.975730895996094 ],
+					"destination" : [ "obj-16", 0 ],
 					"order" : 0,
-					"source" : [ "obj-23", 1 ]
+					"source" : [ "obj-31", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-48", 0 ],
-					"midpoints" : [ 306.0, 234.542686462402344, 526.570003509521484, 234.542686462402344, 526.570003509521484, 57.975730895996094, 767.140007019042969, 57.975730895996094 ],
-					"order" : 0,
-					"source" : [ "obj-23", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-2", 0 ],
+					"destination" : [ "obj-63", 0 ],
+					"midpoints" : [ 881.408790588378906, 412.4757080078125, 1013.408790588378906, 412.4757080078125, 1013.408790588378906, 275.1566162109375, 1029.408790588378906, 275.1566162109375 ],
+					"order" : 1,
 					"source" : [ "obj-31", 0 ]
 				}
 
@@ -905,8 +1079,43 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-15", 1 ],
+					"destination" : [ "obj-25", 1 ],
+					"midpoints" : [ 1170.145622253417969, 435.504196166992188, 1301.835849761962891, 435.504196166992188, 1301.835849761962891, 275.1566162109375, 1437.79486083984375, 275.1566162109375 ],
+					"order" : 0,
+					"source" : [ "obj-41", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-25", 0 ],
+					"midpoints" : [ 1170.145622253417969, 434.0, 1302.604633331298828, 434.0, 1302.604633331298828, 275.1566162109375, 1323.063644409179688, 275.1566162109375 ],
+					"order" : 2,
+					"source" : [ "obj-41", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"midpoints" : [ 1170.145622253417969, 433.0, 1300.760303497314453, 433.0, 1300.760303497314453, 275.1566162109375, 1463.374984741210938, 275.1566162109375 ],
+					"order" : 1,
+					"source" : [ "obj-41", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-77", 0 ],
+					"hidden" : 1,
 					"source" : [ "obj-43", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-15", 1 ],
+					"source" : [ "obj-44", 0 ]
 				}
 
 			}
@@ -928,6 +1137,9 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-12::obj-55" : [ "live.text", "live.text", 0 ],
+			"obj-12::obj-56" : [ "live.text[1]", "live.text", 0 ],
+			"obj-12::obj-60" : [ "live.text[3]", "live.text[3]", 0 ],
 			"obj-15::obj-18::obj-88" : [ "live.toggle[20]", "live.toggle", 0 ],
 			"obj-15::obj-18::obj-92" : [ "live.toggle[17]", "live.toggle", 0 ],
 			"obj-15::obj-22" : [ "live.gain~", "live.gain~", 0 ],
@@ -1107,7 +1319,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "riotbitalino-bp.maxpat",
+				"name" : "in.riotbitalino.maxpat",
 				"bootpath" : "~/github/Gestural-Sound-Toolkit-V2/mod-interfaces/riot",
 				"patcherrelativepath" : "./mod-interfaces/riot",
 				"type" : "JSON",
@@ -1118,13 +1330,6 @@
 				"bootpath" : "~/github/Gestural-Sound-Toolkit-V2/mod-interfaces/riot",
 				"patcherrelativepath" : "./mod-interfaces/riot",
 				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "riot-logo.png",
-				"bootpath" : "~/Documents/Max/riot-new/various",
-				"patcherrelativepath" : "../../Documents/Max/riot-new/various",
-				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
@@ -1215,6 +1420,59 @@
 				"name" : "sp.angles.maxpat",
 				"bootpath" : "~/github/Gestural-Sound-Toolkit-V2/mod-analysis/signal-processing",
 				"patcherrelativepath" : "./mod-analysis/signal-processing",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "in.comote.maxpat",
+				"bootpath" : "~/github/Gestural-Sound-Toolkit-V2/mod-interfaces/CoMo.te",
+				"patcherrelativepath" : "./mod-interfaces/CoMo.te",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "comote.connect.maxpat",
+				"bootpath" : "~/github/Gestural-Sound-Toolkit-V2/mod-interfaces/CoMo.te/patchers",
+				"patcherrelativepath" : "./mod-interfaces/CoMo.te/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "server.js",
+				"bootpath" : "~/github/Gestural-Sound-Toolkit-V2/mod-interfaces/CoMo.te/patchers",
+				"patcherrelativepath" : "./mod-interfaces/CoMo.te/patchers",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "n4m.monitor.maxpat",
+				"bootpath" : "C74:/packages/Node for Max/patchers/debug-monitor",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "resize_n4m_monitor_patcher.js",
+				"bootpath" : "C74:/packages/Node for Max/patchers/debug-monitor",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "fit_jweb_to_bounds.js",
+				"bootpath" : "C74:/packages/Node for Max/patchers/debug-monitor",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "resize.js",
+				"bootpath" : "~/github/Gestural-Sound-Toolkit-V2/mod-interfaces/CoMo.te/patchers",
+				"patcherrelativepath" : "./mod-interfaces/CoMo.te/patchers",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "comote.connect.maxhelp",
+				"bootpath" : "~/github/Gestural-Sound-Toolkit-V2/mod-interfaces/CoMo.te/patchers",
+				"patcherrelativepath" : "./mod-interfaces/CoMo.te/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}

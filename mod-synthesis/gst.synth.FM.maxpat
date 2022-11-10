@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 1,
-			"revision" : 8,
+			"minor" : 2,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -117,7 +117,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-17",
-					"index" : 0,
+					"index" : 4,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -129,7 +129,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-16",
-					"index" : 0,
+					"index" : 3,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -141,7 +141,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-14",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -168,7 +168,7 @@
 				"box" : 				{
 					"comment" : "Carrier Frequency (in Midi)",
 					"id" : "obj-7",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -240,7 +240,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-1",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -267,11 +267,11 @@
 				"box" : 				{
 					"comment" : "Trigger ADSR",
 					"id" : "obj-44",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 31.013644999999997, 39.168316000000004, 30.0, 30.0 ]
 				}
 
@@ -303,8 +303,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 8,
+							"minor" : 2,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -543,7 +543,7 @@
 				"box" : 				{
 					"comment" : "Volume",
 					"id" : "obj-62",
-					"index" : 0,
+					"index" : 6,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -560,7 +560,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 326.477813999999967, 162.5, 75.0, 22.0 ],
-					"text" : "loadmess 1."
+					"text" : "loadmess 2."
 				}
 
 			}
@@ -592,7 +592,7 @@
 				"box" : 				{
 					"comment" : "Modulation Index",
 					"id" : "obj-58",
-					"index" : 0,
+					"index" : 5,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -627,7 +627,7 @@
 				"box" : 				{
 					"comment" : "Harmonicity",
 					"id" : "obj-50",
-					"index" : 0,
+					"index" : 4,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -640,7 +640,7 @@
 				"box" : 				{
 					"comment" : "Carrier Frequency (in Hz)",
 					"id" : "obj-49",
-					"index" : 0,
+					"index" : 3,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -871,8 +871,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 8,
+							"minor" : 2,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1640,31 +1640,13 @@
 
 			}
  ],
-		"parameters" : 		{
-			"obj-2" : [ "live.gain~[1]", "live.gain~", 0 ],
-			"parameterbanks" : 			{
-
-			}
-,
-			"inherited_shortname" : 1
-		}
-,
-		"dependency_cache" : [ 			{
-				"name" : "FM.png",
-				"bootpath" : "~/Documents/Talks/AImove/Max patches-soundsynthesis",
-				"patcherrelativepath" : "../../../Documents/Talks/AImove/Max patches-soundsynthesis",
-				"type" : "PNG",
-				"implicit" : 1
-			}
- ],
-		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "gst.comment",
 				"default" : 				{
-					"fontname" : [ "Helvetica Light" ],
-					"clearcolor" : [ 0.254902, 0.27451, 0.32549, 1.0 ],
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"fontsize" : [ 12.0 ]
+					"fontname" : [ "Helvetica Light" ],
+					"fontsize" : [ 12.0 ],
+					"clearcolor" : [ 0.254902, 0.27451, 0.32549, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
