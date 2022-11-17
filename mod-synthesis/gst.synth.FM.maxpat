@@ -115,9 +115,9 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "Mod. Index",
 					"id" : "obj-17",
-					"index" : 4,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -127,9 +127,9 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "Harmonicity",
 					"id" : "obj-16",
-					"index" : 3,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -139,9 +139,9 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "Carrier Freq.",
 					"id" : "obj-14",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -168,7 +168,7 @@
 				"box" : 				{
 					"comment" : "Carrier Frequency (in Midi)",
 					"id" : "obj-7",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -238,9 +238,9 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "audio",
 					"id" : "obj-1",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -267,11 +267,11 @@
 				"box" : 				{
 					"comment" : "Trigger ADSR",
 					"id" : "obj-44",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 31.013644999999997, 39.168316000000004, 30.0, 30.0 ]
 				}
 
@@ -543,7 +543,7 @@
 				"box" : 				{
 					"comment" : "Volume",
 					"id" : "obj-62",
-					"index" : 6,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -592,7 +592,7 @@
 				"box" : 				{
 					"comment" : "Modulation Index",
 					"id" : "obj-58",
-					"index" : 5,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -627,7 +627,7 @@
 				"box" : 				{
 					"comment" : "Harmonicity",
 					"id" : "obj-50",
-					"index" : 4,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -640,7 +640,7 @@
 				"box" : 				{
 					"comment" : "Carrier Frequency (in Hz)",
 					"id" : "obj-49",
-					"index" : 3,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -1640,13 +1640,31 @@
 
 			}
  ],
+		"parameters" : 		{
+			"obj-2" : [ "live.gain~[1]", "live.gain~", 0 ],
+			"parameterbanks" : 			{
+
+			}
+,
+			"inherited_shortname" : 1
+		}
+,
+		"dependency_cache" : [ 			{
+				"name" : "FM.png",
+				"bootpath" : "~/Documents/Talks/AImove/Max patches-soundsynthesis",
+				"patcherrelativepath" : "../../../Documents/Talks/AImove/Max patches-soundsynthesis",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+ ],
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "gst.comment",
 				"default" : 				{
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"fontname" : [ "Helvetica Light" ],
 					"fontsize" : [ 12.0 ],
-					"clearcolor" : [ 0.254902, 0.27451, 0.32549, 1.0 ]
+					"clearcolor" : [ 0.254902, 0.27451, 0.32549, 1.0 ],
+					"fontname" : [ "Helvetica Light" ]
 				}
 ,
 				"parentstyle" : "",
@@ -1660,8 +1678,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-					"fontsize" : [ 12.059008 ]
+					"fontsize" : [ 12.059008 ],
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
