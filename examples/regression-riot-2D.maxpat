@@ -109,7 +109,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 635.0, 617.0, 99.0, 20.0 ],
-					"text" : "scale -1. 1. 0. 10."
+					"text" : "scale -1. 1. 0. 4."
 				}
 
 			}
@@ -122,7 +122,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 521.0, 617.0, 99.0, 20.0 ],
-					"text" : "scale -1. 1. 0. 10."
+					"text" : "scale -1. 1. 0. 3."
 				}
 
 			}
