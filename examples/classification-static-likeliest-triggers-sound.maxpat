@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 714.0, 79.0, 755.0, 843.0 ],
+		"rect" : [ 660.0, 79.0, 755.0, 843.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,18 +39,6 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
-				"box" : 				{
-					"id" : "obj-10",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "int", "int" ],
-					"patching_rect" : [ 112.329050699869811, 623.0, 93.0, 22.0 ],
-					"text" : "t 1 i"
-				}
-
-			}
-, 			{
 				"box" : 				{
 					"fontsize" : 11.0,
 					"id" : "obj-3",
@@ -150,7 +138,7 @@
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "drawing.maxpat",
-					"numinlets" : 0,
+					"numinlets" : 3,
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "", "int" ],
@@ -255,20 +243,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-12", 1 ],
-					"source" : [ "obj-10", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-12", 0 ],
-					"source" : [ "obj-10", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-26", 0 ],
 					"source" : [ "obj-12", 0 ]
 				}
@@ -304,7 +278,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-10", 0 ],
+					"destination" : [ "obj-12", 1 ],
 					"source" : [ "obj-3", 0 ]
 				}
 

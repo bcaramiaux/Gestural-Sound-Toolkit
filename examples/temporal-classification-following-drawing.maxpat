@@ -41,19 +41,6 @@
 		"boxes" : [ 			{
 				"box" : 				{
 					"fontsize" : 10.0,
-					"id" : "obj-14",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 275.210274832589278, 328.656585693359375, 56.0, 20.0 ],
-					"text" : "0.01, train"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontsize" : 10.0,
 					"id" : "obj-11",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -72,7 +59,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 275.210274832589278, 301.656585693359375, 57.0, 20.0 ],
+					"patching_rect" : [ 315.85232979910711, 303.656585693359375, 57.0, 20.0 ],
 					"text" : "loadbang"
 				}
 
@@ -90,7 +77,7 @@
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "drawing.maxpat",
-					"numinlets" : 2,
+					"numinlets" : 3,
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "", "int" ],
@@ -107,7 +94,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 356.494384765625, 328.656585693359375, 80.0, 20.0 ],
+					"patching_rect" : [ 315.85232979910711, 329.656585693359375, 80.0, 20.0 ],
 					"text" : "states 20, train"
 				}
 
@@ -276,13 +263,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-2", 5 ],
-					"source" : [ "obj-14", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-12", 1 ],
 					"source" : [ "obj-15", 1 ]
 				}
@@ -333,16 +313,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-14", 0 ],
-					"order" : 1,
-					"source" : [ "obj-5", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-7", 0 ],
-					"order" : 0,
 					"source" : [ "obj-5", 0 ]
 				}
 
