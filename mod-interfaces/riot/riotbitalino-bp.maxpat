@@ -1,1 +1,1 @@
-/Users/bevilacq/github/Gestural-Sound-Toolkit-V2/mod-interfaces/riot/in.riotbitalino.maxpat
+in.riotbitalino.maxpat
