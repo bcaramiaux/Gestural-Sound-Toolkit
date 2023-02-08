@@ -170,7 +170,7 @@
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "sp.orientation.maxpat",
-					"numinlets" : 3,
+					"numinlets" : 2,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
@@ -248,7 +248,7 @@
 					"lockeddragscroll" : 0,
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "riotbitalino-bp.maxpat",
+					"name" : "in.riotbitalino.maxpat",
 					"numinlets" : 4,
 					"numoutlets" : 4,
 					"offset" : [ -6.0, 0.0 ],
@@ -353,7 +353,7 @@
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "drawing.maxpat",
-					"numinlets" : 0,
+					"numinlets" : 3,
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "", "int" ],
@@ -545,7 +545,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-31", 0 ],
-					"order" : 1,
+					"order" : 0,
 					"source" : [ "obj-41", 0 ]
 				}
 
@@ -553,7 +553,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-6", 0 ],
-					"order" : 0,
+					"order" : 1,
 					"source" : [ "obj-41", 0 ]
 				}
 
@@ -643,7 +643,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "riotbitalino-bp.maxpat",
+				"name" : "in.riotbitalino.maxpat",
 				"bootpath" : "~/github/Gestural-Sound-Toolkit-V2/mod-interfaces/riot",
 				"patcherrelativepath" : "../../mod-interfaces/riot",
 				"type" : "JSON",

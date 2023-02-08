@@ -120,7 +120,7 @@
 					"lockeddragscroll" : 0,
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "riotbitalino-bp.maxpat",
+					"name" : "in.riotbitalino.maxpat",
 					"numinlets" : 4,
 					"numoutlets" : 4,
 					"offset" : [ -6.0, 0.0 ],
@@ -350,7 +350,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "riotbitalino-bp.maxpat",
+				"name" : "in.riotbitalino.maxpat",
 				"bootpath" : "~/github/Gestural-Sound-Toolkit-V2/mod-interfaces/riot",
 				"patcherrelativepath" : "../mod-interfaces/riot",
 				"type" : "JSON",

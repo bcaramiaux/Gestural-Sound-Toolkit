@@ -25,6 +25,10 @@ examples/.DS_Store
 
 mod-synthesis/.DS_Store
 
+.DS_Store
+
+mod-interfaces/.DS_Store
+
 mod-analysis/data-recording/recording.zip
 
 mod-analysis/data-recording/visualizing.zip
